@@ -1,0 +1,16 @@
+﻿@model MvcAccount.Email.Change.NotificationMessageViewModel
+Recientemente hemos recibido una solicitud para cambiar la dirección de 
+correo electrónico asociada a su cuenta @Html.Raw(Model.Username) en @Html.Raw(Model.SiteName) de:
+
+@Html.Raw(Model.OldEmail)
+
+a:
+
+@Html.Raw(Model.NewEmail)
+
+Si ha solicitado cambiar la dirección, no es necesario que realice ninguna acción. Si
+no lo ha hecho y cree que alguien podría estar utilizando su cuenta, 
+por favor contáctenos en @Html.Raw(Model.HelpResource).
+
+La función de este mensaje es únicamente informativa. Las respuestas no se 
+supervisarán ni se contestarán.

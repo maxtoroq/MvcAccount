@@ -1,0 +1,13 @@
+﻿@using HtmlUtility = MvcAccount.Html.HtmlUtility;
+@model MvcAccount.IndexViewModel
+@section head {
+<title>@Model.Title</title>
+}
+<div class="index">
+   <h1>@Model.Title</h1>
+   <ul>
+      @foreach (var item in Model.Links) {
+         <li>@HtmlUtility.Link(item)</li>
+      }
+   </ul>
+</div>

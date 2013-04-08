@@ -1,0 +1,9 @@
+﻿@using HtmlUtility = MvcAccount.Html.HtmlUtility;
+@model MvcAccount.Password.Reset.DoneViewModel
+@section head {
+<title>@Model.Title</title>
+}
+<div class="password-reset-done">
+   <h1>@Model.Title</h1>
+   <p>@Model.Message @HtmlUtility.Link(Model.NextLink).</p>
+</div>

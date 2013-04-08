@@ -1,0 +1,12 @@
+﻿@using HtmlUtility = MvcAccount.Html.HtmlUtility;
+@model MvcAccount.Email.Change.SavedViewModel
+@section head {
+<title>@Model.Title</title>
+}
+<div class="email-change-saved">
+   <h1>@Model.Title</h1>
+   <p>@Model.Message</p>
+   <p>
+      @HtmlUtility.Link(Model.NextLink)
+   </p>
+</div>

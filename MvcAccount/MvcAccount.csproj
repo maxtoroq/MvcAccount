@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{60F4DAD3-D522-437D-8915-9AF12BB16206}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MvcAccount</RootNamespace>
+    <AssemblyName>MvcAccount</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\MvcAccount.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MicroApis.ErrorModel">
+      <HintPath>..\packages\MicroApis.ErrorModel.0.3.0\lib\net40\MicroApis.ErrorModel.dll</HintPath>
+    </Reference>
+    <Reference Include="MicroApis.OperationModel">
+      <HintPath>..\packages\MicroApis.OperationModel.0.3.0\lib\net40\MicroApis.OperationModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MvcCodeRouting">
+      <HintPath>..\packages\MvcCodeRouting.1.1.0\lib\net40\MvcCodeRouting.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.3.0.20105.1\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.1.0.20105.408\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountConfiguration.cs" />
+    <Compile Include="AccountController.cs" />
+    <Compile Include="AccountMembershipProvider.cs" />
+    <Compile Include="AccountRepository.cs" />
+    <Compile Include="AccountResources.autogen.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountResources.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccountResources.cs" />
+    <Compile Include="Auth\AuthController.cs" />
+    <Compile Include="Auth\FormsAuthenticationService.cs" />
+    <Compile Include="Auth\SignInInput.cs" />
+    <Compile Include="Auth\SignInViewModel.cs" />
+    <Compile Include="Common\AccountRepositoryWrapper.cs" />
+    <Compile Include="Common\BaseController.cs" />
+    <Compile Include="Common\BaseViewModel.cs" />
+    <Compile Include="Common\FormViewModel.cs" />
+    <Compile Include="Email\Change\ChangeController.cs" />
+    <Compile Include="Email\Change\ChangeInput.cs" />
+    <Compile Include="Email\Change\ChangeResult.cs" />
+    <Compile Include="Email\Change\ChangeViewModel.cs" />
+    <Compile Include="Email\Change\NotificationMessageViewModel.cs" />
+    <Compile Include="Email\Change\SavedViewModel.cs" />
+    <Compile Include="Email\Change\VerificationMessageViewModel.cs" />
+    <Compile Include="Email\Change\VerificationSentViewModel.cs" />
+    <Compile Include="Email\Verify\VerifyController.cs" />
+    <Compile Include="Html\HtmlUtility.cs" />
+    <Compile Include="Common\HttpGetHeadAttribute.cs" />
+    <Compile Include="Common\LinkModel.cs" />
+    <Compile Include="Common\QueryStringBuilder.cs" />
+    <Compile Include="Common\StringExtensions.cs" />
+    <Compile Include="Common\UserWrapper.cs" />
+    <Compile Include="Common\VerificationData.cs" />
+    <Compile Include="IndexViewModel.cs" />
+    <Compile Include="Password\Change\ChangeController.cs" />
+    <Compile Include="Password\Change\ChangeInput.cs" />
+    <Compile Include="Password\Change\ChangeViewModel.cs" />
+    <Compile Include="Password\Change\SavedViewModel.cs" />
+    <Compile Include="Password\ClearTextPasswordService.cs" />
+    <Compile Include="Password\PasswordLengthAttribute.cs" />
+    <Compile Include="Password\PasswordService.cs" />
+    <Compile Include="Password\Reset\DoneViewModel.cs" />
+    <Compile Include="Password\Reset\ErrorMessageViewModel.cs" />
+    <Compile Include="Password\Reset\ErrorReason.cs" />
+    <Compile Include="Password\Reset\FinishInput.cs" />
+    <Compile Include="Password\Reset\FinishViewModel.cs" />
+    <Compile Include="Password\Reset\ResetController.cs" />
+    <Compile Include="Password\Reset\ResetInput.cs" />
+    <Compile Include="Password\Reset\ResetResult.cs" />
+    <Compile Include="Password\Reset\ResetViewModel.cs" />
+    <Compile Include="Password\Reset\VerificationMessageViewModel.cs" />
+    <Compile Include="Password\Reset\VerificationSentViewModel.cs" />
+    <Compile Include="Password\SqlMembershipProviderPasswordService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AccountResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Views.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AccountResources.pt.resx" />
+    <EmbeddedResource Include="Views\Email\Change\Change.cshtml" />
+    <EmbeddedResource Include="Views\Email\Change\Saved.cshtml" />
+    <EmbeddedResource Include="Views\Email\Change\VerificationSent.cshtml" />
+    <EmbeddedResource Include="Views\Email\Change\_NotificationMessage.cshtml" />
+    <EmbeddedResource Include="Views\Email\Change\_NotificationMessage.es.cshtml" />
+    <EmbeddedResource Include="Views\Email\Change\_NotificationMessage.fi.cshtml" />
+    <EmbeddedResource Include="Views\Email\Change\_VerificationMessage.cshtml" />
+    <EmbeddedResource Include="Views\Email\Change\_VerificationMessage.es.cshtml" />
+    <EmbeddedResource Include="Views\Email\Change\_VerificationMessage.fi.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AccountResources.es.resx" />
+    <EmbeddedResource Include="Resources\AccountResources.fi.resx" />
+    <EmbeddedResource Include="Resources\AccountResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AccountResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccountResources.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AccountResources.autogen.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Account\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Views.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Auth\SignIn.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Password\Change\Change.cshtml" />
+    <EmbeddedResource Include="Views\Password\Change\Saved.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Password\Reset\Done.cshtml" />
+    <EmbeddedResource Include="Views\Password\Reset\Finish.cshtml" />
+    <EmbeddedResource Include="Views\Password\Reset\Reset.cshtml" />
+    <EmbeddedResource Include="Views\Password\Reset\VerificationSent.cshtml" />
+    <EmbeddedResource Include="Views\Password\Reset\_ErrorMessage.cshtml" />
+    <EmbeddedResource Include="Views\Password\Reset\_ErrorMessage.es.cshtml" />
+    <EmbeddedResource Include="Views\Password\Reset\_VerificationMessage.cshtml" />
+    <EmbeddedResource Include="Views\Password\Reset\_VerificationMessage.es.cshtml" />
+    <EmbeddedResource Include="Views\Password\Reset\_VerificationMessage.fi.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Email\Change\_NotificationMessage.pt.cshtml" />
+    <EmbeddedResource Include="Views\Email\Change\_VerificationMessage.pt.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Password\Reset\_ErrorMessage.pt.cshtml" />
+    <EmbeddedResource Include="Views\Password\Reset\_VerificationMessage.pt.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50808/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

@@ -1,0 +1,21 @@
+﻿@using HtmlUtility = MvcAccount.Html.HtmlUtility;
+@model MvcAccount.Password.Change.ChangeViewModel
+@section head {
+<title>@Model.Title</title>
+}
+<div class="password-change">
+   <h1>@Model.Title</h1>
+   @Html.ValidationSummary(excludePropertyErrors: true)
+   @using (Html.BeginForm()) {
+      var inputHtml = HtmlUtility.HtmlHelperFor(Html, Model.InputModel);
+      <div class="form">
+         @inputHtml.EditorForModel()
+         <div>
+            <div></div>
+            <div class="buttons">
+               <button type="submit">@Model.SubmitText</button>
+            </div>
+         </div>
+      </div>
+   }
+</div>
