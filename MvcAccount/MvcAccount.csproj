@@ -109,6 +109,11 @@
     <Compile Include="Common\BaseController.cs" />
     <Compile Include="Common\BaseViewModel.cs" />
     <Compile Include="Common\FormViewModel.cs" />
+    <Compile Include="Common\Views.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Views.tt</DependentUpon>
+    </Compile>
     <Compile Include="Email\Change\ChangeController.cs" />
     <Compile Include="Email\Change\ChangeInput.cs" />
     <Compile Include="Email\Change\ChangeResult.cs" />
@@ -151,11 +156,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AccountResources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Views.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Views.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
@@ -197,12 +197,6 @@
     <EmbeddedResource Include="Views\Account\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Views.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Views\Auth\SignIn.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -227,6 +221,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Views\Password\Reset\_ErrorMessage.pt.cshtml" />
     <EmbeddedResource Include="Views\Password\Reset\_VerificationMessage.pt.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\Views.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Views.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
