@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MvcAccount {
+namespace MvcAccount.Common {
 
    static class Views {
 

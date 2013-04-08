@@ -24,7 +24,7 @@
 <#
    string rootNamespace = System.Runtime.Remoting.Messaging.CallContext.LogicalGetData("NamespaceHint").ToString();
    string className = Path.GetFileNameWithoutExtension(this.Host.TemplateFile);
-   DirectoryInfo startDirectory = Directory.CreateDirectory(this.Host.ResolvePath("Views"));
+   DirectoryInfo startDirectory = Directory.CreateDirectory(this.Host.ResolvePath("..\\Views"));
    string indent = "   ";
 #>
 //------------------------------------------------------------------------------
