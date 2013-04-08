@@ -96,6 +96,21 @@ namespace MvcAccount.Auth {
 
          return EmptyRedirect(HttpStatusCode.SeeOther, location);
       }
+      
+      /// <summary>
+      /// Removes the forms-authentication ticket from the browser.
+      /// </summary>
+      /// <param name="returnUrl">A URL to redirect to.</param>
+      /// <returns>The action result.</returns>
+      [HttpGet]
+      public ActionResult SignOut(string returnUrl) {
+
+         this.formsAuthService.SignOut();
+
+         string location = GetValidReturnUrl(returnUrl);
+
+         return EmptyRedirect(HttpStatusCode.Found, location);
+      }
 
       OperationResult SignInImpl(SignInInput input) {
 
@@ -212,21 +227,6 @@ namespace MvcAccount.Auth {
             return new OperationResult<string>(HttpStatusCode.BadRequest, userPassNotMatchMessage);
 
          return user.Username;
-      }
-
-      /// <summary>
-      /// Removes the forms-authentication ticket from the browser.
-      /// </summary>
-      /// <param name="returnUrl">A URL to redirect to.</param>
-      /// <returns>The action result.</returns>
-      [HttpGet]
-      public ActionResult SignOut(string returnUrl) {
-
-         this.formsAuthService.SignOut();
-
-         string location = GetValidReturnUrl(returnUrl);
-
-         return EmptyRedirect(HttpStatusCode.Found, location);
       }
    }
 }

@@ -24,7 +24,8 @@ using MvcAccount.Common;
 using MvcCodeRouting.Web.Mvc;
 
 namespace MvcAccount.Password.Change {
-   
+
+   [Authorize]
    public class ChangeController : BaseController {
 
       AccountRepositoryWrapper repo;
@@ -52,7 +53,6 @@ namespace MvcAccount.Password.Change {
       /// </summary>
       /// <returns>The action result.</returns>
       [HttpGetHead]
-      [Authorize]
       [DefaultAction]
       public ActionResult Change() {
 
@@ -67,7 +67,6 @@ namespace MvcAccount.Password.Change {
       /// <param name="input">The input model.</param>
       /// <returns>The action result.</returns>
       [HttpPost]
-      [Authorize]
       public ActionResult Change(ChangeInput input) {
 
          if (input == null)
@@ -84,6 +83,18 @@ namespace MvcAccount.Password.Change {
             return View().WithErrors(result);
 
          return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action("Saved"));
+      }
+
+      /// <summary>
+      /// A page that informs the user that his new password was saved.
+      /// </summary>
+      /// <returns>The action result.</returns>
+      [HttpGetHead]
+      public ActionResult Saved() {
+
+         this.ViewData.Model = new SavedViewModel();
+
+         return View();
       }
 
       OperationResult ChangeImpl(ChangeInput input) {
@@ -110,19 +121,6 @@ namespace MvcAccount.Password.Change {
          this.repo.UpdateUser(user);
 
          return HttpStatusCode.OK;
-      }
-
-      /// <summary>
-      /// A page that informs the user that his new password was saved.
-      /// </summary>
-      /// <returns>The action result.</returns>
-      [HttpGetHead]
-      [Authorize]
-      public ActionResult Saved() {
-
-         this.ViewData.Model = new SavedViewModel();
-
-         return View();
       }
    }
 }

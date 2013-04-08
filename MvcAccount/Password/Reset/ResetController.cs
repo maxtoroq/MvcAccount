@@ -87,6 +87,85 @@ namespace MvcAccount.Password.Reset {
 
          return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action("VerificationSent"));
       }
+      
+      /// <summary>
+      /// A page that informs the user that the reset password verification e-mail was sent.
+      /// </summary>
+      /// <returns>The action result.</returns>
+      [HttpGetHead]
+      public ActionResult VerificationSent() {
+
+         OperationResult result = this.TempData["PostReset"] as OperationResult;
+         ResetResult resource;
+
+         if (result == null
+            || (resource = result.Value as ResetResult) == null)
+            throw new HttpException((int)HttpStatusCode.NotFound, "");
+
+         this.ViewData.Model = new VerificationSentViewModel(resource);
+
+         return View();
+      }
+
+      /// <summary>
+      /// The reset password callback page.
+      /// </summary>
+      /// <param name="id">The verification ticket.</param>
+      /// <returns>The action result.</returns>
+      [HttpGet]
+      public ActionResult Finish(string id) {
+
+         var result = FinishImpl(id);
+
+         if (result.IsError)
+            throw new HttpException((int)result.StatusCode, result.Value.ToStringInvariant());
+
+         this.ViewData.Model = new FinishViewModel(result.ValueAsSuccess);
+
+         return View();
+      }
+
+      /// <summary>
+      /// Attempts to reset the password.
+      /// </summary>
+      /// <param name="id">The verification ticket.</param>
+      /// <param name="input">The input model.</param>
+      /// <returns>The action result.</returns>
+      [HttpPost]
+      [ValidateAntiForgeryToken]
+      public ActionResult Finish(string id, FinishInput input) {
+
+         if (input == null)
+            return Finish(id);
+
+         this.ViewData.Model = new FinishViewModel(input);
+
+         if (!this.ModelState.IsValid)
+            return View().WithStatus(HttpStatusCode.BadRequest);
+
+         var result = FinishImpl(id, input);
+
+         if (result.IsError) {
+            if (result.StatusCode == HttpStatusCode.BadRequest)
+               return View().WithErrors(result);
+
+            throw new HttpException((int)result.StatusCode, result.Value.ToStringInvariant());
+         }
+
+         return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action("Done"));
+      }
+
+      /// <summary>
+      /// A page that informs the user that his password has been reset.
+      /// </summary>
+      /// <returns>The action result.</returns>
+      [HttpGetHead]
+      public ActionResult Done() {
+
+         this.ViewData.Model = new DoneViewModel();
+
+         return View();
+      }
 
       OperationResult<ResetResult> ResetImpl(ResetInput input) {
 
@@ -151,43 +230,6 @@ namespace MvcAccount.Password.Reset {
          return new OperationResult<ResetResult>(HttpStatusCode.Accepted, new ResetResult(destinationEmail));
       }
 
-      /// <summary>
-      /// A page that informs the user that the reset password verification e-mail was sent.
-      /// </summary>
-      /// <returns>The action result.</returns>
-      [HttpGetHead]
-      public ActionResult VerificationSent() {
-
-         OperationResult result = this.TempData["PostReset"] as OperationResult;
-         ResetResult resource;
-
-         if (result == null
-            || (resource = result.Value as ResetResult) == null)
-            throw new HttpException((int)HttpStatusCode.NotFound, "");
-
-         this.ViewData.Model = new VerificationSentViewModel(resource);
-
-         return View();
-      }
-
-      /// <summary>
-      /// The reset password callback page.
-      /// </summary>
-      /// <param name="id">The verification ticket.</param>
-      /// <returns>The action result.</returns>
-      [HttpGet]
-      public ActionResult Finish(string id) {
-
-         var result = FinishImpl(id);
-
-         if (result.IsError)
-            throw new HttpException((int)result.StatusCode, result.Value.ToStringInvariant());
-
-         this.ViewData.Model = new FinishViewModel(result.ValueAsSuccess);
-
-         return View();
-      }
-
       OperationResult<FinishInput> FinishImpl(string cipher) {
 
          var result = CanFinish(cipher);
@@ -237,48 +279,6 @@ namespace MvcAccount.Password.Reset {
             return HttpStatusCode.Gone;
 
          return user;
-      }
-
-      /// <summary>
-      /// Attempts to reset the password.
-      /// </summary>
-      /// <param name="id">The verification ticket.</param>
-      /// <param name="input">The input model.</param>
-      /// <returns>The action result.</returns>
-      [HttpPost]
-      [ValidateAntiForgeryToken]
-      public ActionResult Finish(string id, FinishInput input) {
-
-         if (input == null)
-            return Finish(id);
-
-         this.ViewData.Model = new FinishViewModel(input);
-
-         if (!this.ModelState.IsValid)
-            return View().WithStatus(HttpStatusCode.BadRequest);
-
-         var result = FinishImpl(id, input);
-
-         if (result.IsError) {
-            if (result.StatusCode == HttpStatusCode.BadRequest)
-               return View().WithErrors(result);
-
-            throw new HttpException((int)result.StatusCode, result.Value.ToStringInvariant());
-         }
-
-         return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action("Done"));
-      }
-
-      /// <summary>
-      /// A page that informs the user that his password has been reset.
-      /// </summary>
-      /// <returns>The action result.</returns>
-      [HttpGetHead]
-      public ActionResult Done() {
-
-         this.ViewData.Model = new DoneViewModel();
-
-         return View();
       }
    }
 }

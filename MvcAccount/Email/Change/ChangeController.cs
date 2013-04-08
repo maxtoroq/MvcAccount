@@ -73,22 +73,6 @@ namespace MvcAccount.Email.Change {
          return View();
       }
 
-      ChangeInput ChangeImpl() {
-
-         IIdentity identity = CurrentPrincipalIdentity();
-
-         if (!identity.IsAuthenticated)
-            throw new InvalidOperationException();
-
-         UserWrapper user = this.repo.FindUserByName(identity.Name);
-
-         var input = new ChangeInput {
-            NewEmail = user.Email
-         };
-
-         return input;
-      }
-
       /// <summary>
       /// Attempts to change the email.
       /// </summary>
@@ -119,6 +103,73 @@ namespace MvcAccount.Email.Change {
          }
 
          return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action("Saved"));
+      }
+      
+      /// <summary>
+      /// A page that informs the user that his new email was saved.
+      /// </summary>
+      /// <returns>The action result.</returns>
+      [HttpGetHead]
+      [Authorize]
+      public ActionResult Saved() {
+
+         this.ViewData.Model = new SavedViewModel();
+
+         return View();
+      }
+
+      /// <summary>
+      /// A page that informs the user that the email change verification e-mail was sent.
+      /// </summary>
+      /// <returns>The action result.</returns>
+      [HttpGetHead]
+      [Authorize]
+      public ActionResult VerificationSent() {
+
+         OperationResult result = this.TempData["PostChange"] as OperationResult;
+         ChangeResult resource;
+
+         if (result == null
+            || (resource = result.Value as ChangeResult) == null)
+            throw new HttpException((int)HttpStatusCode.NotFound, "");
+
+         this.ViewData.Model = new VerificationSentViewModel(resource);
+
+         return View();
+      }
+
+      /// <summary>
+      /// The email change verification callback.
+      /// </summary>
+      /// <param name="id">The verification email.</param>
+      /// <returns>The action result.</returns>
+      [HttpGet]
+      public ActionResult Verify(string id) {
+
+         var result = VerifyImpl(id);
+
+         if (result.IsError)
+            throw new HttpException((int)result.StatusCode, result.Value.ToStringInvariant());
+
+         this.ViewData.Model = new SavedViewModel();
+
+         return View(Views.Email.Change.Saved);
+      }
+
+      ChangeInput ChangeImpl() {
+
+         IIdentity identity = CurrentPrincipalIdentity();
+
+         if (!identity.IsAuthenticated)
+            throw new InvalidOperationException();
+
+         UserWrapper user = this.repo.FindUserByName(identity.Name);
+
+         var input = new ChangeInput {
+            NewEmail = user.Email
+         };
+
+         return input;
       }
 
       OperationResult ChangeImpl(ChangeInput input) {
@@ -194,57 +245,6 @@ namespace MvcAccount.Email.Change {
          SendEmail(verifyMessage);
 
          return new OperationResult(HttpStatusCode.Accepted, new ChangeResult(newEmail));
-      }
-
-      /// <summary>
-      /// A page that informs the user that his new email was saved.
-      /// </summary>
-      /// <returns>The action result.</returns>
-      [HttpGetHead]
-      [Authorize]
-      public ActionResult Saved() {
-
-         this.ViewData.Model = new SavedViewModel();
-
-         return View();
-      }
-
-      /// <summary>
-      /// A page that informs the user that the email change verification e-mail was sent.
-      /// </summary>
-      /// <returns>The action result.</returns>
-      [HttpGetHead]
-      [Authorize]
-      public ActionResult VerificationSent() {
-
-         OperationResult result = this.TempData["PostChange"] as OperationResult;
-         ChangeResult resource;
-
-         if (result == null
-            || (resource = result.Value as ChangeResult) == null)
-            throw new HttpException((int)HttpStatusCode.NotFound, "");
-
-         this.ViewData.Model = new VerificationSentViewModel(resource);
-
-         return View();
-      }
-
-      /// <summary>
-      /// The email change verification callback.
-      /// </summary>
-      /// <param name="id">The verification email.</param>
-      /// <returns>The action result.</returns>
-      [HttpGet]
-      public ActionResult Verify(string id) {
-
-         var result = VerifyImpl(id);
-
-         if (result.IsError)
-            throw new HttpException((int)result.StatusCode, result.Value.ToStringInvariant());
-
-         this.ViewData.Model = new SavedViewModel();
-
-         return View(Views.Email.Change.Saved);
       }
 
       OperationResult VerifyImpl(string cipher) {
