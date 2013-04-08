@@ -27,7 +27,15 @@ namespace MvcAccount.Auth {
    /// </summary>
    public class FormsAuthenticationService {
 
-      public virtual AccountConfiguration Configuration { get; set; }
+      AccountConfiguration _Configuration;
+
+      public AccountConfiguration Configuration {
+         get {
+            return _Configuration
+               ?? (_Configuration = AccountConfiguration.Current());
+         }
+         set { _Configuration = value; }
+      }
 
       /// <summary>
       /// Creates an authentication cookie for a given user name. This does not set
