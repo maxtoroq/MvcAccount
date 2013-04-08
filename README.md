@@ -38,11 +38,11 @@ MvcAccount is fully localized in the following languages:
 
 Source code and releases
 ------------------------
-Code hosted on [GitHub][3]. Releases available on NuGet.
+Code hosted on [GitHub][3]. Releases available via [NuGet][4].
 
-This project was originally hosted on [CodePlex][4], source code of earlier releases remain available there for the time being.
+This project was originally hosted on [CodePlex][5], source code of earlier releases remain available there for the time being.
 
-The new codebase was restructured, although it has the same functions, it's **not** backwards compatible with earlier versions. The motivation is explained on [this post][5].
+The new codebase was restructured, although it has the same functions, it's **not** backwards compatible with earlier versions. The motivation is explained on [this post][6].
 
 Resources
 ---------
@@ -54,5 +54,6 @@ Resources
 [1]: http://msdn.microsoft.com/library/system.web.security.membershipprovider
 [2]: http://msdn.microsoft.com/library/system.web.security.sqlmembershipprovider
 [3]: https://github.com/maxtoroq/MvcAccount
-[4]: https://mvcaccount.codeplex.com/
-[5]: http://maxtoroq.blogspot.com/2013/02/aspnet-mvc-workflow-per-controller.html
+[4]: http://www.nuget.org/packages/MvcAccount
+[5]: https://mvcaccount.codeplex.com/
+[6]: http://maxtoroq.blogspot.com/2013/02/aspnet-mvc-workflow-per-controller.html
