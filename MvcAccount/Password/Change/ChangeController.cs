@@ -16,9 +16,11 @@ using System;
 using System.Net;
 using System.Security.Principal;
 using System.Web.Mvc;
+using System.Web.Routing;
 using MicroApis.ErrorModel;
 using MicroApis.OperationModel;
 using MicroApis.OperationModel.Web.Mvc;
+using MvcAccount.Common;
 using MvcCodeRouting.Web.Mvc;
 
 namespace MvcAccount.Password.Change {
@@ -37,12 +39,12 @@ namespace MvcAccount.Password.Change {
          this.passServ = passwordService;
       }
 
-      public override void Initialize(AccountConfiguration configuration) {
+      protected override void Initialize(RequestContext requestContext) {
          
-         base.Initialize(configuration);
+         base.Initialize(requestContext);
 
-         this.repo = configuration.RequireDependency(this.repo);
-         this.passServ = configuration.RequireDependency(this.passServ);
+         this.repo = this.Configuration.RequireDependency(this.repo);
+         this.passServ = this.Configuration.RequireDependency(this.passServ);
       }
 
       /// <summary>

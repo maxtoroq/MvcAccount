@@ -17,7 +17,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MvcAccount {
+namespace MvcAccount.Common {
    
    /// <summary>
    /// Holds common data for views that have a form.

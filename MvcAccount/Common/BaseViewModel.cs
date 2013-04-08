@@ -19,7 +19,7 @@ using System.Text;
 using System.Web.Mvc;
 using System.Web;
 
-namespace MvcAccount {
+namespace MvcAccount.Common {
    
    /// <summary>
    /// Holds common view data.

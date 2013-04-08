@@ -17,9 +17,11 @@ using System.Net;
 using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Routing;
 using MicroApis.ErrorModel;
 using MicroApis.OperationModel;
 using MicroApis.OperationModel.Web.Mvc;
+using MvcAccount.Common;
 using MvcCodeRouting.Web.Mvc;
 
 namespace MvcAccount.Password.Reset {
@@ -38,12 +40,12 @@ namespace MvcAccount.Password.Reset {
          this.passServ = passwordService;
       }
 
-      public override void Initialize(AccountConfiguration configuration) {
+      protected override void Initialize(RequestContext requestContext) {
+         
+         base.Initialize(requestContext);
 
-         base.Initialize(configuration);
-
-         this.repo = configuration.RequireDependency(this.repo);
-         this.passServ = configuration.RequireDependency(this.passServ);
+         this.repo = this.Configuration.RequireDependency(this.repo);
+         this.passServ = this.Configuration.RequireDependency(this.passServ);
       }
 
       /// <summary>

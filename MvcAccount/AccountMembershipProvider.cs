@@ -16,6 +16,7 @@ using System;
 using System.Reflection;
 using System.Web;
 using System.Web.Security;
+using MvcAccount.Password;
 
 namespace MvcAccount {
    
@@ -164,8 +165,14 @@ namespace MvcAccount {
       /// <returns>true if the specified username and password are valid; otherwise, false.</returns>
       public override bool ValidateUser(string username, string password) {
 
-         var controller = new Auth.AuthController();
-         controller.Initialize(Configuration);
+         AccountConfiguration config = Configuration;
+
+         var controller = new Auth.AuthController(
+            config.RequireDependency(default(AccountRepository)),
+            config.RequireDependency(default(PasswordService))
+         );
+
+         controller.Configuration = config;
 
          return controller.ValidateUser(username, password);
       }

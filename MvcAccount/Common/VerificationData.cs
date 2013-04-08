@@ -22,7 +22,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Globalization;
 
-namespace MvcAccount {
+namespace MvcAccount.Common {
    
    class VerificationData {
 

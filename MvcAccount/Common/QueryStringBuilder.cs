@@ -19,7 +19,7 @@ using System.Linq;
 using System.Web;
 using System.Text;
 
-namespace MvcAccount {
+namespace MvcAccount.Common {
    
    /// <summary>
    /// Provides a set of static (Shared in Visual Basic) methods to convert a <see cref="NameValueCollection"/> 

@@ -15,9 +15,11 @@
 using System;
 using System.Net;
 using System.Web.Mvc;
+using System.Web.Routing;
 using MicroApis.ErrorModel;
 using MicroApis.OperationModel;
 using MicroApis.OperationModel.Web.Mvc;
+using MvcAccount.Common;
 using MvcAccount.Password;
 
 namespace MvcAccount.Auth {
@@ -46,13 +48,13 @@ namespace MvcAccount.Auth {
          this.formsAuthService = formsAuthService;
       }
 
-      public override void Initialize(AccountConfiguration configuration) {
+      protected override void Initialize(RequestContext requestContext) {
          
-         base.Initialize(configuration);
+         base.Initialize(requestContext);
 
-         this.repo = configuration.RequireDependency(this.repo);
-         this.passServ = configuration.RequireDependency(this.passServ);
-         this.formsAuthService = configuration.RequireDependency(this.formsAuthService);
+         this.repo = this.Configuration.RequireDependency(this.repo);
+         this.passServ = this.Configuration.RequireDependency(this.passServ);
+         this.formsAuthService = this.Configuration.RequireDependency(this.formsAuthService);
       }
 
       /// <summary>

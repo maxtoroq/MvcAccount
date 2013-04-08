@@ -28,7 +28,7 @@ using System.Web.Routing;
 using MicroApis.ErrorModel;
 using MvcAccount.Password;
 
-namespace MvcAccount {
+namespace MvcAccount.Common {
    
    public abstract class BaseController : Controller {
 
@@ -36,23 +36,19 @@ namespace MvcAccount {
 
       AccountConfiguration _Configuration;
 
-      protected AccountConfiguration Configuration {
+      protected internal AccountConfiguration Configuration {
          get { return _Configuration; }
+         internal set { _Configuration = value; }
       }
 
-      protected override sealed void Initialize(RequestContext requestContext) {
+      protected override void Initialize(RequestContext requestContext) {
          
          base.Initialize(requestContext);
 
-         Initialize(AccountConfiguration.Current(requestContext));
+         _Configuration = AccountConfiguration.Current(requestContext);
       }
 
-      [NonAction]
-      public virtual void Initialize(AccountConfiguration configuration) {
-         _Configuration = configuration;
-      }
-
-      protected ActionResult EmptyRedirect(HttpStatusCode statusCode, string location) {
+      internal ActionResult EmptyRedirect(HttpStatusCode statusCode, string location) {
 
          this.Response.StatusCode = (int)statusCode;
          this.Response.RedirectLocation = location;
@@ -60,7 +56,7 @@ namespace MvcAccount {
          return new EmptyResult();
       }
 
-      protected string GetValidReturnUrl(string returnUrl) {
+      internal string GetValidReturnUrl(string returnUrl) {
 
          string location = (returnUrl.HasValue() && this.Url.IsLocalUrl(returnUrl)) ?
             returnUrl : ApplicationPath;
@@ -68,11 +64,11 @@ namespace MvcAccount {
          return location;
       }
 
-      protected IIdentity CurrentPrincipalIdentity() {
+      internal IIdentity CurrentPrincipalIdentity() {
          return this.User.Identity;
       }
 
-      protected bool EmailEquals(string left, string right) {
+      internal bool EmailEquals(string left, string right) {
          return String.Equals(left, right, StringComparison.OrdinalIgnoreCase);
       }
 
@@ -101,11 +97,11 @@ namespace MvcAccount {
          return false;
       }
 
-      protected string GetSiteName() {
+      internal string GetSiteName() {
          return this.Configuration.SiteName ?? this.HttpContext.Request.Url.Host;
       }
 
-      protected string RenderEmailView(string viewName, object model) {
+      internal string RenderEmailView(string viewName, object model) {
 
          CultureInfo invariantCulture = CultureInfo.InvariantCulture;
          CultureInfo currentCulture = CultureInfo.CurrentUICulture;
@@ -142,8 +138,8 @@ namespace MvcAccount {
             return output.ToString();
          }
       }
-      
-      protected void SendEmail(MailMessage message) {
+
+      internal void SendEmail(MailMessage message) {
          new SmtpClient().Send(message);
       }
    }

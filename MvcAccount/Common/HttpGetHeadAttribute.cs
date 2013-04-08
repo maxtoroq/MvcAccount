@@ -16,7 +16,7 @@ using System;
 using System.Reflection;
 using System.Web.Mvc;
 
-namespace MvcAccount {
+namespace MvcAccount.Common {
    
    sealed class HttpGetHeadAttribute : ActionMethodSelectorAttribute {
       

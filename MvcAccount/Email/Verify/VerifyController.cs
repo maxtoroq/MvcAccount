@@ -16,7 +16,9 @@ using System;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Routing;
 using MicroApis.OperationModel;
+using MvcAccount.Common;
 using MvcCodeRouting.Web.Mvc;
 
 namespace MvcAccount.Email.Verify {
@@ -33,11 +35,11 @@ namespace MvcAccount.Email.Verify {
          this.repo = new AccountRepositoryWrapper(repo);
       }
 
-      public override void Initialize(AccountConfiguration configuration) {
+      protected override void Initialize(RequestContext requestContext) {
          
-         base.Initialize(configuration);
+         base.Initialize(requestContext);
 
-         this.repo = configuration.RequireDependency(this.repo);
+         this.repo = this.Configuration.RequireDependency(this.repo);
       }
 
       /// <summary>

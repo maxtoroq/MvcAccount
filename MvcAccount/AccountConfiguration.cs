@@ -238,17 +238,33 @@ namespace MvcAccount {
             : DateTime.Now;
       }
 
-      internal AccountRepositoryWrapper RequireDependency(AccountRepositoryWrapper injectedDependency) {
+      internal AccountRepository RequireDependency(AccountRepository injectedDependency, bool throwIfMissing = true) {
 
          Func<AccountRepository> resolver = this.AccountRepositoryResolver;
 
          if (resolver != null)
-            return new AccountRepositoryWrapper(resolver());
+            return resolver();
 
-         if (injectedDependency == null)
+         if (injectedDependency != null)
+            return injectedDependency;
+         
+         if (throwIfMissing)
             throw CreateMissingDependencyException(typeof(AccountRepository), "AccountRepositoryResolver");
 
-         return injectedDependency;
+         return null;
+      }
+
+      internal AccountRepositoryWrapper RequireDependency(AccountRepositoryWrapper injectedDependency) {
+
+         AccountRepository repo = RequireDependency(default(AccountRepository), throwIfMissing: false);
+
+         if (repo != null)
+            return new AccountRepositoryWrapper(repo);
+
+         if (injectedDependency != null)
+            return injectedDependency;
+         
+         throw CreateMissingDependencyException(typeof(AccountRepository), "AccountRepositoryResolver");
       }
 
       internal PasswordService RequireDependency(PasswordService injectedDependency) {
@@ -258,10 +274,10 @@ namespace MvcAccount {
          if (resolver != null)
             return resolver();
 
-         if (injectedDependency == null)
-            throw CreateMissingDependencyException(typeof(PasswordService), "PasswordServiceResolver");
+         if (injectedDependency != null)
+            return injectedDependency;
 
-         return injectedDependency;
+         throw CreateMissingDependencyException(typeof(PasswordService), "PasswordServiceResolver");
       }
 
       internal FormsAuthenticationService RequireDependency(FormsAuthenticationService injectedDependency) {
