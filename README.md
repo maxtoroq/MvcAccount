@@ -55,5 +55,5 @@ Resources
 [2]: http://msdn.microsoft.com/library/system.web.security.sqlmembershipprovider
 [3]: https://github.com/maxtoroq/MvcAccount
 [4]: http://www.nuget.org/packages/MvcAccount
-[5]: https://mvcaccount.codeplex.com/
+[5]: http://mvcaccount.codeplex.com/
 [6]: http://maxtoroq.blogspot.com/2013/02/aspnet-mvc-workflow-per-controller.html
