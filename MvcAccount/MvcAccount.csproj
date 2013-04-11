@@ -228,6 +228,10 @@
       <LastGenOutput>Views.cs</LastGenOutput>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Shared\EditorTemplates\Object.cshtml" />
+    <EmbeddedResource Include="Views\Shared\EditorTemplates\Password.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

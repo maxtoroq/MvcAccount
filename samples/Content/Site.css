@@ -40,6 +40,8 @@ textarea {
 -----------------------------------------------------------*/
 .field-validation-error {
     color: #f00;
+    display: block;
+    margin-bottom: .5em;
 }
 
 .field-validation-valid {
