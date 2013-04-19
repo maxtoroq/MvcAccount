@@ -232,7 +232,8 @@ namespace MvcAccount.Email.Change {
 
          var verifyModel = new VerificationMessageViewModel {
             SiteName = notifyModel.SiteName,
-            Url = new VerificationData(user.Id, newEmail).GetVerificationUrl("Verify", this).AbsoluteUri
+            Url = new VerificationData(user.Id, newEmail)
+               .GetVerificationUrl(id => this.Url.Action(Verify, id), this).AbsoluteUri
          };
 
          var verifyMessage = new MailMessage {

@@ -193,7 +193,8 @@ namespace MvcAccount.Password.Reset {
 
             var mailModel = new VerificationMessageViewModel {
                SiteName = GetSiteName(),
-               Url = new VerificationData(user.Id, null).GetVerificationUrl("Finish", this).AbsoluteUri
+               Url = new VerificationData(user.Id, null)
+                  .GetVerificationUrl(id => this.Url.Action(Finish, id), this).AbsoluteUri
             };
 
             if (!EmailEquals(user.Email, user.Username))

@@ -54,7 +54,7 @@ namespace MvcAccount.Common {
          this.UserData = userData;
       }
 
-      internal Uri GetVerificationUrl(string action, Controller controller) {
+      internal Uri GetVerificationUrl(Func<string, string> actionUrl, Controller controller) {
 
          var parameters = new NameValueCollection { 
             { "uid", this.UserId.ToStringInvariant() },
@@ -65,7 +65,7 @@ namespace MvcAccount.Common {
          byte[] ticketBytes = Encoding.Unicode.GetBytes(parameters.ToQueryString());
          string ticketCipher = MachineKey.Encode(ticketBytes, MachineKeyProtection.Encryption);
 
-         return new Uri(controller.Request.Url, controller.Url.Action(action, new { id = ticketCipher }));
+         return new Uri(controller.Request.Url, actionUrl(ticketCipher));
       }
    }
 }
