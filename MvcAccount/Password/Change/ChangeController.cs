@@ -82,7 +82,7 @@ namespace MvcAccount.Password.Change {
          if (result.IsError)
             return View().WithErrors(result);
 
-         return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action("Saved"));
+         return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action(Saved));
       }
 
       /// <summary>

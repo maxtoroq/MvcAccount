@@ -109,6 +109,7 @@
     <Compile Include="Common\BaseController.cs" />
     <Compile Include="Common\BaseViewModel.cs" />
     <Compile Include="Common\FormViewModel.cs" />
+    <Compile Include="Common\StronglyTypedLinkExtensions.cs" />
     <Compile Include="Common\Views.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

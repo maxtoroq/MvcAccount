@@ -85,7 +85,7 @@ namespace MvcAccount.Password.Reset {
 
          this.TempData["PostReset"] = result;
 
-         return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action("VerificationSent"));
+         return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action(VerificationSent));
       }
       
       /// <summary>
@@ -152,7 +152,7 @@ namespace MvcAccount.Password.Reset {
             throw new HttpException((int)result.StatusCode, result.Value.ToStringInvariant());
          }
 
-         return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action("Done"));
+         return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action(Done));
       }
 
       /// <summary>

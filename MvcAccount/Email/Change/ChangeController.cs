@@ -99,10 +99,10 @@ namespace MvcAccount.Email.Change {
 
             this.TempData["PostChange"] = result;
 
-            return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action("VerificationSent"));
+            return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action(VerificationSent));
          }
 
-         return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action("Saved"));
+         return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action(Saved));
       }
       
       /// <summary>
