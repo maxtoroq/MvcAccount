@@ -191,10 +191,12 @@ namespace MvcAccount.Password.Reset {
 
             this.repo.UpdateUser(user);
 
+            string verificationTicket = new VerificationData(user.Id, null).GetVerificationTicket();
+            string verificationUrl = AbsoluteUrl(this.Url.Action(Finish, verificationTicket));
+
             var mailModel = new VerificationMessageViewModel {
                SiteName = GetSiteName(),
-               Url = new VerificationData(user.Id, null)
-                  .GetVerificationUrl(id => this.Url.Action(Finish, id), this).AbsoluteUri
+               Url = verificationUrl
             };
 
             if (!EmailEquals(user.Email, user.Username))

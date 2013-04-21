@@ -13,21 +13,25 @@
 // limitations under the License.
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web.Security;
 using System.Collections.Specialized;
+using System.Text;
 using System.Web;
-using System.Web.Mvc;
-using System.Globalization;
+using System.Web.Security;
 
 namespace MvcAccount.Common {
    
    class VerificationData {
 
-      public object UserId { get; private set; }
-      public string UserData { get; private set; }
+      readonly object _UserId;
+      readonly string _UserData;
+
+      public object UserId { 
+         get { return _UserId; } 
+      }
+
+      public string UserData { 
+         get { return _UserData; } 
+      }
 
       public static VerificationData Parse(string cipher) {
 
@@ -50,11 +54,11 @@ namespace MvcAccount.Common {
 
       internal VerificationData(object userId, string userData) {
 
-         this.UserId = userId;
-         this.UserData = userData;
+         this._UserId = userId;
+         this._UserData = userData;
       }
 
-      internal Uri GetVerificationUrl(Func<string, string> actionUrl, Controller controller) {
+      public string GetVerificationTicket() {
 
          var parameters = new NameValueCollection { 
             { "uid", this.UserId.ToStringInvariant() },
@@ -65,7 +69,7 @@ namespace MvcAccount.Common {
          byte[] ticketBytes = Encoding.Unicode.GetBytes(parameters.ToQueryString());
          string ticketCipher = MachineKey.Encode(ticketBytes, MachineKeyProtection.Encryption);
 
-         return new Uri(controller.Request.Url, actionUrl(ticketCipher));
+         return ticketCipher;
       }
    }
 }

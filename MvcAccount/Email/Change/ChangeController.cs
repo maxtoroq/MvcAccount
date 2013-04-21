@@ -230,10 +230,12 @@ namespace MvcAccount.Email.Change {
             Body = RenderEmailView(Views.Email.Change._NotificationMessage, notifyModel)
          };
 
+         string verificationTicket = new VerificationData(user.Id, newEmail).GetVerificationTicket();
+         string verificationUrl = AbsoluteUrl(this.Url.Action(Verify, verificationTicket));
+
          var verifyModel = new VerificationMessageViewModel {
             SiteName = notifyModel.SiteName,
-            Url = new VerificationData(user.Id, newEmail)
-               .GetVerificationUrl(id => this.Url.Action(Verify, id), this).AbsoluteUri
+            Url = verificationUrl
          };
 
          var verifyMessage = new MailMessage {

@@ -64,6 +64,10 @@ namespace MvcAccount.Common {
          return location;
       }
 
+      internal string AbsoluteUrl(string relativeUrl) {
+         return new Uri(this.Request.Url, relativeUrl).AbsoluteUri;
+      }
+
       internal IIdentity CurrentPrincipalIdentity() {
          return this.User.Identity;
       }
