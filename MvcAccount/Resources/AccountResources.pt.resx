@@ -162,43 +162,43 @@
   <data name="Validation_UserPassNotMatch" xml:space="preserve">
     <value>{0} ou senha incorreta.</value>
   </data>
-  <data name="Views_ChangePassword_Title" xml:space="preserve">
+  <data name="Views_Password_Change_Change_Title" xml:space="preserve">
     <value>Alteração de Senha</value>
   </data>
-  <data name="Views_Index_Title" xml:space="preserve">
+  <data name="Views_Account_Index_Title" xml:space="preserve">
     <value>Opções de Conta</value>
   </data>
-  <data name="Views_PasswordReset_Message" xml:space="preserve">
+  <data name="Views_Password_Reset_Done_Message" xml:space="preserve">
     <value>Sua senha foi redefinida.</value>
   </data>
-  <data name="Views_PasswordReset_Title" xml:space="preserve">
+  <data name="Views_Password_Reset_Done_Title" xml:space="preserve">
     <value>Redefinição de Senha</value>
   </data>
-  <data name="Views_PasswordSaved_Message" xml:space="preserve">
+  <data name="Views_Password_Change_Saved_Message" xml:space="preserve">
     <value>Sua nova senha foi gravada.</value>
   </data>
-  <data name="Views_PasswordSaved_Title" xml:space="preserve">
+  <data name="Views_Password_Change_Saved_Title" xml:space="preserve">
     <value>Senha Gravada</value>
   </data>
-  <data name="Views_PasswordResetVerificationSent_Message" xml:space="preserve">
+  <data name="Views_Password_Reset_VerificationSent_Message" xml:space="preserve">
     <value>Para redefinir sua senha, siga as instruções enviadas via e-mail para &lt;strong&gt;{0}&lt;/strong&gt;.</value>
   </data>
-  <data name="Views_PasswordResetVerificationSent_Title" xml:space="preserve">
+  <data name="Views_Password_Reset_VerificationSent_Title" xml:space="preserve">
     <value>E-mail de Redefinição Enviado</value>
   </data>
-  <data name="Views_ResetPassword_Message" xml:space="preserve">
+  <data name="Views_Password_Reset_Reset_Message" xml:space="preserve">
     <value>Para redefinir sua senha, digite abaixo o campo '{0}'.</value>
   </data>
-  <data name="Views_ResetPassword_Title" xml:space="preserve">
+  <data name="Views_Password_Reset_Reset_Title" xml:space="preserve">
     <value>Esqueceu sua senha?</value>
   </data>
-  <data name="Views_RP_Message" xml:space="preserve">
+  <data name="Views_Password_Reset_Finish_Message" xml:space="preserve">
     <value>Escolha uma nova senha e digite abaixo.</value>
   </data>
-  <data name="Views_RP_Title" xml:space="preserve">
+  <data name="Views_Password_Reset_Finish_Title" xml:space="preserve">
     <value>Redefinição de Senha</value>
   </data>
-  <data name="Views_SignIn_Title" xml:space="preserve">
+  <data name="Views_Auth_SignIn_Title" xml:space="preserve">
     <value>Entrar</value>
   </data>
   <data name="Views_Submit" xml:space="preserve">
@@ -255,22 +255,22 @@
   <data name="Links_ChangeEmail" xml:space="preserve">
     <value>Alterar endereço de e-mail</value>
   </data>
-  <data name="Views_ChangeEmail_Title" xml:space="preserve">
+  <data name="Views_Email_Change_Change_Title" xml:space="preserve">
     <value>Alteração de Endereço de E-mail</value>
   </data>
-  <data name="Views_EmailSaved_Message" xml:space="preserve">
+  <data name="Views_Email_Change_Saved_Message" xml:space="preserve">
     <value>Seu novo endereço de e-mail foi gravado.</value>
   </data>
-  <data name="Views_EmailSaved_Title" xml:space="preserve">
+  <data name="Views_Email_Change_Saved_Title" xml:space="preserve">
     <value>E-mail Gravado</value>
   </data>
   <data name="Views_GoTo" xml:space="preserve">
     <value>Ir para {0}</value>
   </data>
-  <data name="Views_EmailChangeVerificationSent_Message" xml:space="preserve">
+  <data name="Views_Email_Change_VerificationSent_Message" xml:space="preserve">
     <value>Para confirmar a alteração de seu endereço de e-mail, siga as instruções enviadas via e-mail para &lt;strong&gt;{0}&lt;/strong&gt;.</value>
   </data>
-  <data name="Views_EmailChangeVerificationSent_Title" xml:space="preserve">
+  <data name="Views_Email_Change_VerificationSent_Title" xml:space="preserve">
     <value>E-mail de Verificação Enviado</value>
   </data>
 </root>

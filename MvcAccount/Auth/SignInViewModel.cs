@@ -38,7 +38,7 @@ namespace MvcAccount.Auth {
       public SignInViewModel(SignInInput inputModel) 
          : base(inputModel) {
 
-         this.Title = AccountResources.Views_SignIn_Title;
+         this.Title = AccountResources.Views_Auth_SignIn_Title;
          this.AccountRecoveryLink = new LinkModel(this.Url.Action("", "Password.Reset"), AccountResources.Links_Recovery);
       }
    }

@@ -162,43 +162,43 @@
   <data name="Validation_UserPassNotMatch" xml:space="preserve">
     <value>{0} o contraseña incorrectos.</value>
   </data>
-  <data name="Views_ChangePassword_Title" xml:space="preserve">
+  <data name="Views_Password_Change_Change_Title" xml:space="preserve">
     <value>Cambiar contraseña</value>
   </data>
-  <data name="Views_Index_Title" xml:space="preserve">
+  <data name="Views_Account_Index_Title" xml:space="preserve">
     <value>Opciones de cuenta</value>
   </data>
-  <data name="Views_PasswordReset_Message" xml:space="preserve">
+  <data name="Views_Password_Reset_Done_Message" xml:space="preserve">
     <value>Su contraseña se ha restablecido.</value>
   </data>
-  <data name="Views_PasswordReset_Title" xml:space="preserve">
+  <data name="Views_Password_Reset_Done_Title" xml:space="preserve">
     <value>Contraseña restablecida</value>
   </data>
-  <data name="Views_PasswordSaved_Message" xml:space="preserve">
+  <data name="Views_Password_Change_Saved_Message" xml:space="preserve">
     <value>Su contraseña nueva se ha guardado.</value>
   </data>
-  <data name="Views_PasswordSaved_Title" xml:space="preserve">
+  <data name="Views_Password_Change_Saved_Title" xml:space="preserve">
     <value>Contraseña guardada</value>
   </data>
-  <data name="Views_PasswordResetVerificationSent_Message" xml:space="preserve">
+  <data name="Views_Password_Reset_VerificationSent_Message" xml:space="preserve">
     <value>Para restablecer la contraseña, siga las instrucciones que recibio en su dirección de correo electrónico &lt;strong&gt;{0}&lt;/strong&gt;.</value>
   </data>
-  <data name="Views_PasswordResetVerificationSent_Title" xml:space="preserve">
+  <data name="Views_Password_Reset_VerificationSent_Title" xml:space="preserve">
     <value>Se ha enviado el mensaje de correo electrónico de recuperación</value>
   </data>
-  <data name="Views_ResetPassword_Message" xml:space="preserve">
+  <data name="Views_Password_Reset_Reset_Message" xml:space="preserve">
     <value>Para restablecer su contraseña, ingrese su {0}.</value>
   </data>
-  <data name="Views_ResetPassword_Title" xml:space="preserve">
+  <data name="Views_Password_Reset_Reset_Title" xml:space="preserve">
     <value>Olvido su contraseña?</value>
   </data>
-  <data name="Views_RP_Message" xml:space="preserve">
+  <data name="Views_Password_Reset_Finish_Message" xml:space="preserve">
     <value>Seleccione su nueva contraseña e introdúzcala a continuación.</value>
   </data>
-  <data name="Views_RP_Title" xml:space="preserve">
+  <data name="Views_Password_Reset_Finish_Title" xml:space="preserve">
     <value>Restablecer contraseña</value>
   </data>
-  <data name="Views_SignIn_Title" xml:space="preserve">
+  <data name="Views_Auth_SignIn_Title" xml:space="preserve">
     <value>Acceder</value>
   </data>
   <data name="Views_Submit" xml:space="preserve">
@@ -255,22 +255,22 @@
   <data name="Links_ChangeEmail" xml:space="preserve">
     <value>Cambiar dirección de correo electrónico</value>
   </data>
-  <data name="Views_ChangeEmail_Title" xml:space="preserve">
+  <data name="Views_Email_Change_Change_Title" xml:space="preserve">
     <value>Cambiar dirección de correo electrónico</value>
   </data>
   <data name="Views_GoTo" xml:space="preserve">
     <value>Ir a {0}</value>
   </data>
-  <data name="Views_EmailSaved_Message" xml:space="preserve">
+  <data name="Views_Email_Change_Saved_Message" xml:space="preserve">
     <value>Su dirección de correo electrónico nueva se ha guardado.</value>
   </data>
-  <data name="Views_EmailSaved_Title" xml:space="preserve">
+  <data name="Views_Email_Change_Saved_Title" xml:space="preserve">
     <value>Dirección de correo electrónico guardada</value>
   </data>
-  <data name="Views_EmailChangeVerificationSent_Message" xml:space="preserve">
+  <data name="Views_Email_Change_VerificationSent_Message" xml:space="preserve">
     <value>Para confirmar su cambio de correo electrónico, siga las instrucciones que recibio en su dirección de correo electrónico &lt;strong&gt;{0}&lt;/strong&gt;.</value>
   </data>
-  <data name="Views_EmailChangeVerificationSent_Title" xml:space="preserve">
+  <data name="Views_Email_Change_VerificationSent_Title" xml:space="preserve">
     <value>Se ha enviado el mensaje de verificación de correo electrónico</value>
   </data>
 </root>

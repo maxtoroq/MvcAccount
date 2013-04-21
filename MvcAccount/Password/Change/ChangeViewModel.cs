@@ -33,7 +33,7 @@ namespace MvcAccount.Password.Change {
       public ChangeViewModel(ChangeInput inputModel)
          : base(inputModel) {
 
-         this.Title = AccountResources.Views_ChangePassword_Title;
+         this.Title = AccountResources.Views_Password_Change_Change_Title;
       }
    }
 }

@@ -33,7 +33,7 @@ namespace MvcAccount.Email.Change {
       public ChangeViewModel(ChangeInput inputModel) 
          : base(inputModel) {
 
-         this.Title = AccountResources.Views_ChangeEmail_Title;
+         this.Title = AccountResources.Views_Email_Change_Change_Title;
       }
    }
 }

@@ -162,43 +162,43 @@
   <data name="Validation_UserPassNotMatch" xml:space="preserve">
     <value>{0} and password do not match.</value>
   </data>
-  <data name="Views_ChangePassword_Title" xml:space="preserve">
+  <data name="Views_Password_Change_Change_Title" xml:space="preserve">
     <value>Change password</value>
   </data>
-  <data name="Views_Index_Title" xml:space="preserve">
+  <data name="Views_Account_Index_Title" xml:space="preserve">
     <value>Account options</value>
   </data>
-  <data name="Views_PasswordReset_Message" xml:space="preserve">
+  <data name="Views_Password_Reset_Done_Message" xml:space="preserve">
     <value>Your password has been reset.</value>
   </data>
-  <data name="Views_PasswordReset_Title" xml:space="preserve">
+  <data name="Views_Password_Reset_Done_Title" xml:space="preserve">
     <value>Password Reset</value>
   </data>
-  <data name="Views_PasswordSaved_Message" xml:space="preserve">
+  <data name="Views_Password_Change_Saved_Message" xml:space="preserve">
     <value>Your new password has been saved.</value>
   </data>
-  <data name="Views_PasswordSaved_Title" xml:space="preserve">
+  <data name="Views_Password_Change_Saved_Title" xml:space="preserve">
     <value>Password saved</value>
   </data>
-  <data name="Views_PasswordResetVerificationSent_Message" xml:space="preserve">
+  <data name="Views_Password_Reset_VerificationSent_Message" xml:space="preserve">
     <value>To reset your password, follow the instructions sent to your &lt;strong&gt;{0}&lt;/strong&gt; email address.</value>
   </data>
-  <data name="Views_PasswordResetVerificationSent_Title" xml:space="preserve">
+  <data name="Views_Password_Reset_VerificationSent_Title" xml:space="preserve">
     <value>Recovery Email Sent</value>
   </data>
-  <data name="Views_ResetPassword_Message" xml:space="preserve">
+  <data name="Views_Password_Reset_Reset_Message" xml:space="preserve">
     <value>To reset your password, enter your {0}.</value>
   </data>
-  <data name="Views_ResetPassword_Title" xml:space="preserve">
+  <data name="Views_Password_Reset_Reset_Title" xml:space="preserve">
     <value>Forgot your password?</value>
   </data>
-  <data name="Views_RP_Message" xml:space="preserve">
+  <data name="Views_Password_Reset_Finish_Message" xml:space="preserve">
     <value>Select your new password and enter it below.</value>
   </data>
-  <data name="Views_RP_Title" xml:space="preserve">
+  <data name="Views_Password_Reset_Finish_Title" xml:space="preserve">
     <value>Reset Password</value>
   </data>
-  <data name="Views_SignIn_Title" xml:space="preserve">
+  <data name="Views_Auth_SignIn_Title" xml:space="preserve">
     <value>Sign in</value>
   </data>
   <data name="Views_Submit" xml:space="preserve">
@@ -255,22 +255,22 @@
   <data name="Links_ChangeEmail" xml:space="preserve">
     <value>Change email address</value>
   </data>
-  <data name="Views_ChangeEmail_Title" xml:space="preserve">
+  <data name="Views_Email_Change_Change_Title" xml:space="preserve">
     <value>Change email address</value>
   </data>
-  <data name="Views_EmailSaved_Message" xml:space="preserve">
+  <data name="Views_Email_Change_Saved_Message" xml:space="preserve">
     <value>Your new email address has been saved.</value>
   </data>
-  <data name="Views_EmailSaved_Title" xml:space="preserve">
+  <data name="Views_Email_Change_Saved_Title" xml:space="preserve">
     <value>Email saved</value>
   </data>
   <data name="Views_GoTo" xml:space="preserve">
     <value>Go to {0}</value>
   </data>
-  <data name="Views_EmailChangeVerificationSent_Message" xml:space="preserve">
+  <data name="Views_Email_Change_VerificationSent_Message" xml:space="preserve">
     <value>To confirm your email address change, follow the instructions sent to your &lt;strong&gt;{0}&lt;/strong&gt; email address.</value>
   </data>
-  <data name="Views_EmailChangeVerificationSent_Title" xml:space="preserve">
+  <data name="Views_Email_Change_VerificationSent_Title" xml:space="preserve">
     <value>Verification Email Sent</value>
   </data>
 </root>

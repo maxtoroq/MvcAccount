@@ -38,8 +38,8 @@ namespace MvcAccount.Password.Reset {
       public ResetViewModel(ResetInput inputModel) 
          : base(inputModel) {
 
-         this.Title = AccountResources.Views_ResetPassword_Title;
-         this.Message = AccountResources.Views_ResetPassword_Message.FormatInvariant(AccountResources.Model_Email);
+         this.Title = AccountResources.Views_Password_Reset_Reset_Title;
+         this.Message = AccountResources.Views_Password_Reset_Reset_Message.FormatInvariant(AccountResources.Model_Email);
       }
    }
 }

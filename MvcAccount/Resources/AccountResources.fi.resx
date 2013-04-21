@@ -162,43 +162,43 @@
   <data name="Validation_UserPassNotMatch" xml:space="preserve">
     <value>{0} ja salasana eivät täsmää.</value>
   </data>
-  <data name="Views_ChangePassword_Title" xml:space="preserve">
+  <data name="Views_Password_Change_Change_Title" xml:space="preserve">
     <value>Muuta salasana</value>
   </data>
-  <data name="Views_Index_Title" xml:space="preserve">
+  <data name="Views_Account_Index_Title" xml:space="preserve">
     <value>Tilin asetukset</value>
   </data>
-  <data name="Views_PasswordReset_Message" xml:space="preserve">
+  <data name="Views_Password_Reset_Done_Message" xml:space="preserve">
     <value>Salasanasi on resetoitu.</value>
   </data>
-  <data name="Views_PasswordReset_Title" xml:space="preserve">
+  <data name="Views_Password_Reset_Done_Title" xml:space="preserve">
     <value>Salasanan resetointi</value>
   </data>
-  <data name="Views_PasswordSaved_Message" xml:space="preserve">
+  <data name="Views_Password_Change_Saved_Message" xml:space="preserve">
     <value>Uusi salasanasi on tallennettu</value>
   </data>
-  <data name="Views_PasswordSaved_Title" xml:space="preserve">
+  <data name="Views_Password_Change_Saved_Title" xml:space="preserve">
     <value>Salasana tallennettu</value>
   </data>
-  <data name="Views_PasswordResetVerificationSent_Message" xml:space="preserve">
+  <data name="Views_Password_Reset_VerificationSent_Message" xml:space="preserve">
     <value>Resetoidaksesi salasanasi, seuraa ohjeita jotka on lähetetty &lt;strong&gt;{0}&lt;/strong&gt; osoitteeseen.</value>
   </data>
-  <data name="Views_PasswordResetVerificationSent_Title" xml:space="preserve">
+  <data name="Views_Password_Reset_VerificationSent_Title" xml:space="preserve">
     <value>Sähköposti lähetetty</value>
   </data>
-  <data name="Views_ResetPassword_Message" xml:space="preserve">
+  <data name="Views_Password_Reset_Reset_Message" xml:space="preserve">
     <value>Resetoidaksesi salasanan, syötä {0}.</value>
   </data>
-  <data name="Views_ResetPassword_Title" xml:space="preserve">
+  <data name="Views_Password_Reset_Reset_Title" xml:space="preserve">
     <value>Unohditko salasanasi?</value>
   </data>
-  <data name="Views_RP_Message" xml:space="preserve">
+  <data name="Views_Password_Reset_Finish_Message" xml:space="preserve">
     <value>Valitse uusi salasa a ja syötä se alle.</value>
   </data>
-  <data name="Views_RP_Title" xml:space="preserve">
+  <data name="Views_Password_Reset_Finish_Title" xml:space="preserve">
     <value>Resetoi salasana</value>
   </data>
-  <data name="Views_SignIn_Title" xml:space="preserve">
+  <data name="Views_Auth_SignIn_Title" xml:space="preserve">
     <value>Kirjaudu sisään</value>
   </data>
   <data name="Views_Submit" xml:space="preserve">
@@ -255,22 +255,22 @@
   <data name="Links_ChangeEmail" xml:space="preserve">
     <value>Muuta sähköpostiosoite</value>
   </data>
-  <data name="Views_ChangeEmail_Title" xml:space="preserve">
+  <data name="Views_Email_Change_Change_Title" xml:space="preserve">
     <value>Muuta sähköpostiosoite</value>
   </data>
-  <data name="Views_EmailSaved_Message" xml:space="preserve">
+  <data name="Views_Email_Change_Saved_Message" xml:space="preserve">
     <value>Uusi sähköpostiosoite on tallennettu.</value>
   </data>
-  <data name="Views_EmailSaved_Title" xml:space="preserve">
+  <data name="Views_Email_Change_Saved_Title" xml:space="preserve">
     <value>Sähköposti tallennettu</value>
   </data>
   <data name="Views_GoTo" xml:space="preserve">
     <value>Siirry {0}</value>
   </data>
-  <data name="Views_EmailChangeVerificationSent_Message" xml:space="preserve">
+  <data name="Views_Email_Change_VerificationSent_Message" xml:space="preserve">
     <value>Vahvistaaksesi sähköpostiosoitteen muutoksen, seuraa ohjeita jotka on lähetetty &lt;strong&gt;{0}&lt;/strong&gt; osoitteeseen.</value>
   </data>
-  <data name="Views_EmailChangeVerificationSent_Title" xml:space="preserve">
+  <data name="Views_Email_Change_VerificationSent_Title" xml:space="preserve">
     <value>Varmistussähköposti lähetetty.</value>
   </data>
 </root>

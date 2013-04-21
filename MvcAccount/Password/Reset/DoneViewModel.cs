@@ -40,8 +40,8 @@ namespace MvcAccount.Password.Reset {
       /// </summary>
       public DoneViewModel() {
          
-         this.Title = AccountResources.Views_PasswordReset_Title;
-         this.Message = AccountResources.Views_PasswordReset_Message;
+         this.Title = AccountResources.Views_Password_Reset_Done_Title;
+         this.Message = AccountResources.Views_Password_Reset_Done_Message;
          this.NextLink = new LinkModel(this.Url.Action("SignIn", "~Auth"), AccountResources.Links_SignIn);
       }
    }

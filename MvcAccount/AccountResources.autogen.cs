@@ -125,92 +125,92 @@ namespace MvcAccount {
       /// <summary>
       /// Looks up a localized string similar to 'Change password'.
       /// </summary>
-      public static string Views_ChangePassword_Title {
-         get { return GetResource(Keys.Views_ChangePassword_Title); }
+      public static string Views_Password_Change_Change_Title {
+         get { return GetResource(Keys.Views_Password_Change_Change_Title); }
       }
 
       /// <summary>
       /// Looks up a localized string similar to 'Account options'.
       /// </summary>
-      public static string Views_Index_Title {
-         get { return GetResource(Keys.Views_Index_Title); }
+      public static string Views_Account_Index_Title {
+         get { return GetResource(Keys.Views_Account_Index_Title); }
       }
 
       /// <summary>
       /// Looks up a localized string similar to 'Your password has been reset.'.
       /// </summary>
-      public static string Views_PasswordReset_Message {
-         get { return GetResource(Keys.Views_PasswordReset_Message); }
+      public static string Views_Password_Reset_Done_Message {
+         get { return GetResource(Keys.Views_Password_Reset_Done_Message); }
       }
 
       /// <summary>
       /// Looks up a localized string similar to 'Password Reset'.
       /// </summary>
-      public static string Views_PasswordReset_Title {
-         get { return GetResource(Keys.Views_PasswordReset_Title); }
+      public static string Views_Password_Reset_Done_Title {
+         get { return GetResource(Keys.Views_Password_Reset_Done_Title); }
       }
 
       /// <summary>
       /// Looks up a localized string similar to 'Your new password has been saved.'.
       /// </summary>
-      public static string Views_PasswordSaved_Message {
-         get { return GetResource(Keys.Views_PasswordSaved_Message); }
+      public static string Views_Password_Change_Saved_Message {
+         get { return GetResource(Keys.Views_Password_Change_Saved_Message); }
       }
 
       /// <summary>
       /// Looks up a localized string similar to 'Password saved'.
       /// </summary>
-      public static string Views_PasswordSaved_Title {
-         get { return GetResource(Keys.Views_PasswordSaved_Title); }
+      public static string Views_Password_Change_Saved_Title {
+         get { return GetResource(Keys.Views_Password_Change_Saved_Title); }
       }
 
       /// <summary>
       /// Looks up a localized string similar to 'To reset your password, follow the instructions sent to your <strong>{0}</strong> email address.'.
       /// </summary>
-      public static string Views_PasswordResetVerificationSent_Message {
-         get { return GetResource(Keys.Views_PasswordResetVerificationSent_Message); }
+      public static string Views_Password_Reset_VerificationSent_Message {
+         get { return GetResource(Keys.Views_Password_Reset_VerificationSent_Message); }
       }
 
       /// <summary>
       /// Looks up a localized string similar to 'Recovery Email Sent'.
       /// </summary>
-      public static string Views_PasswordResetVerificationSent_Title {
-         get { return GetResource(Keys.Views_PasswordResetVerificationSent_Title); }
+      public static string Views_Password_Reset_VerificationSent_Title {
+         get { return GetResource(Keys.Views_Password_Reset_VerificationSent_Title); }
       }
 
       /// <summary>
       /// Looks up a localized string similar to 'To reset your password, enter your {0}.'.
       /// </summary>
-      public static string Views_ResetPassword_Message {
-         get { return GetResource(Keys.Views_ResetPassword_Message); }
+      public static string Views_Password_Reset_Reset_Message {
+         get { return GetResource(Keys.Views_Password_Reset_Reset_Message); }
       }
 
       /// <summary>
       /// Looks up a localized string similar to 'Forgot your password?'.
       /// </summary>
-      public static string Views_ResetPassword_Title {
-         get { return GetResource(Keys.Views_ResetPassword_Title); }
+      public static string Views_Password_Reset_Reset_Title {
+         get { return GetResource(Keys.Views_Password_Reset_Reset_Title); }
       }
 
       /// <summary>
       /// Looks up a localized string similar to 'Select your new password and enter it below.'.
       /// </summary>
-      public static string Views_RP_Message {
-         get { return GetResource(Keys.Views_RP_Message); }
+      public static string Views_Password_Reset_Finish_Message {
+         get { return GetResource(Keys.Views_Password_Reset_Finish_Message); }
       }
 
       /// <summary>
       /// Looks up a localized string similar to 'Reset Password'.
       /// </summary>
-      public static string Views_RP_Title {
-         get { return GetResource(Keys.Views_RP_Title); }
+      public static string Views_Password_Reset_Finish_Title {
+         get { return GetResource(Keys.Views_Password_Reset_Finish_Title); }
       }
 
       /// <summary>
       /// Looks up a localized string similar to 'Sign in'.
       /// </summary>
-      public static string Views_SignIn_Title {
-         get { return GetResource(Keys.Views_SignIn_Title); }
+      public static string Views_Auth_SignIn_Title {
+         get { return GetResource(Keys.Views_Auth_SignIn_Title); }
       }
 
       /// <summary>
@@ -342,22 +342,22 @@ namespace MvcAccount {
       /// <summary>
       /// Looks up a localized string similar to 'Change email address'.
       /// </summary>
-      public static string Views_ChangeEmail_Title {
-         get { return GetResource(Keys.Views_ChangeEmail_Title); }
+      public static string Views_Email_Change_Change_Title {
+         get { return GetResource(Keys.Views_Email_Change_Change_Title); }
       }
 
       /// <summary>
       /// Looks up a localized string similar to 'Your new email address has been saved.'.
       /// </summary>
-      public static string Views_EmailSaved_Message {
-         get { return GetResource(Keys.Views_EmailSaved_Message); }
+      public static string Views_Email_Change_Saved_Message {
+         get { return GetResource(Keys.Views_Email_Change_Saved_Message); }
       }
 
       /// <summary>
       /// Looks up a localized string similar to 'Email saved'.
       /// </summary>
-      public static string Views_EmailSaved_Title {
-         get { return GetResource(Keys.Views_EmailSaved_Title); }
+      public static string Views_Email_Change_Saved_Title {
+         get { return GetResource(Keys.Views_Email_Change_Saved_Title); }
       }
 
       /// <summary>
@@ -370,15 +370,15 @@ namespace MvcAccount {
       /// <summary>
       /// Looks up a localized string similar to 'To confirm your email address change, follow the instructions sent to your <strong>{0}</strong> email address.'.
       /// </summary>
-      public static string Views_EmailChangeVerificationSent_Message {
-         get { return GetResource(Keys.Views_EmailChangeVerificationSent_Message); }
+      public static string Views_Email_Change_VerificationSent_Message {
+         get { return GetResource(Keys.Views_Email_Change_VerificationSent_Message); }
       }
 
       /// <summary>
       /// Looks up a localized string similar to 'Verification Email Sent'.
       /// </summary>
-      public static string Views_EmailChangeVerificationSent_Title {
-         get { return GetResource(Keys.Views_EmailChangeVerificationSent_Title); }
+      public static string Views_Email_Change_VerificationSent_Title {
+         get { return GetResource(Keys.Views_Email_Change_VerificationSent_Title); }
       }
       
       internal static class Keys {
@@ -399,19 +399,19 @@ namespace MvcAccount {
             Validation_UserDisabled = "Validation_UserDisabled",
             Validation_UserNotExist = "Validation_UserNotExist",
             Validation_UserPassNotMatch = "Validation_UserPassNotMatch",
-            Views_ChangePassword_Title = "Views_ChangePassword_Title",
-            Views_Index_Title = "Views_Index_Title",
-            Views_PasswordReset_Message = "Views_PasswordReset_Message",
-            Views_PasswordReset_Title = "Views_PasswordReset_Title",
-            Views_PasswordSaved_Message = "Views_PasswordSaved_Message",
-            Views_PasswordSaved_Title = "Views_PasswordSaved_Title",
-            Views_PasswordResetVerificationSent_Message = "Views_PasswordResetVerificationSent_Message",
-            Views_PasswordResetVerificationSent_Title = "Views_PasswordResetVerificationSent_Title",
-            Views_ResetPassword_Message = "Views_ResetPassword_Message",
-            Views_ResetPassword_Title = "Views_ResetPassword_Title",
-            Views_RP_Message = "Views_RP_Message",
-            Views_RP_Title = "Views_RP_Title",
-            Views_SignIn_Title = "Views_SignIn_Title",
+            Views_Password_Change_Change_Title = "Views_Password_Change_Change_Title",
+            Views_Account_Index_Title = "Views_Account_Index_Title",
+            Views_Password_Reset_Done_Message = "Views_Password_Reset_Done_Message",
+            Views_Password_Reset_Done_Title = "Views_Password_Reset_Done_Title",
+            Views_Password_Change_Saved_Message = "Views_Password_Change_Saved_Message",
+            Views_Password_Change_Saved_Title = "Views_Password_Change_Saved_Title",
+            Views_Password_Reset_VerificationSent_Message = "Views_Password_Reset_VerificationSent_Message",
+            Views_Password_Reset_VerificationSent_Title = "Views_Password_Reset_VerificationSent_Title",
+            Views_Password_Reset_Reset_Message = "Views_Password_Reset_Reset_Message",
+            Views_Password_Reset_Reset_Title = "Views_Password_Reset_Reset_Title",
+            Views_Password_Reset_Finish_Message = "Views_Password_Reset_Finish_Message",
+            Views_Password_Reset_Finish_Title = "Views_Password_Reset_Finish_Title",
+            Views_Auth_SignIn_Title = "Views_Auth_SignIn_Title",
             Views_Submit = "Views_Submit",
             Model_ConfirmNewPassword = "Model_ConfirmNewPassword",
             Model_CurrentPassword = "Model_CurrentPassword",
@@ -430,12 +430,12 @@ namespace MvcAccount {
             Model_EmailVerificationMessageSubject = "Model_EmailVerificationMessageSubject",
             Validation_NewEmailSameAsCurrent = "Validation_NewEmailSameAsCurrent",
             Links_ChangeEmail = "Links_ChangeEmail",
-            Views_ChangeEmail_Title = "Views_ChangeEmail_Title",
-            Views_EmailSaved_Message = "Views_EmailSaved_Message",
-            Views_EmailSaved_Title = "Views_EmailSaved_Title",
+            Views_Email_Change_Change_Title = "Views_Email_Change_Change_Title",
+            Views_Email_Change_Saved_Message = "Views_Email_Change_Saved_Message",
+            Views_Email_Change_Saved_Title = "Views_Email_Change_Saved_Title",
             Views_GoTo = "Views_GoTo",
-            Views_EmailChangeVerificationSent_Message = "Views_EmailChangeVerificationSent_Message",
-            Views_EmailChangeVerificationSent_Title = "Views_EmailChangeVerificationSent_Title";
+            Views_Email_Change_VerificationSent_Message = "Views_Email_Change_VerificationSent_Message",
+            Views_Email_Change_VerificationSent_Title = "Views_Email_Change_VerificationSent_Title";
       }
    }
 }

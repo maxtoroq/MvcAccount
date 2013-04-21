@@ -36,7 +36,7 @@ namespace MvcAccount {
       /// </summary>
       public IndexViewModel() {
 
-         this.Title = AccountResources.Views_Index_Title;
+         this.Title = AccountResources.Views_Account_Index_Title;
          this.Links = new Collection<LinkModel> { 
             new LinkModel(this.Url.Action("", "Password.Change"), AccountResources.Links_ChangePassword),
             new LinkModel(this.Url.Action("", "Email.Change"), AccountResources.Links_ChangeEmail),

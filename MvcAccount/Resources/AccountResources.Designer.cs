@@ -349,56 +349,65 @@ namespace MvcAccount.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Account options.
+        /// </summary>
+        internal static string Views_Account_Index_Title {
+            get {
+                return ResourceManager.GetString("Views_Account_Index_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sign in.
+        /// </summary>
+        internal static string Views_Auth_SignIn_Title {
+            get {
+                return ResourceManager.GetString("Views_Auth_SignIn_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Change email address.
         /// </summary>
-        internal static string Views_ChangeEmail_Title {
+        internal static string Views_Email_Change_Change_Title {
             get {
-                return ResourceManager.GetString("Views_ChangeEmail_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Change password.
-        /// </summary>
-        internal static string Views_ChangePassword_Title {
-            get {
-                return ResourceManager.GetString("Views_ChangePassword_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to To confirm your email address change, follow the instructions sent to your &lt;strong&gt;{0}&lt;/strong&gt; email address..
-        /// </summary>
-        internal static string Views_EmailChangeVerificationSent_Message {
-            get {
-                return ResourceManager.GetString("Views_EmailChangeVerificationSent_Message", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Verification Email Sent.
-        /// </summary>
-        internal static string Views_EmailChangeVerificationSent_Title {
-            get {
-                return ResourceManager.GetString("Views_EmailChangeVerificationSent_Title", resourceCulture);
+                return ResourceManager.GetString("Views_Email_Change_Change_Title", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Your new email address has been saved..
         /// </summary>
-        internal static string Views_EmailSaved_Message {
+        internal static string Views_Email_Change_Saved_Message {
             get {
-                return ResourceManager.GetString("Views_EmailSaved_Message", resourceCulture);
+                return ResourceManager.GetString("Views_Email_Change_Saved_Message", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Email saved.
         /// </summary>
-        internal static string Views_EmailSaved_Title {
+        internal static string Views_Email_Change_Saved_Title {
             get {
-                return ResourceManager.GetString("Views_EmailSaved_Title", resourceCulture);
+                return ResourceManager.GetString("Views_Email_Change_Saved_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To confirm your email address change, follow the instructions sent to your &lt;strong&gt;{0}&lt;/strong&gt; email address..
+        /// </summary>
+        internal static string Views_Email_Change_VerificationSent_Message {
+            get {
+                return ResourceManager.GetString("Views_Email_Change_VerificationSent_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Verification Email Sent.
+        /// </summary>
+        internal static string Views_Email_Change_VerificationSent_Title {
+            get {
+                return ResourceManager.GetString("Views_Email_Change_VerificationSent_Title", resourceCulture);
             }
         }
         
@@ -412,110 +421,101 @@ namespace MvcAccount.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Account options.
+        ///   Looks up a localized string similar to Change password.
         /// </summary>
-        internal static string Views_Index_Title {
+        internal static string Views_Password_Change_Change_Title {
             get {
-                return ResourceManager.GetString("Views_Index_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Your password has been reset..
-        /// </summary>
-        internal static string Views_PasswordReset_Message {
-            get {
-                return ResourceManager.GetString("Views_PasswordReset_Message", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Password Reset.
-        /// </summary>
-        internal static string Views_PasswordReset_Title {
-            get {
-                return ResourceManager.GetString("Views_PasswordReset_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to To reset your password, follow the instructions sent to your &lt;strong&gt;{0}&lt;/strong&gt; email address..
-        /// </summary>
-        internal static string Views_PasswordResetVerificationSent_Message {
-            get {
-                return ResourceManager.GetString("Views_PasswordResetVerificationSent_Message", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Recovery Email Sent.
-        /// </summary>
-        internal static string Views_PasswordResetVerificationSent_Title {
-            get {
-                return ResourceManager.GetString("Views_PasswordResetVerificationSent_Title", resourceCulture);
+                return ResourceManager.GetString("Views_Password_Change_Change_Title", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Your new password has been saved..
         /// </summary>
-        internal static string Views_PasswordSaved_Message {
+        internal static string Views_Password_Change_Saved_Message {
             get {
-                return ResourceManager.GetString("Views_PasswordSaved_Message", resourceCulture);
+                return ResourceManager.GetString("Views_Password_Change_Saved_Message", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Password saved.
         /// </summary>
-        internal static string Views_PasswordSaved_Title {
+        internal static string Views_Password_Change_Saved_Title {
             get {
-                return ResourceManager.GetString("Views_PasswordSaved_Title", resourceCulture);
+                return ResourceManager.GetString("Views_Password_Change_Saved_Title", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to To reset your password, enter your {0}..
+        ///   Looks up a localized string similar to Your password has been reset..
         /// </summary>
-        internal static string Views_ResetPassword_Message {
+        internal static string Views_Password_Reset_Done_Message {
             get {
-                return ResourceManager.GetString("Views_ResetPassword_Message", resourceCulture);
+                return ResourceManager.GetString("Views_Password_Reset_Done_Message", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Forgot your password?.
+        ///   Looks up a localized string similar to Password Reset.
         /// </summary>
-        internal static string Views_ResetPassword_Title {
+        internal static string Views_Password_Reset_Done_Title {
             get {
-                return ResourceManager.GetString("Views_ResetPassword_Title", resourceCulture);
+                return ResourceManager.GetString("Views_Password_Reset_Done_Title", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Select your new password and enter it below..
         /// </summary>
-        internal static string Views_RP_Message {
+        internal static string Views_Password_Reset_Finish_Message {
             get {
-                return ResourceManager.GetString("Views_RP_Message", resourceCulture);
+                return ResourceManager.GetString("Views_Password_Reset_Finish_Message", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Reset Password.
         /// </summary>
-        internal static string Views_RP_Title {
+        internal static string Views_Password_Reset_Finish_Title {
             get {
-                return ResourceManager.GetString("Views_RP_Title", resourceCulture);
+                return ResourceManager.GetString("Views_Password_Reset_Finish_Title", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sign in.
+        ///   Looks up a localized string similar to To reset your password, enter your {0}..
         /// </summary>
-        internal static string Views_SignIn_Title {
+        internal static string Views_Password_Reset_Reset_Message {
             get {
-                return ResourceManager.GetString("Views_SignIn_Title", resourceCulture);
+                return ResourceManager.GetString("Views_Password_Reset_Reset_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Forgot your password?.
+        /// </summary>
+        internal static string Views_Password_Reset_Reset_Title {
+            get {
+                return ResourceManager.GetString("Views_Password_Reset_Reset_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To reset your password, follow the instructions sent to your &lt;strong&gt;{0}&lt;/strong&gt; email address..
+        /// </summary>
+        internal static string Views_Password_Reset_VerificationSent_Message {
+            get {
+                return ResourceManager.GetString("Views_Password_Reset_VerificationSent_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recovery Email Sent.
+        /// </summary>
+        internal static string Views_Password_Reset_VerificationSent_Title {
+            get {
+                return ResourceManager.GetString("Views_Password_Reset_VerificationSent_Title", resourceCulture);
             }
         }
         

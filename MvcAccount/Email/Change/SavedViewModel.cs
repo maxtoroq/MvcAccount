@@ -40,8 +40,8 @@ namespace MvcAccount.Email.Change {
       /// </summary>
       public SavedViewModel() {
          
-         this.Title = AccountResources.Views_EmailSaved_Title;
-         this.Message = AccountResources.Views_EmailSaved_Message;
+         this.Title = AccountResources.Views_Email_Change_Saved_Title;
+         this.Message = AccountResources.Views_Email_Change_Saved_Message;
          this.NextLink = new LinkModel(this.Url.Action("", "~Account"), AccountResources.Views_GoTo.FormatInvariant(AccountResources.Links_Index));
       }
    }

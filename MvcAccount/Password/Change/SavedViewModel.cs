@@ -40,8 +40,8 @@ namespace MvcAccount.Password.Change {
       /// </summary>
       public SavedViewModel() {
 
-         this.Title = AccountResources.Views_PasswordSaved_Title;
-         this.Message = AccountResources.Views_PasswordSaved_Message;
+         this.Title = AccountResources.Views_Password_Change_Saved_Title;
+         this.Message = AccountResources.Views_Password_Change_Saved_Message;
          this.NextLink = new LinkModel(this.Url.Action("", "~Account"), AccountResources.Views_GoTo.FormatInvariant(AccountResources.Links_Index));
       }
    }

@@ -34,13 +34,13 @@ namespace MvcAccount.Password.Reset {
       /// Initializes a new instance of the <see cref="VerificationSentViewModel"/> class.
       /// </summary>
       public VerificationSentViewModel() {
-         this.Title = AccountResources.Views_PasswordResetVerificationSent_Title;
+         this.Title = AccountResources.Views_Password_Reset_VerificationSent_Title;
       }
 
       internal VerificationSentViewModel(ResetResult result) 
          : this() {
 
-         this.Message = AccountResources.Views_PasswordResetVerificationSent_Message.FormatInvariant(result.EmailDisplay);
+         this.Message = AccountResources.Views_Password_Reset_VerificationSent_Message.FormatInvariant(result.EmailDisplay);
       }
    }
 }

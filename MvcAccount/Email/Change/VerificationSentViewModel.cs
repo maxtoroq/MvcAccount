@@ -34,13 +34,13 @@ namespace MvcAccount.Email.Change {
       /// Initializes a new instance of the <see cref="VerificationSentViewModel"/> class.
       /// </summary>
       public VerificationSentViewModel() {
-         this.Title = AccountResources.Views_EmailChangeVerificationSent_Title;
+         this.Title = AccountResources.Views_Email_Change_VerificationSent_Title;
       }
 
       internal VerificationSentViewModel(ChangeResult result) 
          : this() {
          
-         this.Message = AccountResources.Views_EmailChangeVerificationSent_Message.FormatInvariant(result.EmailDisplay);
+         this.Message = AccountResources.Views_Email_Change_VerificationSent_Message.FormatInvariant(result.EmailDisplay);
       }
    }
 }
