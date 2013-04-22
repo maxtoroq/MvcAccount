@@ -120,9 +120,6 @@
   <data name="Links_ChangePassword" xml:space="preserve">
     <value>Muuta salasana</value>
   </data>
-  <data name="Links_Index" xml:space="preserve">
-    <value>Tili</value>
-  </data>
   <data name="Links_Recovery" xml:space="preserve">
     <value>Ongelmia kirjautumisessa?</value>
   </data>
@@ -222,7 +219,7 @@
   <data name="Model_RememberMe" xml:space="preserve">
     <value>Pysykirjautuneena</value>
   </data>
-  <data name="Model_ResetPasswordMessageSubject" xml:space="preserve">
+  <data name="Model_PasswordResetVerificationMessageSubject" xml:space="preserve">
     <value>Salasanan uusinta</value>
   </data>
   <data name="Model_Username" xml:space="preserve">
@@ -246,9 +243,6 @@
   <data name="Model_EmailChangeVerificationMessageSubject" xml:space="preserve">
     <value>Sähköpostin muutos vahvistus</value>
   </data>
-  <data name="Model_EmailVerificationMessageSubject" xml:space="preserve">
-    <value>Sähköpostiosoitteen vahvistus</value>
-  </data>
   <data name="Validation_NewEmailSameAsCurrent" xml:space="preserve">
     <value>{1} ei voi olla sama kuin nykyinen.</value>
   </data>
@@ -264,13 +258,13 @@
   <data name="Views_Email_Change_Saved_Title" xml:space="preserve">
     <value>Sähköposti tallennettu</value>
   </data>
-  <data name="Views_GoTo" xml:space="preserve">
-    <value>Siirry {0}</value>
-  </data>
   <data name="Views_Email_Change_VerificationSent_Message" xml:space="preserve">
     <value>Vahvistaaksesi sähköpostiosoitteen muutoksen, seuraa ohjeita jotka on lähetetty &lt;strong&gt;{0}&lt;/strong&gt; osoitteeseen.</value>
   </data>
   <data name="Views_Email_Change_VerificationSent_Title" xml:space="preserve">
     <value>Varmistussähköposti lähetetty.</value>
+  </data>
+  <data name="Links_ReturnToIndex" xml:space="preserve">
+    <value>Siirry Tili</value>
   </data>
 </root>

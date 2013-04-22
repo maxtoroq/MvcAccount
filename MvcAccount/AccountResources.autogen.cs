@@ -25,13 +25,6 @@ namespace MvcAccount {
       }
 
       /// <summary>
-      /// Looks up a localized string similar to 'My account'.
-      /// </summary>
-      public static string Links_Index {
-         get { return GetResource(Keys.Links_Index); }
-      }
-
-      /// <summary>
       /// Looks up a localized string similar to 'Can't access your account?'.
       /// </summary>
       public static string Links_Recovery {
@@ -265,8 +258,8 @@ namespace MvcAccount {
       /// <summary>
       /// Looks up a localized string similar to 'Password Assistance'.
       /// </summary>
-      public static string Model_ResetPasswordMessageSubject {
-         get { return GetResource(Keys.Model_ResetPasswordMessageSubject); }
+      public static string Model_PasswordResetVerificationMessageSubject {
+         get { return GetResource(Keys.Model_PasswordResetVerificationMessageSubject); }
       }
 
       /// <summary>
@@ -319,13 +312,6 @@ namespace MvcAccount {
       }
 
       /// <summary>
-      /// Looks up a localized string similar to 'Email address verification'.
-      /// </summary>
-      public static string Model_EmailVerificationMessageSubject {
-         get { return GetResource(Keys.Model_EmailVerificationMessageSubject); }
-      }
-
-      /// <summary>
       /// Looks up a localized string similar to 'The {1} must be different from the current one.'.
       /// </summary>
       public static string Validation_NewEmailSameAsCurrent {
@@ -361,13 +347,6 @@ namespace MvcAccount {
       }
 
       /// <summary>
-      /// Looks up a localized string similar to 'Go to {0}'.
-      /// </summary>
-      public static string Views_GoTo {
-         get { return GetResource(Keys.Views_GoTo); }
-      }
-
-      /// <summary>
       /// Looks up a localized string similar to 'To confirm your email address change, follow the instructions sent to your <strong>{0}</strong> email address.'.
       /// </summary>
       public static string Views_Email_Change_VerificationSent_Message {
@@ -380,12 +359,18 @@ namespace MvcAccount {
       public static string Views_Email_Change_VerificationSent_Title {
          get { return GetResource(Keys.Views_Email_Change_VerificationSent_Title); }
       }
+
+      /// <summary>
+      /// Looks up a localized string similar to 'Go to My account'.
+      /// </summary>
+      public static string Links_ReturnToIndex {
+         get { return GetResource(Keys.Links_ReturnToIndex); }
+      }
       
       internal static class Keys {
       
          public const string
             Links_ChangePassword = "Links_ChangePassword",
-            Links_Index = "Links_Index",
             Links_Recovery = "Links_Recovery",
             Links_SignIn = "Links_SignIn",
             Links_SignOut = "Links_SignOut",
@@ -419,7 +404,7 @@ namespace MvcAccount {
             Model_NewPassword = "Model_NewPassword",
             Model_Password = "Model_Password",
             Model_RememberMe = "Model_RememberMe",
-            Model_ResetPasswordMessageSubject = "Model_ResetPasswordMessageSubject",
+            Model_PasswordResetVerificationMessageSubject = "Model_PasswordResetVerificationMessageSubject",
             Model_Username = "Model_Username",
             Model_NewEmail = "Model_NewEmail",
             Validation_EmailPattern = "Validation_EmailPattern",
@@ -427,15 +412,14 @@ namespace MvcAccount {
             Validation_StringLengthWithMin = "Validation_StringLengthWithMin",
             Model_EmailChangeNotificationMessageSubject = "Model_EmailChangeNotificationMessageSubject",
             Model_EmailChangeVerificationMessageSubject = "Model_EmailChangeVerificationMessageSubject",
-            Model_EmailVerificationMessageSubject = "Model_EmailVerificationMessageSubject",
             Validation_NewEmailSameAsCurrent = "Validation_NewEmailSameAsCurrent",
             Links_ChangeEmail = "Links_ChangeEmail",
             Views_Email_Change_Change_Title = "Views_Email_Change_Change_Title",
             Views_Email_Change_Saved_Message = "Views_Email_Change_Saved_Message",
             Views_Email_Change_Saved_Title = "Views_Email_Change_Saved_Title",
-            Views_GoTo = "Views_GoTo",
             Views_Email_Change_VerificationSent_Message = "Views_Email_Change_VerificationSent_Message",
-            Views_Email_Change_VerificationSent_Title = "Views_Email_Change_VerificationSent_Title";
+            Views_Email_Change_VerificationSent_Title = "Views_Email_Change_VerificationSent_Title",
+            Links_ReturnToIndex = "Links_ReturnToIndex";
       }
    }
 }

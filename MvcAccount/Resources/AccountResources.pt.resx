@@ -120,9 +120,6 @@
   <data name="Links_ChangePassword" xml:space="preserve">
     <value>Alterar senha</value>
   </data>
-  <data name="Links_Index" xml:space="preserve">
-    <value>A minha conta</value>
-  </data>
   <data name="Links_Recovery" xml:space="preserve">
     <value>Não consegue acessar sua conta?</value>
   </data>
@@ -222,7 +219,7 @@
   <data name="Model_RememberMe" xml:space="preserve">
     <value>Continuar conectado</value>
   </data>
-  <data name="Model_ResetPasswordMessageSubject" xml:space="preserve">
+  <data name="Model_PasswordResetVerificationMessageSubject" xml:space="preserve">
     <value>Assistência de senha</value>
   </data>
   <data name="Model_Username" xml:space="preserve">
@@ -246,9 +243,6 @@
   <data name="Model_EmailChangeVerificationMessageSubject" xml:space="preserve">
     <value>Verificação de alteração de e-mail</value>
   </data>
-  <data name="Model_EmailVerificationMessageSubject" xml:space="preserve">
-    <value>Verificação de endereço de e-mail</value>
-  </data>
   <data name="Validation_NewEmailSameAsCurrent" xml:space="preserve">
     <value>O campo '{1}' precisa ser diferente do valor atual.</value>
   </data>
@@ -264,13 +258,13 @@
   <data name="Views_Email_Change_Saved_Title" xml:space="preserve">
     <value>E-mail Gravado</value>
   </data>
-  <data name="Views_GoTo" xml:space="preserve">
-    <value>Ir para {0}</value>
-  </data>
   <data name="Views_Email_Change_VerificationSent_Message" xml:space="preserve">
     <value>Para confirmar a alteração de seu endereço de e-mail, siga as instruções enviadas via e-mail para &lt;strong&gt;{0}&lt;/strong&gt;.</value>
   </data>
   <data name="Views_Email_Change_VerificationSent_Title" xml:space="preserve">
     <value>E-mail de Verificação Enviado</value>
+  </data>
+  <data name="Links_ReturnToIndex" xml:space="preserve">
+    <value>Ir para A minha conta</value>
   </data>
 </root>

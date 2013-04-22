@@ -42,7 +42,7 @@ namespace MvcAccount.Email.Change {
          
          this.Title = AccountResources.Views_Email_Change_Saved_Title;
          this.Message = AccountResources.Views_Email_Change_Saved_Message;
-         this.NextLink = new LinkModel(this.Url.Action("", "~Account"), AccountResources.Views_GoTo.FormatInvariant(AccountResources.Links_Index));
+         this.NextLink = new LinkModel(this.Url.Action("", "~Account"), AccountResources.Links_ReturnToIndex);
       }
    }
 }

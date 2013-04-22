@@ -79,20 +79,20 @@ namespace MvcAccount.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to My account.
-        /// </summary>
-        internal static string Links_Index {
-            get {
-                return ResourceManager.GetString("Links_Index", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Can&apos;t access your account?.
         /// </summary>
         internal static string Links_Recovery {
             get {
                 return ResourceManager.GetString("Links_Recovery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Go to My account.
+        /// </summary>
+        internal static string Links_ReturnToIndex {
+            get {
+                return ResourceManager.GetString("Links_ReturnToIndex", resourceCulture);
             }
         }
         
@@ -160,15 +160,6 @@ namespace MvcAccount.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email address verification.
-        /// </summary>
-        internal static string Model_EmailVerificationMessageSubject {
-            get {
-                return ResourceManager.GetString("Model_EmailVerificationMessageSubject", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to New email address.
         /// </summary>
         internal static string Model_NewEmail {
@@ -196,20 +187,20 @@ namespace MvcAccount.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Password Assistance.
+        /// </summary>
+        internal static string Model_PasswordResetVerificationMessageSubject {
+            get {
+                return ResourceManager.GetString("Model_PasswordResetVerificationMessageSubject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Stay signed in.
         /// </summary>
         internal static string Model_RememberMe {
             get {
                 return ResourceManager.GetString("Model_RememberMe", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Password Assistance.
-        /// </summary>
-        internal static string Model_ResetPasswordMessageSubject {
-            get {
-                return ResourceManager.GetString("Model_ResetPasswordMessageSubject", resourceCulture);
             }
         }
         
@@ -408,15 +399,6 @@ namespace MvcAccount.Resources {
         internal static string Views_Email_Change_VerificationSent_Title {
             get {
                 return ResourceManager.GetString("Views_Email_Change_VerificationSent_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Go to {0}.
-        /// </summary>
-        internal static string Views_GoTo {
-            get {
-                return ResourceManager.GetString("Views_GoTo", resourceCulture);
             }
         }
         

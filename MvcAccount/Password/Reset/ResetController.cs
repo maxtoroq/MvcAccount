@@ -206,7 +206,7 @@ namespace MvcAccount.Password.Reset {
 
             message = new MailMessage {
                To = { destinationEmail },
-               Subject = AccountResources.Model_ResetPasswordMessageSubject,
+               Subject = AccountResources.Model_PasswordResetVerificationMessageSubject,
                Body = RenderEmailView(Views.Password.Reset._VerificationMessage, mailModel)
             };
 
@@ -223,7 +223,7 @@ namespace MvcAccount.Password.Reset {
 
             message = new MailMessage {
                To = { destinationEmail },
-               Subject = AccountResources.Model_ResetPasswordMessageSubject,
+               Subject = AccountResources.Model_PasswordResetVerificationMessageSubject,
                Body = RenderEmailView(Views.Password.Reset._ErrorMessage, mailModel)
             };
          }
