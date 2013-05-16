@@ -23,7 +23,7 @@ Password encryption methods
 
 Integration
 -----------
-- **MembershipProvider (MvcAccount.AccountMembershipProvider)**: Although MvcAccount is a substitute for MembershipProvider there a many components out there that work against this API, so MvcAccount also provides an implementation. The only functions currently implemented are:
+- **MembershipProvider (MvcAccount.Web.Security.AccountMembershipProvider)**: Although MvcAccount is a substitute for MembershipProvider there a many components out there that work against this API, so MvcAccount also provides an implementation. The only functions currently implemented are:
  - **ValidateUser** (useful if your application implements other functions that require username/password verification).
  - **GetUser** (all overloads, this allows you to get user information from your application without a direct dependency on MvcAccount).
 
