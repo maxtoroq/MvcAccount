@@ -1,8 +1,8 @@
-﻿@model MvcAccount.Password.Reset.VerificationSentViewModel
+﻿@model MvcAccount.Web.Password.Reset.VerificationSentViewModel
 @section head {
 <title>@Model.Title</title>
 }
-<div class="password-reset-verification-sent">
+<div class="@Model.ViewCssClass">
    <h1>@Model.Title</h1>
    <p>@Html.Raw(Model.Message)</p>
 </div>

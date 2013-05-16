@@ -1,9 +1,9 @@
-﻿@using HtmlUtility = MvcAccount.Html.HtmlUtility;
-@model MvcAccount.Password.Change.SavedViewModel
+﻿@using HtmlUtility = MvcAccount.Web.HtmlUtility;
+@model MvcAccount.Web.Password.Change.SavedViewModel
 @section head {
 <title>@Model.Title</title>
 }
-<div class="password-change-saved">
+<div class="@Model.ViewCssClass">
    <h1>@Model.Title</h1>
    <p>@Model.Message</p>
    <p>

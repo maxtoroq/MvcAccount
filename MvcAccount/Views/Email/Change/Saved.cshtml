@@ -1,9 +1,9 @@
-﻿@using HtmlUtility = MvcAccount.Html.HtmlUtility;
-@model MvcAccount.Email.Change.SavedViewModel
+﻿@using HtmlUtility = MvcAccount.Web.HtmlUtility;
+@model MvcAccount.Web.Email.Change.SavedViewModel
 @section head {
 <title>@Model.Title</title>
 }
-<div class="email-change-saved">
+<div class="@Model.ViewCssClass">
    <h1>@Model.Title</h1>
    <p>@Model.Message</p>
    <p>

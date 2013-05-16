@@ -16,8 +16,6 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Web;
 using System.Web.Routing;
-using MvcAccount.Auth;
-using MvcAccount.Password;
 
 namespace MvcAccount {
 
@@ -42,7 +40,7 @@ namespace MvcAccount {
       /// <summary>
       /// A delegate that returns a <see cref="AccountRepository"/> implementation. 
       /// This setting is optional if using controller dependency injection,
-      /// but required when using <see cref="AccountMembershipProvider"/>.
+      /// but required when using <see cref="MvcAccount.Web.Security.AccountMembershipProvider"/>.
       /// </summary>
       public Func<AccountRepository> AccountRepositoryResolver {
          get {
@@ -58,7 +56,7 @@ namespace MvcAccount {
       /// <summary>
       /// A delegate that returns a <see cref="PasswordService"/> implementation. 
       /// This setting is optional if using controller dependency injection,
-      /// but required when using <see cref="AccountMembershipProvider"/>.
+      /// but required when using <see cref="MvcAccount.Web.Security.AccountMembershipProvider"/>.
       /// </summary>
       public Func<PasswordService> PasswordServiceResolver {
          get { 
@@ -176,6 +174,8 @@ namespace MvcAccount {
 
       internal static AccountConfiguration Current(RequestContext requestContext = null) {
 
+         Func<AccountConfiguration> configResolver = ConfigurationResolver;
+
          if (requestContext == null) {
             HttpContext httpContext = HttpContext.Current;
 
@@ -183,8 +183,6 @@ namespace MvcAccount {
                requestContext = httpContext.Request.RequestContext;
 
             } else {
-
-               Func<AccountConfiguration> configResolver = ConfigurationResolver;
 
                if (configResolver == null) {
                   throw new InvalidOperationException(
@@ -196,8 +194,11 @@ namespace MvcAccount {
             }
          }
 
+         if (configResolver == null)
+            configResolver = () => Default;
+
          return requestContext.RouteData.DataTokens["Configuration"] as AccountConfiguration
-            ?? Default;
+            ?? configResolver();
       }
 
       public AccountConfiguration() {

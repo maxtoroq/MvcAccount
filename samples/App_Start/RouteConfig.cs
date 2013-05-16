@@ -18,12 +18,12 @@ namespace Samples {
 
          routes.MapCodeRoutes(
             baseRoute: "Account",
-            rootController: typeof(MvcAccount.AccountController),
+            rootController: typeof(MvcAccount.Web.AccountController),
             settings: new CodeRoutingSettings {
                EnableEmbeddedViews = true,
                Configuration = new MvcAccount.AccountConfiguration { 
                   AccountRepositoryResolver = () => new Models.TestAccountRepository(),
-                  PasswordServiceResolver = () => new MvcAccount.Password.ClearTextPasswordService()
+                  PasswordServiceResolver = () => new MvcAccount.ClearTextPasswordService()
                }
             }
          );

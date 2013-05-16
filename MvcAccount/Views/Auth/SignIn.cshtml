@@ -1,24 +1,22 @@
-﻿@using HtmlUtility = MvcAccount.Html.HtmlUtility;
-@model MvcAccount.Auth.SignInViewModel
+﻿@using HtmlUtility = MvcAccount.Web.HtmlUtility;
+@model MvcAccount.Web.Auth.SignInViewModel
 @section head {
 <title>@Model.Title</title>
 }
-<div class="auth-sign-in">
+<div class="@Model.ViewCssClass">
    <h1>@Model.Title</h1>
    @Html.ValidationSummary(excludePropertyErrors: true)
    @using (Html.BeginForm()) {
       var inputHtml = HtmlUtility.HtmlHelperFor(Html, Model.InputModel);
       @Html.AntiForgeryToken()
-      <div class="form">
-         @inputHtml.EditorForModel()
+      @inputHtml.EditorForModel("../../Shared/EditorTemplates/Object")
+      <div class="buttons">
+         <div></div>
          <div>
-            <div></div>
-            <div class="buttons">
-               <button type="submit">@Model.SubmitText</button>
-               <br />
-               <br />
-               @HtmlUtility.Link(Model.AccountRecoveryLink)
-            </div>
+            <button type="submit">@Model.SubmitText</button>
+            <br />
+            <br />
+            @HtmlUtility.Link(Model.AccountRecoveryLink)
          </div>
       </div>
    }

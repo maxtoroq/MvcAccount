@@ -92,65 +92,64 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountConfiguration.cs" />
-    <Compile Include="AccountController.cs" />
-    <Compile Include="AccountMembershipProvider.cs" />
+    <Compile Include="Web\AccountController.cs" />
+    <Compile Include="Web.Security\AccountMembershipProvider.cs" />
     <Compile Include="AccountRepository.cs" />
-    <Compile Include="AccountResources.autogen.cs">
+    <Compile Include="Web\AccountResources.autogen.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AccountResources.tt</DependentUpon>
     </Compile>
-    <Compile Include="AccountResources.cs" />
-    <Compile Include="Auth\AuthController.cs" />
-    <Compile Include="Auth\FormsAuthenticationService.cs" />
-    <Compile Include="Auth\SignInInput.cs" />
-    <Compile Include="Auth\SignInViewModel.cs" />
-    <Compile Include="Common\AccountRepositoryWrapper.cs" />
-    <Compile Include="Common\BaseController.cs" />
-    <Compile Include="Common\BaseViewModel.cs" />
-    <Compile Include="Common\FormViewModel.cs" />
-    <Compile Include="Common\StronglyTypedLinkExtensions.cs" />
-    <Compile Include="Common\Views.cs">
+    <Compile Include="Web\AccountResources.cs" />
+    <Compile Include="Web.Auth\AuthController.cs" />
+    <Compile Include="FormsAuthenticationService.cs" />
+    <Compile Include="Web.Auth\SignInInput.cs" />
+    <Compile Include="Web.Auth\SignInViewModel.cs" />
+    <Compile Include="AccountRepositoryWrapper.cs" />
+    <Compile Include="Web\BaseController.cs" />
+    <Compile Include="Web\BaseViewModel.cs" />
+    <Compile Include="Web\FormViewModel.cs" />
+    <Compile Include="Web\StronglyTypedLinkExtensions.cs" />
+    <Compile Include="Web\Views.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Views.tt</DependentUpon>
     </Compile>
-    <Compile Include="Email\Change\ChangeController.cs" />
-    <Compile Include="Email\Change\ChangeInput.cs" />
-    <Compile Include="Email\Change\ChangeResult.cs" />
-    <Compile Include="Email\Change\ChangeViewModel.cs" />
-    <Compile Include="Email\Change\NotificationMessageViewModel.cs" />
-    <Compile Include="Email\Change\SavedViewModel.cs" />
-    <Compile Include="Email\Change\VerificationMessageViewModel.cs" />
-    <Compile Include="Email\Change\VerificationSentViewModel.cs" />
-    <Compile Include="Email\Verify\VerifyController.cs" />
-    <Compile Include="Html\HtmlUtility.cs" />
-    <Compile Include="Common\HttpGetHeadAttribute.cs" />
-    <Compile Include="Common\LinkModel.cs" />
-    <Compile Include="Common\QueryStringBuilder.cs" />
-    <Compile Include="Common\StringExtensions.cs" />
-    <Compile Include="Common\UserWrapper.cs" />
-    <Compile Include="Common\VerificationData.cs" />
-    <Compile Include="IndexViewModel.cs" />
-    <Compile Include="Password\Change\ChangeController.cs" />
-    <Compile Include="Password\Change\ChangeInput.cs" />
-    <Compile Include="Password\Change\ChangeViewModel.cs" />
-    <Compile Include="Password\Change\SavedViewModel.cs" />
-    <Compile Include="Password\ClearTextPasswordService.cs" />
-    <Compile Include="Password\PasswordLengthAttribute.cs" />
-    <Compile Include="Password\PasswordService.cs" />
-    <Compile Include="Password\Reset\DoneViewModel.cs" />
-    <Compile Include="Password\Reset\ErrorMessageViewModel.cs" />
-    <Compile Include="Password\Reset\ErrorReason.cs" />
-    <Compile Include="Password\Reset\FinishInput.cs" />
-    <Compile Include="Password\Reset\FinishViewModel.cs" />
-    <Compile Include="Password\Reset\ResetController.cs" />
-    <Compile Include="Password\Reset\ResetInput.cs" />
-    <Compile Include="Password\Reset\ResetResult.cs" />
-    <Compile Include="Password\Reset\ResetViewModel.cs" />
-    <Compile Include="Password\Reset\VerificationMessageViewModel.cs" />
-    <Compile Include="Password\Reset\VerificationSentViewModel.cs" />
-    <Compile Include="Password\SqlMembershipProviderPasswordService.cs" />
+    <Compile Include="Web.Email\Change\ChangeController.cs" />
+    <Compile Include="Web.Email\Change\ChangeInput.cs" />
+    <Compile Include="Web.Email\Change\ChangeResult.cs" />
+    <Compile Include="Web.Email\Change\ChangeViewModel.cs" />
+    <Compile Include="Web.Email\Change\NotificationMessageViewModel.cs" />
+    <Compile Include="Web.Email\Change\SavedViewModel.cs" />
+    <Compile Include="Web.Email\Change\VerificationMessageViewModel.cs" />
+    <Compile Include="Web.Email\Change\VerificationSentViewModel.cs" />
+    <Compile Include="Web.Email\Verify\VerifyController.cs" />
+    <Compile Include="Web\HtmlUtility.cs" />
+    <Compile Include="Web\HttpGetHeadAttribute.cs" />
+    <Compile Include="Web\LinkModel.cs" />
+    <Compile Include="Utilities\QueryStringBuilder.cs" />
+    <Compile Include="Utilities\StringExtensions.cs" />
+    <Compile Include="Web\VerificationData.cs" />
+    <Compile Include="Web\IndexViewModel.cs" />
+    <Compile Include="Web.Password\Change\ChangeController.cs" />
+    <Compile Include="Web.Password\Change\ChangeInput.cs" />
+    <Compile Include="Web.Password\Change\ChangeViewModel.cs" />
+    <Compile Include="Web.Password\Change\SavedViewModel.cs" />
+    <Compile Include="ClearTextPasswordService.cs" />
+    <Compile Include="Web.Password\PasswordLengthAttribute.cs" />
+    <Compile Include="PasswordService.cs" />
+    <Compile Include="Web.Password\Reset\DoneViewModel.cs" />
+    <Compile Include="Web.Password\Reset\ErrorMessageViewModel.cs" />
+    <Compile Include="Web.Password\Reset\ErrorReason.cs" />
+    <Compile Include="Web.Password\Reset\FinishInput.cs" />
+    <Compile Include="Web.Password\Reset\FinishViewModel.cs" />
+    <Compile Include="Web.Password\Reset\ResetController.cs" />
+    <Compile Include="Web.Password\Reset\ResetInput.cs" />
+    <Compile Include="Web.Password\Reset\ResetResult.cs" />
+    <Compile Include="Web.Password\Reset\ResetViewModel.cs" />
+    <Compile Include="Web.Password\Reset\VerificationMessageViewModel.cs" />
+    <Compile Include="Web.Password\Reset\VerificationSentViewModel.cs" />
+    <Compile Include="Web.Security\SqlMembershipProviderPasswordService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\AccountResources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -163,7 +162,6 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\AccountResources.pt.resx" />
     <EmbeddedResource Include="Views\Email\Change\Change.cshtml" />
     <EmbeddedResource Include="Views\Email\Change\Saved.cshtml" />
     <EmbeddedResource Include="Views\Email\Change\VerificationSent.cshtml" />
@@ -180,13 +178,14 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\AccountResources.es.resx" />
     <EmbeddedResource Include="Resources\AccountResources.fi.resx" />
+    <EmbeddedResource Include="Resources\AccountResources.pt.resx" />
     <EmbeddedResource Include="Resources\AccountResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AccountResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AccountResources.tt">
+    <Content Include="Web\AccountResources.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>AccountResources.autogen.cs</LastGenOutput>
     </Content>
@@ -224,14 +223,13 @@
     <EmbeddedResource Include="Views\Password\Reset\_VerificationMessage.pt.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Common\Views.tt">
+    <Content Include="Web\Views.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Views.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\Shared\EditorTemplates\Object.cshtml" />
-    <EmbeddedResource Include="Views\Shared\EditorTemplates\Password.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
