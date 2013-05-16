@@ -1,9 +1,9 @@
-﻿@using HtmlUtility = MvcAccount.Html.HtmlUtility;
-@model MvcAccount.Email.Change.VerificationSentViewModel
+﻿@using HtmlUtility = MvcAccount.Web.HtmlUtility;
+@model MvcAccount.Web.Email.Change.VerificationSentViewModel
 @section head {
 <title>@Model.Title</title>
 }
-<div class="email-change-verification-sent">
+<div class="@Model.ViewCssClass">
    <h1>@Model.Title</h1>
    <p>@Html.Raw(Model.Message)</p>
 </div>

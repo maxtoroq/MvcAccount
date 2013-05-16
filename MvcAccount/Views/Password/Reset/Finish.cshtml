@@ -1,22 +1,20 @@
-﻿@using HtmlUtility = MvcAccount.Html.HtmlUtility;
-@model MvcAccount.Password.Reset.FinishViewModel
+﻿@using HtmlUtility = MvcAccount.Web.HtmlUtility;
+@model MvcAccount.Web.Password.Reset.FinishViewModel
 @section head {
 <title>@Model.Title</title>
 }
-<div class="password-reset-finish">
+<div class="@Model.ViewCssClass">
    <h1>@Model.Title</h1>
    <p>@Model.Message</p>
    @Html.ValidationSummary(excludePropertyErrors: true)
    @using (Html.BeginForm()) {
       @Html.AntiForgeryToken()
       var inputHtml = HtmlUtility.HtmlHelperFor(Html, Model.InputModel);
-      <div class="form">
-         @inputHtml.EditorForModel()
+      @inputHtml.EditorForModel("../../../Shared/EditorTemplates/Object")
+      <div class="buttons">
+         <div></div>
          <div>
-            <div></div>
-            <div class="buttons">
-               <button type="submit">@Model.SubmitText</button>
-            </div>
+            <button type="submit">@Model.SubmitText</button>
          </div>
       </div>
    }

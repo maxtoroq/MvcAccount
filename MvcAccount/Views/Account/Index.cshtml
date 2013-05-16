@@ -1,9 +1,9 @@
-﻿@using HtmlUtility = MvcAccount.Html.HtmlUtility;
-@model MvcAccount.IndexViewModel
+﻿@using HtmlUtility = MvcAccount.Web.HtmlUtility;
+@model MvcAccount.Web.IndexViewModel
 @section head {
 <title>@Model.Title</title>
 }
-<div class="index">
+<div class="@Model.ViewCssClass">
    <h1>@Model.Title</h1>
    <ul>
       @foreach (var item in Model.Links) {

@@ -10,6 +10,7 @@ Copyright 2012-2013 Max Toro Q.
 This product includes/uses software(s) developed by 'Max Toro Q.'
   - Micro APIs Error Model (https://github.com/maxtoroq/MicroApis)
   - Micro APIs Operation Model (https://github.com/maxtoroq/MicroApis)
+  - MvcCodeRouting (http://mvccoderouting.codeplex.com/)
 
 Translations
   - Finnish (fi) by 'mikkoviitala' (http://www.codeplex.com/site/users/view/mikkoviitala)

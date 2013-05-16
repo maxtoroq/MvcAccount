@@ -5,17 +5,23 @@
       if (prop.HideSurroundingHtml) { 
          @Html.Editor(prop.PropertyName)
       } else {
-         var editor = Html.Editor(prop.PropertyName, prop.TemplateHint ?? prop.DataTypeName);
+         string templateName = prop.TemplateHint ?? prop.DataTypeName;
+         
+         /* Omit password value for security reasons */
+         var editor = (templateName == "Password") ?
+            Html.Password(prop.PropertyName, null, new { @class = "text-box single-line password" })
+            : Html.Editor(prop.PropertyName, templateName);
          
          if (!MvcHtmlString.IsNullOrEmpty(editor)) {
-            var isBool = prop.ModelType == typeof(bool);
+            bool isBool = prop.ModelType == typeof(bool);
+            string labelText = prop.Description ?? prop.GetDisplayName();
          <div>
-            <div>@(!isBool ? Html.Label(prop.PropertyName, prop.Description ?? prop.GetDisplayName()) : null)</div>
+            <div>@(!isBool ? Html.Label(prop.PropertyName, labelText) : null)</div>
             <div>
             @if (isBool) {
                <label>
                   @editor
-                  @(prop.Description ?? prop.GetDisplayName())
+                  @labelText
                </label>
             } else {
                @editor
