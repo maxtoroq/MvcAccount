@@ -68,9 +68,6 @@ namespace MvcAccount.Web.Password.Change {
       [HttpPost]
       public ActionResult Change(ChangeInput input) {
 
-         if (input == null)
-            return Change();
-
          this.ViewData.Model = new ChangeViewModel(input);
 
          if (!this.ModelState.IsValid)
@@ -81,7 +78,7 @@ namespace MvcAccount.Web.Password.Change {
          if (result.IsError)
             return View().WithErrors(result);
 
-         return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action(Saved));
+         return HttpSeeOther(this.Url.Action(Saved));
       }
 
       /// <summary>

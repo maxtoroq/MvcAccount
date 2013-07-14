@@ -81,9 +81,6 @@ namespace MvcAccount.Web.Auth {
       [ValidateAntiForgeryToken]
       public ActionResult SignIn(SignInInput input, string returnUrl) {
 
-         if (input == null)
-            return SignIn();
-
          this.ViewData.Model = new SignInViewModel(input);
 
          if (!this.ModelState.IsValid)
@@ -96,7 +93,7 @@ namespace MvcAccount.Web.Auth {
 
          string location = GetValidReturnUrl(returnUrl);
 
-         return EmptyRedirect(HttpStatusCode.SeeOther, location);
+         return HttpSeeOther(location);
       }
       
       /// <summary>
@@ -112,7 +109,7 @@ namespace MvcAccount.Web.Auth {
 
          string location = GetValidReturnUrl(returnUrl);
 
-         return EmptyRedirect(HttpStatusCode.Found, location);
+         return HttpSeeOther(location);
       }
 
       OperationResult SignInImpl(SignInInput input) {

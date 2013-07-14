@@ -49,9 +49,9 @@ namespace MvcAccount.Web {
          _Configuration = AccountConfiguration.Current(requestContext);
       }
 
-      internal ActionResult EmptyRedirect(HttpStatusCode statusCode, string location) {
+      internal ActionResult HttpSeeOther(string location) {
 
-         this.Response.StatusCode = (int)statusCode;
+         this.Response.StatusCode = 303;
          this.Response.RedirectLocation = location;
 
          return new EmptyResult();

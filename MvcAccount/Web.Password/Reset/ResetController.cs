@@ -69,9 +69,6 @@ namespace MvcAccount.Web.Password.Reset {
       [ValidateAntiForgeryToken]
       public ActionResult Reset(ResetInput input) {
 
-         if (input == null)
-            return Reset();
-
          this.ViewData.Model = new ResetViewModel(input);
 
          if (!this.ModelState.IsValid)
@@ -84,7 +81,7 @@ namespace MvcAccount.Web.Password.Reset {
 
          this.TempData["PostReset"] = result;
 
-         return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action(VerificationSent));
+         return HttpSeeOther(this.Url.Action(VerificationSent));
       }
       
       /// <summary>
@@ -134,9 +131,6 @@ namespace MvcAccount.Web.Password.Reset {
       [ValidateAntiForgeryToken]
       public ActionResult Finish(string id, FinishInput input) {
 
-         if (input == null)
-            return Finish(id);
-
          this.ViewData.Model = new FinishViewModel(input);
 
          if (!this.ModelState.IsValid)
@@ -151,7 +145,7 @@ namespace MvcAccount.Web.Password.Reset {
             throw new HttpException((int)result.StatusCode, result.Value.ToStringInvariant());
          }
 
-         return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action(Done));
+         return HttpSeeOther(this.Url.Action(Done));
       }
 
       /// <summary>

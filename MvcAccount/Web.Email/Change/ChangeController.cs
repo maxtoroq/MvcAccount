@@ -79,9 +79,6 @@ namespace MvcAccount.Web.Email.Change {
       [Authorize]
       public ActionResult Change(ChangeInput input) {
 
-         if (input == null)
-            return Change();
-
          this.ViewData.Model = new ChangeViewModel(input);
 
          if (!this.ModelState.IsValid)
@@ -96,10 +93,10 @@ namespace MvcAccount.Web.Email.Change {
 
             this.TempData["PostChange"] = result;
 
-            return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action(VerificationSent));
+            return HttpSeeOther(this.Url.Action(VerificationSent));
          }
 
-         return EmptyRedirect(HttpStatusCode.SeeOther, this.Url.Action(Saved));
+         return HttpSeeOther(this.Url.Action(Saved));
       }
       
       /// <summary>
