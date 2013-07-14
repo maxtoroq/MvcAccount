@@ -136,7 +136,7 @@
     <Compile Include="Web.Password\Change\ChangeViewModel.cs" />
     <Compile Include="Web.Password\Change\SavedViewModel.cs" />
     <Compile Include="ClearTextPasswordService.cs" />
-    <Compile Include="Web.Password\PasswordLengthAttribute.cs" />
+    <Compile Include="PasswordLengthAttribute.cs" />
     <Compile Include="PasswordService.cs" />
     <Compile Include="Web.Password\Reset\DoneViewModel.cs" />
     <Compile Include="Web.Password\Reset\ErrorMessageViewModel.cs" />
