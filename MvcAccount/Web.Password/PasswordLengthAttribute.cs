@@ -18,8 +18,9 @@ using System.Linq;
 using System.Text;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
+using MvcAccount.Web;
 
-namespace MvcAccount.Web.Password {
+namespace MvcAccount {
 
    /// <summary>
    /// Validates the length of new passwords. Settings are taken from <see cref="AccountConfiguration.MinPasswordLength"/>
