@@ -43,17 +43,12 @@
     <DocumentationFile>bin\MvcAccount.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MicroApis.ErrorModel">
-      <HintPath>..\packages\MicroApis.ErrorModel.0.3.0\lib\net40\MicroApis.ErrorModel.dll</HintPath>
-    </Reference>
-    <Reference Include="MicroApis.OperationModel">
-      <HintPath>..\packages\MicroApis.OperationModel.0.3.0\lib\net40\MicroApis.OperationModel.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="MvcCodeRouting">
       <HintPath>..\packages\MvcCodeRouting.1.1.0\lib\net40\MvcCodeRouting.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Web" />
@@ -92,6 +87,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountConfiguration.cs" />
+    <Compile Include="Utilities\ErrorBuilder.cs" />
+    <Compile Include="Utilities\OperationResult.cs" />
     <Compile Include="Web\AccountController.cs" />
     <Compile Include="Web.Security\AccountMembershipProvider.cs" />
     <Compile Include="AccountRepository.cs" />
