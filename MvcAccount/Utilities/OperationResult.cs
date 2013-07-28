@@ -456,19 +456,22 @@ namespace MvcAccount.Web {
 
          HttpResponseBase response = context.HttpContext.Response;
 
-         if (this.operationResult != null) {
-            SetStatusAndHeaders(response, this.operationResult);
+         int httpStatusCode = (this.operationResult != null) ?
+            (int)this.operationResult.StatusCode
+            : (int)this.statusCode;
 
-         } else {
-            response.StatusCode = (int)this.statusCode;
-         }
+         response.StatusCode = httpStatusCode;
+
+         if (httpStatusCode >= 400)
+            response.TrySkipIisCustomErrors = true;
+
+         if (this.operationResult != null) 
+            SetHeaders(response, this.operationResult);
 
          this.originalResult.ExecuteResult(context);
       }
 
-      static void SetStatusAndHeaders(HttpResponseBase response, OperationResult result) {
-
-         response.StatusCode = (int)result.StatusCode;
+      static void SetHeaders(HttpResponseBase response, OperationResult result) {
 
          if (!String.IsNullOrEmpty(result.Location))
             response.RedirectLocation = result.Location;
