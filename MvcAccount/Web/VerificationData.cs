@@ -42,7 +42,11 @@ namespace MvcAccount.Web {
 
          try {
             ticketBytes = MachineKey.Decode(cipher, MachineKeyProtection.Encryption);
+         
          } catch (ArgumentException) {
+            return null;
+         
+         } catch (HttpException) {
             return null;
          }
 
