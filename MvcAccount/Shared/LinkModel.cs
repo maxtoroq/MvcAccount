@@ -23,7 +23,6 @@ namespace MvcAccount.Shared {
    /// <summary>
    /// Holds link data.
    /// </summary>
-   /// <seealso cref="MvcAccount.HtmlUtility"/>
    public class LinkModel : IHtmlString {
 
       /// <summary>
