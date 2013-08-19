@@ -679,7 +679,7 @@ namespace MvcAccount {
    }
 }
 
-namespace MvcAccount.Web {
+namespace MvcAccount {
    using System.Web.Mvc;
 
    /// <summary>

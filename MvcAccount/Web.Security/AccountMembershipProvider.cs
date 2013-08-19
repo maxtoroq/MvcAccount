@@ -158,7 +158,7 @@ namespace MvcAccount.Web.Security {
 
          AccountConfiguration config = GetConfiguration();
 
-         var controller = new Web.Auth.AuthController(
+         var controller = new Auth.AuthController(
             config.RequireDependency(default(AccountRepository)),
             config.RequireDependency(default(PasswordService))
          );

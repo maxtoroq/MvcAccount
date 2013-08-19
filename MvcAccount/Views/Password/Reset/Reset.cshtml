@@ -1,5 +1,4 @@
-﻿@using HtmlUtility = MvcAccount.Web.HtmlUtility;
-@model MvcAccount.Web.Password.Reset.ResetViewModel
+﻿@model MvcAccount.Password.Reset.ResetViewModel
 @section head {
 <title>@Model.Title</title>
 }
@@ -9,7 +8,7 @@
    @Html.ValidationSummary(excludePropertyErrors: true)
    @using (Html.BeginForm(null, null, FormMethod.Post, new { autocomplete = "off" })) {
       @Html.AntiForgeryToken()
-      var inputHtml = HtmlUtility.HtmlHelperFor(Html, Model.InputModel);
+      var inputHtml = Model.HtmlHelperForInput(Html);
       @inputHtml.EditorForModel("../../../Shared/EditorTemplates/Object")
       <div class="buttons">
          <div></div>

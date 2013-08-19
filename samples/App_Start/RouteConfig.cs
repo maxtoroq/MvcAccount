@@ -18,7 +18,7 @@ namespace Samples {
 
          routes.MapCodeRoutes(
             baseRoute: "Account",
-            rootController: typeof(MvcAccount.Web.AccountController),
+            rootController: typeof(MvcAccount.AccountController),
             settings: new CodeRoutingSettings {
                EnableEmbeddedViews = true,
                Configuration = new MvcAccount.AccountConfiguration { 

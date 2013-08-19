@@ -1,5 +1,4 @@
-﻿@using HtmlUtility = MvcAccount.Web.HtmlUtility;
-@model MvcAccount.Web.Password.Change.ChangeViewModel
+﻿@model MvcAccount.Password.Change.ChangeViewModel
 @section head {
 <title>@Model.Title</title>
 }
@@ -7,7 +6,7 @@
    <h1>@Model.Title</h1>
    @Html.ValidationSummary(excludePropertyErrors: true)
    @using (Html.BeginForm()) {
-      var inputHtml = HtmlUtility.HtmlHelperFor(Html, Model.InputModel);
+      var inputHtml = Model.HtmlHelperForInput(Html);
       @inputHtml.EditorForModel("../../../Shared/EditorTemplates/Object")
       <div class="buttons">
          <div></div>

@@ -1,7 +1,7 @@
-﻿@model MvcAccount.Web.Password.Reset.ErrorMessageViewModel
+﻿@model MvcAccount.Password.Reset.ErrorMessageViewModel
 You (or someone else) entered this email address when trying to reset the
 password of a @Html.Raw(Model.SiteName) account.
-@if (Model.ErrorReason == MvcAccount.Web.Password.Reset.ErrorReason.AccountDisabled) {
+@if (Model.ErrorReason == MvcAccount.Password.Reset.ErrorReason.AccountDisabled) {
 <text>
 However, the account is currently disabled and therefore a password reset is 
 not allowed.

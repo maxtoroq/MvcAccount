@@ -342,7 +342,7 @@ namespace MvcAccount {
    }
 }
 
-namespace MvcAccount.Web {
+namespace MvcAccount {
    using System.Web;
    using System.Web.Mvc;
 
