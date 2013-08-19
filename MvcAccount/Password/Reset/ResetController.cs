@@ -248,7 +248,7 @@ namespace MvcAccount.Password.Reset {
          var errors = new ErrorBuilder();
 
          if (errors.NotValid(input)
-            || !TrySetPassword(user, () => input.NewPassword, this.passServ, errors))
+            || !this.passServ.TrySetPassword(user, () => input.NewPassword, errors))
             return errors;
 
          user.PasswordResetTicketExpiration = null;

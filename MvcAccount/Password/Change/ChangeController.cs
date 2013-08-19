@@ -105,7 +105,7 @@ namespace MvcAccount.Password.Change {
 
          if (errors.Not(user != null, AccountResources.Validation_UserNotExist.FormatInvariant(username))
             || errors.Not(this.passServ.PasswordEquals(input.CurrentPassword, user.Password), AccountResources.Validation_CurrentPasswordIncorrect, () => input.CurrentPassword)
-            || !TrySetPassword(user, () => input.NewPassword, this.passServ, errors))
+            || !this.passServ.TrySetPassword(user, () => input.NewPassword, errors))
             return errors;
 
          this.repo.UpdateUser(user);

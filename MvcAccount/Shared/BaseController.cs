@@ -77,27 +77,6 @@ namespace MvcAccount.Shared {
          return String.Equals(user.Username, identity.Name, StringComparison.Ordinal);
       }
 
-      internal bool TrySetPassword(UserWrapper user, Expression<Func<string>> valueSelector, PasswordService passServ, ErrorBuilder errors) {
-
-         string newPassword = valueSelector.Compile().Invoke();
-
-         string passErr = passServ.ValidatePassword(newPassword);
-
-         if (errors.Assert(passErr == null, passErr, valueSelector)) {
-
-            string currentPassword = user.Password;
-
-            user.Password = passServ.ProcessPasswordForStorage(newPassword);
-
-            if (errors.ValidProperty(() => user.Password))
-               return true;
-
-            user.Password = currentPassword;
-         }
-
-         return false;
-      }
-
       internal string GetSiteName() {
          return this.Configuration.SiteName ?? this.HttpContext.Request.Url.Host;
       }
