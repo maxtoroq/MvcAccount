@@ -27,7 +27,6 @@ using System.Web.Routing;
 
 namespace MvcAccount.Shared {
    
-   [EditorBrowsable(EditorBrowsableState.Never)]
    public abstract class BaseController : Controller {
 
       static readonly string ApplicationPath = VirtualPathUtility.AppendTrailingSlash(HostingEnvironment.ApplicationVirtualPath);
