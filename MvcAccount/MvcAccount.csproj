@@ -89,6 +89,7 @@
     <Compile Include="AccountConfiguration.cs" />
     <Compile Include="AccountController.cs" />
     <Compile Include="Utilities\ErrorBuilder.cs" />
+    <Compile Include="Utilities\LocalizedViewExtensions.cs" />
     <Compile Include="Utilities\OperationResult.cs" />
     <Compile Include="Account\AccountImplController.cs" />
     <Compile Include="Web.Security\AccountMembershipProvider.cs" />

@@ -83,22 +83,7 @@ namespace MvcAccount.Shared {
 
       internal string RenderEmailView(string viewName, object model) {
 
-         CultureInfo invariantCulture = CultureInfo.InvariantCulture;
-         CultureInfo currentCulture = CultureInfo.CurrentUICulture;
-         ControllerContext context = this.ControllerContext;
-
-         ViewEngineResult viewResult;
-
-         do {
-            viewResult = ViewEngines.Engines.FindPartialView(context, "{0}.{1}".FormatInvariant(viewName, currentCulture.Name));
-
-            if (viewResult.View == null)
-               currentCulture = currentCulture.Parent;
-
-         } while (viewResult.View == null && currentCulture != invariantCulture);
-
-         if (viewResult.View == null)
-            viewResult = ViewEngines.Engines.FindPartialView(context, viewName);
+         ViewEngineResult viewResult = ViewEngines.Engines.FindLocalizedPartialView(this.ControllerContext, viewName);
 
          if (viewResult.View == null)
             throw new InvalidOperationException();
@@ -106,7 +91,7 @@ namespace MvcAccount.Shared {
          using (var output = new StringWriter()) {
 
             var viewContext = new ViewContext(
-               context,
+               this.ControllerContext,
                viewResult.View,
                new ViewDataDictionary(model),
                new TempDataDictionary(),
