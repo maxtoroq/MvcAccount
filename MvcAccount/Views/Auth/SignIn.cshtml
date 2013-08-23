@@ -1,5 +1,4 @@
-﻿@using HtmlUtility = MvcAccount.Web.HtmlUtility;
-@model MvcAccount.Web.Auth.SignInViewModel
+﻿@model MvcAccount.Auth.SignInViewModel
 @section head {
 <title>@Model.Title</title>
 }
@@ -7,7 +6,7 @@
    <h1>@Model.Title</h1>
    @Html.ValidationSummary(excludePropertyErrors: true)
    @using (Html.BeginForm()) {
-      var inputHtml = HtmlUtility.HtmlHelperFor(Html, Model.InputModel);
+      var inputHtml = Model.HtmlHelperForInput(Html);
       @Html.AntiForgeryToken()
       @inputHtml.EditorForModel("../../Shared/EditorTemplates/Object")
       <div class="buttons">
@@ -16,7 +15,7 @@
             <button type="submit">@Model.SubmitText</button>
             <br />
             <br />
-            @HtmlUtility.Link(Model.AccountRecoveryLink)
+            @Model.AccountRecoveryLink
          </div>
       </div>
    }

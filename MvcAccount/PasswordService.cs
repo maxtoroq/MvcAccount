@@ -16,6 +16,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Linq.Expressions;
 
 namespace MvcAccount {
    
@@ -54,6 +55,27 @@ namespace MvcAccount {
       /// </remarks>
       public virtual string ValidatePassword(string clearTextPassword) {
          return null;
+      }
+
+      internal bool TrySetPassword(UserWrapper user, Expression<Func<string>> valueSelector, ErrorBuilder errors) {
+
+         string newPassword = valueSelector.Compile().Invoke();
+
+         string passErr = ValidatePassword(newPassword);
+
+         if (errors.Assert(passErr == null, passErr, valueSelector)) {
+
+            string currentPassword = user.Password;
+
+            user.Password = ProcessPasswordForStorage(newPassword);
+
+            if (errors.ValidProperty(() => user.Password))
+               return true;
+
+            user.Password = currentPassword;
+         }
+
+         return false;
       }
    }
 }

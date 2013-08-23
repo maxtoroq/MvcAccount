@@ -1,5 +1,4 @@
-﻿@using HtmlUtility = MvcAccount.Web.HtmlUtility;
-@model MvcAccount.Web.IndexViewModel
+﻿@model MvcAccount.Account.IndexViewModel
 @section head {
 <title>@Model.Title</title>
 }
@@ -7,7 +6,7 @@
    <h1>@Model.Title</h1>
    <ul>
       @foreach (var item in Model.Links) {
-         <li>@HtmlUtility.Link(item)</li>
+         <li>@item</li>
       }
    </ul>
 </div>

@@ -68,4 +68,4 @@ textarea {
 .MvcAccount form > div > div { display: table-cell; padding: .2em .5em; }
 .MvcAccount form > div.buttons > div { padding-top: 1em; }
 .MvcAccount form label[for]:after { content: ":"; }
-.MvcAccount-Web-Auth-SignInViewModel form > div > div:first-child { text-align: right; }
+.MvcAccount-Auth-SignInViewModel form > div > div:first-child { text-align: right; }

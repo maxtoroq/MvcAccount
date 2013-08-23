@@ -1,5 +1,4 @@
-﻿@using HtmlUtility = MvcAccount.Web.HtmlUtility;
-@model MvcAccount.Web.Email.Change.SavedViewModel
+﻿@model MvcAccount.Email.Change.SavedViewModel
 @section head {
 <title>@Model.Title</title>
 }
@@ -7,6 +6,6 @@
    <h1>@Model.Title</h1>
    <p>@Model.Message</p>
    <p>
-      @HtmlUtility.Link(Model.NextLink)
+      @Model.NextLink
    </p>
 </div>
