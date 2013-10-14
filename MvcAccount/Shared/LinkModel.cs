@@ -17,6 +17,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web;
+using System.Web.Mvc;
 
 namespace MvcAccount.Shared {
    
@@ -47,7 +48,16 @@ namespace MvcAccount.Shared {
       }
 
       public string ToHtmlString() {
-         return HtmlUtility.Link(this).ToHtmlString();
+
+         var builder = new TagBuilder("a") {
+            Attributes = { 
+               { "href", this.Url }
+            }
+         };
+
+         builder.SetInnerText(this.Text);
+
+         return builder.ToString(TagRenderMode.Normal);
       }
    }
 }
