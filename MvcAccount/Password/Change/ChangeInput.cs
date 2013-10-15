@@ -18,13 +18,14 @@ using System.Linq;
 using System.Text;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
+using MvcAccount.Shared;
 
 namespace MvcAccount.Password.Change {
    
    /// <summary>
    /// Holds data required by the <see cref="ChangeController.Change(ChangeInput)"/> action.
    /// </summary>
-   public class ChangeInput {
+   public class ChangeInput : ICancelableOperationInput {
 
       /// <summary>
       /// The user's current password.
@@ -51,5 +52,8 @@ namespace MvcAccount.Password.Change {
       [DataType(DataType.Password)]
       [Display(Order = 3, Name = AccountResources.Keys.Model_ConfirmNewPassword, ResourceType = typeof(AccountResources))]
       public string ConfirmNewPassword { get; set; }
+
+      [ScaffoldColumn(false)]
+      public string Cancel { get; set; }
    }
 }

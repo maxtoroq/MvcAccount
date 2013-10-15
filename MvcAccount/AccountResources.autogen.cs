@@ -366,6 +366,13 @@ namespace MvcAccount {
       public static string Links_ReturnToIndex {
          get { return GetResource(Keys.Links_ReturnToIndex); }
       }
+
+      /// <summary>
+      /// Looks up a localized string similar to 'Cancel'.
+      /// </summary>
+      public static string Views_Cancel {
+         get { return GetResource(Keys.Views_Cancel); }
+      }
       
       internal static class Keys {
       
@@ -419,7 +426,8 @@ namespace MvcAccount {
             Views_Email_Change_Saved_Title = "Views_Email_Change_Saved_Title",
             Views_Email_Change_VerificationSent_Message = "Views_Email_Change_VerificationSent_Message",
             Views_Email_Change_VerificationSent_Title = "Views_Email_Change_VerificationSent_Title",
-            Links_ReturnToIndex = "Links_ReturnToIndex";
+            Links_ReturnToIndex = "Links_ReturnToIndex",
+            Views_Cancel = "Views_Cancel";
       }
    }
 }

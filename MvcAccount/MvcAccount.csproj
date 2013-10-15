@@ -88,6 +88,7 @@
   <ItemGroup>
     <Compile Include="AccountConfiguration.cs" />
     <Compile Include="AccountController.cs" />
+    <Compile Include="Shared\ICancelableOperationInput.cs" />
     <Compile Include="Utilities\ErrorBuilder.cs" />
     <Compile Include="Utilities\LocalizedViewExtensions.cs" />
     <Compile Include="Utilities\OperationResult.cs" />

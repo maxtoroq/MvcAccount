@@ -37,6 +37,11 @@ namespace MvcAccount.Shared {
       public string SubmitText { get; set; }
 
       /// <summary>
+      /// Text for the cancel button.
+      /// </summary>
+      public string CancelText { get; set; }
+
+      /// <summary>
       /// Initializes a new instance of the FormViewModel&lt;TInputModel> class
       /// using the provided input model.
       /// </summary>
@@ -45,6 +50,7 @@ namespace MvcAccount.Shared {
          
          this.InputModel = inputModel;
          this.SubmitText = AccountResources.Views_Submit;
+         this.CancelText = AccountResources.Views_Cancel;
       }
 
       public HtmlHelper<TInputModel> HtmlHelperForInput(HtmlHelper htmlHelper) {

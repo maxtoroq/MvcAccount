@@ -66,6 +66,9 @@ namespace MvcAccount.Password.Change {
       [HttpPost]
       public ActionResult Change(ChangeInput input) {
 
+         if (input.Cancel != null)
+            return HttpSeeOther(this.Url.Action("", "~Account"));
+
          this.ViewData.Model = new ChangeViewModel(input);
 
          if (!this.ModelState.IsValid)

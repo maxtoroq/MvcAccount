@@ -267,4 +267,7 @@
   <data name="Links_ReturnToIndex" xml:space="preserve">
     <value>Ir para A minha conta</value>
   </data>
+  <data name="Views_Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
 </root>
