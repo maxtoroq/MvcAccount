@@ -34,6 +34,7 @@ namespace MvcAccount.Email.Change {
          : base(inputModel) {
 
          this.Title = AccountResources.Views_Email_Change_Change_Title;
+         this.SubmitText = this.Title;
       }
    }
 }
