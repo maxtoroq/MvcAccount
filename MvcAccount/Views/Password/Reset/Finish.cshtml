@@ -10,10 +10,10 @@
       @Html.AntiForgeryToken()
       var inputHtml = Model.HtmlHelperForInput(Html);
       @inputHtml.EditorForModel("../../../Shared/EditorTemplates/Object")
-      <div class="buttons">
+      <div class="form-group buttons">
          <div></div>
          <div>
-            <button type="submit">@Model.SubmitText</button>
+            <button type="submit" class="btn btn-primary">@Model.SubmitText</button>
          </div>
       </div>
    }

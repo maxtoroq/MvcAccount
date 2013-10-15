@@ -6,14 +6,14 @@
    <h1>@Model.Title</h1>
    <p>@Model.Message</p>
    @Html.ValidationSummary(excludePropertyErrors: true)
-   @using (Html.BeginForm(null, null, FormMethod.Post, new { autocomplete = "off" })) {
+   @using (Html.BeginForm(null, null, FormMethod.Post, new Dictionary<string, object> { { "autocomplete", "off" } })) {
       @Html.AntiForgeryToken()
       var inputHtml = Model.HtmlHelperForInput(Html);
       @inputHtml.EditorForModel("../../../Shared/EditorTemplates/Object")
-      <div class="buttons">
+      <div class="form-group buttons">
          <div></div>
          <div>
-            <button type="submit">@Model.SubmitText</button>
+            <button type="submit" class="btn btn-primary">@Model.SubmitText</button>
          </div>
       </div>
    }

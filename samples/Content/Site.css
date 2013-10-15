@@ -1,8 +1,6 @@
 ﻿body {
-    font-size: .85em;
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
-    color: #232323;
-    background-color: #fff;
+    margin: 10px auto;
+    padding: 0 15px;
 }
 
 header, footer, nav, section {
@@ -49,7 +47,6 @@ textarea {
 }
 
 .input-validation-error {
-    border: 1px solid #f00;
     background-color: #fee;
 }
 
@@ -66,6 +63,7 @@ textarea {
 -----------------------------------------------------------*/
 .MvcAccount form > div { display: table-row; }
 .MvcAccount form > div > div { display: table-cell; padding: .2em .5em; }
+.MvcAccount form > div > div:first-child { text-align: right; }
 .MvcAccount form > div.buttons > div { padding-top: 1em; }
 .MvcAccount form label[for]:after { content: ":"; }
-.MvcAccount-Auth-SignInViewModel form > div > div:first-child { text-align: right; }
+.MvcAccount form .form-control { display: inline-block; width: auto; }
