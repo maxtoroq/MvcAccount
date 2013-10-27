@@ -3,37 +3,6 @@
     padding: 0 15px;
 }
 
-header, footer, nav, section {
-    display: block;
-}
-
-
-/* Styles for basic forms
------------------------------------------------------------*/
-fieldset {
-    border: 1px solid #ddd;
-    padding: 0 1.4em 1.4em 1.4em;
-    margin: 0 0 1.5em 0;
-}
-
-legend {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-textarea {
-    min-height: 75px;
-}
-
-.editor-label {
-    margin: 1em 0 0 0;
-}
-
-.editor-field {
-    margin: 0.5em 0 0 0;
-}
-
-
 /* Styles for validation helpers
 -----------------------------------------------------------*/
 .field-validation-error {
@@ -62,8 +31,16 @@ textarea {
 /* MvcAccount
 -----------------------------------------------------------*/
 .MvcAccount form > div { display: table-row; }
-.MvcAccount form > div > div { display: table-cell; padding: .2em .5em; }
+.MvcAccount form > div > div { display: table-cell; padding: 0 10px 15px 10px; }
 .MvcAccount form > div > div:first-child { text-align: right; }
-.MvcAccount form > div.buttons > div { padding-top: 1em; }
 .MvcAccount form label[for]:after { content: ":"; }
 .MvcAccount form .form-control { display: inline-block; width: auto; }
+.MvcAccount form .btn-primary { margin-right: 5px; }
+
+@media (max-width: 767px) {
+   .MvcAccount form .form-group { margin-bottom: 15px; }
+   .MvcAccount form > div { display: block; }
+   .MvcAccount form > div > div { display: block; padding: 0; }
+   .MvcAccount form > div > div:first-child { text-align: left; }
+   .MvcAccount form > div.buttons > div:first-child { display: none; }
+}
