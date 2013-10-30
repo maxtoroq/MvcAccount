@@ -75,9 +75,9 @@ namespace MvcAccount.Email.Change {
       /// <returns>The action result.</returns>
       [HttpPost]
       [Authorize]
-      public ActionResult Change(ChangeInput input) {
+      public ActionResult Change(ChangeInput input, FormButton cancel) {
 
-         if (input.Cancel != null)
+         if (cancel)
             return HttpSeeOther(this.Url.Action("", "~Account"));
 
          this.ViewData.Model = new ChangeViewModel(input);

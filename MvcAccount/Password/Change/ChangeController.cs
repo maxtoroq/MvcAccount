@@ -64,9 +64,9 @@ namespace MvcAccount.Password.Change {
       /// <param name="input">The input model.</param>
       /// <returns>The action result.</returns>
       [HttpPost]
-      public ActionResult Change(ChangeInput input) {
+      public ActionResult Change(ChangeInput input, FormButton cancel) {
 
-         if (input.Cancel != null)
+         if (cancel)
             return HttpSeeOther(this.Url.Action("", "~Account"));
 
          this.ViewData.Model = new ChangeViewModel(input);
