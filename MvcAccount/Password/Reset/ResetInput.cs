@@ -30,7 +30,7 @@ namespace MvcAccount.Password.Reset {
       /// </summary>
       [Required(ErrorMessageResourceName = AccountResources.Keys.Validation_Required, ErrorMessageResourceType = typeof(AccountResources))]
       [RegularExpression(@"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*", ErrorMessageResourceName = AccountResources.Keys.Validation_EmailPattern, ErrorMessageResourceType = typeof(AccountResources))]
-      // TODO: [DataType(DataType.EmailAddress)]
+      [DataType(DataType.EmailAddress)]
       [Display(Name = AccountResources.Keys.Model_Email, ResourceType = typeof(AccountResources))]
       public string Email { get; set; }
    }

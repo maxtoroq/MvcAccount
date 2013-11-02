@@ -33,12 +33,25 @@
          @Html.Editor(prop.PropertyName)
       } else {
          string templateName = prop.TemplateHint ?? prop.DataTypeName;
-         
-         /* Omit password value for security reasons */
-         var editor = (templateName == "Password") ?
-            Html.Password(prop.PropertyName, null, new Dictionary<string, object> { { "class", "text-box single-line password form-control" } })
-            : Html.Editor(prop.PropertyName, templateName);
-         
+
+         MvcHtmlString editor;
+
+         switch (templateName) {
+            case "Password":
+               /* Omit password value for security reasons */               
+               editor = Html.Password(prop.PropertyName, null, new Dictionary<string, object> { { "class", "text-box single-line password form-control" } });
+               break;
+            
+            case "EmailAddress":
+               /* Workaround https://aspnetwebstack.codeplex.com/workitem/1051 */
+               editor = Html.TextBox(prop.PropertyName, prop.Model, new Dictionary<string, object> { { "class", "text-box single-line form-control" } });
+               break;
+               
+            default:
+               editor = Html.Editor(prop.PropertyName, templateName);
+               break;
+         }
+                  
          if (!MvcHtmlString.IsNullOrEmpty(editor)) {
             bool isBool = prop.ModelType == typeof(bool);
             string labelText = prop.DisplayName ?? prop.PropertyName;
