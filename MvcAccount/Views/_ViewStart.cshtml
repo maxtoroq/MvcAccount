@@ -1,0 +1,8 @@
+﻿@using BaseViewModel = MvcAccount.Shared.BaseViewModel
+@{
+   var baseModel = ViewContext.ViewData.Model as BaseViewModel;
+   
+   if (baseModel != null) {
+      Page.Title = baseModel.Title;
+   }
+}
