@@ -49,7 +49,6 @@ namespace MvcAccount.Shared {
       protected FormViewModel(TInputModel inputModel) {
          
          this.InputModel = inputModel;
-         this.SubmitText = AccountResources.Views_Submit;
          this.CancelText = AccountResources.Views_Cancel;
       }
 

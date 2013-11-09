@@ -34,7 +34,7 @@ namespace MvcAccount.Password.Change {
          : base(inputModel) {
 
          this.Title = AccountResources.Views_Password_Change_Change_Title;
-         this.SubmitText = this.Title;
+         this.SubmitText = AccountResources.Views_Password_Change_Change_Submit;
       }
    }
 }

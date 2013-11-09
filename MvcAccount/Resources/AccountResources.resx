@@ -198,9 +198,6 @@
   <data name="Views_Auth_SignIn_Title" xml:space="preserve">
     <value>Sign in</value>
   </data>
-  <data name="Views_Submit" xml:space="preserve">
-    <value>Submit</value>
-  </data>
   <data name="Model_ConfirmNewPassword" xml:space="preserve">
     <value>Re-enter new password</value>
   </data>
@@ -269,5 +266,20 @@
   </data>
   <data name="Views_Cancel" xml:space="preserve">
     <value>Cancel</value>
+  </data>
+  <data name="Views_Auth_SignIn_Submit" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="Views_Email_Change_Change_Submit" xml:space="preserve">
+    <value>Change email address</value>
+  </data>
+  <data name="Views_Password_Change_Change_Submit" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="Views_Password_Reset_Finish_Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="Views_Password_Reset_Reset_Submit" xml:space="preserve">
+    <value>Submit</value>
   </data>
 </root>

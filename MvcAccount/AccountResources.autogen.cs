@@ -207,13 +207,6 @@ namespace MvcAccount {
       }
 
       /// <summary>
-      /// Looks up a localized string similar to 'Submit'.
-      /// </summary>
-      public static string Views_Submit {
-         get { return GetResource(Keys.Views_Submit); }
-      }
-
-      /// <summary>
       /// Looks up a localized string similar to 'Re-enter new password'.
       /// </summary>
       public static string Model_ConfirmNewPassword {
@@ -373,6 +366,41 @@ namespace MvcAccount {
       public static string Views_Cancel {
          get { return GetResource(Keys.Views_Cancel); }
       }
+
+      /// <summary>
+      /// Looks up a localized string similar to 'Sign in'.
+      /// </summary>
+      public static string Views_Auth_SignIn_Submit {
+         get { return GetResource(Keys.Views_Auth_SignIn_Submit); }
+      }
+
+      /// <summary>
+      /// Looks up a localized string similar to 'Change email address'.
+      /// </summary>
+      public static string Views_Email_Change_Change_Submit {
+         get { return GetResource(Keys.Views_Email_Change_Change_Submit); }
+      }
+
+      /// <summary>
+      /// Looks up a localized string similar to 'Change password'.
+      /// </summary>
+      public static string Views_Password_Change_Change_Submit {
+         get { return GetResource(Keys.Views_Password_Change_Change_Submit); }
+      }
+
+      /// <summary>
+      /// Looks up a localized string similar to 'Submit'.
+      /// </summary>
+      public static string Views_Password_Reset_Finish_Submit {
+         get { return GetResource(Keys.Views_Password_Reset_Finish_Submit); }
+      }
+
+      /// <summary>
+      /// Looks up a localized string similar to 'Submit'.
+      /// </summary>
+      public static string Views_Password_Reset_Reset_Submit {
+         get { return GetResource(Keys.Views_Password_Reset_Reset_Submit); }
+      }
       
       internal static class Keys {
       
@@ -404,7 +432,6 @@ namespace MvcAccount {
             Views_Password_Reset_Finish_Message = "Views_Password_Reset_Finish_Message",
             Views_Password_Reset_Finish_Title = "Views_Password_Reset_Finish_Title",
             Views_Auth_SignIn_Title = "Views_Auth_SignIn_Title",
-            Views_Submit = "Views_Submit",
             Model_ConfirmNewPassword = "Model_ConfirmNewPassword",
             Model_CurrentPassword = "Model_CurrentPassword",
             Model_Email = "Model_Email",
@@ -427,7 +454,12 @@ namespace MvcAccount {
             Views_Email_Change_VerificationSent_Message = "Views_Email_Change_VerificationSent_Message",
             Views_Email_Change_VerificationSent_Title = "Views_Email_Change_VerificationSent_Title",
             Links_ReturnToIndex = "Links_ReturnToIndex",
-            Views_Cancel = "Views_Cancel";
+            Views_Cancel = "Views_Cancel",
+            Views_Auth_SignIn_Submit = "Views_Auth_SignIn_Submit",
+            Views_Email_Change_Change_Submit = "Views_Email_Change_Change_Submit",
+            Views_Password_Change_Change_Submit = "Views_Password_Change_Change_Submit",
+            Views_Password_Reset_Finish_Submit = "Views_Password_Reset_Finish_Submit",
+            Views_Password_Reset_Reset_Submit = "Views_Password_Reset_Reset_Submit";
       }
    }
 }

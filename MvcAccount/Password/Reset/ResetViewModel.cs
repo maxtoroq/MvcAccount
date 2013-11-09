@@ -40,6 +40,7 @@ namespace MvcAccount.Password.Reset {
 
          this.Title = AccountResources.Views_Password_Reset_Reset_Title;
          this.Message = AccountResources.Views_Password_Reset_Reset_Message.FormatInvariant(AccountResources.Model_Email);
+         this.SubmitText = AccountResources.Views_Password_Reset_Reset_Submit;
       }
    }
 }

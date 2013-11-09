@@ -198,9 +198,6 @@
   <data name="Views_Auth_SignIn_Title" xml:space="preserve">
     <value>Entrar</value>
   </data>
-  <data name="Views_Submit" xml:space="preserve">
-    <value>Enviar</value>
-  </data>
   <data name="Model_ConfirmNewPassword" xml:space="preserve">
     <value>Redigite a nova senha</value>
   </data>
@@ -269,5 +266,20 @@
   </data>
   <data name="Views_Cancel" xml:space="preserve">
     <value>Cancelar</value>
+  </data>
+  <data name="Views_Auth_SignIn_Submit" xml:space="preserve">
+    <value>Entrar</value>
+  </data>
+  <data name="Views_Email_Change_Change_Submit" xml:space="preserve">
+    <value>Alteração de Endereço de E-mail</value>
+  </data>
+  <data name="Views_Password_Change_Change_Submit" xml:space="preserve">
+    <value>Alteração de Senha</value>
+  </data>
+  <data name="Views_Password_Reset_Finish_Submit" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="Views_Password_Reset_Reset_Submit" xml:space="preserve">
+    <value>Enviar</value>
   </data>
 </root>
