@@ -18,7 +18,7 @@ using System.Linq;
 using System.Text;
 using MvcAccount.Shared;
 
-namespace MvcAccount.Auth {
+namespace MvcAccount.Authentication {
    
    /// <summary>
    /// Holds data for the SignIn view.
@@ -38,8 +38,8 @@ namespace MvcAccount.Auth {
       public SignInViewModel(SignInInput inputModel) 
          : base(inputModel) {
 
-         this.Title = AccountResources.Views_Auth_SignIn_Title;
-         this.SubmitText = AccountResources.Views_Auth_SignIn_Submit;
+         this.Title = AccountResources.Views_Authentication_SignIn_Title;
+         this.SubmitText = AccountResources.Views_Authentication_SignIn_Submit;
          this.AccountRecoveryLink = new LinkModel(this.Url.Action("", "Password.Reset"), AccountResources.Links_Recovery);
       }
    }

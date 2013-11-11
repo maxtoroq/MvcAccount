@@ -202,8 +202,8 @@ namespace MvcAccount {
       /// <summary>
       /// Looks up a localized string similar to 'Sign in'.
       /// </summary>
-      public static string Views_Auth_SignIn_Title {
-         get { return GetResource(Keys.Views_Auth_SignIn_Title); }
+      public static string Views_Authentication_SignIn_Title {
+         get { return GetResource(Keys.Views_Authentication_SignIn_Title); }
       }
 
       /// <summary>
@@ -370,8 +370,8 @@ namespace MvcAccount {
       /// <summary>
       /// Looks up a localized string similar to 'Sign in'.
       /// </summary>
-      public static string Views_Auth_SignIn_Submit {
-         get { return GetResource(Keys.Views_Auth_SignIn_Submit); }
+      public static string Views_Authentication_SignIn_Submit {
+         get { return GetResource(Keys.Views_Authentication_SignIn_Submit); }
       }
 
       /// <summary>
@@ -431,7 +431,7 @@ namespace MvcAccount {
             Views_Password_Reset_Reset_Title = "Views_Password_Reset_Reset_Title",
             Views_Password_Reset_Finish_Message = "Views_Password_Reset_Finish_Message",
             Views_Password_Reset_Finish_Title = "Views_Password_Reset_Finish_Title",
-            Views_Auth_SignIn_Title = "Views_Auth_SignIn_Title",
+            Views_Authentication_SignIn_Title = "Views_Authentication_SignIn_Title",
             Model_ConfirmNewPassword = "Model_ConfirmNewPassword",
             Model_CurrentPassword = "Model_CurrentPassword",
             Model_Email = "Model_Email",
@@ -455,7 +455,7 @@ namespace MvcAccount {
             Views_Email_Change_VerificationSent_Title = "Views_Email_Change_VerificationSent_Title",
             Links_ReturnToIndex = "Links_ReturnToIndex",
             Views_Cancel = "Views_Cancel",
-            Views_Auth_SignIn_Submit = "Views_Auth_SignIn_Submit",
+            Views_Authentication_SignIn_Submit = "Views_Authentication_SignIn_Submit",
             Views_Email_Change_Change_Submit = "Views_Email_Change_Change_Submit",
             Views_Password_Change_Change_Submit = "Views_Password_Change_Change_Submit",
             Views_Password_Reset_Finish_Submit = "Views_Password_Reset_Finish_Submit",

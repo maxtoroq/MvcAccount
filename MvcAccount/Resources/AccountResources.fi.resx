@@ -195,7 +195,7 @@
   <data name="Views_Password_Reset_Finish_Title" xml:space="preserve">
     <value>Resetoi salasana</value>
   </data>
-  <data name="Views_Auth_SignIn_Title" xml:space="preserve">
+  <data name="Views_Authentication_SignIn_Title" xml:space="preserve">
     <value>Kirjaudu sisään</value>
   </data>
   <data name="Model_ConfirmNewPassword" xml:space="preserve">
@@ -267,7 +267,7 @@
   <data name="Views_Cancel" xml:space="preserve">
     <value>Peruuta</value>
   </data>
-  <data name="Views_Auth_SignIn_Submit" xml:space="preserve">
+  <data name="Views_Authentication_SignIn_Submit" xml:space="preserve">
     <value>Kirjaudu sisään</value>
   </data>
   <data name="Views_Email_Change_Change_Submit" xml:space="preserve">

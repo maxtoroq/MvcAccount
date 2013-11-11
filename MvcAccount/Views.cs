@@ -12,7 +12,8 @@ namespace MvcAccount {
    static class Views {
 
       public const string 
-         Web = "Web";
+         Web = "Web",
+         _ViewStart = "_ViewStart";
 
       public static class Account {
 

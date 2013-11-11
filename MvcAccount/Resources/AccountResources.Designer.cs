@@ -351,18 +351,18 @@ namespace MvcAccount.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Sign in.
         /// </summary>
-        internal static string Views_Auth_SignIn_Submit {
+        internal static string Views_Authentication_SignIn_Submit {
             get {
-                return ResourceManager.GetString("Views_Auth_SignIn_Submit", resourceCulture);
+                return ResourceManager.GetString("Views_Authentication_SignIn_Submit", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Sign in.
         /// </summary>
-        internal static string Views_Auth_SignIn_Title {
+        internal static string Views_Authentication_SignIn_Title {
             get {
-                return ResourceManager.GetString("Views_Auth_SignIn_Title", resourceCulture);
+                return ResourceManager.GetString("Views_Authentication_SignIn_Title", resourceCulture);
             }
         }
         

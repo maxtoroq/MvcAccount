@@ -18,10 +18,10 @@ using System.Linq;
 using System.Text;
 using System.ComponentModel.DataAnnotations;
 
-namespace MvcAccount.Auth {
+namespace MvcAccount.Authentication {
    
    /// <summary>
-   /// Holds data required by the <see cref="AuthController.SignIn(SignInInput, string)"/> action.
+   /// Holds data required by the <see cref="AuthenticationController.SignIn(SignInInput, string)"/> action.
    /// </summary>
    public class SignInInput {
 

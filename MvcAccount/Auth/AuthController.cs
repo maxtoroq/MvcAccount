@@ -19,27 +19,27 @@ using System.Web.Routing;
 using MvcAccount.Shared;
 using MvcCodeRouting.Web.Mvc;
 
-namespace MvcAccount.Auth {
+namespace MvcAccount.Authentication {
    
    /// <summary>
    /// Authentication controller.
    /// </summary>
-   public class AuthController : BaseController {
+   public class AuthenticationController : BaseController {
 
       AccountRepositoryWrapper repo;
       PasswordService passServ;
       FormsAuthenticationService formsAuthService;
 
-      public AuthController() { }
+      public AuthenticationController() { }
 
-      public AuthController(AccountRepository repo, PasswordService passwordService) 
+      public AuthenticationController(AccountRepository repo, PasswordService passwordService) 
          : this() {
 
          this.repo = new AccountRepositoryWrapper(repo);
          this.passServ = passwordService;
       }
 
-      public AuthController(AccountRepository repo, PasswordService passwordService, FormsAuthenticationService formsAuthService) 
+      public AuthenticationController(AccountRepository repo, PasswordService passwordService, FormsAuthenticationService formsAuthService) 
          : this(repo, passwordService) {
          
          this.formsAuthService = formsAuthService;

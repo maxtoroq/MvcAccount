@@ -40,7 +40,7 @@ namespace MvcAccount.Account {
          this.Links = new Collection<LinkModel> { 
             new LinkModel(this.Url.Action("", "Password.Change"), AccountResources.Links_ChangePassword),
             new LinkModel(this.Url.Action("", "Email.Change"), AccountResources.Links_ChangeEmail),
-            new LinkModel(this.Url.Action("SignOut", "Auth"), AccountResources.Links_SignOut)
+            new LinkModel(this.Url.Action("SignOut", "Authentication"), AccountResources.Links_SignOut)
          };
       }
    }

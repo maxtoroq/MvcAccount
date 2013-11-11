@@ -42,7 +42,7 @@ namespace MvcAccount.Password.Reset {
          
          this.Title = AccountResources.Views_Password_Reset_Done_Title;
          this.Message = AccountResources.Views_Password_Reset_Done_Message;
-         this.NextLink = new LinkModel(this.Url.Action("SignIn", "~Auth"), AccountResources.Links_SignIn);
+         this.NextLink = new LinkModel(this.Url.Action("SignIn", "~Authentication"), AccountResources.Links_SignIn);
       }
    }
 }
