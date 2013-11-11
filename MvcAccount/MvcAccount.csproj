@@ -102,10 +102,10 @@
       <DependentUpon>AccountResources.tt</DependentUpon>
     </Compile>
     <Compile Include="AccountResources.cs" />
-    <Compile Include="Auth\AuthController.cs" />
+    <Compile Include="Authentication\AuthenticationController.cs" />
     <Compile Include="FormsAuthenticationService.cs" />
-    <Compile Include="Auth\SignInInput.cs" />
-    <Compile Include="Auth\SignInViewModel.cs" />
+    <Compile Include="Authentication\SignInInput.cs" />
+    <Compile Include="Authentication\SignInViewModel.cs" />
     <Compile Include="AccountRepositoryWrapper.cs" />
     <Compile Include="Shared\BaseController.cs" />
     <Compile Include="Shared\BaseViewModel.cs" />
@@ -197,7 +197,7 @@
     <EmbeddedResource Include="Views\Account\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Auth\SignIn.cshtml" />
+    <EmbeddedResource Include="Views\Authentication\SignIn.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\Password\Change\Change.cshtml" />
