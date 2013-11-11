@@ -93,6 +93,7 @@
     <Compile Include="Utilities\LocalizedViewExtensions.cs" />
     <Compile Include="Utilities\OperationResult.cs" />
     <Compile Include="Account\AccountImplController.cs" />
+    <Compile Include="Web.Helpers\CryptoPasswordService.cs" />
     <Compile Include="Web.Security\AccountMembershipProvider.cs" />
     <Compile Include="AccountRepository.cs" />
     <Compile Include="AccountResources.autogen.cs">
