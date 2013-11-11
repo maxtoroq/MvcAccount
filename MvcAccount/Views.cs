@@ -21,7 +21,7 @@ namespace MvcAccount {
             Index = "Index";
       }
 
-      public static class Auth {
+      public static class Authentication {
 
          public const string 
             SignIn = "SignIn";
