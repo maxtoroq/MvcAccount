@@ -64,7 +64,7 @@ namespace MvcAccount {
       /// information.
       /// </returns>
       public HttpCookie GetAuthCookie(string userName, bool createPersistentCookie) {
-         return GetAuthCookie(userName, createPersistentCookie, FormsAuthentication.FormsCookiePath);
+         return GetAuthCookie(userName, createPersistentCookie, null);
       }
 
       /// <summary>
@@ -83,6 +83,9 @@ namespace MvcAccount {
       /// </returns>
       public virtual HttpCookie GetAuthCookie(string userName, bool createPersistentCookie, string strCookiePath) {
 
+         if (!strCookiePath.HasValue())
+            strCookiePath = FormsAuthentication.FormsCookiePath;
+
          DateTime utcNow = DateTime.UtcNow;
          TimeSpan persistentTimeout = this.Configuration.PersistentCookieTimeout;
          
@@ -92,13 +95,13 @@ namespace MvcAccount {
 
          DateTime expirationUtc = utcNow.Add(timeout);
 
-         var ticket = new FormsAuthenticationTicket(
+         FormsAuthenticationTicket ticket = CreateFormsAuthenticationTicket(
             version: 2,
             name: userName,
             issueDate: utcNow,
             expiration: expirationUtc,
             isPersistent: createPersistentCookie,
-            userData: ""
+            cookiePath: strCookiePath
          );
 
          string encryptedTicket = FormsAuthentication.Encrypt(ticket);
@@ -118,6 +121,19 @@ namespace MvcAccount {
             cookie.Expires = ticket.Expiration;
 
          return cookie;
+      }
+
+      protected virtual FormsAuthenticationTicket CreateFormsAuthenticationTicket(int version, string name, DateTime issueDate, DateTime expiration, bool isPersistent, string cookiePath) {
+         
+         return new FormsAuthenticationTicket(
+            version: version,
+            name: name,
+            issueDate: issueDate,
+            expiration: expiration,
+            isPersistent: isPersistent,
+            userData: "",
+            cookiePath: cookiePath
+         );
       }
 
       /// <summary>
