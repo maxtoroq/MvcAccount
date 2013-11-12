@@ -25,13 +25,17 @@ namespace MvcAccount.Shared {
    [DebuggerDisplay("{Successful}")]
    public struct FormButton {
 
+      readonly bool _Successful;
+
       /// <summary>
       /// true if the form submission was triggered by this button; otherwise, false.
       /// </summary>
-      public readonly bool Successful;
+      public bool Successful {
+         get { return _Successful; }
+      }
 
       internal FormButton(bool successful) {
-         this.Successful = successful;
+         _Successful = successful;
       }
 
       /// <summary>
