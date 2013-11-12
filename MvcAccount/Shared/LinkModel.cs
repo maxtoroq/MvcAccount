@@ -47,6 +47,10 @@ namespace MvcAccount.Shared {
          this.Text = text;
       }
 
+      /// <summary>
+      /// Returns an HTML-encoded string representation of the link.
+      /// </summary>
+      /// <returns>An HTML-encoded string representation of the link.</returns>
       public string ToHtmlString() {
 
          var builder = new TagBuilder("a") {

@@ -18,16 +18,27 @@ using System.Web.Mvc;
 
 namespace MvcAccount.Shared {
    
+   /// <summary>
+   /// Represents a boolean value that indicates if a form submission was triggered by a particular button.
+   /// </summary>
    [ModelBinder(typeof(FormButtonBinder))]
    [DebuggerDisplay("{Successful}")]
    public struct FormButton {
 
+      /// <summary>
+      /// true if the form submission was triggered by this button; otherwise, false.
+      /// </summary>
       public readonly bool Successful;
 
       internal FormButton(bool successful) {
          this.Successful = successful;
       }
 
+      /// <summary>
+      /// Converts to <see cref="Boolean"/>.
+      /// </summary>
+      /// <param name="value">The value.</param>
+      /// <returns>The value of <see cref="Successful"/>.</returns>
       public static implicit operator Boolean(FormButton value) {
          return value.Successful;
       }

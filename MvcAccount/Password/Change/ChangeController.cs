@@ -22,14 +22,26 @@ using MvcCodeRouting.Web.Mvc;
 
 namespace MvcAccount.Password.Change {
 
+   /// <summary>
+   /// Exposes password change functionality.
+   /// </summary>
    [Authorize]
    public class ChangeController : BaseController {
 
       AccountRepositoryWrapper repo;
       PasswordService passServ;
 
+      /// <summary>
+      /// Initializes a new instance of the <see cref="ChangeController"/> class.
+      /// </summary>
       public ChangeController() { }
 
+      /// <summary>
+      /// Initializes a new instance of the <see cref="ChangeController"/> class, 
+      /// with the provided <paramref name="repo"/> and <paramref name="passwordService"/>.
+      /// </summary>
+      /// <param name="repo">The account repository.</param>
+      /// <param name="passwordService">The password service.</param>
       public ChangeController(AccountRepository repo, PasswordService passwordService) 
          : this() {
          
@@ -37,6 +49,10 @@ namespace MvcAccount.Password.Change {
          this.passServ = passwordService;
       }
 
+      /// <summary>
+      /// Initializes data that might not be available when the constructor is called.
+      /// </summary>
+      /// <param name="requestContext">The HTTP context and route data.</param>
       protected override void Initialize(RequestContext requestContext) {
          
          base.Initialize(requestContext);
@@ -62,6 +78,7 @@ namespace MvcAccount.Password.Change {
       /// Attempts to change the password.
       /// </summary>
       /// <param name="input">The input model.</param>
+      /// <param name="cancel">A value that indicates if the operation was cancelled by the user.</param>
       /// <returns>The action result.</returns>
       [HttpPost]
       public ActionResult Change(ChangeInput input, FormButton cancel) {

@@ -52,6 +52,11 @@ namespace MvcAccount.Shared {
          this.CancelText = AccountResources.Views_Cancel;
       }
 
+      /// <summary>
+      /// Returns a <see cref="HtmlHelper&lt;TInputModel>"/> to be used to render form controls for the <see cref="InputModel"/>.
+      /// </summary>
+      /// <param name="htmlHelper">The <see cref="HtmlHelper"/> of the current view.</param>
+      /// <returns>An <see cref="HtmlHelper&lt;TInputModel>"/> instance.</returns>
       public HtmlHelper<TInputModel> HtmlHelperForInput(HtmlHelper htmlHelper) {
          return HtmlHelperFor<TInputModel>(htmlHelper, this.InputModel);
       }

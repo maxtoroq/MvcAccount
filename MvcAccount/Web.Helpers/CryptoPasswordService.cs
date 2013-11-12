@@ -20,12 +20,26 @@ using System.Web.Helpers;
 
 namespace MvcAccount.Web.Helpers {
    
+   /// <summary>
+   /// A <see cref="PasswordService"/> that uses the <see cref="Crypto"/> class to hash and compare passwords using PBKDF2.
+   /// </summary>
    public class CryptoPasswordService : PasswordService {
-      
+
+      /// <summary>
+      /// Converts the <paramref name="clearTextPassword"/> to one that is suitable for storage.
+      /// </summary>
+      /// <param name="clearTextPassword">The password in clear text.</param>
+      /// <returns>The password suitable for storage.</returns>
       public override string ProcessPasswordForStorage(string clearTextPassword) {
          return Crypto.HashPassword(clearTextPassword);
       }
 
+      /// <summary>
+      /// Compares a password provided by a user to one that is stored.
+      /// </summary>
+      /// <param name="clearTextPassword">The password in clear text provided by a user.</param>
+      /// <param name="storedPassword">The stored password.</param>
+      /// <returns>true if the passwords are equal; otherwise false.</returns>
       public override bool PasswordEquals(string clearTextPassword, string storedPassword) {
          return Crypto.VerifyHashedPassword(storedPassword, clearTextPassword);
       }

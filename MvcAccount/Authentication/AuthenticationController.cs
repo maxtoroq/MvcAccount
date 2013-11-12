@@ -22,7 +22,7 @@ using MvcCodeRouting.Web.Mvc;
 namespace MvcAccount.Authentication {
    
    /// <summary>
-   /// Authentication controller.
+   /// Exposes authentication functionality.
    /// </summary>
    public class AuthenticationController : BaseController {
 
@@ -30,8 +30,17 @@ namespace MvcAccount.Authentication {
       PasswordService passServ;
       FormsAuthenticationService formsAuthService;
 
+      /// <summary>
+      /// Initializes a new instance of the <see cref="AuthenticationController"/> class.
+      /// </summary>
       public AuthenticationController() { }
 
+      /// <summary>
+      /// Initializes a new instance of the <see cref="AuthenticationController"/> class, 
+      /// with the provided <paramref name="repo"/> and <paramref name="passwordService"/>.
+      /// </summary>
+      /// <param name="repo">The account repository.</param>
+      /// <param name="passwordService">The password service.</param>
       public AuthenticationController(AccountRepository repo, PasswordService passwordService) 
          : this() {
 
@@ -39,12 +48,23 @@ namespace MvcAccount.Authentication {
          this.passServ = passwordService;
       }
 
+      /// <summary>
+      /// Initializes a new instance of the <see cref="AuthenticationController"/> class, 
+      /// with the provided <paramref name="repo"/>, <paramref name="passwordService"/> and <paramref name="formsAuthService"/>.
+      /// </summary>
+      /// <param name="repo">The account repository.</param>
+      /// <param name="passwordService">The password service.</param>
+      /// <param name="formsAuthService">The forms authentication service.</param>
       public AuthenticationController(AccountRepository repo, PasswordService passwordService, FormsAuthenticationService formsAuthService) 
          : this(repo, passwordService) {
          
          this.formsAuthService = formsAuthService;
       }
 
+      /// <summary>
+      /// Initializes data that might not be available when the constructor is called.
+      /// </summary>
+      /// <param name="requestContext">The HTTP context and route data.</param>
       protected override void Initialize(RequestContext requestContext) {
          
          base.Initialize(requestContext);

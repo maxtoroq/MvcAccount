@@ -29,6 +29,9 @@ namespace MvcAccount {
 
       AccountConfiguration _Configuration;
 
+      /// <summary>
+      /// The <see cref="AccountConfiguration"/> instance for the current request.
+      /// </summary>
       public AccountConfiguration Configuration {
          get {
             return _Configuration
@@ -123,6 +126,17 @@ namespace MvcAccount {
          return cookie;
       }
 
+      /// <summary>
+      /// Creates a <see cref="FormsAuthenticationTicket"/> instance.
+      /// </summary>
+      /// <param name="version">The version number of the ticket.</param>
+      /// <param name="name">The user name associated with the ticket.</param>
+      /// <param name="issueDate">The local date and time at which the ticket was issued.</param>
+      /// <param name="expiration">The local date and time at which the ticket expires.</param>
+      /// <param name="isPersistent">true if the ticket will be stored in a persistent cookie (saved across browser sessions); otherwise, false. If the ticket is stored in the URL, this value is ignored.</param>
+      /// <param name="cookiePath">The user-specific data to be stored with the ticket.</param>
+      /// <returns>A new <see cref="FormsAuthenticationTicket"/> instance.</returns>
+      /// <remarks>This method can be overriden to provide a value for the userData parameter.</remarks>
       protected virtual FormsAuthenticationTicket CreateFormsAuthenticationTicket(int version, string name, DateTime issueDate, DateTime expiration, bool isPersistent, string cookiePath) {
          
          return new FormsAuthenticationTicket(

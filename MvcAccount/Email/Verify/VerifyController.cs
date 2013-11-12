@@ -22,18 +22,33 @@ using MvcCodeRouting.Web.Mvc;
 
 namespace MvcAccount.Email.Verify {
    
+   /// <summary>
+   /// Exposes e-mail verification functionality.
+   /// </summary>
    public class VerifyController : BaseController {
 
       AccountRepositoryWrapper repo;
 
+      /// <summary>
+      /// Initializes a new instance of the <see cref="VerifyController"/> class.
+      /// </summary>
       public VerifyController() { }
 
+      /// <summary>
+      /// Initializes a new instance of the <see cref="VerifyController"/> class, 
+      /// with the provided <paramref name="repo"/>.
+      /// </summary>
+      /// <param name="repo">The account repository.</param>
       public VerifyController(AccountRepository repo) 
          : this() { 
 
          this.repo = new AccountRepositoryWrapper(repo);
       }
 
+      /// <summary>
+      /// Initializes data that might not be available when the constructor is called.
+      /// </summary>
+      /// <param name="requestContext">The HTTP context and route data.</param>
       protected override void Initialize(RequestContext requestContext) {
          
          base.Initialize(requestContext);

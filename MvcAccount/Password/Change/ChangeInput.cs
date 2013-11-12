@@ -18,11 +18,12 @@ using System.Linq;
 using System.Text;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
+using MvcAccount.Shared;
 
 namespace MvcAccount.Password.Change {
    
    /// <summary>
-   /// Holds data required by the <see cref="ChangeController.Change(ChangeInput)"/> action.
+   /// Holds data required by the <see cref="ChangeController.Change(ChangeInput, FormButton)"/> action.
    /// </summary>
    public class ChangeInput {
 

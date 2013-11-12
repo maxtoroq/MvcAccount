@@ -34,6 +34,9 @@ namespace MvcAccount.Shared {
       /// </summary>
       public string Title { get; set; }
 
+      /// <summary>
+      /// A space-separated list of CSS classes to be used in the view.
+      /// </summary>
       public string ViewCssClass {
          get { return _ViewCssClass.Value; }
       }
@@ -45,6 +48,9 @@ namespace MvcAccount.Shared {
          get { return _Url.Value; }
       }
 
+      /// <summary>
+      /// Initializes a new instance of the <see cref="BaseViewModel"/> class.
+      /// </summary>
       protected BaseViewModel () {
          
          _ViewCssClass = new Lazy<string>(() => "MvcAccount " + GetType().FullName.Replace(".", "-"));

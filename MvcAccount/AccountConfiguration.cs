@@ -35,10 +35,14 @@ namespace MvcAccount {
       Func<PasswordService> _PasswordServiceResolver;
       Func<FormsAuthenticationService> _FormsAuthenticationServiceResolver;
 
+      /// <summary>
+      /// A delegate that returns an <see cref="AccountConfiguration"/> instance.
+      /// This setting is required only when using <see cref="MvcAccount.Web.Security.AccountMembershipProvider"/>.
+      /// </summary>
       public static Func<AccountConfiguration> ConfigurationResolver { get; set; }
 
       /// <summary>
-      /// A delegate that returns a <see cref="AccountRepository"/> implementation. 
+      /// A delegate that returns an <see cref="AccountRepository"/> implementation. 
       /// This setting is optional if using controller dependency injection,
       /// but required when using <see cref="MvcAccount.Web.Security.AccountMembershipProvider"/>.
       /// </summary>
@@ -201,6 +205,9 @@ namespace MvcAccount {
             ?? configResolver();
       }
 
+      /// <summary>
+      /// Initializes a new instance of the <see cref="AccountConfiguration"/> class.
+      /// </summary>
       public AccountConfiguration() {
          Reset();
       }

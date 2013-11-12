@@ -27,12 +27,18 @@ using System.Web.Routing;
 
 namespace MvcAccount.Shared {
    
+   /// <summary>
+   /// Base class for all MvcAccount's controllers.
+   /// </summary>
    public abstract class BaseController : Controller {
 
       static readonly string ApplicationPath = VirtualPathUtility.AppendTrailingSlash(HostingEnvironment.ApplicationVirtualPath);
 
       AccountConfiguration _Configuration;
 
+      /// <summary>
+      /// The <see cref="AccountConfiguration"/> instance for the current request.
+      /// </summary>
       protected internal AccountConfiguration Configuration {
          get { return _Configuration; }
          internal set { _Configuration = value; }
@@ -42,6 +48,10 @@ namespace MvcAccount.Shared {
          get { return User.Identity.Name; }
       }
 
+      /// <summary>
+      /// Initializes data that might not be available when the constructor is called.
+      /// </summary>
+      /// <param name="requestContext">The HTTP context and route data.</param>
       protected override void Initialize(RequestContext requestContext) {
          
          base.Initialize(requestContext);
