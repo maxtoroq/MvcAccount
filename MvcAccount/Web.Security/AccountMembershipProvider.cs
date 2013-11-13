@@ -17,6 +17,9 @@ using System.Web.Security;
 
 namespace MvcAccount.Web.Security {
    
+   /// <summary>
+   /// A <see cref="MembershipProvider"/> for MvcAccount.
+   /// </summary>
    /// <remarks>
    /// The only methods implemented are <see cref="GetUser(string, bool)"/>, <see cref="GetUser(object, bool)"/>
    /// and <see cref="ValidateUser(string, string)"/>. All other methods throw a <see cref="NotImplementedException"/>.
