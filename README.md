@@ -53,6 +53,7 @@ Code hosted on [GitHub][3]. Releases available via [NuGet][4].
 Resources
 ---------
 - [Documentation](https://github.com/maxtoroq/MvcAccount/wiki)
+- [Ask for help](https://github.com/maxtoroq/MvcAccount/issues/new)
 - [Report an issue](https://github.com/maxtoroq/MvcAccount/issues)
 
 <a href="https://github.com/maxtoroq/MvcAccount/wiki/Donate"><img src="http://maxtoroq.users.sourceforge.net/donate/paypal/btn_donate_SM.gif" alt="Donate"/></a>
