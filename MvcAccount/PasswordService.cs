@@ -69,8 +69,9 @@ namespace MvcAccount {
 
             user.Password = ProcessPasswordForStorage(newPassword);
 
-            if (errors.ValidProperty(() => user.Password))
+            if (errors.ValidProperty(() => user.Password)) {
                return true;
+            }
 
             user.Password = currentPassword;
          }

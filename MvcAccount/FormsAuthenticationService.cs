@@ -117,11 +117,13 @@ namespace MvcAccount {
 
          string domain = FormsAuthentication.CookieDomain;
 
-         if (domain != null)
+         if (domain != null) {
             cookie.Domain = domain;
+         }
 
-         if (ticket.IsPersistent)
+         if (ticket.IsPersistent) {
             cookie.Expires = ticket.Expiration;
+         }
 
          return cookie;
       }

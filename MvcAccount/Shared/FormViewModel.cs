@@ -71,8 +71,9 @@ namespace MvcAccount.Shared {
 
          TemplateInfo templateInfo = viewDataContainer.ViewData.TemplateInfo;
 
-         if (!String.IsNullOrEmpty(htmlFieldPrefix))
+         if (!String.IsNullOrEmpty(htmlFieldPrefix)) {
             templateInfo.HtmlFieldPrefix = templateInfo.GetFullHtmlFieldName(htmlFieldPrefix);
+         }
 
          ViewContext viewContext = htmlHelper.ViewContext;
          ViewContext newViewContext = new ViewContext(viewContext.Controller.ControllerContext, viewContext.View, viewDataContainer.ViewData, viewContext.TempData, viewContext.Writer);

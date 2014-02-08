@@ -34,8 +34,9 @@ namespace MvcAccount {
 
          string classKey = AccountConfiguration.Current().ResourceClassKey;
 
-         if (!classKey.HasValue())
+         if (!classKey.HasValue()) {
             return null;
+         }
 
          return HttpContext.GetGlobalResourceObject(classKey, resourceKey, culture) as string;
       }

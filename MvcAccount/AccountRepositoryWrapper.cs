@@ -31,8 +31,9 @@ namespace MvcAccount {
 
          object user = this.repo.FindUserById(id);
 
-         if (user == null)
+         if (user == null) {
             return null;
+         }
 
          return new UserWrapper(user);
       }
@@ -41,8 +42,9 @@ namespace MvcAccount {
 
          var user = this.repo.FindUserByName(username);
 
-         if (user == null)
+         if (user == null) {
             return null;
+         }
 
          return new UserWrapper(user);
       }
@@ -51,8 +53,9 @@ namespace MvcAccount {
 
          var user = this.repo.FindUserByEmail(email);
 
-         if (user == null)
+         if (user == null) {
             return null;
+         }
 
          return new UserWrapper(user);
       }

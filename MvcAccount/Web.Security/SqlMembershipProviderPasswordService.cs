@@ -74,8 +74,9 @@ namespace MvcAccount.Web.Security {
       /// <returns>The password suitable for storage.</returns>
       public override string ProcessPasswordForStorage(string clearTextPassword) {
 
-         if (this.passwordFormat == MembershipPasswordFormat.Clear)
+         if (this.passwordFormat == MembershipPasswordFormat.Clear) {
             return clearTextPassword;
+         }
 
          string salt = GenerateSalt();
          return String.Concat(salt, "$", EncodePassword(clearTextPassword, (int)this.passwordFormat, salt));
@@ -102,9 +103,12 @@ namespace MvcAccount.Web.Security {
          if (storedPassword == null) throw new ArgumentNullException("storedPassword");
 
          if (this.passwordFormat == MembershipPasswordFormat.Clear) {
+            
             pass = storedPassword;
             salt = null;
+         
          } else {
+            
             string[] parts = storedPassword.Split('$');
             pass = parts[1];
             salt = parts[0];

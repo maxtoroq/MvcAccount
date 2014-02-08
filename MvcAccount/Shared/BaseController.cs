@@ -30,7 +30,7 @@ namespace MvcAccount.Shared {
    /// <summary>
    /// Base class for all MvcAccount's controllers.
    /// </summary>
-   public abstract class BaseController : Controller {
+   public abstract class BaseController : Controller, IAccountContext {
 
       static readonly string ApplicationPath = VirtualPathUtility.AppendTrailingSlash(HostingEnvironment.ApplicationVirtualPath);
 
@@ -41,11 +41,17 @@ namespace MvcAccount.Shared {
       /// </summary>
       protected internal AccountConfiguration Configuration {
          get { return _Configuration; }
-         internal set { _Configuration = value; }
       }
 
-      internal string CurrentUserName {
+      string IAccountContext.CurrentUserName {
          get { return User.Identity.Name; }
+      }
+
+      string IAccountContext.SiteName {
+         get {
+            return this.Configuration.SiteName 
+               ?? this.HttpContext.Request.Url.Host;
+         }
       }
 
       /// <summary>
@@ -75,28 +81,17 @@ namespace MvcAccount.Shared {
          return location;
       }
 
-      internal string AbsoluteUrl(string relativeUrl) {
+      string IAccountContext.AbsoluteUrl(string relativeUrl) {
          return new Uri(this.Request.Url, relativeUrl).AbsoluteUri;
       }
 
-      internal bool EmailEquals(string left, string right) {
-         return String.Equals(left, right, StringComparison.OrdinalIgnoreCase);
-      }
-
-      internal bool UserEquals(UserWrapper user, IIdentity identity) {
-         return String.Equals(user.Username, identity.Name, StringComparison.Ordinal);
-      }
-
-      internal string GetSiteName() {
-         return this.Configuration.SiteName ?? this.HttpContext.Request.Url.Host;
-      }
-
-      internal string RenderEmailView(string viewName, object model) {
+      string IAccountContext.RenderEmailView(string viewName, object model) {
 
          ViewEngineResult viewResult = ViewEngines.Engines.FindLocalizedPartialView(this.ControllerContext, viewName);
 
-         if (viewResult.View == null)
+         if (viewResult.View == null) {
             throw new InvalidOperationException();
+         }
 
          using (var output = new StringWriter()) {
 
@@ -114,7 +109,7 @@ namespace MvcAccount.Shared {
          }
       }
 
-      internal void SendEmail(MailMessage message) {
+      void IAccountContext.SendEmail(MailMessage message) {
          new SmtpClient().Send(message);
       }
    }

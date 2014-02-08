@@ -14,6 +14,7 @@
 
 using System;
 using System.Web.Security;
+using MvcAccount.Authentication;
 
 namespace MvcAccount.Web.Security {
    
@@ -86,7 +87,7 @@ namespace MvcAccount.Web.Security {
       }
 
       static AccountRepositoryWrapper GetRepositoryInstance() {
-         return GetConfiguration().RequireDependency(default(AccountRepositoryWrapper));
+         return new AccountRepositoryWrapper(GetConfiguration().RequireDependency(default(AccountRepository)));
       }
 
       static MembershipUser CreateMembershipUser(string providerName, UserWrapper user) {
@@ -123,8 +124,9 @@ namespace MvcAccount.Web.Security {
 
          UserWrapper user = repo.FindUserByName(username);
 
-         if (user == null)
+         if (user == null) {
             return null;
+         }
 
          return CreateMembershipUser(this.Name, user);
       }
@@ -145,8 +147,9 @@ namespace MvcAccount.Web.Security {
 
          UserWrapper user = repo.FindUserById(providerUserKey);
 
-         if (user == null)
+         if (user == null) {
             return null;
+         }
 
          return CreateMembershipUser(this.Name, user);
       }
@@ -161,14 +164,9 @@ namespace MvcAccount.Web.Security {
 
          AccountConfiguration config = GetConfiguration();
 
-         var controller = new Authentication.AuthenticationController(
-            config.RequireDependency(default(AccountRepository)),
-            config.RequireDependency(default(PasswordService))
-         );
+         var auth = new Authenticator(config);
 
-         controller.Configuration = config;
-
-         return controller.ValidateUser(username, password);
+         return auth.ValidateUser(username, password);
       }
 
       /// <summary>

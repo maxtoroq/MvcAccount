@@ -13,7 +13,6 @@
 // limitations under the License.
 
 using System;
-using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
@@ -27,7 +26,8 @@ namespace MvcAccount.Email.Verify {
    /// </summary>
    public class VerifyController : BaseController {
 
-      AccountRepositoryWrapper repo;
+      AccountRepository repo;
+      EmailVerifier verifier;
 
       /// <summary>
       /// Initializes a new instance of the <see cref="VerifyController"/> class.
@@ -42,7 +42,7 @@ namespace MvcAccount.Email.Verify {
       public VerifyController(AccountRepository repo) 
          : this() { 
 
-         this.repo = new AccountRepositoryWrapper(repo);
+         this.repo = repo;
       }
 
       /// <summary>
@@ -53,7 +53,7 @@ namespace MvcAccount.Email.Verify {
          
          base.Initialize(requestContext);
 
-         this.repo = this.Configuration.RequireDependency(this.repo);
+         this.verifier = new EmailVerifier(this.Configuration, this.repo);
       }
 
       /// <summary>
@@ -65,38 +65,13 @@ namespace MvcAccount.Email.Verify {
       [DefaultAction]
       public ActionResult Verify(string id) {
 
-         var result = VerifyImpl(id);
+         var result = this.verifier.Verify(id);
 
-         if (result.IsError)
+         if (result.IsError) { 
             throw new HttpException((int)result.StatusCode, result.Value.ToStringInvariant());
+         }
 
          return View();
-      }
-
-      OperationResult VerifyImpl(string cipher) {
-
-         var verifData = VerificationData.Parse(cipher);
-
-         if (verifData == null)
-            return HttpStatusCode.NotFound;
-
-         UserWrapper user = this.repo.FindUserById(verifData.UserId);
-
-         if (user == null
-            || user.EmailVerified
-            || user.EmailVerificationTicketExpiration == null
-            || user.EmailVerificationTicketExpiration.Value < this.Configuration.GetNow())
-            return HttpStatusCode.Gone;
-
-         user.EmailVerified = true;
-         user.EmailVerificationTicketExpiration = null;
-
-         if (this.Configuration.EmailVerificationEnablesUser)
-            user.Disabled = false;
-
-         this.repo.UpdateUser(user);
-
-         return HttpStatusCode.OK;
       }
    }
 }

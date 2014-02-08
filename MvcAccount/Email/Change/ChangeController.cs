@@ -14,8 +14,6 @@
 
 using System;
 using System.Net;
-using System.Net.Mail;
-using System.Security.Principal;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
@@ -29,9 +27,11 @@ namespace MvcAccount.Email.Change {
    /// </summary>
    public class ChangeController : BaseController {
 
-      AccountRepositoryWrapper repo;
+      AccountRepository repo;
       PasswordService passServ;
       FormsAuthenticationService formsAuthService;
+
+      EmailChanger changer;
 
       /// <summary>
       /// Initializes a new instance of the <see cref="ChangeController"/> class.
@@ -47,7 +47,7 @@ namespace MvcAccount.Email.Change {
       public ChangeController(AccountRepository repo, PasswordService passwordService) 
          : this() { 
       
-         this.repo = new AccountRepositoryWrapper(repo);
+         this.repo = repo;
          this.passServ = passwordService;
       }
 
@@ -72,9 +72,7 @@ namespace MvcAccount.Email.Change {
          
          base.Initialize(requestContext);
 
-         this.repo = this.Configuration.RequireDependency(this.repo);
-         this.passServ = this.Configuration.RequireDependency(this.passServ);
-         this.formsAuthService = this.Configuration.RequireDependency(this.formsAuthService);
+         this.changer = new EmailChanger(this.Configuration, this, this.repo, this.passServ, this.formsAuthService);
       }
 
       /// <summary>
@@ -86,7 +84,7 @@ namespace MvcAccount.Email.Change {
       [DefaultAction]
       public ActionResult Change() {
 
-         this.ViewData.Model = new ChangeViewModel(ChangeImpl());
+         this.ViewData.Model = new ChangeViewModel(this.changer.Change());
 
          return View();
       }
@@ -101,18 +99,21 @@ namespace MvcAccount.Email.Change {
       [Authorize]
       public ActionResult Change(ChangeInput input, FormButton cancel) {
 
-         if (cancel)
+         if (cancel) {
             return HttpSeeOther(this.Url.Action("", "~Account"));
+         }
 
          this.ViewData.Model = new ChangeViewModel(input);
 
-         if (!this.ModelState.IsValid)
+         if (!this.ModelState.IsValid) {
             return View().WithStatus(HttpStatusCode.BadRequest);
+         }
 
-         var result = ChangeImpl(input);
+         var result = this.changer.Change(input);
 
-         if (result.IsError)
+         if (result.IsError) {
             return View().WithErrors(result);
+         }
 
          if (result.StatusCode == HttpStatusCode.Accepted) {
 
@@ -149,8 +150,10 @@ namespace MvcAccount.Email.Change {
          ChangeResult resource;
 
          if (result == null
-            || (resource = result.Value as ChangeResult) == null)
+            || (resource = result.Value as ChangeResult) == null) {
+            
             throw new HttpException((int)HttpStatusCode.NotFound, "");
+         }
 
          this.ViewData.Model = new VerificationSentViewModel(resource);
 
@@ -165,131 +168,15 @@ namespace MvcAccount.Email.Change {
       [HttpGet]
       public ActionResult Verify(string id) {
 
-         var result = VerifyImpl(id);
+         var result = this.changer.Verify(id);
 
-         if (result.IsError)
+         if (result.IsError) {
             throw new HttpException((int)result.StatusCode, result.Value.ToStringInvariant());
+         }
 
          this.ViewData.Model = new SavedViewModel();
 
          return View(Views.Email.Change.Saved);
-      }
-
-      ChangeInput ChangeImpl() {
-
-         UserWrapper user = this.repo.FindUserByName(this.CurrentUserName);
-
-         var input = new ChangeInput {
-            NewEmail = user.Email
-         };
-
-         return input;
-      }
-
-      OperationResult ChangeImpl(ChangeInput input) {
-
-         if (input == null) throw new ArgumentNullException("input");
-
-         var errors = new ErrorBuilder();
-
-         if (errors.NotValid(input))
-            return errors;
-
-         UserWrapper user = this.repo.FindUserByName(this.CurrentUserName);
-
-         string currentEmail = user.Email;
-         string newEmail = input.NewEmail;
-
-         if (errors.Not(currentEmail.HasValue(), AccountResources.Validation_MissingEmail))
-            return errors;
-
-         if (errors.Not(this.passServ.PasswordEquals(input.CurrentPassword, user.Password), AccountResources.Validation_CurrentPasswordIncorrect, () => input.CurrentPassword)
-            | errors.Not(!EmailEquals(currentEmail, newEmail), AccountResources.Validation_NewEmailSameAsCurrent, () => input.NewEmail))
-            return errors;
-
-         if (errors.Not(this.repo.FindUserByEmail(newEmail) == null, AccountResources.Validation_EmailAlreadyExists, () => input.NewEmail))
-            return errors;
-
-         if (!this.Configuration.EnableEmailVerification) {
-
-            user.Email = newEmail;
-
-            this.repo.UpdateUser(user);
-
-            return HttpStatusCode.OK;
-         }
-
-         user.EmailChangeTicketExpiration = this.Configuration.GetNow().Add(this.Configuration.EmailChangeTicketExpiration);
-
-         this.repo.UpdateUser(user);
-
-         var notifyModel = new NotificationMessageViewModel {
-            SiteName = GetSiteName(),
-            NewEmail = newEmail,
-            OldEmail = currentEmail,
-            HelpResource = this.Configuration.HelpResource
-         };
-
-         if (!EmailEquals(currentEmail, user.Username))
-            notifyModel.Username = user.Username;
-
-         var notifyMessage = new MailMessage {
-            To = { user.Email },
-            Subject = AccountResources.Model_EmailChangeNotificationMessageSubject,
-            Body = RenderEmailView(Views.Email.Change._NotificationMessage, notifyModel)
-         };
-
-         string verificationTicket = new VerificationData(user.Id, newEmail).GetVerificationTicket();
-         string verificationUrl = AbsoluteUrl(this.Url.Action(Verify, verificationTicket));
-
-         var verifyModel = new VerificationMessageViewModel {
-            SiteName = notifyModel.SiteName,
-            Url = verificationUrl
-         };
-
-         var verifyMessage = new MailMessage {
-            To = { newEmail },
-            Subject = AccountResources.Model_EmailChangeVerificationMessageSubject,
-            Body = RenderEmailView(Views.Email.Change._VerificationMessage, verifyModel)
-         };
-
-         SendEmail(notifyMessage);
-         SendEmail(verifyMessage);
-
-         return new OperationResult(HttpStatusCode.Accepted, new ChangeResult(newEmail));
-      }
-
-      OperationResult VerifyImpl(string cipher) {
-
-         var verifData = VerificationData.Parse(cipher);
-
-         if (verifData == null)
-            return HttpStatusCode.NotFound;
-
-         UserWrapper user = this.repo.FindUserById(verifData.UserId);
-
-         if (user == null
-            || user.EmailChangeTicketExpiration == null
-            || user.EmailChangeTicketExpiration.Value < this.Configuration.GetNow())
-            return HttpStatusCode.Gone;
-
-         string newEmail = verifData.UserData;
-
-         user.Email = newEmail;
-         user.EmailVerified = true;
-         user.EmailChangeTicketExpiration = null;
-
-         this.repo.UpdateUser(user);
-
-         IIdentity identity = this.User.Identity;
-
-         if (identity.IsAuthenticated
-            && !UserEquals(user, identity)) {
-
-            this.formsAuthService.SignOut();
-         }
-
-         return HttpStatusCode.OK;
       }
    }
 }

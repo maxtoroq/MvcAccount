@@ -48,8 +48,9 @@ namespace MvcAccount {
       /// </summary>
       public Func<AccountRepository> AccountRepositoryResolver {
          get {
-            if (_AccountRepositoryResolver == null && DependencyResolver != null) 
+            if (_AccountRepositoryResolver == null && DependencyResolver != null) {
                _AccountRepositoryResolver = () => (AccountRepository)DependencyResolver(typeof(AccountRepository));
+            }
             return _AccountRepositoryResolver;
          }
          set {
@@ -63,9 +64,10 @@ namespace MvcAccount {
       /// but required when using <see cref="MvcAccount.Web.Security.AccountMembershipProvider"/>.
       /// </summary>
       public Func<PasswordService> PasswordServiceResolver {
-         get { 
-            if (_PasswordServiceResolver == null && DependencyResolver != null) 
+         get {
+            if (_PasswordServiceResolver == null && DependencyResolver != null) {
                _PasswordServiceResolver = () => (PasswordService)DependencyResolver(typeof(PasswordService));
+            }
             return _PasswordServiceResolver;
          }
          set {
@@ -80,8 +82,9 @@ namespace MvcAccount {
       /// </summary>
       public Func<FormsAuthenticationService> FormsAuthenticationServiceResolver {
          get {
-            if (_FormsAuthenticationServiceResolver == null && DependencyResolver != null) 
+            if (_FormsAuthenticationServiceResolver == null && DependencyResolver != null) {
                _FormsAuthenticationServiceResolver = () => (FormsAuthenticationService)DependencyResolver(typeof(FormsAuthenticationService));
+            }
             return _FormsAuthenticationServiceResolver;
          }
          set {
@@ -181,6 +184,7 @@ namespace MvcAccount {
          Func<AccountConfiguration> configResolver = ConfigurationResolver;
 
          if (requestContext == null) {
+
             HttpContext httpContext = HttpContext.Current;
 
             if (httpContext != null) {
@@ -198,8 +202,9 @@ namespace MvcAccount {
             }
          }
 
-         if (configResolver == null)
+         if (configResolver == null) {
             configResolver = () => Default;
+         }
 
          return requestContext.RouteData.DataTokens["Configuration"] as AccountConfiguration
             ?? configResolver();
@@ -250,40 +255,32 @@ namespace MvcAccount {
 
          Func<AccountRepository> resolver = this.AccountRepositoryResolver;
 
-         if (resolver != null)
+         if (resolver != null) {
             return resolver();
+         }
 
-         if (injectedDependency != null)
+         if (injectedDependency != null) {
             return injectedDependency;
-         
-         if (throwIfMissing)
+         }
+
+         if (throwIfMissing) {
             throw CreateMissingDependencyException(typeof(AccountRepository), "AccountRepositoryResolver");
+         }
 
          return null;
-      }
-
-      internal AccountRepositoryWrapper RequireDependency(AccountRepositoryWrapper injectedDependency) {
-
-         AccountRepository repo = RequireDependency(default(AccountRepository), throwIfMissing: false);
-
-         if (repo != null)
-            return new AccountRepositoryWrapper(repo);
-
-         if (injectedDependency != null)
-            return injectedDependency;
-         
-         throw CreateMissingDependencyException(typeof(AccountRepository), "AccountRepositoryResolver");
       }
 
       internal PasswordService RequireDependency(PasswordService injectedDependency) {
 
          Func<PasswordService> resolver = this.PasswordServiceResolver;
 
-         if (resolver != null)
+         if (resolver != null) {
             return resolver();
+         }
 
-         if (injectedDependency != null)
+         if (injectedDependency != null) {
             return injectedDependency;
+         }
 
          throw CreateMissingDependencyException(typeof(PasswordService), "PasswordServiceResolver");
       }

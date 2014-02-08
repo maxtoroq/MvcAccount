@@ -35,8 +35,9 @@ namespace MvcAccount {
 
       public static VerificationData Parse(string cipher) {
 
-         if (!cipher.HasValue())
+         if (!cipher.HasValue()) {
             return null;
+         }
 
          byte[] ticketBytes;
 

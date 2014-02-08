@@ -93,6 +93,13 @@
   <ItemGroup>
     <Compile Include="AccountConfiguration.cs" />
     <Compile Include="AccountController.cs" />
+    <Compile Include="AccountHelpers.cs" />
+    <Compile Include="Authentication\Authenticator.cs" />
+    <Compile Include="Email\Change\EmailChanger.cs" />
+    <Compile Include="Email\Verify\EmailVerifier.cs" />
+    <Compile Include="IAccountContext.cs" />
+    <Compile Include="Password\Change\PasswordChanger.cs" />
+    <Compile Include="Password\Reset\PasswordResetter.cs" />
     <Compile Include="Shared\FormButton.cs" />
     <Compile Include="Utilities\ErrorBuilder.cs" />
     <Compile Include="Utilities\LocalizedViewExtensions.cs" />

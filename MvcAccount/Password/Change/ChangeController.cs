@@ -14,7 +14,6 @@
 
 using System;
 using System.Net;
-using System.Security.Principal;
 using System.Web.Mvc;
 using System.Web.Routing;
 using MvcAccount.Shared;
@@ -28,8 +27,10 @@ namespace MvcAccount.Password.Change {
    [Authorize]
    public class ChangeController : BaseController {
 
-      AccountRepositoryWrapper repo;
+      AccountRepository repo;
       PasswordService passServ;
+
+      PasswordChanger changer;
 
       /// <summary>
       /// Initializes a new instance of the <see cref="ChangeController"/> class.
@@ -45,7 +46,7 @@ namespace MvcAccount.Password.Change {
       public ChangeController(AccountRepository repo, PasswordService passwordService) 
          : this() {
          
-         this.repo = new AccountRepositoryWrapper(repo);
+         this.repo = repo;
          this.passServ = passwordService;
       }
 
@@ -57,8 +58,7 @@ namespace MvcAccount.Password.Change {
          
          base.Initialize(requestContext);
 
-         this.repo = this.Configuration.RequireDependency(this.repo);
-         this.passServ = this.Configuration.RequireDependency(this.passServ);
+         this.changer = new PasswordChanger(this.Configuration, this, this.repo, this.passServ);
       }
 
       /// <summary>
@@ -83,18 +83,21 @@ namespace MvcAccount.Password.Change {
       [HttpPost]
       public ActionResult Change(ChangeInput input, FormButton cancel) {
 
-         if (cancel)
+         if (cancel) {
             return HttpSeeOther(this.Url.Action("", "~Account"));
+         }
 
          this.ViewData.Model = new ChangeViewModel(input);
 
-         if (!this.ModelState.IsValid)
+         if (!this.ModelState.IsValid) {
             return View().WithStatus(HttpStatusCode.BadRequest);
+         }
 
-         var result = ChangeImpl(input);
+         var result = this.changer.Change(input);
 
-         if (result.IsError)
+         if (result.IsError) {
             return View().WithErrors(result);
+         }
 
          return HttpSeeOther(this.Url.Action(Saved));
       }
@@ -109,28 +112,6 @@ namespace MvcAccount.Password.Change {
          this.ViewData.Model = new SavedViewModel();
 
          return View();
-      }
-
-      OperationResult ChangeImpl(ChangeInput input) {
-
-         if (input == null) throw new ArgumentNullException("input");
-
-         var errors = new ErrorBuilder();
-
-         if (errors.NotValid(input))
-            return errors;
-
-         string username = this.CurrentUserName;
-         UserWrapper user = this.repo.FindUserByName(username);
-
-         if (errors.Not(user != null, AccountResources.Validation_UserNotExist.FormatInvariant(username))
-            || errors.Not(this.passServ.PasswordEquals(input.CurrentPassword, user.Password), AccountResources.Validation_CurrentPasswordIncorrect, () => input.CurrentPassword)
-            || !this.passServ.TrySetPassword(user, () => input.NewPassword, errors))
-            return errors;
-
-         this.repo.UpdateUser(user);
-
-         return HttpStatusCode.OK;
       }
    }
 }
