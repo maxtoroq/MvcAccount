@@ -5,7 +5,7 @@
    @using (Html.BeginForm()) {
       var inputHtml = Model.HtmlHelperForInput(Html);
       @Html.AntiForgeryToken()
-      @inputHtml.EditorForModel("../../Shared/EditorTemplates/Object")
+      @inputHtml.EditorForModel()
       <div class="form-group buttons">
          <div></div>
          <div>

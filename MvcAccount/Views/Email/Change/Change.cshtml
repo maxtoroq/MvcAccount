@@ -4,7 +4,7 @@
    @Html.ValidationSummary(excludePropertyErrors: true)
    @using (Html.BeginForm()) {
       var inputHtml = Model.HtmlHelperForInput(Html);
-      @inputHtml.EditorForModel("../../../Shared/EditorTemplates/Object")
+      @inputHtml.EditorForModel()
       <div class="form-group buttons">
          <div></div>
          <div>
