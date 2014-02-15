@@ -25,6 +25,8 @@ namespace MvcAccount {
 
    sealed class EmailAddressAttribute : DataTypeAttribute, IClientValidatable {
 
+      // Regex class usage matches RegularExpressionAttribute for back compat
+
       static readonly Regex EmailRegex = new Regex(@"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*");
 
       public EmailAddressAttribute() 
