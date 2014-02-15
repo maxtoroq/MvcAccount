@@ -41,11 +41,6 @@
                /* Omit password value for security reasons */               
                editor = Html.Password(prop.PropertyName, null, new Dictionary<string, object> { { "class", "text-box single-line password form-control" } });
                break;
-            
-            case "EmailAddress":
-               /* Workaround https://aspnetwebstack.codeplex.com/workitem/1051 */
-               editor = Html.TextBox(prop.PropertyName, prop.Model, new Dictionary<string, object> { { "class", "text-box single-line form-control" } });
-               break;
                
             default:
                editor = Html.Editor(prop.PropertyName, templateName);

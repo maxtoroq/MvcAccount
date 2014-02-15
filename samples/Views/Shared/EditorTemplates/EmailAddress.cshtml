@@ -1,0 +1,13 @@
+﻿@{
+   var htmlAttributes = new Dictionary<string, object> {
+      { "type", "email" },
+      { "class", "text-box single-line form-control" }
+   };
+
+   ModelMetadata metadata = ViewData.ModelMetadata;
+
+   if (!String.IsNullOrEmpty(metadata.Watermark)) {
+      htmlAttributes["placeholder"] = metadata.Watermark;
+   }
+}
+@Html.TextBox("", ViewData.TemplateInfo.FormattedModelValue, htmlAttributes)

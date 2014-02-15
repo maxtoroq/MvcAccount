@@ -17,7 +17,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.ComponentModel.DataAnnotations;
-using MvcAccount.Shared;
 
 namespace MvcAccount.Email.Change {
    
@@ -30,9 +29,8 @@ namespace MvcAccount.Email.Change {
       /// The new email.
       /// </summary>
       [Required(ErrorMessageResourceName = AccountResources.Keys.Validation_Required, ErrorMessageResourceType = typeof(AccountResources))]
-      [RegularExpression(@"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*", ErrorMessageResourceName = AccountResources.Keys.Validation_EmailPattern, ErrorMessageResourceType = typeof(AccountResources))]
+      [EmailAddress]
       [StringLength(254, ErrorMessageResourceName = AccountResources.Keys.Validation_StringLength, ErrorMessageResourceType = typeof(AccountResources))]
-      [DataType(DataType.EmailAddress)]
       [Display(Order = 1, Name = AccountResources.Keys.Model_NewEmail, ResourceType = typeof(AccountResources))]
       public string NewEmail { get; set; }
 

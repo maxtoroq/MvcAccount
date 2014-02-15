@@ -100,6 +100,7 @@
     <Compile Include="IAccountContext.cs" />
     <Compile Include="Password\Change\PasswordChanger.cs" />
     <Compile Include="Password\Reset\PasswordResetter.cs" />
+    <Compile Include="Utilities\EmailAddressAttribute.cs" />
     <Compile Include="Shared\FormButton.cs" />
     <Compile Include="Utilities\ErrorBuilder.cs" />
     <Compile Include="Utilities\LocalizedViewExtensions.cs" />
