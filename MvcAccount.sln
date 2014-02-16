@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAccount", "MvcAccount\MvcAccount.csproj", "{60F4DAD3-D522-437D-8915-9AF12BB16206}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples", "samples\Samples.csproj", "{5BF8519F-DC81-4ABC-A532-2D9F66B676DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Mvc4", "samples\Mvc4\Samples.Mvc4.csproj", "{5BF8519F-DC81-4ABC-A532-2D9F66B676DA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9CE63643-B0E6-430B-8789-1EF9FFFAB4E0}"
 	ProjectSection(SolutionItems) = preProject
