@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
-using System.Web.Optimization;
 using System.Web.Routing;
 using MvcCodeRouting;
 
@@ -12,15 +11,35 @@ namespace Samples {
 
    public class MvcApplication : System.Web.HttpApplication {
       
-      protected void Application_Start() {
+      void Application_Start() {
          
-         AreaRegistration.RegisterAllAreas();
-         WebApiConfig.Register(GlobalConfiguration.Configuration);
-         FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-         RouteConfig.RegisterRoutes(RouteTable.Routes);
-         BundleConfig.RegisterBundles(BundleTable.Bundles);
+         RegisterGlobalFilters(GlobalFilters.Filters);
+         RegisterRoutes(RouteTable.Routes);
 
          ViewEngines.Engines.EnableCodeRouting();
+      }
+
+      void RegisterGlobalFilters(GlobalFilterCollection filters) {
+         filters.Add(new HandleErrorAttribute());
+      }
+
+      void RegisterRoutes(RouteCollection routes) {
+
+         routes.MapCodeRoutes(
+            rootController: typeof(Controllers.HomeController)
+         );
+
+         routes.MapCodeRoutes(
+            baseRoute: "Account",
+            rootController: typeof(MvcAccount.AccountController),
+            settings: new CodeRoutingSettings {
+               EnableEmbeddedViews = true,
+               Configuration = new MvcAccount.AccountConfiguration {
+                  AccountRepositoryResolver = () => new Models.TestAccountRepository(),
+                  PasswordServiceResolver = () => new MvcAccount.ClearTextPasswordService()
+               }
+            }
+         );
       }
    }
 }

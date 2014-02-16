@@ -6,13 +6,14 @@
    <title>@Page.Title - My ASP.NET Application</title>
    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css" />
-   @Styles.Render("~/Content/css")
+   <link href="~/Content/Site.css" rel="stylesheet" />
 </head>
 <body>
    @RenderBody()
 
-   @Scripts.Render("~/bundles/jquery")
-   @Scripts.Render("~/bundles/jqueryval")
+   <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+   <script src="~/Scripts/jquery.validate.min.js"></script>
+   <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
    @RenderSection("scripts", required: false)
 </body>
