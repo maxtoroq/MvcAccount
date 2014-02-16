@@ -51,28 +51,36 @@ namespace MvcAccount {
       /// <returns>A <see cref="String"/> in application/x-www-form-urlencoded format.</returns>
       public static string ToQueryString(this NameValueCollection qs, bool includeDelimiter) {
 
-         StringBuilder sb = new StringBuilder();
+         var sb = new StringBuilder();
 
          for (int i = 0; i < qs.AllKeys.Length; i++) {
             
             string key = qs.AllKeys[i];
             string[] values = qs.GetValues(key);
 
-            if (values != null) {
+            if (values != null
+               && values.Length > 0) {
+
+               string encodedKey = HttpUtility.UrlEncode(key);
+
                for (int j = 0; j < values.Length; j++) {
 
-                  if (sb.Length > 0)
+                  if (sb.Length > 0) {
                      sb.Append('&');
+                  }
 
-                  sb.Append(HttpUtility.UrlEncode(key))
+                  sb.Append(encodedKey)
                      .Append('=')
                      .Append(HttpUtility.UrlEncode(values[j]));
                } 
             }
          }
 
-         if (includeDelimiter && sb.Length > 0) 
+         if (includeDelimiter
+            && sb.Length > 0) {
+
             sb.Insert(0, '?');
+         }
 
          return sb.ToString();
       }

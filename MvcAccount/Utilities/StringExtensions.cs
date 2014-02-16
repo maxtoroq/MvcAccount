@@ -24,13 +24,5 @@ namespace MvcAccount {
       public static bool HasValue(this string value) {
          return !String.IsNullOrEmpty(value);
       }
-
-      public static string FormatInvariant(this string format, params object[] args) {
-         return String.Format(CultureInfo.InvariantCulture, format, args);
-      }
-
-      public static string ToStringInvariant(this object obj) {
-         return Convert.ToString(obj, CultureInfo.InvariantCulture);
-      }
    }
 }

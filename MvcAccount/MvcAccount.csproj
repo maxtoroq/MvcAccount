@@ -103,6 +103,7 @@
     <Compile Include="Utilities\EmailAddressAttribute.cs" />
     <Compile Include="Shared\FormButton.cs" />
     <Compile Include="Utilities\ErrorBuilder.cs" />
+    <Compile Include="Utilities\FormatInvariantExtensions.cs" />
     <Compile Include="Utilities\LocalizedViewExtensions.cs" />
     <Compile Include="Utilities\OperationResult.cs" />
     <Compile Include="Account\AccountImplController.cs" />

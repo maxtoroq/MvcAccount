@@ -104,8 +104,9 @@ namespace MvcAccount {
 
             var parameters = action.Method.GetParameters();
 
-            for (int i = 0; i < parameters.Length; i++)
-               values[parameters[i].Name] = args[i]; 
+            for (int i = 0; i < parameters.Length; i++) {
+               values[parameters[i].Name] = args[i];
+            }
          }
 
          string actionName = actionNames.GetOrAdd(action.Method, m => {
@@ -115,8 +116,7 @@ namespace MvcAccount {
                .Cast<ActionNameAttribute>()
                .SingleOrDefault();
 
-            return (attr != null) ?
-               attr.Name
+            return (attr != null) ? attr.Name
                : m.Name;
          });
 
