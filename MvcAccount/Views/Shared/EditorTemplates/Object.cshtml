@@ -1,60 +1,102 @@
 ﻿@using ModelMetadata = System.Web.Mvc.ModelMetadata;
 @using MvcHtmlString = System.Web.Mvc.MvcHtmlString;
-@helper DefaultFormGroup(ModelMetadata property, MvcHtmlString editor, string labelText) {
-   <div class="form-group">
-      <div>
-         <label for="@ViewData.TemplateInfo.GetFullHtmlFieldId(property.PropertyName)">@labelText</label>
-      </div>
-      <div>
-         @editor
+@functions {
+
+   readonly bool includeComplexProperties = false;
+   readonly bool recurseComplexProperties = false; // includeComplexProperties must be true
+
+   ModelMetadata ObjectMetadata {
+      get { return ViewData.ModelMetadata; }
+   }
+   
+   bool RenderDisplayText {
+      get {
+         return !recurseComplexProperties
+            && ViewData.TemplateInfo.TemplateDepth > 1;
+      }
+   }
+
+   string DisplayText {
+      get {
+         return (ObjectMetadata.Model == null) ? ObjectMetadata.NullDisplayText
+            : ObjectMetadata.SimpleDisplayText;
+      }
+   }
+   
+   bool ShouldShowProperty(ModelMetadata propertyMetadata) {
+
+      return propertyMetadata.ShowForEdit
+         && (includeComplexProperties || !propertyMetadata.IsComplexType)
+         && !ViewData.TemplateInfo.Visited(propertyMetadata);
+   }
+
+   MvcHtmlString Editor(ModelMetadata propertyMetadata) {
+
+      string templateName = propertyMetadata.TemplateHint
+         ?? propertyMetadata.DataTypeName;
+
+      switch (templateName) {
+         case "Password":
+            /* Omit password value for security reasons */
+            return Html.Password(propertyMetadata.PropertyName, null, new Dictionary<string, object> { { "class", "text-box single-line password form-control" } });
+
+         default:
+            return Html.Editor(propertyMetadata.PropertyName, templateName, new { htmlAttributes = new { @class = "form-control" } });
+      }
+   }
+
+   string LabelText(ModelMetadata propertyMetadata) {
+
+      return propertyMetadata.DisplayName 
+         ?? propertyMetadata.PropertyName;
+   }
+}
+@helper DefaultFormGroup(ModelMetadata property, MvcHtmlString editor) {
+<div class="form-group">
+   <div>
+      <label for="@ViewData.TemplateInfo.GetFullHtmlFieldId(property.PropertyName)">@LabelText(property)</label>
+   </div>
+   <div>
+      @editor
+      @Html.ValidationMessage(property.PropertyName)
+   </div>
+</div>
+}
+@helper BooleanFormGroup(ModelMetadata property, MvcHtmlString editor) {
+<div class="form-group">
+   <div></div>
+   <div>
+      <div class="checkbox">
+         <label>
+            @editor
+            @LabelText(property)
+         </label>
          @Html.ValidationMessage(property.PropertyName)
       </div>
    </div>
+</div>
 }
-@helper BooleanFormGroup(ModelMetadata property, MvcHtmlString editor, string labelText) {
-   <div class="form-group">
-      <div></div>
-      <div>
-         <div class="checkbox">
-            <label>
-               @editor
-               @labelText
-            </label>
-            @Html.ValidationMessage(property.PropertyName)
-         </div>
-      </div>
-   </div>
-}
-@if (ViewData.TemplateInfo.TemplateDepth > 1) { 
-   @ViewData.ModelMetadata.SimpleDisplayText
+@if (RenderDisplayText) {
+   @DisplayText
+   
 } else {
-   foreach (var prop in ViewData.ModelMetadata.Properties.Where(pm => pm.ShowForEdit && !ViewData.TemplateInfo.Visited(pm))) {
-      if (prop.HideSurroundingHtml) { 
-         @Html.Editor(prop.PropertyName)
+   foreach (var prop in ObjectMetadata.Properties.Where(pm => ShouldShowProperty(pm))) {
+
+      if (prop.HideSurroundingHtml) {
+         @Editor(prop)
+
       } else {
-         string templateName = prop.TemplateHint ?? prop.DataTypeName;
 
-         MvcHtmlString editor;
+         MvcHtmlString editor = Editor(prop);
 
-         switch (templateName) {
-            case "Password":
-               /* Omit password value for security reasons */               
-               editor = Html.Password(prop.PropertyName, null, new Dictionary<string, object> { { "class", "text-box single-line password form-control" } });
-               break;
-               
-            default:
-               editor = Html.Editor(prop.PropertyName, templateName);
-               break;
-         }
-                  
          if (!MvcHtmlString.IsNullOrEmpty(editor)) {
+
             bool isBool = prop.ModelType == typeof(bool);
-            string labelText = prop.DisplayName ?? prop.PropertyName;
 
             if (isBool) {
-               @BooleanFormGroup(prop, editor, labelText)
-            } else { 
-               @DefaultFormGroup(prop, editor, labelText)
+               @BooleanFormGroup(prop, editor)
+            } else {
+               @DefaultFormGroup(prop, editor)
             }
          }
       }
