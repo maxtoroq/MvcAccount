@@ -1,0 +1,46 @@
+﻿body {
+    margin: 10px auto;
+    padding: 0 15px;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+    display: block;
+    margin-bottom: .5em;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* MvcAccount
+-----------------------------------------------------------*/
+.MvcAccount form > div { display: table-row; }
+.MvcAccount form > div > div { display: table-cell; padding: 0 10px 15px 10px; }
+.MvcAccount form > div > div:first-child { text-align: right; }
+.MvcAccount form label[for]:after { content: ":"; }
+.MvcAccount form .form-control { display: inline-block; width: auto; }
+.MvcAccount form .btn-primary { margin-right: 5px; }
+
+@media (max-width: 767px) {
+   .MvcAccount form .form-group { margin-bottom: 15px; }
+   .MvcAccount form > div { display: block; }
+   .MvcAccount form > div > div { display: block; padding: 0; }
+   .MvcAccount form > div > div:first-child { text-align: left; }
+   .MvcAccount form > div.buttons > div:first-child { display: none; }
+}

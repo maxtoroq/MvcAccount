@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{F150
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Mvc5", "samples\Mvc5\Samples.Mvc5.csproj", "{7EEB794C-65B1-41F1-B850-B201C3DC61C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Mvc3", "samples\Mvc3\Samples.Mvc3.csproj", "{27FC3163-CA02-4F2A-BADC-ADD5074493AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{7EEB794C-65B1-41F1-B850-B201C3DC61C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EEB794C-65B1-41F1-B850-B201C3DC61C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EEB794C-65B1-41F1-B850-B201C3DC61C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27FC3163-CA02-4F2A-BADC-ADD5074493AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27FC3163-CA02-4F2A-BADC-ADD5074493AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27FC3163-CA02-4F2A-BADC-ADD5074493AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27FC3163-CA02-4F2A-BADC-ADD5074493AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,5 +49,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5BF8519F-DC81-4ABC-A532-2D9F66B676DA} = {F150C769-C56A-4F0C-B2AB-B3B8641D2860}
 		{7EEB794C-65B1-41F1-B850-B201C3DC61C7} = {F150C769-C56A-4F0C-B2AB-B3B8641D2860}
+		{27FC3163-CA02-4F2A-BADC-ADD5074493AA} = {F150C769-C56A-4F0C-B2AB-B3B8641D2860}
 	EndGlobalSection
 EndGlobal
