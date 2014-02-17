@@ -17,6 +17,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.ComponentModel.DataAnnotations;
+using MvcAccount.Shared;
 
 namespace MvcAccount.Email.Change {
    
