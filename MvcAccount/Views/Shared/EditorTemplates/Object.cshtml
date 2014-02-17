@@ -35,14 +35,18 @@
       string templateName = propertyMetadata.TemplateHint
          ?? propertyMetadata.DataTypeName;
 
-      switch (templateName) {
-         case "Password":
-            /* Omit password value for security reasons */
-            return Html.Password(propertyMetadata.PropertyName, null, new Dictionary<string, object> { { "class", "text-box single-line password form-control" } });
-
-         default:
-            return Html.Editor(propertyMetadata.PropertyName, templateName, new { htmlAttributes = new { @class = "form-control" } });
+      if (templateName == "Password") {
+         /* Omit password value for security reasons */
+         return Html.Password(propertyMetadata.PropertyName, null, new Dictionary<string, object> { { "class", "text-box single-line password form-control" } });
       }
+            
+      object additionalViewData = null;
+
+      if (propertyMetadata.ModelType != typeof(bool)) { 
+         additionalViewData = new { htmlAttributes = new { @class = "form-control" } };
+      }
+            
+      return Html.Editor(propertyMetadata.PropertyName, templateName, additionalViewData);
    }
 
    string LabelText(ModelMetadata propertyMetadata) {
