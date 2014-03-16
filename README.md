@@ -52,7 +52,7 @@ Code hosted on [GitHub][3]. Releases available via [NuGet][4].
 
 Resources
 ---------
-- [Documentation](https://github.com/maxtoroq/MvcAccount/wiki)
+- [Documentation](docs)
 - [Ask for help](https://github.com/maxtoroq/MvcAccount/issues?labels=question&state=closed)
 - [Report an issue](https://github.com/maxtoroq/MvcAccount/issues?state=open)
 
