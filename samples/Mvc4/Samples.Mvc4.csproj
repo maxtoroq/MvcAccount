@@ -117,7 +117,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\MvcAccount\MvcAccount.csproj">
+    <ProjectReference Include="..\..\src\MvcAccount\MvcAccount.csproj">
       <Project>{60f4dad3-d522-437d-8915-9af12bb16206}</Project>
       <Name>MvcAccount</Name>
     </ProjectReference>
