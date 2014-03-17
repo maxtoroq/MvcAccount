@@ -1,0 +1,24 @@
+﻿@model MvcAccount.ViewModels.SignInViewModel
+@section head {
+<title>@Model.Title</title>
+}
+<div class="sign-in">
+   <h1>@Model.Title</h1>
+   @Html.ValidationSummary(excludePropertyErrors: true)
+   @using (Html.BeginForm()) {
+      var inputHtml = MvcAccount.HtmlUtility.HtmlHelperFor(Html, Model.InputModel);
+      @Html.AntiForgeryToken()
+      <div class="form">
+         @inputHtml.EditorForModel()
+         <div>
+            <div></div>
+            <div class="buttons">
+               <button type="submit">@Model.SubmitText</button>
+               <br />
+               <br />
+               @MvcAccount.HtmlUtility.Link(Model.AccountRecoveryLink)
+            </div>
+         </div>
+      </div>
+   }
+</div>

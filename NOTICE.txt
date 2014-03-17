@@ -1,0 +1,15 @@
+=========================================================================
+==  NOTICE file corresponding to the section 4 d of                    ==
+==  the Apache License, Version 2.0,                                   ==
+==  in this case for the MvcAccount distribution.                      ==
+=========================================================================
+
+MvcAccount
+Copyright 2012 Max Toro Q.
+
+Translations
+  - Finnish (fi) by 'mikkoviitala' (http://www.codeplex.com/site/users/view/mikkoviitala)
+  - Portuguese (pt) by 'maurojs25' (http://www.codeplex.com/site/users/view/maurojs25)
+
+Additional copyright notices and license terms applicable are
+present in the packages directory of this distribution.

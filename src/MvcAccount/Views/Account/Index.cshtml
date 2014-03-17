@@ -1,0 +1,12 @@
+﻿@model MvcAccount.ViewModels.IndexViewModel
+@section head {
+<title>@Model.Title</title>
+}
+<div class="index">
+   <h1>@Model.Title</h1>
+   <ul>
+      @foreach (var item in Model.Links) {
+         <li>@MvcAccount.HtmlUtility.Link(item)</li>
+      }
+   </ul>
+</div>

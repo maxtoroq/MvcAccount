@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Links_ChangePassword" xml:space="preserve">
+    <value>Muuta salasana</value>
+  </data>
+  <data name="Links_Index" xml:space="preserve">
+    <value>Tili</value>
+  </data>
+  <data name="Links_Recovery" xml:space="preserve">
+    <value>Ongelmia kirjautumisessa?</value>
+  </data>
+  <data name="Links_SignIn" xml:space="preserve">
+    <value>Kirjaudu sisään</value>
+  </data>
+  <data name="Links_SignOut" xml:space="preserve">
+    <value>Kirjaudu ulos</value>
+  </data>
+  <data name="Validation_CurrentPasswordIncorrect" xml:space="preserve">
+    <value>{1} on väärin.</value>
+  </data>
+  <data name="Validation_EmailAlreadyExists" xml:space="preserve">
+    <value>Sähköpostiosoite '{0}' on jo olemassa.</value>
+  </data>
+  <data name="Validation_MaxInvalidSignInAttempts" xml:space="preserve">
+    <value>Liian monta kirjautumisyritystä, yritä uudestaan {0} minuutin kuluttua.</value>
+  </data>
+  <data name="Validation_MissingEmail" xml:space="preserve">
+    <value>Sähköpostiosoitettasi ei löydy tiedoistamme, pyyntöäei voi suorittaa.</value>
+  </data>
+  <data name="Validation_MissingPasswordCannotAuthenticate" xml:space="preserve">
+    <value>Tunnistautuminen ei onnistu.</value>
+  </data>
+  <data name="Validation_PasswordsNotMatch" xml:space="preserve">
+    <value>Salasanat eivät täsmää.</value>
+  </data>
+  <data name="Validation_Required" xml:space="preserve">
+    <value>Pakollinen kenttä ei voi olla tyhjä.</value>
+  </data>
+  <data name="Validation_UserDisabled" xml:space="preserve">
+    <value>Tilisi on lukittu.</value>
+  </data>
+  <data name="Validation_UserNotExist" xml:space="preserve">
+    <value>Käyttäjää '{0}' ei löydy.</value>
+  </data>
+  <data name="Validation_UserPassNotMatch" xml:space="preserve">
+    <value>{0} ja salasana eivät täsmää.</value>
+  </data>
+  <data name="Views_ChangePassword_Title" xml:space="preserve">
+    <value>Muuta salasana</value>
+  </data>
+  <data name="Views_Index_Title" xml:space="preserve">
+    <value>Tilin asetukset</value>
+  </data>
+  <data name="Views_PasswordReset_Message" xml:space="preserve">
+    <value>Salasanasi on resetoitu.</value>
+  </data>
+  <data name="Views_PasswordReset_Title" xml:space="preserve">
+    <value>Salasanan resetointi</value>
+  </data>
+  <data name="Views_PasswordSaved_Message" xml:space="preserve">
+    <value>Uusi salasanasi on tallennettu</value>
+  </data>
+  <data name="Views_PasswordSaved_Title" xml:space="preserve">
+    <value>Salasana tallennettu</value>
+  </data>
+  <data name="Views_PasswordResetVerificationSent_Message" xml:space="preserve">
+    <value>Resetoidaksesi salasanasi, seuraa ohjeita jotka on lähetetty &lt;strong&gt;{0}&lt;/strong&gt; osoitteeseen.</value>
+  </data>
+  <data name="Views_PasswordResetVerificationSent_Title" xml:space="preserve">
+    <value>Sähköposti lähetetty</value>
+  </data>
+  <data name="Views_ResetPassword_Message" xml:space="preserve">
+    <value>Resetoidaksesi salasanan, syötä {0}.</value>
+  </data>
+  <data name="Views_ResetPassword_Title" xml:space="preserve">
+    <value>Unohditko salasanasi?</value>
+  </data>
+  <data name="Views_RP_Message" xml:space="preserve">
+    <value>Valitse uusi salasa a ja syötä se alle.</value>
+  </data>
+  <data name="Views_RP_Title" xml:space="preserve">
+    <value>Resetoi salasana</value>
+  </data>
+  <data name="Views_SignIn_Title" xml:space="preserve">
+    <value>Kirjaudu sisään</value>
+  </data>
+  <data name="Views_Submit" xml:space="preserve">
+    <value>Lähetä</value>
+  </data>
+  <data name="Model_ConfirmNewPassword" xml:space="preserve">
+    <value>Kirjoita uusi salasana uudestaan</value>
+  </data>
+  <data name="Model_CurrentPassword" xml:space="preserve">
+    <value>Nykyinen salasana</value>
+  </data>
+  <data name="Model_Email" xml:space="preserve">
+    <value>Sähköposti</value>
+  </data>
+  <data name="Model_NewPassword" xml:space="preserve">
+    <value>Uusi salasana</value>
+  </data>
+  <data name="Model_Password" xml:space="preserve">
+    <value>Salasana</value>
+  </data>
+  <data name="Model_RememberMe" xml:space="preserve">
+    <value>Pysykirjautuneena</value>
+  </data>
+  <data name="Model_ResetPasswordMessageSubject" xml:space="preserve">
+    <value>Salasanan uusinta</value>
+  </data>
+  <data name="Model_Username" xml:space="preserve">
+    <value>Käyttäjätunnus</value>
+  </data>
+  <data name="Model_NewEmail" xml:space="preserve">
+    <value>Uusi sähköpostiosoite</value>
+  </data>
+  <data name="Validation_EmailPattern" xml:space="preserve">
+    <value>{0} ei kelpaa.</value>
+  </data>
+  <data name="Validation_StringLength" xml:space="preserve">
+    <value>{0} ei voi olla yli {1} merkkiä.</value>
+  </data>
+  <data name="Validation_StringLengthWithMin" xml:space="preserve">
+    <value>{0} täytyy olla {2} ja {1} merkin välillä.</value>
+  </data>
+  <data name="Model_EmailChangeNotificationMessageSubject" xml:space="preserve">
+    <value>Sähköpostin muutos ilmoitus</value>
+  </data>
+  <data name="Model_EmailChangeVerificationMessageSubject" xml:space="preserve">
+    <value>Sähköpostin muutos vahvistus</value>
+  </data>
+  <data name="Model_EmailVerificationMessageSubject" xml:space="preserve">
+    <value>Sähköpostiosoitteen vahvistus</value>
+  </data>
+  <data name="Validation_NewEmailSameAsCurrent" xml:space="preserve">
+    <value>{1} ei voi olla sama kuin nykyinen.</value>
+  </data>
+  <data name="Links_ChangeEmail" xml:space="preserve">
+    <value>Muuta sähköpostiosoite</value>
+  </data>
+  <data name="Views_ChangeEmail_Title" xml:space="preserve">
+    <value>Muuta sähköpostiosoite</value>
+  </data>
+  <data name="Views_EmailSaved_Message" xml:space="preserve">
+    <value>Uusi sähköpostiosoite on tallennettu.</value>
+  </data>
+  <data name="Views_EmailSaved_Title" xml:space="preserve">
+    <value>Sähköposti tallennettu</value>
+  </data>
+  <data name="Views_GoTo" xml:space="preserve">
+    <value>Siirry {0}</value>
+  </data>
+  <data name="Views_EmailChangeVerificationSent_Message" xml:space="preserve">
+    <value>Vahvistaaksesi sähköpostiosoitteen muutoksen, seuraa ohjeita jotka on lähetetty &lt;strong&gt;{0}&lt;/strong&gt; osoitteeseen.</value>
+  </data>
+  <data name="Views_EmailChangeVerificationSent_Title" xml:space="preserve">
+    <value>Varmistussähköposti lähetetty.</value>
+  </data>
+</root>

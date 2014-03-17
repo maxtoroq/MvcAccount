@@ -1,0 +1,22 @@
+﻿@model MvcAccount.ViewModels.RPViewModel
+@section head {
+<title>@Model.Title</title>
+}
+<div class="rp">
+   <h1>@Model.Title</h1>
+   <p>@Model.Message</p>
+   @Html.ValidationSummary(excludePropertyErrors: true)
+   @using (Html.BeginForm()) {
+      @Html.AntiForgeryToken()
+      var inputHtml = MvcAccount.HtmlUtility.HtmlHelperFor(Html, Model.InputModel);
+      <div class="form">
+         @inputHtml.EditorForModel()
+         <div>
+            <div></div>
+            <div class="buttons">
+               <button type="submit">@Model.SubmitText</button>
+            </div>
+         </div>
+      </div>
+   }
+</div>

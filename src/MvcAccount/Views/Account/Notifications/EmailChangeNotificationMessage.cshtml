@@ -1,0 +1,16 @@
+﻿@model MvcAccount.ViewModels.EmailChangeNotificationMessageViewModel
+We've received a request to change the email address associated with your
+@Html.Raw(Model.SiteName) @Html.Raw(Model.Username) account from:
+
+@Html.Raw(Model.OldEmail)
+
+to:
+
+@Html.Raw(Model.NewEmail)
+
+If you initiated this request, you don't need to take any further action. If
+you didn't request an email change and you think someone may be using your
+account, please contact us at @Html.Raw(Model.HelpResource).
+
+This is a post-only mailing. Replies to this message are not monitored
+or answered.
