@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2013 for Web
 VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAccount", "MvcAccount\MvcAccount.csproj", "{60F4DAD3-D522-437D-8915-9AF12BB16206}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAccount", "src\MvcAccount\MvcAccount.csproj", "{60F4DAD3-D522-437D-8915-9AF12BB16206}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Mvc4", "samples\Mvc4\Samples.Mvc4.csproj", "{5BF8519F-DC81-4ABC-A532-2D9F66B676DA}"
 EndProject
