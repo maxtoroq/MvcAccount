@@ -47,7 +47,7 @@ The `baseRoute` parameter can be anything you want, adjust the `loginUrl` accord
 
 Dependencies
 ------------
-Before you can start using MvcAccount you must provide its dependencies. There are three ways to do this, you can use constructor injection for MvcAccount's controllers, you can set various resolver settings on [AccountConfiguration](http://maxtoroq.users.sourceforge.net/mvcaccount/library/?topic=html/Properties_T_MvcAccount_AccountConfiguration.htm) for each dependency, or you can just set [AccountConfiguration.DependencyResolver](http://maxtoroq.users.sourceforge.net/mvcaccount/library/?topic=html/P_MvcAccount_AccountConfiguration_DependencyResolver.htm).
+Before you can start using MvcAccount you must provide its dependencies. There are three ways to do this, you can use constructor injection for MvcAccount's controllers, you can set various resolver settings on [AccountConfiguration](api/MvcAccount/AccountConfiguration/README.md#Properties) for each dependency, or you can just set [AccountConfiguration.DependencyResolver](api/MvcAccount/AccountConfiguration/DependencyResolver.md).
 
 ### Option 1: Constructor injection for MvcAccount's controllers
 If you are not familiar with dependency injection see Option 2.
@@ -84,14 +84,14 @@ routes.MapCodeRoutes(
 ### MvcAccount.AccountRepository
 Responsible for querying account information and persisting changes. The Find methods must return an instance of a public class with the following public properties:
 
-| Name	                             | Type
+| Name                               | Type
 | ---------------------------------- | -------------------
-| Disabled	                     | Boolean
-| Email	                             | String
-| EmailChangeTicketExpiration	     | Nullable&lt;DateTime>
+| Disabled                           | Boolean
+| Email                              | String
+| EmailChangeTicketExpiration        | Nullable&lt;DateTime>
 | EmailVerificationTicketExpiration  | Nullable&lt;DateTime>
-| EmailVerified	                     | Boolean
-| FailedSignInAttempts	             | Int32
+| EmailVerified                      | Boolean
+| FailedSignInAttempts               | Int32
 | FailedSignInAttemptWindowStart     | Nullable&lt;DateTime>
 | Id                                 | Any type is allowed
 | LastSignIn                         | Nullable&lt;DateTime>
@@ -102,9 +102,9 @@ Responsible for querying account information and persisting changes. The Find me
 ### MvcAccount.PasswordService
 Responsible for encrypting and comparing passwords. MvcAccount includes three implementations you can choose from:
 
-- [ClearTextPasswordService](http://maxtoroq.users.sourceforge.net/mvcaccount/library/?topic=html/T_MvcAccount_ClearTextPasswordService.htm): Use if passwords are stored in clear text.
-- [CryptoPasswordService](http://maxtoroq.users.sourceforge.net/mvcaccount/library/?topic=html/T_MvcAccount_Web_Helpers_CryptoPasswordService.htm): PBKDF2 hashing ([Recommended](http://brockallen.com/2012/10/19/password-management-made-easy-in-asp-net-with-the-crypto-api/))
-* [SqlMembershipProviderPasswordService](http://maxtoroq.users.sourceforge.net/mvcaccount/library/?topic=html/T_MvcAccount_Web_Security_SqlMembershipProviderPasswordService.htm): Provides SHA1 and MachineKey-based encryption, as implemented by [SqlMembershipProvider](http://msdn.microsoft.com/library/system.web.security.sqlmembershipprovider).
+- [ClearTextPasswordService](api/MvcAccount/ClearTextPasswordService/README.md): Use if passwords are stored in clear text.
+- [CryptoPasswordService](api/MvcAccount.Web.Helpers/CryptoPasswordService/README.md): PBKDF2 hashing ([Recommended](http://brockallen.com/2012/10/19/password-management-made-easy-in-asp-net-with-the-crypto-api/))
+- [SqlMembershipProviderPasswordService](api/MvcAccount.Web.Security/SqlMembershipProviderPasswordService/README.md): Provides SHA1 and MachineKey-based encryption, as implemented by [SqlMembershipProvider](http://msdn.microsoft.com/library/system.web.security.sqlmembershipprovider).
 
 Layout
 ------

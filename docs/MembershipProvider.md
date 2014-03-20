@@ -13,7 +13,7 @@ To use MvcAccount's MembershipProvider implementation set the following in Web.c
 </system.web>
 ```
 
-Since MembershipProvider can be used on requests that are not handled by MvcAccount's controllers, it needs a way to locate the `AccountConfiguration` instance. For that use the [AccountConfiguration.ConfigurationResolver](http://maxtoroq.users.sourceforge.net/mvcaccount/library/?topic=html/P_MvcAccount_AccountConfiguration_ConfigurationResolver.htm) static property:
+Since MembershipProvider can be used on requests that are not handled by MvcAccount's controllers, it needs a way to locate the `AccountConfiguration` instance. For that use the [AccountConfiguration.ConfigurationResolver](api/MvcAccount/AccountConfiguration/ConfigurationResolver.md) static property:
 
 ```csharp
 using MvcAccount;

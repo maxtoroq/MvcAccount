@@ -3,7 +3,7 @@
 
 Settings
 --------
-Use the [AccountConfiguration](http://maxtoroq.users.sourceforge.net/mvcaccount/library/?topic=html/Properties_T_MvcAccount_AccountConfiguration.htm) class to customize the behavior of MvcAccount. See the [Installation Instructions](Installation-Instructions.md#registration) for more info.
+Use the [AccountConfiguration](api/MvcAccount/AccountConfiguration/README.md#Properties) class to customize the behavior of MvcAccount. See the [Installation Instructions](Installation-Instructions.md#registration) for more info.
 
 CSS
 ---
@@ -106,6 +106,6 @@ Resources
 You can override individual resources, like error messages, display names, text in HTML elements like `<h1>` and `<title>`, for any particular culture, by using [global resource files](http://msdn.microsoft.com/library/ms227427). Here's how it works:
 
 1. Create a resource file in `~/App_GlobalResources`.
-2. Set [AccountConfiguration.ResourceClassKey](http://maxtoroq.users.sourceforge.net/mvcaccount/library/?topic=html/P_MvcAccount_AccountConfiguration_ResourceClassKey.htm) to the name of the resource file, minus the culture and extension.
+2. Set [AccountConfiguration.ResourceClassKey](api/MvcAccount/AccountConfiguration/ResourceClassKey.md) to the name of the resource file, minus the culture and extension.
 
-For a list of resource names see [this](http://maxtoroq.users.sourceforge.net/mvcaccount/library/?topic=html/Properties_T_MvcAccount_AccountResources.htm).
+For a list of resource names see [this](api/MvcAccount/AccountResources/README.md#Properties).
