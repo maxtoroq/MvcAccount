@@ -134,8 +134,8 @@ Responsible for querying account information and persisting changes. The Find me
 ### MvcAccount.PasswordService
 Responsible for encrypting and comparing passwords. MvcAccount includes several implementations you can choose from:
 
-* [ClearTextPasswordService](api/MvcAccount/ClearTextPasswordService.md): Use if passwords are stored in clear text.
-* [SqlMembershipProviderPasswordService](api/MvcAccount/SqlMembershipProviderPasswordService.md): Provides SHA1 and MachineKey-based encryption, as implemented by [SqlMembershipProvider](http://msdn.microsoft.com/library/system.web.security.sqlmembershipprovider).
+* [ClearTextPasswordService](api/MvcAccount/ClearTextPasswordService/README.md): Use if passwords are stored in clear text.
+* [SqlMembershipProviderPasswordService](api/MvcAccount/SqlMembershipProviderPasswordService/README.md): Provides SHA1 and MachineKey-based encryption, as implemented by [SqlMembershipProvider](http://msdn.microsoft.com/library/system.web.security.sqlmembershipprovider).
 
 MembershipProvider
 ------------------
