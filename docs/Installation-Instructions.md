@@ -47,7 +47,7 @@ The `baseRoute` parameter can be anything you want, adjust the `loginUrl` accord
 
 Dependencies
 ------------
-Before you can start using MvcAccount you must provide its dependencies. There are three ways to do this, you can use constructor injection for MvcAccount's controllers, you can set various resolver settings on [AccountConfiguration](api/MvcAccount/AccountConfiguration/README.md#Properties) for each dependency, or you can just set [AccountConfiguration.DependencyResolver](api/MvcAccount/AccountConfiguration/DependencyResolver.md).
+Before you can start using MvcAccount you must provide its dependencies. There are three ways to do this, you can use constructor injection for MvcAccount's controllers, you can set various resolver settings on [AccountConfiguration](api/MvcAccount/AccountConfiguration/README.md#properties) for each dependency, or you can just set [AccountConfiguration.DependencyResolver](api/MvcAccount/AccountConfiguration/DependencyResolver.md).
 
 ### Option 1: Constructor injection for MvcAccount's controllers
 If you are not familiar with dependency injection see Option 2.

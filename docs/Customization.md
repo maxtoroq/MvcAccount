@@ -3,7 +3,7 @@
 
 Settings
 --------
-Use the [AccountConfiguration](api/MvcAccount/AccountConfiguration/README.md#Properties) class to customize the behavior of MvcAccount. See the [Installation Instructions](Installation-Instructions.md#registration) for more info.
+Use the [AccountConfiguration](api/MvcAccount/AccountConfiguration/README.md#properties) class to customize the behavior of MvcAccount. See the [Installation Instructions](Installation-Instructions.md#registration) for more info.
 
 CSS
 ---
@@ -108,4 +108,4 @@ You can override individual resources, like error messages, display names, text 
 1. Create a resource file in `~/App_GlobalResources`.
 2. Set [AccountConfiguration.ResourceClassKey](api/MvcAccount/AccountConfiguration/ResourceClassKey.md) to the name of the resource file, minus the culture and extension.
 
-For a list of resource names see [this](api/MvcAccount/AccountResources/README.md#Properties).
+For a list of resource names see [this](api/MvcAccount/AccountResources/README.md#properties).
