@@ -3,7 +3,7 @@
 
 Configuration
 -------------
-Use the [AccountConfiguration](http://maxtoroq.users.sourceforge.net/mvcaccount/library/0.8/?topic=html/Properties_T_MvcAccount_AccountConfiguration.htm) class to customize the behavior of MvcAccount.
+Use the [AccountConfiguration](api/MvcAccount/AccountConfiguration/README.md#properties) class to customize the behavior of MvcAccount.
 
 ```csharp
 void Application_Start() {
