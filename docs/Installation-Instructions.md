@@ -1,9 +1,17 @@
 ﻿Installation Instructions
 =========================
 
+Getting MvcAccount
+------------------
+The first step is to install the [MvcAccount](http://www.nuget.org/packages/MvcAccount) package using NuGet:
+
+```powershell
+Install-Package MvcAccount
+```
+
 Registration
 ------------
-Using [MvcCodeRouting](http://mvccoderouting.codeplex.com/) you can register MvcAccount like this:
+By installing the MvcAccount package it will also install [MvcCodeRouting](http://mvccoderouting.codeplex.com/), which you can use to register MvcAccount like this:
 
 ```csharp
 using System;
@@ -129,7 +137,13 @@ You need to [configure an SMTP server](http://msdn.microsoft.com/library/w355a94
 
 Languages
 ---------
-MvcAccount is fully localized in several languages. Localized resources are available as separate satellite packages, see the [release notes](https://github.com/maxtoroq/MvcAccount/releases) for more information. The easiest way to view the pages using the preferred language setting of the user's browser is to set `uiCulture="auto"` in Web.config:
+MvcAccount is fully localized in several languages. Localized resources are available as separate satellite packages:
+
+- [Spanish (es)](http://www.nuget.org/packages/MvcAccount.es)
+- [Finnish (fi)](http://www.nuget.org/packages/MvcAccount.fi)
+- [Portuguese (pt)](http://www.nuget.org/packages/MvcAccount.pt)
+
+The easiest way to view the pages using the preferred language setting of the user's browser is to set `uiCulture="auto"` in Web.config:
 
 ```xml
 <system.web>
