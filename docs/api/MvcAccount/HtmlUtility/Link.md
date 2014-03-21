@@ -31,5 +31,5 @@ See Also
 
 [1]: ../README.md
 [2]: ../../MvcAccount.ViewModels/LinkModel/README.md
-[3]: http://msdn2.microsoft.com/en-us/library/ee461471
+[3]: http://msdn.microsoft.com/en-us/library/ee461471
 [4]: README.md

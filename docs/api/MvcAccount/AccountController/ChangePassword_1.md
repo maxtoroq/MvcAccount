@@ -31,5 +31,5 @@ See Also
 
 [1]: ../README.md
 [2]: ../ChangePasswordInput/README.md
-[3]: http://msdn2.microsoft.com/en-us/library/dd493064
+[3]: http://msdn.microsoft.com/en-us/library/dd493064
 [4]: README.md

@@ -26,7 +26,7 @@ See Also
 [AccountMembershipProvider Class][4]  
 [MvcAccount Namespace][2]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/6byb74h9
+[1]: http://msdn.microsoft.com/en-us/library/6byb74h9
 [2]: ../README.md
-[3]: http://msdn2.microsoft.com/en-us/library/d1b506ez
+[3]: http://msdn.microsoft.com/en-us/library/d1b506ez
 [4]: README.md

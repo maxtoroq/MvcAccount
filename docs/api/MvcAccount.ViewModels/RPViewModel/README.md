@@ -60,22 +60,22 @@ See Also
 --------
 [MvcAccount.ViewModels Namespace][5]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
+[1]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [2]: ../BaseViewModel/README.md
 [3]: ../FormViewModel_1/README.md
 [4]: ../../MvcAccount/FinishResetPasswordInput/README.md
 [5]: ../README.md
 [6]: _ctor.md
-[7]: http://msdn2.microsoft.com/en-us/library/bsc2ak47
-[8]: http://msdn2.microsoft.com/en-us/library/4k87zsw7
-[9]: http://msdn2.microsoft.com/en-us/library/zdee4b3y
-[10]: http://msdn2.microsoft.com/en-us/library/dfwy45w9
-[11]: http://msdn2.microsoft.com/en-us/library/42892f65
-[12]: http://msdn2.microsoft.com/en-us/library/57ctke0a
-[13]: http://msdn2.microsoft.com/en-us/library/7bxwbwt2
+[7]: http://msdn.microsoft.com/en-us/library/bsc2ak47
+[8]: http://msdn.microsoft.com/en-us/library/4k87zsw7
+[9]: http://msdn.microsoft.com/en-us/library/zdee4b3y
+[10]: http://msdn.microsoft.com/en-us/library/dfwy45w9
+[11]: http://msdn.microsoft.com/en-us/library/42892f65
+[12]: http://msdn.microsoft.com/en-us/library/57ctke0a
+[13]: http://msdn.microsoft.com/en-us/library/7bxwbwt2
 [14]: ../FormViewModel_1/InputModel.md
 [15]: Message.md
 [16]: ../FormViewModel_1/SubmitText.md
 [17]: ../BaseViewModel/Title.md
 [18]: ../BaseViewModel/Url.md
-[19]: http://msdn2.microsoft.com/en-us/library/dd492578
+[19]: http://msdn.microsoft.com/en-us/library/dd492578

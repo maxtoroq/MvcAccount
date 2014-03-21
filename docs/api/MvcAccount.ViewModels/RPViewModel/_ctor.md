@@ -19,8 +19,6 @@ public RPViewModel(
 #### *inputModel*
 Type: [MvcAccount.FinishResetPasswordInput][3]  
 
-[Missing &lt;param name="inputModel"/> documentation for "M:MvcAccount.ViewModels.RPViewModel.#ctor(MvcAccount.FinishResetPasswordInput)"]
-
 
 
 See Also

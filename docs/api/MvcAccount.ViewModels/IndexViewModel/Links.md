@@ -21,6 +21,6 @@ See Also
 [MvcAccount.ViewModels Namespace][1]  
 
 [1]: ../README.md
-[2]: http://msdn2.microsoft.com/en-us/library/ms132397
+[2]: http://msdn.microsoft.com/en-us/library/ms132397
 [3]: ../LinkModel/README.md
 [4]: README.md

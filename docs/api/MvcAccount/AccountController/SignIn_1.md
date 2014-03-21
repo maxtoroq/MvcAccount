@@ -36,6 +36,6 @@ See Also
 
 [1]: ../README.md
 [2]: ../SignInInput/README.md
-[3]: http://msdn2.microsoft.com/en-us/library/s1wwdcbf
-[4]: http://msdn2.microsoft.com/en-us/library/dd493064
+[3]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
+[4]: http://msdn.microsoft.com/en-us/library/dd493064
 [5]: README.md

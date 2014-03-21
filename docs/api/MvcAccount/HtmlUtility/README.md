@@ -36,7 +36,7 @@ See Also
 --------
 [MvcAccount Namespace][2]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
+[1]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [2]: ../README.md
 [3]: HtmlHelperFor__1.md
 [4]: HtmlHelperFor__1_1.md

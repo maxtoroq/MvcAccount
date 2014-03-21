@@ -50,18 +50,18 @@ See Also
 --------
 [MvcAccount Namespace][2]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
+[1]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [2]: ../README.md
 [3]: _ctor.md
-[4]: http://msdn2.microsoft.com/en-us/library/bsc2ak47
-[5]: http://msdn2.microsoft.com/en-us/library/4k87zsw7
+[4]: http://msdn.microsoft.com/en-us/library/bsc2ak47
+[5]: http://msdn.microsoft.com/en-us/library/4k87zsw7
 [6]: FindUserByEmail.md
 [7]: FindUserById.md
-[8]: http://msdn2.microsoft.com/en-us/library/s1wwdcbf
+[8]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
 [9]: FindUserByName.md
-[10]: http://msdn2.microsoft.com/en-us/library/zdee4b3y
-[11]: http://msdn2.microsoft.com/en-us/library/dfwy45w9
-[12]: http://msdn2.microsoft.com/en-us/library/42892f65
-[13]: http://msdn2.microsoft.com/en-us/library/57ctke0a
-[14]: http://msdn2.microsoft.com/en-us/library/7bxwbwt2
+[10]: http://msdn.microsoft.com/en-us/library/zdee4b3y
+[11]: http://msdn.microsoft.com/en-us/library/dfwy45w9
+[12]: http://msdn.microsoft.com/en-us/library/42892f65
+[13]: http://msdn.microsoft.com/en-us/library/57ctke0a
+[14]: http://msdn.microsoft.com/en-us/library/7bxwbwt2
 [15]: UpdateUser.md

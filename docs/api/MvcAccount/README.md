@@ -36,7 +36,7 @@ Enumeration                    | Description
 [1]: AccountConfiguration/README.md
 [2]: AccountController/README.md
 [3]: AccountMembershipProvider/README.md
-[4]: http://msdn2.microsoft.com/en-us/library/sfka4yf8
+[4]: http://msdn.microsoft.com/en-us/library/sfka4yf8
 [5]: AccountRepository/README.md
 [6]: AccountResources/README.md
 [7]: ChangeEmailInput/README.md
@@ -57,5 +57,5 @@ Enumeration                    | Description
 [22]: SignInInput/README.md
 [23]: AccountController/SignIn_1.md
 [24]: SqlMembershipProviderPasswordService/README.md
-[25]: http://msdn2.microsoft.com/en-us/library/89hwy0w9
+[25]: http://msdn.microsoft.com/en-us/library/89hwy0w9
 [26]: ResetPasswordErrorReason/README.md

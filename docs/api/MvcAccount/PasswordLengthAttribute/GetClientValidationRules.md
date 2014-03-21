@@ -38,9 +38,9 @@ See Also
 [MvcAccount Namespace][1]  
 
 [1]: ../README.md
-[2]: http://msdn2.microsoft.com/en-us/library/ee407408
-[3]: http://msdn2.microsoft.com/en-us/library/dd492673
-[4]: http://msdn2.microsoft.com/en-us/library/9eekhta0
-[5]: http://msdn2.microsoft.com/en-us/library/ee450611
-[6]: http://msdn2.microsoft.com/en-us/library/gg416550
+[2]: http://msdn.microsoft.com/en-us/library/ee407408
+[3]: http://msdn.microsoft.com/en-us/library/dd492673
+[4]: http://msdn.microsoft.com/en-us/library/9eekhta0
+[5]: http://msdn.microsoft.com/en-us/library/ee450611
+[6]: http://msdn.microsoft.com/en-us/library/gg416550
 [7]: README.md

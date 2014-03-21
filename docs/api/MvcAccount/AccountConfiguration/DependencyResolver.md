@@ -23,7 +23,7 @@ See Also
 [1]: AccountRepositoryResolver.md
 [2]: PasswordServiceResolver.md
 [3]: ../README.md
-[4]: http://msdn2.microsoft.com/en-us/library/bb549151
-[5]: http://msdn2.microsoft.com/en-us/library/42892f65
-[6]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
+[4]: http://msdn.microsoft.com/en-us/library/bb549151
+[5]: http://msdn.microsoft.com/en-us/library/42892f65
+[6]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [7]: README.md

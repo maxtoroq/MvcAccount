@@ -56,16 +56,16 @@ See Also
 [MvcAccount.ViewModels Namespace][2]  
 [MvcAccount.HtmlUtility][13]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
+[1]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [2]: ../README.md
 [3]: _ctor.md
-[4]: http://msdn2.microsoft.com/en-us/library/bsc2ak47
-[5]: http://msdn2.microsoft.com/en-us/library/4k87zsw7
-[6]: http://msdn2.microsoft.com/en-us/library/zdee4b3y
-[7]: http://msdn2.microsoft.com/en-us/library/dfwy45w9
-[8]: http://msdn2.microsoft.com/en-us/library/42892f65
-[9]: http://msdn2.microsoft.com/en-us/library/57ctke0a
-[10]: http://msdn2.microsoft.com/en-us/library/7bxwbwt2
+[4]: http://msdn.microsoft.com/en-us/library/bsc2ak47
+[5]: http://msdn.microsoft.com/en-us/library/4k87zsw7
+[6]: http://msdn.microsoft.com/en-us/library/zdee4b3y
+[7]: http://msdn.microsoft.com/en-us/library/dfwy45w9
+[8]: http://msdn.microsoft.com/en-us/library/42892f65
+[9]: http://msdn.microsoft.com/en-us/library/57ctke0a
+[10]: http://msdn.microsoft.com/en-us/library/7bxwbwt2
 [11]: Text.md
 [12]: Url.md
 [13]: ../../MvcAccount/HtmlUtility/README.md

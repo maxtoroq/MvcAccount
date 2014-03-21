@@ -70,7 +70,7 @@ See Also
 --------
 [MvcAccount.ViewModels Namespace][8]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
+[1]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [2]: ../BaseViewModel/README.md
 [3]: ../ChangeEmailViewModel/README.md
 [4]: ../ChangePasswordViewModel/README.md
@@ -79,15 +79,15 @@ See Also
 [7]: ../SignInViewModel/README.md
 [8]: ../README.md
 [9]: _ctor.md
-[10]: http://msdn2.microsoft.com/en-us/library/bsc2ak47
-[11]: http://msdn2.microsoft.com/en-us/library/4k87zsw7
-[12]: http://msdn2.microsoft.com/en-us/library/zdee4b3y
-[13]: http://msdn2.microsoft.com/en-us/library/dfwy45w9
-[14]: http://msdn2.microsoft.com/en-us/library/42892f65
-[15]: http://msdn2.microsoft.com/en-us/library/57ctke0a
-[16]: http://msdn2.microsoft.com/en-us/library/7bxwbwt2
+[10]: http://msdn.microsoft.com/en-us/library/bsc2ak47
+[11]: http://msdn.microsoft.com/en-us/library/4k87zsw7
+[12]: http://msdn.microsoft.com/en-us/library/zdee4b3y
+[13]: http://msdn.microsoft.com/en-us/library/dfwy45w9
+[14]: http://msdn.microsoft.com/en-us/library/42892f65
+[15]: http://msdn.microsoft.com/en-us/library/57ctke0a
+[16]: http://msdn.microsoft.com/en-us/library/7bxwbwt2
 [17]: InputModel.md
 [18]: SubmitText.md
 [19]: ../BaseViewModel/Title.md
 [20]: ../BaseViewModel/Url.md
-[21]: http://msdn2.microsoft.com/en-us/library/dd492578
+[21]: http://msdn.microsoft.com/en-us/library/dd492578

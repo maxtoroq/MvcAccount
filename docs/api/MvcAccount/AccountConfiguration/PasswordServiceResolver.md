@@ -23,5 +23,5 @@ See Also
 [1]: ../PasswordService/README.md
 [2]: ../AccountMembershipProvider/README.md
 [3]: ../README.md
-[4]: http://msdn2.microsoft.com/en-us/library/bb534960
+[4]: http://msdn.microsoft.com/en-us/library/bb534960
 [5]: README.md

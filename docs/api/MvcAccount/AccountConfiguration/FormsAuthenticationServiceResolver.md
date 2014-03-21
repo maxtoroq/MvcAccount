@@ -22,5 +22,5 @@ See Also
 
 [1]: ../FormsAuthenticationService/README.md
 [2]: ../README.md
-[3]: http://msdn2.microsoft.com/en-us/library/bb534960
+[3]: http://msdn.microsoft.com/en-us/library/bb534960
 [4]: README.md

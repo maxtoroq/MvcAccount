@@ -66,23 +66,23 @@ See Also
 --------
 [MvcAccount Namespace][2]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
+[1]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [2]: ../README.md
-[3]: http://msdn2.microsoft.com/en-us/library/bsc2ak47
-[4]: http://msdn2.microsoft.com/en-us/library/4k87zsw7
-[5]: http://msdn2.microsoft.com/en-us/library/zdee4b3y
+[3]: http://msdn.microsoft.com/en-us/library/bsc2ak47
+[4]: http://msdn.microsoft.com/en-us/library/4k87zsw7
+[5]: http://msdn.microsoft.com/en-us/library/zdee4b3y
 [6]: GetNow.md
-[7]: http://msdn2.microsoft.com/en-us/library/03ybds8y
-[8]: http://msdn2.microsoft.com/en-us/library/dfwy45w9
-[9]: http://msdn2.microsoft.com/en-us/library/42892f65
-[10]: http://msdn2.microsoft.com/en-us/library/57ctke0a
+[7]: http://msdn.microsoft.com/en-us/library/03ybds8y
+[8]: http://msdn.microsoft.com/en-us/library/dfwy45w9
+[9]: http://msdn.microsoft.com/en-us/library/42892f65
+[10]: http://msdn.microsoft.com/en-us/library/57ctke0a
 [11]: Reset.md
-[12]: http://msdn2.microsoft.com/en-us/library/7bxwbwt2
+[12]: http://msdn.microsoft.com/en-us/library/7bxwbwt2
 [13]: AccountRepositoryResolver.md
 [14]: ../AccountRepository/README.md
 [15]: ../AccountMembershipProvider/README.md
 [16]: DateTimeKind.md
-[17]: http://msdn2.microsoft.com/en-us/library/shx7s921
+[17]: http://msdn.microsoft.com/en-us/library/shx7s921
 [18]: DependencyResolver.md
 [19]: PasswordServiceResolver.md
 [20]: DisableOnMaxInvalidSignInAttempts.md
@@ -102,4 +102,4 @@ See Also
 [34]: ResourceClassKey.md
 [35]: SignInAttemptWindow.md
 [36]: SiteName.md
-[37]: http://msdn2.microsoft.com/en-us/library/kx8cbz3x
+[37]: http://msdn.microsoft.com/en-us/library/kx8cbz3x

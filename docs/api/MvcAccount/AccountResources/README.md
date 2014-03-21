@@ -84,7 +84,7 @@ See Also
 --------
 [MvcAccount Namespace][2]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
+[1]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [2]: ../README.md
 [3]: Links_ChangeEmail.md
 [4]: Links_ChangePassword.md
