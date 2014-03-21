@@ -3,16 +3,16 @@
 
 v0.12.0
 -------
-- Fixed #5: Cannot override template for input model in EditorTemplates
-- Fixed #7: Use type="email"
-- Fixes #8: Leverage MVC 5.1 htmlAttributes support for class="form-control"
+- Fixed [#5](https://github.com/maxtoroq/MvcAccount/issues/5): Cannot override template for input model in EditorTemplates
+- Fixed [#7](https://github.com/maxtoroq/MvcAccount/issues/7): Use type="email"
+- Fixes [#8](https://github.com/maxtoroq/MvcAccount/issues/8): Leverage MVC 5.1 htmlAttributes support for class="form-control"
 
 v0.11.0
 -------
 - Bootstrap CSS compatibility
 - Changed submit text of sign in, change password and change email views.
 - Added cancel button on change password and change email
-- Fixed #2: Use DataType.EmailAddress
+- Fixed [#2](https://github.com/maxtoroq/MvcAccount/issues/2): Use DataType.EmailAddress
 - Added CryptoPasswordService (PBKDF2)
 - Added FormsAuthenticationService.CreateFormsAuthenticationTicket method
 
@@ -23,8 +23,8 @@ BREAKING CHANGES:
 
 v0.10.0
 -------
-- Fixed #3: Exception while resetting password
-- Fixed #4: Incompatibility with NotFoundMvc, setting `TrySkipIisCustomErrors = true` for error responses.
+- Fixed [#3](https://github.com/maxtoroq/MvcAccount/issues/3): Exception while resetting password
+- Fixed [#4](https://github.com/maxtoroq/MvcAccount/issues/4): Incompatibility with NotFoundMvc, setting `TrySkipIisCustomErrors = true` for error responses.
 
 BREAKING CHANGES:
 - PasswordLengthAttribute moved to root namespace
