@@ -12,4 +12,4 @@ Class                      | Description
 
 [1]: CryptoPasswordService/README.md
 [2]: ../MvcAccount/PasswordService/README.md
-[3]: http://msdn2.microsoft.com/en-us/library/gg538437
+[3]: http://msdn.microsoft.com/en-us/library/gg538437

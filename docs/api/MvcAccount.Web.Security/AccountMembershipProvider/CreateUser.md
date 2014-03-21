@@ -64,11 +64,11 @@ See Also
 [AccountMembershipProvider Class][8]  
 [MvcAccount.Web.Security Namespace][2]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/6byb74h9
+[1]: http://msdn.microsoft.com/en-us/library/6byb74h9
 [2]: ../README.md
-[3]: http://msdn2.microsoft.com/en-us/library/s1wwdcbf
-[4]: http://msdn2.microsoft.com/en-us/library/a28wyd50
-[5]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
-[6]: http://msdn2.microsoft.com/en-us/library/czcfs330
-[7]: http://msdn2.microsoft.com/en-us/library/d1b506ez
+[3]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
+[4]: http://msdn.microsoft.com/en-us/library/a28wyd50
+[5]: http://msdn.microsoft.com/en-us/library/e5kfa45b
+[6]: http://msdn.microsoft.com/en-us/library/czcfs330
+[7]: http://msdn.microsoft.com/en-us/library/d1b506ez
 [8]: README.md

@@ -29,7 +29,7 @@ namespace MvcAccount.Email.Change {
       /// Initializes a new instance of the <see cref="ChangeViewModel"/> class
       /// using the provided input model.
       /// </summary>
-      /// <param name="inputModel"></param>
+      /// <param name="inputModel">The input model.</param>
       public ChangeViewModel(ChangeInput inputModel) 
          : base(inputModel) {
 

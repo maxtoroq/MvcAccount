@@ -34,7 +34,7 @@ namespace MvcAccount.Password.Reset {
       /// Initializes a new instance of the <see cref="FinishViewModel"/> class
       /// using the provided input model.
       /// </summary>
-      /// <param name="inputModel"></param>
+      /// <param name="inputModel">The input model.</param>
       public FinishViewModel(FinishInput inputModel) 
          : base(inputModel) {
 

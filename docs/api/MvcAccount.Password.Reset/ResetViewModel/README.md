@@ -63,26 +63,26 @@ See Also
 --------
 [MvcAccount.Password.Reset Namespace][5]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
+[1]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [2]: ../../MvcAccount.Shared/BaseViewModel/README.md
 [3]: ../../MvcAccount.Shared/FormViewModel_1/README.md
 [4]: ../ResetInput/README.md
 [5]: ../README.md
 [6]: _ctor.md
-[7]: http://msdn2.microsoft.com/en-us/library/bsc2ak47
-[8]: http://msdn2.microsoft.com/en-us/library/4k87zsw7
-[9]: http://msdn2.microsoft.com/en-us/library/zdee4b3y
-[10]: http://msdn2.microsoft.com/en-us/library/dfwy45w9
-[11]: http://msdn2.microsoft.com/en-us/library/42892f65
+[7]: http://msdn.microsoft.com/en-us/library/bsc2ak47
+[8]: http://msdn.microsoft.com/en-us/library/4k87zsw7
+[9]: http://msdn.microsoft.com/en-us/library/zdee4b3y
+[10]: http://msdn.microsoft.com/en-us/library/dfwy45w9
+[11]: http://msdn.microsoft.com/en-us/library/42892f65
 [12]: ../../MvcAccount.Shared/FormViewModel_1/HtmlHelperForInput.md
-[13]: http://msdn2.microsoft.com/en-us/library/dd492619
+[13]: http://msdn.microsoft.com/en-us/library/dd492619
 [14]: ../../MvcAccount.Shared/FormViewModel_1/InputModel.md
-[15]: http://msdn2.microsoft.com/en-us/library/57ctke0a
-[16]: http://msdn2.microsoft.com/en-us/library/7bxwbwt2
+[15]: http://msdn.microsoft.com/en-us/library/57ctke0a
+[16]: http://msdn.microsoft.com/en-us/library/7bxwbwt2
 [17]: ../../MvcAccount.Shared/FormViewModel_1/CancelText.md
 [18]: Message.md
 [19]: ../../MvcAccount.Shared/FormViewModel_1/SubmitText.md
 [20]: ../../MvcAccount.Shared/BaseViewModel/Title.md
 [21]: ../../MvcAccount.Shared/BaseViewModel/Url.md
-[22]: http://msdn2.microsoft.com/en-us/library/dd492578
+[22]: http://msdn.microsoft.com/en-us/library/dd492578
 [23]: ../../MvcAccount.Shared/BaseViewModel/ViewCssClass.md

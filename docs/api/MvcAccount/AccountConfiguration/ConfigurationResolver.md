@@ -23,4 +23,4 @@ See Also
 [1]: README.md
 [2]: ../../MvcAccount.Web.Security/AccountMembershipProvider/README.md
 [3]: ../README.md
-[4]: http://msdn2.microsoft.com/en-us/library/bb534960
+[4]: http://msdn.microsoft.com/en-us/library/bb534960

@@ -47,13 +47,13 @@ See Also
 [MvcAccount.Shared Namespace][1]  
 
 [1]: ../README.md
-[2]: http://msdn2.microsoft.com/en-us/library/2dts52z7
-[3]: http://msdn2.microsoft.com/en-us/library/aey3s293
-[4]: http://msdn2.microsoft.com/en-us/library/y3509fc2
-[5]: http://msdn2.microsoft.com/en-us/library/dfwy45w9
-[6]: http://msdn2.microsoft.com/en-us/library/42892f65
-[7]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
-[8]: http://msdn2.microsoft.com/en-us/library/wb77sz3h
+[2]: http://msdn.microsoft.com/en-us/library/2dts52z7
+[3]: http://msdn.microsoft.com/en-us/library/aey3s293
+[4]: http://msdn.microsoft.com/en-us/library/y3509fc2
+[5]: http://msdn.microsoft.com/en-us/library/dfwy45w9
+[6]: http://msdn.microsoft.com/en-us/library/42892f65
+[7]: http://msdn.microsoft.com/en-us/library/e5kfa45b
+[8]: http://msdn.microsoft.com/en-us/library/wb77sz3h
 [9]: op_Implicit.md
-[10]: http://msdn2.microsoft.com/en-us/library/a28wyd50
+[10]: http://msdn.microsoft.com/en-us/library/a28wyd50
 [11]: Successful.md

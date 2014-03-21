@@ -63,7 +63,7 @@ See Also
 --------
 [MvcAccount.Shared Namespace][9]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
+[1]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [2]: ../../MvcAccount.Account/IndexViewModel/README.md
 [3]: ../../MvcAccount.Email.Change/SavedViewModel/README.md
 [4]: ../../MvcAccount.Email.Change/VerificationSentViewModel/README.md
@@ -73,14 +73,14 @@ See Also
 [8]: ../FormViewModel_1/README.md
 [9]: ../README.md
 [10]: _ctor.md
-[11]: http://msdn2.microsoft.com/en-us/library/bsc2ak47
-[12]: http://msdn2.microsoft.com/en-us/library/4k87zsw7
-[13]: http://msdn2.microsoft.com/en-us/library/zdee4b3y
-[14]: http://msdn2.microsoft.com/en-us/library/dfwy45w9
-[15]: http://msdn2.microsoft.com/en-us/library/42892f65
-[16]: http://msdn2.microsoft.com/en-us/library/57ctke0a
-[17]: http://msdn2.microsoft.com/en-us/library/7bxwbwt2
+[11]: http://msdn.microsoft.com/en-us/library/bsc2ak47
+[12]: http://msdn.microsoft.com/en-us/library/4k87zsw7
+[13]: http://msdn.microsoft.com/en-us/library/zdee4b3y
+[14]: http://msdn.microsoft.com/en-us/library/dfwy45w9
+[15]: http://msdn.microsoft.com/en-us/library/42892f65
+[16]: http://msdn.microsoft.com/en-us/library/57ctke0a
+[17]: http://msdn.microsoft.com/en-us/library/7bxwbwt2
 [18]: Title.md
 [19]: Url.md
-[20]: http://msdn2.microsoft.com/en-us/library/dd492578
+[20]: http://msdn.microsoft.com/en-us/library/dd492578
 [21]: ViewCssClass.md

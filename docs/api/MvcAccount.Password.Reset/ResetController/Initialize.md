@@ -27,5 +27,5 @@ See Also
 [MvcAccount.Password.Reset Namespace][1]  
 
 [1]: ../README.md
-[2]: http://msdn2.microsoft.com/en-us/library/cc680130
+[2]: http://msdn.microsoft.com/en-us/library/cc680130
 [3]: README.md

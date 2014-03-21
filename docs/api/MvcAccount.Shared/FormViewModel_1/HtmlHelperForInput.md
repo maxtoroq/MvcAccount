@@ -29,8 +29,8 @@ See Also
 [FormViewModel<TInputModel> Class][5]  
 [MvcAccount.Shared Namespace][3]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/dd492619
+[1]: http://msdn.microsoft.com/en-us/library/dd492619
 [2]: InputModel.md
 [3]: ../README.md
-[4]: http://msdn2.microsoft.com/en-us/library/dd493095
+[4]: http://msdn.microsoft.com/en-us/library/dd493095
 [5]: README.md

@@ -29,7 +29,7 @@ See Also
 [AccountRepository Class][4]  
 [MvcAccount Namespace][2]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/s1wwdcbf
+[1]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
 [2]: ../README.md
-[3]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
+[3]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [4]: README.md

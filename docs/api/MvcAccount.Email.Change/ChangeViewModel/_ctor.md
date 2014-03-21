@@ -18,9 +18,7 @@ public ChangeViewModel(
 
 #### *inputModel*
 Type: [MvcAccount.Email.Change.ChangeInput][3]  
-
-[Missing &lt;param name="inputModel"/> documentation for "M:MvcAccount.Email.Change.ChangeViewModel.#ctor(MvcAccount.Email.Change.ChangeInput)"]
-
+The input model.
 
 
 See Also

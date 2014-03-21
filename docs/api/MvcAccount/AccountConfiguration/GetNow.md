@@ -22,7 +22,7 @@ See Also
 [MvcAccount Namespace][2]  
 [AccountConfiguration.DateTimeKind][3]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/03ybds8y
+[1]: http://msdn.microsoft.com/en-us/library/03ybds8y
 [2]: ../README.md
 [3]: DateTimeKind.md
 [4]: README.md

@@ -20,7 +20,7 @@ See Also
 [AccountConfiguration Class][4]  
 [MvcAccount Namespace][2]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/kx8cbz3x
+[1]: http://msdn.microsoft.com/en-us/library/kx8cbz3x
 [2]: ../README.md
-[3]: http://msdn2.microsoft.com/en-us/library/s1wwdcbf
+[3]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
 [4]: README.md

@@ -37,5 +37,5 @@ See Also
 [1]: ../README.md
 [2]: ../ChangeInput/README.md
 [3]: ../../MvcAccount.Shared/FormButton/README.md
-[4]: http://msdn2.microsoft.com/en-us/library/dd493064
+[4]: http://msdn.microsoft.com/en-us/library/dd493064
 [5]: README.md

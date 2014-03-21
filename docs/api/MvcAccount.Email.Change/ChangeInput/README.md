@@ -56,15 +56,15 @@ See Also
 [MvcAccount.Email.Change Namespace][3]  
 
 [1]: ../ChangeController/Change_1.md
-[2]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
+[2]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [3]: ../README.md
 [4]: _ctor.md
-[5]: http://msdn2.microsoft.com/en-us/library/bsc2ak47
-[6]: http://msdn2.microsoft.com/en-us/library/4k87zsw7
-[7]: http://msdn2.microsoft.com/en-us/library/zdee4b3y
-[8]: http://msdn2.microsoft.com/en-us/library/dfwy45w9
-[9]: http://msdn2.microsoft.com/en-us/library/42892f65
-[10]: http://msdn2.microsoft.com/en-us/library/57ctke0a
-[11]: http://msdn2.microsoft.com/en-us/library/7bxwbwt2
+[5]: http://msdn.microsoft.com/en-us/library/bsc2ak47
+[6]: http://msdn.microsoft.com/en-us/library/4k87zsw7
+[7]: http://msdn.microsoft.com/en-us/library/zdee4b3y
+[8]: http://msdn.microsoft.com/en-us/library/dfwy45w9
+[9]: http://msdn.microsoft.com/en-us/library/42892f65
+[10]: http://msdn.microsoft.com/en-us/library/57ctke0a
+[11]: http://msdn.microsoft.com/en-us/library/7bxwbwt2
 [12]: CurrentPassword.md
 [13]: NewEmail.md

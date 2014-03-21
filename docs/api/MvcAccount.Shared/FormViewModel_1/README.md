@@ -73,7 +73,7 @@ See Also
 --------
 [MvcAccount.Shared Namespace][8]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
+[1]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [2]: ../BaseViewModel/README.md
 [3]: ../../MvcAccount.Authentication/SignInViewModel/README.md
 [4]: ../../MvcAccount.Email.Change/ChangeViewModel/README.md
@@ -82,19 +82,19 @@ See Also
 [7]: ../../MvcAccount.Password.Reset/ResetViewModel/README.md
 [8]: ../README.md
 [9]: _ctor.md
-[10]: http://msdn2.microsoft.com/en-us/library/bsc2ak47
-[11]: http://msdn2.microsoft.com/en-us/library/4k87zsw7
-[12]: http://msdn2.microsoft.com/en-us/library/zdee4b3y
-[13]: http://msdn2.microsoft.com/en-us/library/dfwy45w9
-[14]: http://msdn2.microsoft.com/en-us/library/42892f65
+[10]: http://msdn.microsoft.com/en-us/library/bsc2ak47
+[11]: http://msdn.microsoft.com/en-us/library/4k87zsw7
+[12]: http://msdn.microsoft.com/en-us/library/zdee4b3y
+[13]: http://msdn.microsoft.com/en-us/library/dfwy45w9
+[14]: http://msdn.microsoft.com/en-us/library/42892f65
 [15]: HtmlHelperForInput.md
-[16]: http://msdn2.microsoft.com/en-us/library/dd492619
+[16]: http://msdn.microsoft.com/en-us/library/dd492619
 [17]: InputModel.md
-[18]: http://msdn2.microsoft.com/en-us/library/57ctke0a
-[19]: http://msdn2.microsoft.com/en-us/library/7bxwbwt2
+[18]: http://msdn.microsoft.com/en-us/library/57ctke0a
+[19]: http://msdn.microsoft.com/en-us/library/7bxwbwt2
 [20]: CancelText.md
 [21]: SubmitText.md
 [22]: ../BaseViewModel/Title.md
 [23]: ../BaseViewModel/Url.md
-[24]: http://msdn2.microsoft.com/en-us/library/dd492578
+[24]: http://msdn.microsoft.com/en-us/library/dd492578
 [25]: ../BaseViewModel/ViewCssClass.md

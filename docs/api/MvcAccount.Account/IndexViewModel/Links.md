@@ -21,6 +21,6 @@ See Also
 [MvcAccount.Account Namespace][1]  
 
 [1]: ../README.md
-[2]: http://msdn2.microsoft.com/en-us/library/ms132397
+[2]: http://msdn.microsoft.com/en-us/library/ms132397
 [3]: ../../MvcAccount.Shared/LinkModel/README.md
 [4]: README.md

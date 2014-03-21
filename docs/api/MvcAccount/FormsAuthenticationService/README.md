@@ -63,25 +63,25 @@ See Also
 --------
 [MvcAccount Namespace][2]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
+[1]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [2]: ../README.md
 [3]: _ctor.md
 [4]: CreateFormsAuthenticationTicket.md
-[5]: http://msdn2.microsoft.com/en-us/library/se1843z2
-[6]: http://msdn2.microsoft.com/en-us/library/bsc2ak47
-[7]: http://msdn2.microsoft.com/en-us/library/4k87zsw7
+[5]: http://msdn.microsoft.com/en-us/library/se1843z2
+[6]: http://msdn.microsoft.com/en-us/library/bsc2ak47
+[7]: http://msdn.microsoft.com/en-us/library/4k87zsw7
 [8]: GetAuthCookie.md
 [9]: GetAuthCookie_1.md
 [10]: GetAuthCookie_2.md
-[11]: http://msdn2.microsoft.com/en-us/library/zdee4b3y
-[12]: http://msdn2.microsoft.com/en-us/library/dfwy45w9
-[13]: http://msdn2.microsoft.com/en-us/library/42892f65
-[14]: http://msdn2.microsoft.com/en-us/library/57ctke0a
+[11]: http://msdn.microsoft.com/en-us/library/zdee4b3y
+[12]: http://msdn.microsoft.com/en-us/library/dfwy45w9
+[13]: http://msdn.microsoft.com/en-us/library/42892f65
+[14]: http://msdn.microsoft.com/en-us/library/57ctke0a
 [15]: SetAuthCookie.md
 [16]: SetAuthCookie_3.md
 [17]: SetAuthCookie_1.md
 [18]: SetAuthCookie_2.md
 [19]: SignOut.md
-[20]: http://msdn2.microsoft.com/en-us/library/7bxwbwt2
+[20]: http://msdn.microsoft.com/en-us/library/7bxwbwt2
 [21]: Configuration.md
 [22]: ../AccountConfiguration/README.md

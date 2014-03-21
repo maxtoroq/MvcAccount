@@ -35,7 +35,7 @@ See Also
 [MvcAccount.Web.Security Namespace][1]  
 
 [1]: ../README.md
-[2]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
-[3]: http://msdn2.microsoft.com/en-us/library/a28wyd50
-[4]: http://msdn2.microsoft.com/en-us/library/d1b506ez
+[2]: http://msdn.microsoft.com/en-us/library/e5kfa45b
+[3]: http://msdn.microsoft.com/en-us/library/a28wyd50
+[4]: http://msdn.microsoft.com/en-us/library/d1b506ez
 [5]: README.md

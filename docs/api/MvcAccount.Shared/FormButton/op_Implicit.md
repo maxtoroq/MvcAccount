@@ -29,7 +29,7 @@ See Also
 [FormButton Structure][3]  
 [MvcAccount.Shared Namespace][2]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/a28wyd50
+[1]: http://msdn.microsoft.com/en-us/library/a28wyd50
 [2]: ../README.md
 [3]: README.md
 [4]: Successful.md

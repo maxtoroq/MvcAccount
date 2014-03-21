@@ -52,19 +52,19 @@ See Also
 --------
 [MvcAccount Namespace][5]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
+[1]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [2]: ../ClearTextPasswordService/README.md
 [3]: ../../MvcAccount.Web.Helpers/CryptoPasswordService/README.md
 [4]: ../../MvcAccount.Web.Security/SqlMembershipProviderPasswordService/README.md
 [5]: ../README.md
 [6]: _ctor.md
-[7]: http://msdn2.microsoft.com/en-us/library/bsc2ak47
-[8]: http://msdn2.microsoft.com/en-us/library/4k87zsw7
-[9]: http://msdn2.microsoft.com/en-us/library/zdee4b3y
-[10]: http://msdn2.microsoft.com/en-us/library/dfwy45w9
-[11]: http://msdn2.microsoft.com/en-us/library/42892f65
-[12]: http://msdn2.microsoft.com/en-us/library/57ctke0a
+[7]: http://msdn.microsoft.com/en-us/library/bsc2ak47
+[8]: http://msdn.microsoft.com/en-us/library/4k87zsw7
+[9]: http://msdn.microsoft.com/en-us/library/zdee4b3y
+[10]: http://msdn.microsoft.com/en-us/library/dfwy45w9
+[11]: http://msdn.microsoft.com/en-us/library/42892f65
+[12]: http://msdn.microsoft.com/en-us/library/57ctke0a
 [13]: PasswordEquals.md
 [14]: ProcessPasswordForStorage.md
-[15]: http://msdn2.microsoft.com/en-us/library/7bxwbwt2
+[15]: http://msdn.microsoft.com/en-us/library/7bxwbwt2
 [16]: ValidatePassword.md

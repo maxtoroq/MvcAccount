@@ -40,8 +40,8 @@ See Also
 [MvcAccount Namespace][1]  
 
 [1]: ../README.md
-[2]: http://msdn2.microsoft.com/en-us/library/s1wwdcbf
-[3]: http://msdn2.microsoft.com/en-us/library/a28wyd50
-[4]: http://msdn2.microsoft.com/en-us/library/6tc50289
-[5]: http://msdn2.microsoft.com/en-us/library/zw640823
+[2]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
+[3]: http://msdn.microsoft.com/en-us/library/a28wyd50
+[4]: http://msdn.microsoft.com/en-us/library/6tc50289
+[5]: http://msdn.microsoft.com/en-us/library/zw640823
 [6]: README.md

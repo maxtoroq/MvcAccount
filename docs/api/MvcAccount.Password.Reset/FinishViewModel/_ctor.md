@@ -18,9 +18,7 @@ public FinishViewModel(
 
 #### *inputModel*
 Type: [MvcAccount.Password.Reset.FinishInput][3]  
-
-[Missing &lt;param name="inputModel"/> documentation for "M:MvcAccount.Password.Reset.FinishViewModel.#ctor(MvcAccount.Password.Reset.FinishInput)"]
-
+The input model.
 
 
 See Also

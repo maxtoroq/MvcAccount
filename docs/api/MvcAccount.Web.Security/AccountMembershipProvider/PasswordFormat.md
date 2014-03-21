@@ -20,6 +20,6 @@ See Also
 [AccountMembershipProvider Class][3]  
 [MvcAccount.Web.Security Namespace][2]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/fx3ae0xh
+[1]: http://msdn.microsoft.com/en-us/library/fx3ae0xh
 [2]: ../README.md
 [3]: README.md

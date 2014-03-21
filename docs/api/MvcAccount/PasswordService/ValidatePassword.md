@@ -34,7 +34,7 @@ See Also
 [MvcAccount Namespace][1]  
 
 [1]: ../README.md
-[2]: http://msdn2.microsoft.com/en-us/library/s1wwdcbf
+[2]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
 [3]: ../AccountConfiguration/MinPasswordLength.md
 [4]: ../AccountConfiguration/MaxPasswordLength.md
 [5]: README.md

@@ -23,5 +23,5 @@ See Also
 [1]: MaxInvalidSignInAttempts.md
 [2]: DisableOnMaxInvalidSignInAttempts.md
 [3]: ../README.md
-[4]: http://msdn2.microsoft.com/en-us/library/269ew577
+[4]: http://msdn.microsoft.com/en-us/library/269ew577
 [5]: README.md

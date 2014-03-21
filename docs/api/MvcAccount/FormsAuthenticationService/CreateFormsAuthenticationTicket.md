@@ -58,10 +58,10 @@ See Also
 [FormsAuthenticationService Class][7]  
 [MvcAccount Namespace][2]  
 
-[1]: http://msdn2.microsoft.com/en-us/library/se1843z2
+[1]: http://msdn.microsoft.com/en-us/library/se1843z2
 [2]: ../README.md
-[3]: http://msdn2.microsoft.com/en-us/library/td2s409d
-[4]: http://msdn2.microsoft.com/en-us/library/s1wwdcbf
-[5]: http://msdn2.microsoft.com/en-us/library/03ybds8y
-[6]: http://msdn2.microsoft.com/en-us/library/a28wyd50
+[3]: http://msdn.microsoft.com/en-us/library/td2s409d
+[4]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
+[5]: http://msdn.microsoft.com/en-us/library/03ybds8y
+[6]: http://msdn.microsoft.com/en-us/library/a28wyd50
 [7]: README.md

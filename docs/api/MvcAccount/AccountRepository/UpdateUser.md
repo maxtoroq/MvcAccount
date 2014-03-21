@@ -27,5 +27,5 @@ See Also
 [MvcAccount Namespace][1]  
 
 [1]: ../README.md
-[2]: http://msdn2.microsoft.com/en-us/library/e5kfa45b
+[2]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [3]: README.md
