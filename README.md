@@ -56,8 +56,8 @@ Resources
 - [Ask for help](https://github.com/maxtoroq/MvcAccount/issues?labels=question&state=closed)
 - [Report an issue](https://github.com/maxtoroq/MvcAccount/issues?state=open)
 
-<a href="https://github.com/maxtoroq/MvcAccount/wiki/Donate"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" alt="Donate"/></a>
-<a href="http://flattr.com/thing/1761238/MvcAccount" target="_blank"><img src="https://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://github.com/maxtoroq/MvcAccount/wiki/Donate)
+[![Flattr this](https://api.flattr.com/button/flattr-badge-large.png)](http://flattr.com/thing/1761238/MvcAccount)
 
 [1]: http://msdn.microsoft.com/library/system.web.security.membershipprovider
 [2]: http://msdn.microsoft.com/library/system.web.security.sqlmembershipprovider
