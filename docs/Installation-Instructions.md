@@ -92,20 +92,38 @@ routes.MapCodeRoutes(
 ### MvcAccount.AccountRepository
 Responsible for querying account information and persisting changes. The Find methods must return an instance of a public class with the following public properties:
 
-| Name                               | Type
-| ---------------------------------- | -------------------
-| Disabled                           | Boolean
-| Email                              | String
-| EmailChangeTicketExpiration        | Nullable&lt;DateTime>
-| EmailVerificationTicketExpiration  | Nullable&lt;DateTime>
-| EmailVerified                      | Boolean
-| FailedSignInAttempts               | Int32
-| FailedSignInAttemptWindowStart     | Nullable&lt;DateTime>
-| Id                                 | Any type is allowed
-| LastSignIn                         | Nullable&lt;DateTime>
-| Password                           | String
-| PasswordResetTicketExpiration      | Nullable&lt;DateTime>
-| Username                           | String
+```csharp
+// The class name has no semantics
+public class UserAccount {
+
+   // Any type is allowed (e.g. Int32, Guid, etc.)
+   public object Id { get; set; } 
+   
+   public string Username { get; set; }
+   
+   public string Password { get; set; }
+   
+   public string Email { get; set; }
+   
+   public DateTime? LastSignIn { get; set; }
+   
+   public int FailedSignInAttempts { get; set; }
+
+   public DateTime? FailedSignInAttemptWindowStart { get; set; }
+
+   public bool EmailVerified { get; set; }
+
+   public DateTime? EmailVerificationTicketExpiration { get; set; }
+
+   public DateTime? EmailChangeTicketExpiration { get; set; }
+
+   public DateTime? PasswordResetTicketExpiration { get; set; }
+
+   public bool Disabled { get; set; }
+}
+```
+
+If you use the e-mail address as the username you can simply make the `Username` getter/setter call the `Email` getter/setter.
 
 ### MvcAccount.PasswordService
 Responsible for encrypting and comparing passwords. MvcAccount includes three implementations you can choose from:
