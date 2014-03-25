@@ -6,12 +6,12 @@ MvcAccount.Shared Namespace
 Classes
 -------
 
-Class                           | Description                                   
-------------------------------- | --------------------------------------------- 
-[BaseController][1]             | Base class for all MvcAccount's controllers.  
-[BaseViewModel][2]              | Holds common view data.                       
-[FormViewModel<TInputModel>][3] | Holds common data for views that have a form. 
-[LinkModel][4]                  | Holds link data.                              
+Class                              | Description                                   
+---------------------------------- | --------------------------------------------- 
+[BaseController][1]                | Base class for all MvcAccount's controllers.  
+[BaseViewModel][2]                 | Holds common view data.                       
+[FormViewModel&lt;TInputModel>][3] | Holds common data for views that have a form. 
+[LinkModel][4]                     | Holds link data.                              
 
 
 Structures

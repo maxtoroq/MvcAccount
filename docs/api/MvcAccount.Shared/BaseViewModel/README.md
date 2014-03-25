@@ -13,7 +13,7 @@ Inheritance Hierarchy
     [MvcAccount.Password.Change.SavedViewModel][5]  
     [MvcAccount.Password.Reset.DoneViewModel][6]  
     [MvcAccount.Password.Reset.VerificationSentViewModel][7]  
-    [MvcAccount.Shared.FormViewModel<TInputModel>][8]  
+    [MvcAccount.Shared.FormViewModel&lt;TInputModel>][8]  
 
 **Namespace:** [MvcAccount.Shared][9]  
 **Assembly:** MvcAccount (in MvcAccount.dll)

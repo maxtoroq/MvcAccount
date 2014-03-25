@@ -37,9 +37,9 @@ The **FormViewModel<TInputModel>** type exposes the following members.
 Constructors
 ------------
 
-Name                            | Description                                                                                           
-------------------------------- | ----------------------------------------------------------------------------------------------------- 
-[FormViewModel<TInputModel>][9] | Initializes a new instance of the FormViewModel&lt;TInputModel> class using the provided input model. 
+Name                               | Description                                                                                           
+---------------------------------- | ----------------------------------------------------------------------------------------------------- 
+[FormViewModel&lt;TInputModel>][9] | Initializes a new instance of the FormViewModel&lt;TInputModel> class using the provided input model. 
 
 
 Methods
@@ -51,7 +51,7 @@ Name                     | Description
 [Finalize][11]           | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection. (Inherited from [Object][1].) 
 [GetHashCode][12]        | Serves as a hash function for a particular type. (Inherited from [Object][1].)                                                                             
 [GetType][13]            | Gets the [Type][14] of the current instance. (Inherited from [Object][1].)                                                                                 
-[HtmlHelperForInput][15] | Returns a [HtmlHelper<TModel>][16] to be used to render form controls for the [InputModel][17].                                                            
+[HtmlHelperForInput][15] | Returns a [HtmlHelper&lt;TModel>][16] to be used to render form controls for the [InputModel][17].                                                         
 [MemberwiseClone][18]    | Creates a shallow copy of the current [Object][1]. (Inherited from [Object][1].)                                                                           
 [ToString][19]           | Returns a string that represents the current object. (Inherited from [Object][1].)                                                                         
 

@@ -1,6 +1,6 @@
 FormViewModel&lt;TInputModel>.HtmlHelperForInput Method
 =======================================================
-Returns a [HtmlHelper<TModel>][1] to be used to render form controls for the [InputModel][2].
+Returns a [HtmlHelper&lt;TModel>][1] to be used to render form controls for the [InputModel][2].
 
 **Namespace:** [MvcAccount.Shared][3]  
 **Assembly:** MvcAccount (in MvcAccount.dll)
@@ -22,11 +22,11 @@ The [HtmlHelper][4] of the current view.
 
 ### Return Value
 Type: [HtmlHelper][1]&lt;[TInputModel][5]>  
-An [HtmlHelper<TModel>][1] instance.
+An [HtmlHelper&lt;TModel>][1] instance.
 
 See Also
 --------
-[FormViewModel<TInputModel> Class][5]  
+[FormViewModel&lt;TInputModel> Class][5]  
 [MvcAccount.Shared Namespace][3]  
 
 [1]: http://msdn.microsoft.com/en-us/library/dd492619

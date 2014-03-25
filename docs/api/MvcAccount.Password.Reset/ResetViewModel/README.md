@@ -40,7 +40,7 @@ Name                     | Description
 [Finalize][8]            | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection. (Inherited from [Object][1].) 
 [GetHashCode][9]         | Serves as a hash function for a particular type. (Inherited from [Object][1].)                                                                             
 [GetType][10]            | Gets the [Type][11] of the current instance. (Inherited from [Object][1].)                                                                                 
-[HtmlHelperForInput][12] | Returns a [HtmlHelper<TModel>][13] to be used to render form controls for the [InputModel][14]. (Inherited from [FormViewModel<TInputModel>][3].)          
+[HtmlHelperForInput][12] | Returns a [HtmlHelper&lt;TModel>][13] to be used to render form controls for the [InputModel][14]. (Inherited from [FormViewModel&lt;TInputModel>][3].)    
 [MemberwiseClone][15]    | Creates a shallow copy of the current [Object][1]. (Inherited from [Object][1].)                                                                           
 [ToString][16]           | Returns a string that represents the current object. (Inherited from [Object][1].)                                                                         
 
@@ -50,10 +50,10 @@ Properties
 
 Name               | Description                                                                                        
 ------------------ | -------------------------------------------------------------------------------------------------- 
-[CancelText][17]   | Text for the cancel button. (Inherited from [FormViewModel<TInputModel>][3].)                      
-[InputModel][14]   | The form's input model. (Inherited from [FormViewModel<TInputModel>][3].)                          
+[CancelText][17]   | Text for the cancel button. (Inherited from [FormViewModel&lt;TInputModel>][3].)                   
+[InputModel][14]   | The form's input model. (Inherited from [FormViewModel&lt;TInputModel>][3].)                       
 [Message][18]      | A message for the user.                                                                            
-[SubmitText][19]   | Text for the submit button. (Inherited from [FormViewModel<TInputModel>][3].)                      
+[SubmitText][19]   | Text for the submit button. (Inherited from [FormViewModel&lt;TInputModel>][3].)                   
 [Title][20]        | The view's title, used on h1 and title elements. (Inherited from [BaseViewModel][2].)              
 [Url][21]          | A [UrlHelper][22] for creating URLs. (Inherited from [BaseViewModel][2].)                          
 [ViewCssClass][23] | A space-separated list of CSS classes to be used in the view. (Inherited from [BaseViewModel][2].) 
