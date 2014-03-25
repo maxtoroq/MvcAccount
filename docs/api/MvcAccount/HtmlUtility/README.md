@@ -22,14 +22,14 @@ public static class HtmlUtility
 Methods
 -------
 
-Name                                                   | Description                                                                  
------------------------------------------------------- | ---------------------------------------------------------------------------- 
-[HtmlHelperFor<TModel>(HtmlHelper)][3]                 | Creates a strongly typed HTML helper.                                        
-[HtmlHelperFor<TModel>(HtmlHelper, TModel)][4]         | Creates a strongly typed HTML helper.                                        
-[HtmlHelperFor<TModel>(HtmlHelper, TModel, String)][5] | Creates a strongly typed HTML helper.                                        
-[Link(LinkModel)][6]                                   | Returns an anchor element (a element) created using the provided link model. 
-[Link(LinkModel, Object)][7]                           | Returns an anchor element (a element) created using the provided link model. 
-[Link(LinkModel, RouteValueDictionary)][8]             | Returns an anchor element (a element) created using the provided link model. 
+Name                                                      | Description                                                                  
+--------------------------------------------------------- | ---------------------------------------------------------------------------- 
+[HtmlHelperFor&lt;TModel>(HtmlHelper)][3]                 | Creates a strongly typed HTML helper.                                        
+[HtmlHelperFor&lt;TModel>(HtmlHelper, TModel)][4]         | Creates a strongly typed HTML helper.                                        
+[HtmlHelperFor&lt;TModel>(HtmlHelper, TModel, String)][5] | Creates a strongly typed HTML helper.                                        
+[Link(LinkModel)][6]                                      | Returns an anchor element (a element) created using the provided link model. 
+[Link(LinkModel, Object)][7]                              | Returns an anchor element (a element) created using the provided link model. 
+[Link(LinkModel, RouteValueDictionary)][8]                | Returns an anchor element (a element) created using the provided link model. 
 
 
 See Also

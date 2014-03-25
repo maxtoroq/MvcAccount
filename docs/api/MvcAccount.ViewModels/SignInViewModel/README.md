@@ -50,8 +50,8 @@ Properties
 Name                      | Description                                                                           
 ------------------------- | ------------------------------------------------------------------------------------- 
 [AccountRecoveryLink][14] | A link for account recovery.                                                          
-[InputModel][15]          | The form's input model. (Inherited from [FormViewModel<TInputModel>][3].)             
-[SubmitText][16]          | Text for the submit button. (Inherited from [FormViewModel<TInputModel>][3].)         
+[InputModel][15]          | The form's input model. (Inherited from [FormViewModel&lt;TInputModel>][3].)          
+[SubmitText][16]          | Text for the submit button. (Inherited from [FormViewModel&lt;TInputModel>][3].)      
 [Title][17]               | The view's title, used on h1 and title elements. (Inherited from [BaseViewModel][2].) 
 [Url][18]                 | A [UrlHelper][19] for creating URLs. (Inherited from [BaseViewModel][2].)             
 

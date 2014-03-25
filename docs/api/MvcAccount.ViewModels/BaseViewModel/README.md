@@ -9,7 +9,7 @@ Inheritance Hierarchy
   **MvcAccount.ViewModels.BaseViewModel**  
     [MvcAccount.ViewModels.EmailChangeVerificationSentViewModel][2]  
     [MvcAccount.ViewModels.EmailSavedViewModel][3]  
-    [MvcAccount.ViewModels.FormViewModel<TInputModel>][4]  
+    [MvcAccount.ViewModels.FormViewModel&lt;TInputModel>][4]  
     [MvcAccount.ViewModels.IndexViewModel][5]  
     [MvcAccount.ViewModels.PasswordResetVerificationSentViewModel][6]  
     [MvcAccount.ViewModels.PasswordResetViewModel][7]  

@@ -49,8 +49,8 @@ Properties
 
 Name             | Description                                                                           
 ---------------- | ------------------------------------------------------------------------------------- 
-[InputModel][14] | The form's input model. (Inherited from [FormViewModel<TInputModel>][3].)             
-[SubmitText][15] | Text for the submit button. (Inherited from [FormViewModel<TInputModel>][3].)         
+[InputModel][14] | The form's input model. (Inherited from [FormViewModel&lt;TInputModel>][3].)          
+[SubmitText][15] | Text for the submit button. (Inherited from [FormViewModel&lt;TInputModel>][3].)      
 [Title][16]      | The view's title, used on h1 and title elements. (Inherited from [BaseViewModel][2].) 
 [Url][17]        | A [UrlHelper][18] for creating URLs. (Inherited from [BaseViewModel][2].)             
 

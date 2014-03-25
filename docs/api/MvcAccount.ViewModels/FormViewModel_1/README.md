@@ -37,9 +37,9 @@ The **FormViewModel<TInputModel>** type exposes the following members.
 Constructors
 ------------
 
-Name                            | Description                                                                                           
-------------------------------- | ----------------------------------------------------------------------------------------------------- 
-[FormViewModel<TInputModel>][9] | Initializes a new instance of the FormViewModel&lt;TInputModel> class using the provided input model. 
+Name                               | Description                                                                                           
+---------------------------------- | ----------------------------------------------------------------------------------------------------- 
+[FormViewModel&lt;TInputModel>][9] | Initializes a new instance of the FormViewModel&lt;TInputModel> class using the provided input model. 
 
 
 Methods

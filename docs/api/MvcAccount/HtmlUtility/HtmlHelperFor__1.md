@@ -29,7 +29,7 @@ The type of the model.
 
 ### Return Value
 Type: [HtmlHelper][3]&lt;**TModel**>  
-A new [HtmlHelper<TModel>][3] object.
+A new [HtmlHelper&lt;TModel>][3] object.
 
 See Also
 --------

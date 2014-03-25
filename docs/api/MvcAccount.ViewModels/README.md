@@ -16,7 +16,7 @@ Class                                        | Description
 [EmailChangeVerificationSentViewModel][6]    | Holds data for the EmailChangeVerificationSent view.    
 [EmailSavedViewModel][7]                     | Holds data for the EmailSaved view.                     
 [EmailVerificationMessageViewModel][8]       | Holds data for the EmailVerificationMessage view.       
-[FormViewModel<TInputModel>][9]              | Holds common data for views that have a form.           
+[FormViewModel&lt;TInputModel>][9]           | Holds common data for views that have a form.           
 [IndexViewModel][10]                         | Holds data for the Index view.                          
 [LinkModel][11]                              | Holds link data.                                        
 [PasswordResetVerificationSentViewModel][12] | Holds data for the PasswordResetVerificationSent view.  

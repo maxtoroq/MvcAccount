@@ -23,7 +23,7 @@ The form's input model.
 
 See Also
 --------
-[FormViewModel<TInputModel> Class][2]  
+[FormViewModel&lt;TInputModel> Class][2]  
 [MvcAccount.ViewModels Namespace][1]  
 
 [1]: ../README.md
