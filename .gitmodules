@@ -1,0 +1,3 @@
+[submodule "submodules/ResultEnvelope"]
+	path = submodules/ResultEnvelope
+	url = https://github.com/maxtoroq/ResultEnvelope.git

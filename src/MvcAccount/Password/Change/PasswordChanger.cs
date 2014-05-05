@@ -17,6 +17,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Web;
+using ResultEnvelope;
 
 namespace MvcAccount.Password.Change {
    
@@ -39,7 +40,7 @@ namespace MvcAccount.Password.Change {
          this.passServ = config.RequireDependency(passServ);
       }
 
-      public OperationResult Change(ChangeInput input) {
+      public Result Change(ChangeInput input) {
 
          if (input == null) throw new ArgumentNullException("input");
 

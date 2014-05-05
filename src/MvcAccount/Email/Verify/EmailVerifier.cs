@@ -17,6 +17,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Web;
+using ResultEnvelope;
 
 namespace MvcAccount.Email.Verify {
    
@@ -36,7 +37,7 @@ namespace MvcAccount.Email.Verify {
          this.repo = new AccountRepositoryWrapper(config.RequireDependency(repo));
       }
 
-      public OperationResult Verify(string cipher) {
+      public Result Verify(string cipher) {
 
          var verifData = VerificationData.Parse(cipher);
 

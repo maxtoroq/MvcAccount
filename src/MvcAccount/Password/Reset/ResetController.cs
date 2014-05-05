@@ -19,6 +19,8 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using MvcAccount.Shared;
 using MvcCodeRouting.Web.Mvc;
+using ResultEnvelope;
+using ResultEnvelope.Web.Mvc;
 
 namespace MvcAccount.Password.Reset {
    
@@ -107,7 +109,7 @@ namespace MvcAccount.Password.Reset {
       [HttpGetHead]
       public ActionResult VerificationSent() {
 
-         OperationResult result = this.TempData["PostReset"] as OperationResult;
+         Result result = this.TempData["PostReset"] as Result;
          ResetResult resource;
 
          if (result == null

@@ -18,6 +18,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using MvcAccount.Shared;
 using MvcCodeRouting.Web.Mvc;
+using ResultEnvelope.Web.Mvc;
 
 namespace MvcAccount.Password.Change {
 

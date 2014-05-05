@@ -19,6 +19,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Security.Principal;
 using System.Web;
+using ResultEnvelope;
 
 namespace MvcAccount.Email.Change {
    
@@ -56,7 +57,7 @@ namespace MvcAccount.Email.Change {
          return input;
       }
 
-      public OperationResult Change(ChangeInput input) {
+      public Result Change(ChangeInput input) {
 
          if (input == null) throw new ArgumentNullException("input");
 
@@ -132,10 +133,10 @@ namespace MvcAccount.Email.Change {
          this.context.SendEmail(notifyMessage);
          this.context.SendEmail(verifyMessage);
 
-         return new OperationResult(HttpStatusCode.Accepted, new ChangeResult(newEmail));
+         return new Result(HttpStatusCode.Accepted, new ChangeResult(newEmail));
       }
 
-      public OperationResult Verify(string cipher) {
+      public Result Verify(string cipher) {
 
          var verifData = VerificationData.Parse(cipher);
 

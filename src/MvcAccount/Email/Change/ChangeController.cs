@@ -19,6 +19,8 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using MvcAccount.Shared;
 using MvcCodeRouting.Web.Mvc;
+using ResultEnvelope;
+using ResultEnvelope.Web.Mvc;
 
 namespace MvcAccount.Email.Change {
    
@@ -146,7 +148,7 @@ namespace MvcAccount.Email.Change {
       [Authorize]
       public ActionResult VerificationSent() {
 
-         OperationResult result = this.TempData["PostChange"] as OperationResult;
+         Result result = this.TempData["PostChange"] as Result;
          ChangeResult resource;
 
          if (result == null

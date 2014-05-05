@@ -91,6 +91,15 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\submodules\ResultEnvelope\src\ResultEnvelope.Web.Mvc\ResultMvcExtensions.cs">
+      <Link>Utilities\ResultEnvelope\ResultMvcExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\submodules\ResultEnvelope\src\ResultEnvelope\ErrorBuilder.cs">
+      <Link>Utilities\ResultEnvelope\ErrorBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\submodules\ResultEnvelope\src\ResultEnvelope\Result.cs">
+      <Link>Utilities\ResultEnvelope\Result.cs</Link>
+    </Compile>
     <Compile Include="AccountConfiguration.cs" />
     <Compile Include="AccountController.cs" />
     <Compile Include="AccountHelpers.cs" />
@@ -102,10 +111,8 @@
     <Compile Include="Password\Reset\PasswordResetter.cs" />
     <Compile Include="Utilities\EmailAddressAttribute.cs" />
     <Compile Include="Shared\FormButton.cs" />
-    <Compile Include="Utilities\ErrorBuilder.cs" />
     <Compile Include="Utilities\FormatInvariantExtensions.cs" />
     <Compile Include="Utilities\LocalizedViewExtensions.cs" />
-    <Compile Include="Utilities\OperationResult.cs" />
     <Compile Include="Account\AccountImplController.cs" />
     <Compile Include="Web.Helpers\CryptoPasswordService.cs" />
     <Compile Include="Web.Security\AccountMembershipProvider.cs" />

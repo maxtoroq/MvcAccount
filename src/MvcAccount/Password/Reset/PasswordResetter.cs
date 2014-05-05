@@ -18,6 +18,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Mail;
 using System.Web;
+using ResultEnvelope;
 
 namespace MvcAccount.Password.Reset {
    
@@ -42,7 +43,7 @@ namespace MvcAccount.Password.Reset {
          this.passServ = config.RequireDependency(passwordService);
       }
 
-      public OperationResult<ResetResult> Reset(ResetInput input) {
+      public Result<ResetResult> Reset(ResetInput input) {
 
          if (input == null) throw new ArgumentNullException("input");
 
@@ -107,21 +108,21 @@ namespace MvcAccount.Password.Reset {
 
          this.context.SendEmail(message);
 
-         return new OperationResult<ResetResult>(HttpStatusCode.Accepted, new ResetResult(destinationEmail));
+         return new Result<ResetResult>(HttpStatusCode.Accepted, new ResetResult(destinationEmail));
       }
 
-      public OperationResult<FinishInput> Finish(string cipher) {
+      public Result<FinishInput> Finish(string cipher) {
 
          var result = CanFinish(cipher);
 
          if (result.IsError) {
-            return new OperationResult<FinishInput>(result.StatusCode, result.Value);
+            return new Result<FinishInput>(result.StatusCode, result.Value);
          }
 
          return new FinishInput();
       }
 
-      public OperationResult Finish(string cipher, FinishInput input) {
+      public Result Finish(string cipher, FinishInput input) {
 
          if (input == null) throw new ArgumentNullException("input");
 
@@ -148,7 +149,7 @@ namespace MvcAccount.Password.Reset {
          return HttpStatusCode.OK;
       }
 
-      public OperationResult<UserWrapper> CanFinish(string cipher) {
+      public Result<UserWrapper> CanFinish(string cipher) {
 
          var verifData = VerificationData.Parse(cipher);
 

@@ -17,6 +17,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Web;
+using ResultEnvelope;
 
 namespace MvcAccount.Authentication {
    
@@ -40,7 +41,7 @@ namespace MvcAccount.Authentication {
          this.formsAuthService = config.RequireDependency(formsAuthService);
       }
 
-      public OperationResult SignIn(SignInInput input) {
+      public Result SignIn(SignInInput input) {
 
          var result = ValidateUser(input);
 
@@ -57,7 +58,7 @@ namespace MvcAccount.Authentication {
          return !ValidateUser(new SignInInput { Username = username, Password = password }).IsError;
       }
 
-      OperationResult<string> ValidateUser(SignInInput input) {
+      Result<string> ValidateUser(SignInInput input) {
 
          if (input == null) throw new ArgumentNullException("input");
 
@@ -78,7 +79,7 @@ namespace MvcAccount.Authentication {
          DateTime now = this.config.GetNow();
 
          if (!user.Password.HasValue()) {
-            return new OperationResult<string>(HttpStatusCode.Forbidden, AccountResources.Validation_MissingPasswordCannotAuthenticate);
+            return new Result<string>(HttpStatusCode.Forbidden, AccountResources.Validation_MissingPasswordCannotAuthenticate);
          }
 
          int maxInvalidAttempts = this.config.MaxInvalidSignInAttempts;
@@ -89,13 +90,13 @@ namespace MvcAccount.Authentication {
          if (passwordCorrect) {
 
             if (user.Disabled) {
-               return new OperationResult<string>(HttpStatusCode.Forbidden, AccountResources.Validation_UserDisabled);
+               return new Result<string>(HttpStatusCode.Forbidden, AccountResources.Validation_UserDisabled);
             }
 
          } else {
 
             if (user.Disabled) {
-               return new OperationResult<string>(HttpStatusCode.BadRequest, userPassNotMatchMessage);
+               return new Result<string>(HttpStatusCode.BadRequest, userPassNotMatchMessage);
             }
 
             if (failedAttempts <= maxInvalidAttempts) {
@@ -117,7 +118,7 @@ namespace MvcAccount.Authentication {
                if (failedAttempts <= maxInvalidAttempts
                   || user.Disabled) {
 
-                  return new OperationResult<string>(HttpStatusCode.BadRequest, userPassNotMatchMessage);
+                  return new Result<string>(HttpStatusCode.BadRequest, userPassNotMatchMessage);
                }
             }
          }
@@ -134,7 +135,7 @@ namespace MvcAccount.Authentication {
             double minutes = Math.Ceiling(totalMinutes);
 
             if (minutes > 0) {
-               return new OperationResult<string>(
+               return new Result<string>(
                   HttpStatusCode.Forbidden,
                   AccountResources.Validation_MaxInvalidSignInAttempts.FormatInvariant(minutes)
                );
@@ -158,7 +159,7 @@ namespace MvcAccount.Authentication {
          this.repo.UpdateUser(user);
 
          if (!passwordCorrect) {
-            return new OperationResult<string>(HttpStatusCode.BadRequest, userPassNotMatchMessage);
+            return new Result<string>(HttpStatusCode.BadRequest, userPassNotMatchMessage);
          }
 
          return user.Username;
