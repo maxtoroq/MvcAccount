@@ -1,3 +1,6 @@
 [submodule "submodules/ResultEnvelope"]
 	path = submodules/ResultEnvelope
 	url = https://github.com/maxtoroq/ResultEnvelope.git
+[submodule "submodules/sandcastle-md"]
+	path = submodules/sandcastle-md
+	url = https://github.com/maxtoroq/sandcastle-md.git
