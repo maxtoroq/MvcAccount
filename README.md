@@ -2,7 +2,7 @@ Authentication and account management plugin for ASP.NET MVC
 ============================================================
 MvcAccount is a substitute for [MembershipProvider][1] designed for ASP.NET MVC, that provides more features and the ability to store username/password and other related data in your own database.
 
-Get it now! Using NuGet
+Get it now! using NuGet
 -----------
 ```powershell
 Install-Package MvcAccount
