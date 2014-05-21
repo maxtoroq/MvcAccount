@@ -34,15 +34,18 @@ namespace MvcAccount {
          ViewEngineResult viewResult;
 
          do {
+
             viewResult = viewEngines.FindPartialView(controllerContext, String.Concat(partialViewName, ".", currentCulture.Name));
 
-            if (viewResult.View == null)
+            if (viewResult.View == null) {
                currentCulture = currentCulture.Parent;
+            }
 
          } while (viewResult.View == null && currentCulture != invariantCulture);
 
-         if (viewResult.View == null)
+         if (viewResult.View == null) {
             viewResult = viewEngines.FindPartialView(controllerContext, partialViewName);
+         }
 
          return viewResult;
       }

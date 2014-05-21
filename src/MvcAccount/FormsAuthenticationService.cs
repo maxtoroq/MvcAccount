@@ -86,8 +86,9 @@ namespace MvcAccount {
       /// </returns>
       public virtual HttpCookie GetAuthCookie(string userName, bool createPersistentCookie, string strCookiePath) {
 
-         if (!strCookiePath.HasValue())
+         if (!strCookiePath.HasValue()) {
             strCookiePath = FormsAuthentication.FormsCookiePath;
+         }
 
          DateTime utcNow = DateTime.UtcNow;
          TimeSpan persistentTimeout = this.Configuration.PersistentCookieTimeout;
