@@ -5,15 +5,16 @@
 =========================================================================
 
 MvcAccount
+http://maxtoroq.github.io/MvcAccount/
 Copyright 2012-2014 Max Toro Q.
 
 See LICENSE.txt
 
 This product includes/uses software(s) developed by 'Max Toro Q.'
-  - MvcCodeRouting (http://mvccoderouting.codeplex.com/)
+  - MvcCodeRouting <http://mvccoderouting.codeplex.com/>
   
 See packages/MvcCodeRouting.1.1.0/LICENSE.txt
 
 Translations
-  - Finnish (fi) by 'mikkoviitala' (http://www.codeplex.com/site/users/view/mikkoviitala)
-  - Portuguese (pt) by 'maurojs25' (http://www.codeplex.com/site/users/view/maurojs25)
+  - Finnish (fi) by 'mikkoviitala' <http://www.codeplex.com/site/users/view/mikkoviitala>
+  - Portuguese (pt) by 'maurojs25' <http://www.codeplex.com/site/users/view/maurojs25>
