@@ -99,7 +99,7 @@ Views
 -----
 MvcAccount includes all Razor views embedded as assembly resources. Embedded views can be individually overridden by files views in your project.
 
-To extract all views use the [Extract-Views](https://mvccoderouting.codeplex.com/wikipage?title=Extract-Views) command, using the same value of `baseRoute` (used at [registration](Installation-Instructions.md#registration)) for the `-ViewsDirectory` parameter.
+To extract all views use the [Extract-Views](https://github.com/maxtoroq/MvcCodeRouting/blob/master/docs/Embedded-Views.md#extracting-views) command, using the same value of `baseRoute` (used at [registration](Installation-Instructions.md#registration)) for the `-ViewsDirectory` parameter.
 
 Resources
 ---------
