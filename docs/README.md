@@ -1,6 +1,8 @@
 ﻿Getting Started
 ---------------
-To get started read the [Installation Instructions](Installation-Instructions.md).
+- [Installation Instructions](Installation-Instructions.md)
+- [Customization](Customization.md)
+- [MembershipProvider](MembershipProvider.md)
 
 Reference
 ---------
