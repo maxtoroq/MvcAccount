@@ -5,9 +5,9 @@ MvcAccount is a substitute for [MembershipProvider](http://msdn.microsoft.com/li
 Functions
 ---------
 - **Sign In/Out**: With account lock out after max. invalid attempts.
-- **ResetPassword**: Sends email with link to enter new password.
-- **ChangePassword**: User must sign in first.
-- **ChangeEmail**: With optional verification (sends email with link).
+- **Reset Password**: Sends email with link to enter new password.
+- **Change Password**: User must sign in first.
+- **Change Email**: With optional verification (sends email with link).
 
 Password encryption methods
 ---------------------------
@@ -43,7 +43,7 @@ MvcAccount doesn't provide the following functionality:
 
 Resources
 ---------
-- [Documentation](docs)
+- [Documentation](docs/README.md)
 - [Ask for help](https://github.com/maxtoroq/MvcAccount/issues?labels=question&state=closed)
 - [Report an issue](https://github.com/maxtoroq/MvcAccount/issues?state=open)
 

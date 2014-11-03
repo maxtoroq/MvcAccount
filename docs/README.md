@@ -6,4 +6,4 @@
 
 Reference
 ---------
-- [MvcAccount API Reference](api)
+- [MvcAccount API Reference](api/README.md)
