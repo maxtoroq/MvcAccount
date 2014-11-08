@@ -91,13 +91,13 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\submodules\ResultEnvelope\src\ResultEnvelope.Web.Mvc\ResultMvcExtensions.cs">
+    <Compile Include="..\ResultEnvelope\src\ResultEnvelope.Web.Mvc\ResultMvcExtensions.cs">
       <Link>Utilities\ResultEnvelope\ResultMvcExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\..\submodules\ResultEnvelope\src\ResultEnvelope\ErrorBuilder.cs">
+    <Compile Include="..\ResultEnvelope\src\ResultEnvelope\ErrorBuilder.cs">
       <Link>Utilities\ResultEnvelope\ErrorBuilder.cs</Link>
     </Compile>
-    <Compile Include="..\..\submodules\ResultEnvelope\src\ResultEnvelope\Result.cs">
+    <Compile Include="..\ResultEnvelope\src\ResultEnvelope\Result.cs">
       <Link>Utilities\ResultEnvelope\Result.cs</Link>
     </Compile>
     <Compile Include="AccountConfiguration.cs" />
