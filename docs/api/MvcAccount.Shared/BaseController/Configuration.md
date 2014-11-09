@@ -9,7 +9,7 @@ Syntax
 ------
 
 ```csharp
-protected AccountConfiguration Configuration { get; }
+protected internal AccountConfiguration Configuration { get; }
 ```
 
 ### Property Value

@@ -29,29 +29,16 @@ Name                              | Description
 [NotificationMessageViewModel][3] | Initializes a new instance of the **NotificationMessageViewModel** class 
 
 
-Methods
--------
-
-Name                 | Description                                                                                                                                                
--------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- 
-[Equals][4]          | Determines whether the specified [Object][1] is equal to the current [Object][1]. (Inherited from [Object][1].)                                            
-[Finalize][5]        | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection. (Inherited from [Object][1].) 
-[GetHashCode][6]     | Serves as a hash function for a particular type. (Inherited from [Object][1].)                                                                             
-[GetType][7]         | Gets the [Type][8] of the current instance. (Inherited from [Object][1].)                                                                                  
-[MemberwiseClone][9] | Creates a shallow copy of the current [Object][1]. (Inherited from [Object][1].)                                                                           
-[ToString][10]       | Returns a string that represents the current object. (Inherited from [Object][1].)                                                                         
-
-
 Properties
 ----------
 
-Name               | Description                              
------------------- | ---------------------------------------- 
-[HelpResource][11] | A resource where users can ask for help. 
-[NewEmail][12]     | The new email.                           
-[OldEmail][13]     | The old email.                           
-[SiteName][14]     | The name of the website.                 
-[Username][15]     | The username.                            
+Name              | Description                              
+----------------- | ---------------------------------------- 
+[HelpResource][4] | A resource where users can ask for help. 
+[NewEmail][5]     | The new email.                           
+[OldEmail][6]     | The old email.                           
+[SiteName][7]     | The name of the website.                 
+[Username][8]     | The username.                            
 
 
 See Also
@@ -61,15 +48,8 @@ See Also
 [1]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [2]: ../README.md
 [3]: _ctor.md
-[4]: http://msdn.microsoft.com/en-us/library/bsc2ak47
-[5]: http://msdn.microsoft.com/en-us/library/4k87zsw7
-[6]: http://msdn.microsoft.com/en-us/library/zdee4b3y
-[7]: http://msdn.microsoft.com/en-us/library/dfwy45w9
-[8]: http://msdn.microsoft.com/en-us/library/42892f65
-[9]: http://msdn.microsoft.com/en-us/library/57ctke0a
-[10]: http://msdn.microsoft.com/en-us/library/7bxwbwt2
-[11]: HelpResource.md
-[12]: NewEmail.md
-[13]: OldEmail.md
-[14]: SiteName.md
-[15]: Username.md
+[4]: HelpResource.md
+[5]: NewEmail.md
+[6]: OldEmail.md
+[7]: SiteName.md
+[8]: Username.md

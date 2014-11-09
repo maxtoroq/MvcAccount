@@ -33,17 +33,11 @@ Name                       | Description
 Methods
 -------
 
-Name                            | Description                                                                                                                                                                                                                                              
-------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-[Equals][6]                     | Determines whether the specified [Object][3] is equal to the current [Object][3]. (Inherited from [Object][3].)                                                                                                                                          
-[Finalize][7]                   | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection. (Inherited from [Object][3].)                                                                                               
-[GetHashCode][8]                | Serves as a hash function for a particular type. (Inherited from [Object][3].)                                                                                                                                                                           
-[GetType][9]                    | Gets the [Type][10] of the current instance. (Inherited from [Object][3].)                                                                                                                                                                               
-[MemberwiseClone][11]           | Creates a shallow copy of the current [Object][3]. (Inherited from [Object][3].)                                                                                                                                                                         
-[PasswordEquals][12]            | Compares a password provided by a user to one that is stored. (Overrides [PasswordService.PasswordEquals(String, String)][13].)                                                                                                                          
-[ProcessPasswordForStorage][14] | Converts the *clearTextPassword* to one that is suitable for storage. (Overrides [PasswordService.ProcessPasswordForStorage(String)][15].)                                                                                                               
-[ToString][16]                  | Returns a string that represents the current object. (Inherited from [Object][3].)                                                                                                                                                                       
-[ValidatePassword][17]          | Validates a new password provided by a user. This method can be used to check if the new password has the length required by the encryption method. Returns null by default, which means all passwords are valid. (Inherited from [PasswordService][1].) 
+Name                           | Description                                                                                                                                                                                                                                              
+------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+[PasswordEquals][6]            | Compares a password provided by a user to one that is stored. (Overrides [PasswordService.PasswordEquals(String, String)][7].)                                                                                                                           
+[ProcessPasswordForStorage][8] | Converts the *clearTextPassword* to one that is suitable for storage. (Overrides [PasswordService.ProcessPasswordForStorage(String)][9].)                                                                                                                
+[ValidatePassword][10]         | Validates a new password provided by a user. This method can be used to check if the new password has the length required by the encryption method. Returns null by default, which means all passwords are valid. (Inherited from [PasswordService][1].) 
 
 
 See Also
@@ -55,15 +49,8 @@ See Also
 [3]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [4]: ../README.md
 [5]: _ctor.md
-[6]: http://msdn.microsoft.com/en-us/library/bsc2ak47
-[7]: http://msdn.microsoft.com/en-us/library/4k87zsw7
-[8]: http://msdn.microsoft.com/en-us/library/zdee4b3y
-[9]: http://msdn.microsoft.com/en-us/library/dfwy45w9
-[10]: http://msdn.microsoft.com/en-us/library/42892f65
-[11]: http://msdn.microsoft.com/en-us/library/57ctke0a
-[12]: PasswordEquals.md
-[13]: ../../MvcAccount/PasswordService/PasswordEquals.md
-[14]: ProcessPasswordForStorage.md
-[15]: ../../MvcAccount/PasswordService/ProcessPasswordForStorage.md
-[16]: http://msdn.microsoft.com/en-us/library/7bxwbwt2
-[17]: ../../MvcAccount/PasswordService/ValidatePassword.md
+[6]: PasswordEquals.md
+[7]: ../../MvcAccount/PasswordService/PasswordEquals.md
+[8]: ProcessPasswordForStorage.md
+[9]: ../../MvcAccount/PasswordService/ProcessPasswordForStorage.md
+[10]: ../../MvcAccount/PasswordService/ValidatePassword.md

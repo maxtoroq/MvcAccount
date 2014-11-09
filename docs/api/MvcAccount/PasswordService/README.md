@@ -35,17 +35,11 @@ Name                 | Description
 Methods
 -------
 
-Name                            | Description                                                                                                                                                                                                       
-------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-[Equals][7]                     | Determines whether the specified [Object][1] is equal to the current [Object][1]. (Inherited from [Object][1].)                                                                                                   
-[Finalize][8]                   | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection. (Inherited from [Object][1].)                                                        
-[GetHashCode][9]                | Serves as a hash function for a particular type. (Inherited from [Object][1].)                                                                                                                                    
-[GetType][10]                   | Gets the [Type][11] of the current instance. (Inherited from [Object][1].)                                                                                                                                        
-[MemberwiseClone][12]           | Creates a shallow copy of the current [Object][1]. (Inherited from [Object][1].)                                                                                                                                  
-[PasswordEquals][13]            | Compares a password provided by a user to one that is stored.                                                                                                                                                     
-[ProcessPasswordForStorage][14] | Converts the *clearTextPassword* to one that is suitable for storage.                                                                                                                                             
-[ToString][15]                  | Returns a string that represents the current object. (Inherited from [Object][1].)                                                                                                                                
-[ValidatePassword][16]          | Validates a new password provided by a user. This method can be used to check if the new password has the length required by the encryption method. Returns null by default, which means all passwords are valid. 
+Name                           | Description                                                                                                                                                                                                       
+------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+[PasswordEquals][7]            | Compares a password provided by a user to one that is stored.                                                                                                                                                     
+[ProcessPasswordForStorage][8] | Converts the *clearTextPassword* to one that is suitable for storage.                                                                                                                                             
+[ValidatePassword][9]          | Validates a new password provided by a user. This method can be used to check if the new password has the length required by the encryption method. Returns null by default, which means all passwords are valid. 
 
 
 See Also
@@ -58,13 +52,6 @@ See Also
 [4]: ../../MvcAccount.Web.Security/SqlMembershipProviderPasswordService/README.md
 [5]: ../README.md
 [6]: _ctor.md
-[7]: http://msdn.microsoft.com/en-us/library/bsc2ak47
-[8]: http://msdn.microsoft.com/en-us/library/4k87zsw7
-[9]: http://msdn.microsoft.com/en-us/library/zdee4b3y
-[10]: http://msdn.microsoft.com/en-us/library/dfwy45w9
-[11]: http://msdn.microsoft.com/en-us/library/42892f65
-[12]: http://msdn.microsoft.com/en-us/library/57ctke0a
-[13]: PasswordEquals.md
-[14]: ProcessPasswordForStorage.md
-[15]: http://msdn.microsoft.com/en-us/library/7bxwbwt2
-[16]: ValidatePassword.md
+[7]: PasswordEquals.md
+[8]: ProcessPasswordForStorage.md
+[9]: ValidatePassword.md
