@@ -25,7 +25,6 @@
         <DocumentationSource sourceFile="..\..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.Helpers.dll" />
         <DocumentationSource sourceFile="..\..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.Helpers.xml" />
         <DocumentationSource sourceFile="..\..\packages\Microsoft.AspNet.Mvc.3.0.20105.1\lib\net40\System.Web.Mvc.dll" />
-        <DocumentationSource sourceFile="..\..\packages\Microsoft.AspNet.Mvc.3.0.20105.1\lib\net40\System.Web.Mvc.xml" />
         <DocumentationSource sourceFile="..\..\packages\Microsoft.AspNet.Razor.1.0.20105.408\lib\net40\System.Web.Razor.dll" />
         <DocumentationSource sourceFile="..\..\packages\Microsoft.AspNet.Razor.1.0.20105.408\lib\net40\System.Web.Razor.xml" />
         <DocumentationSource sourceFile="..\..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Deployment.dll" />
