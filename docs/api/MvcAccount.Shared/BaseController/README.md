@@ -9,8 +9,9 @@ Inheritance Hierarchy
   [System.Web.Mvc.ControllerBase][2]  
     [System.Web.Mvc.Controller][3]  
       **MvcAccount.Shared.BaseController**  
-        
-**Namespace:** [MvcAccount.Shared][4]  
+        [More...][4]
+
+**Namespace:** [MvcAccount.Shared][5]  
 **Assembly:** MvcAccount (in MvcAccount.dll)
 
 Syntax
@@ -29,7 +30,7 @@ Constructors
 
                     | Name                | Description                                                
 ------------------- | ------------------- | ---------------------------------------------------------- 
-![Protected method] | [BaseController][5] | Initializes a new instance of the **BaseController** class 
+![Protected method] | [BaseController][6] | Initializes a new instance of the **BaseController** class 
 
 
 Methods
@@ -37,49 +38,50 @@ Methods
 
                     | Name            | Description                                                                                                                          
 ------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------ 
-![Protected method] | [Initialize][6] | Initializes data that might not be available when the constructor is called. (Overrides [Controller.Initialize(RequestContext)][7].) 
+![Protected method] | [Initialize][7] | Initializes data that might not be available when the constructor is called. (Overrides [Controller.Initialize(RequestContext)][8].) 
 
 
 Properties
 ----------
 
-                      | Name               | Description                                                     
---------------------- | ------------------ | --------------------------------------------------------------- 
-![Protected property] | [Configuration][8] | The [AccountConfiguration][9] instance for the current request. 
+                      | Name               | Description                                                      
+--------------------- | ------------------ | ---------------------------------------------------------------- 
+![Protected property] | [Configuration][9] | The [AccountConfiguration][10] instance for the current request. 
 
 
 See Also
 --------
-[MvcAccount.Shared Namespace][4]  
+[MvcAccount.Shared Namespace][5]  
 
 
-Inheritance Hierarchy
----------------------
+Inheritance Hierarchy (Continued)
+---------------------------------
 [System.Object][1]  
   [System.Web.Mvc.ControllerBase][2]  
     [System.Web.Mvc.Controller][3]  
       **MvcAccount.Shared.BaseController**  
-        [MvcAccount.Account.AccountImplController][10]  
-        [MvcAccount.Authentication.AuthenticationController][11]  
-        [MvcAccount.Email.Change.ChangeController][12]  
-        [MvcAccount.Email.Verify.VerifyController][13]  
-        [MvcAccount.Password.Change.ChangeController][14]  
-        [MvcAccount.Password.Reset.ResetController][15]  
+        [MvcAccount.Account.AccountImplController][11]  
+        [MvcAccount.Authentication.AuthenticationController][12]  
+        [MvcAccount.Email.Change.ChangeController][13]  
+        [MvcAccount.Email.Verify.VerifyController][14]  
+        [MvcAccount.Password.Change.ChangeController][15]  
+        [MvcAccount.Password.Reset.ResetController][16]  
 
 [1]: http://msdn.microsoft.com/en-us/library/e5kfa45b
 [2]: http://msdn.microsoft.com/en-us/library/dd504950
 [3]: http://msdn.microsoft.com/en-us/library/dd460481
-[4]: ../README.md
-[5]: _ctor.md
-[6]: Initialize.md
-[7]: http://msdn.microsoft.com/en-us/library/dd470201
-[8]: Configuration.md
-[9]: ../../MvcAccount/AccountConfiguration/README.md
-[10]: ../../MvcAccount.Account/AccountImplController/README.md
-[11]: ../../MvcAccount.Authentication/AuthenticationController/README.md
-[12]: ../../MvcAccount.Email.Change/ChangeController/README.md
-[13]: ../../MvcAccount.Email.Verify/VerifyController/README.md
-[14]: ../../MvcAccount.Password.Change/ChangeController/README.md
-[15]: ../../MvcAccount.Password.Reset/ResetController/README.md
+[4]: #inheritance-hierarchy-continued
+[5]: ../README.md
+[6]: _ctor.md
+[7]: Initialize.md
+[8]: http://msdn.microsoft.com/en-us/library/dd470201
+[9]: Configuration.md
+[10]: ../../MvcAccount/AccountConfiguration/README.md
+[11]: ../../MvcAccount.Account/AccountImplController/README.md
+[12]: ../../MvcAccount.Authentication/AuthenticationController/README.md
+[13]: ../../MvcAccount.Email.Change/ChangeController/README.md
+[14]: ../../MvcAccount.Email.Verify/VerifyController/README.md
+[15]: ../../MvcAccount.Password.Change/ChangeController/README.md
+[16]: ../../MvcAccount.Password.Reset/ResetController/README.md
 [Protected method]: ../../_icons/protmethod.gif "Protected method"
 [Protected property]: ../../_icons/protproperty.gif "Protected property"
