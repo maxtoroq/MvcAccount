@@ -9,24 +9,24 @@ Syntax
 ------
 
 ```csharp
-public override bool ValidateUser(
-	string username,
-	string password
+public override bool ValidateUser(
+	string username,
+	string password
 )
 ```
 
 ### Parameters
 
 #### *username*
-Type: [System.String][2]  
+Type: [System.String][2]  
 The name of the user to validate.
 
 #### *password*
-Type: [System.String][2]  
+Type: [System.String][2]  
 The password for the specified user.
 
 ### Return Value
-Type: [Boolean][3]  
+Type: [Boolean][3]  
 true if the specified username and password are valid; otherwise, false.
 
 See Also

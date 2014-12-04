@@ -9,15 +9,15 @@ Syntax
 ------
 
 ```csharp
-public ResetViewModel(
-	ResetInput inputModel
+public ResetViewModel(
+	ResetInput inputModel
 )
 ```
 
 ### Parameters
 
 #### *inputModel*
-Type: [MvcAccount.Password.Reset.ResetInput][3]  
+Type: [MvcAccount.Password.Reset.ResetInput][3]  
 The input model.
 
 

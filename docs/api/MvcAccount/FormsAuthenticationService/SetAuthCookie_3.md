@@ -9,15 +9,15 @@ Syntax
 ------
 
 ```csharp
-public virtual void SetAuthCookie(
-	HttpCookie cookie
+public virtual void SetAuthCookie(
+	HttpCookie cookie
 )
 ```
 
 ### Parameters
 
 #### *cookie*
-Type: [System.Web.HttpCookie][2]  
+Type: [System.Web.HttpCookie][2]  
 The authentication cookie.
 
 

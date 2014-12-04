@@ -15,7 +15,7 @@ Syntax
 ------
 
 ```csharp
-public class VerificationMessageViewModel
+public class VerificationMessageViewModel
 ```
 
 The **VerificationMessageViewModel** type exposes the following members.
@@ -24,19 +24,19 @@ The **VerificationMessageViewModel** type exposes the following members.
 Constructors
 ------------
 
-Name                              | Description                                                              
---------------------------------- | ------------------------------------------------------------------------ 
-[VerificationMessageViewModel][3] | Initializes a new instance of the **VerificationMessageViewModel** class 
+                 | Name                              | Description                                                              
+---------------- | --------------------------------- | ------------------------------------------------------------------------ 
+![Public method] | [VerificationMessageViewModel][3] | Initializes a new instance of the **VerificationMessageViewModel** class 
 
 
 Properties
 ----------
 
-Name          | Description              
-------------- | ------------------------ 
-[SiteName][4] | The name of the website. 
-[Url][5]      | The verification URL.    
-[Username][6] | The username.            
+                   | Name          | Description              
+------------------ | ------------- | ------------------------ 
+![Public property] | [SiteName][4] | The name of the website. 
+![Public property] | [Url][5]      | The verification URL.    
+![Public property] | [Username][6] | The username.            
 
 
 See Also
@@ -49,3 +49,5 @@ See Also
 [4]: SiteName.md
 [5]: Url.md
 [6]: Username.md
+[Public method]: ../../_icons/pubmethod.gif "Public method"
+[Public property]: ../../_icons/pubproperty.gif "Public property"

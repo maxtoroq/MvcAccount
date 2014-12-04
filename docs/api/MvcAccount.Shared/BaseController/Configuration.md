@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-protected internal AccountConfiguration Configuration { get; }
+protected internal AccountConfiguration Configuration { get; }
 ```
 
 ### Property Value
-Type: [AccountConfiguration][1]
+Type: [AccountConfiguration][1]
 
 See Also
 --------

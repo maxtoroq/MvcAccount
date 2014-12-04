@@ -9,24 +9,24 @@ Syntax
 ------
 
 ```csharp
-public override string GetPassword(
-	string username,
-	string answer
+public override string GetPassword(
+	string username,
+	string answer
 )
 ```
 
 ### Parameters
 
 #### *username*
-Type: [System.String][3]  
+Type: [System.String][3]  
 The user to retrieve the password for.
 
 #### *answer*
-Type: [System.String][3]  
+Type: [System.String][3]  
 The password answer for the user.
 
 ### Return Value
-Type: [String][3]  
+Type: [String][3]  
 The password for the specified user name.
 
 See Also

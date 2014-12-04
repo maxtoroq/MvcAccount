@@ -9,19 +9,19 @@ Syntax
 ------
 
 ```csharp
-public HtmlHelper<TInputModel> HtmlHelperForInput(
-	HtmlHelper htmlHelper
+public HtmlHelper<TInputModel> HtmlHelperForInput(
+	HtmlHelper htmlHelper
 )
 ```
 
 ### Parameters
 
 #### *htmlHelper*
-Type: [System.Web.Mvc.HtmlHelper][4]  
+Type: [System.Web.Mvc.HtmlHelper][4]  
 The [HtmlHelper][4] of the current view.
 
 ### Return Value
-Type: [HtmlHelper][1]&lt;[TInputModel][5]>  
+Type: [HtmlHelper][1]&lt;[TInputModel][5]>  
 An [HtmlHelper&lt;TModel>][1] instance.
 
 See Also

@@ -18,7 +18,7 @@ Syntax
 ------
 
 ```csharp
-public class ChangeController : BaseController
+public class ChangeController : BaseController
 ```
 
 The **ChangeController** type exposes the following members.
@@ -27,32 +27,32 @@ The **ChangeController** type exposes the following members.
 Constructors
 ------------
 
-Name                                                                                  | Description                                                                                                                       
-------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- 
-[ChangeController()][6]                                                               | Initializes a new instance of the **ChangeController** class.                                                                     
-[ChangeController(AccountRepository, PasswordService)][7]                             | Initializes a new instance of the **ChangeController** class, with the provided *repo* and *passwordService*.                     
-[ChangeController(AccountRepository, PasswordService, FormsAuthenticationService)][8] | Initializes a new instance of the **ChangeController** class, with the provided *repo*, *passwordService* and *formsAuthService*. 
+                 | Name                                                                                  | Description                                                                                                                       
+---------------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- 
+![Public method] | [ChangeController()][6]                                                               | Initializes a new instance of the **ChangeController** class.                                                                     
+![Public method] | [ChangeController(AccountRepository, PasswordService)][7]                             | Initializes a new instance of the **ChangeController** class, with the provided *repo* and *passwordService*.                     
+![Public method] | [ChangeController(AccountRepository, PasswordService, FormsAuthenticationService)][8] | Initializes a new instance of the **ChangeController** class, with the provided *repo*, *passwordService* and *formsAuthService*. 
 
 
 Methods
 -------
 
-Name                                  | Description                                                                                                                               
-------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- 
-[Change()][9]                         | The change email page.                                                                                                                    
-[Change(ChangeInput, FormButton)][10] | Attempts to change the email.                                                                                                             
-[Initialize][11]                      | Initializes data that might not be available when the constructor is called. (Overrides [BaseController.Initialize(RequestContext)][12].) 
-[Saved][13]                           | A page that informs the user that his new email was saved.                                                                                
-[VerificationSent][14]                | A page that informs the user that the email change verification e-mail was sent.                                                          
-[Verify][15]                          | The email change verification callback.                                                                                                   
+                    | Name                                  | Description                                                                                                                               
+------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- 
+![Public method]    | [Change()][9]                         | The change email page.                                                                                                                    
+![Public method]    | [Change(ChangeInput, FormButton)][10] | Attempts to change the email.                                                                                                             
+![Protected method] | [Initialize][11]                      | Initializes data that might not be available when the constructor is called. (Overrides [BaseController.Initialize(RequestContext)][12].) 
+![Public method]    | [Saved][13]                           | A page that informs the user that his new email was saved.                                                                                
+![Public method]    | [VerificationSent][14]                | A page that informs the user that the email change verification e-mail was sent.                                                          
+![Public method]    | [Verify][15]                          | The email change verification callback.                                                                                                   
 
 
 Properties
 ----------
 
-Name                | Description                                                                                            
-------------------- | ------------------------------------------------------------------------------------------------------ 
-[Configuration][16] | The [AccountConfiguration][17] instance for the current request. (Inherited from [BaseController][4].) 
+                      | Name                | Description                                                                                            
+--------------------- | ------------------- | ------------------------------------------------------------------------------------------------------ 
+![Protected property] | [Configuration][16] | The [AccountConfiguration][17] instance for the current request. (Inherited from [BaseController][4].) 
 
 
 See Also
@@ -76,3 +76,6 @@ See Also
 [15]: Verify.md
 [16]: ../../MvcAccount.Shared/BaseController/Configuration.md
 [17]: ../../MvcAccount/AccountConfiguration/README.md
+[Public method]: ../../_icons/pubmethod.gif "Public method"
+[Protected method]: ../../_icons/protmethod.gif "Protected method"
+[Protected property]: ../../_icons/protproperty.gif "Protected property"

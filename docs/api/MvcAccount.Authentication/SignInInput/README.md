@@ -15,7 +15,7 @@ Syntax
 ------
 
 ```csharp
-public class SignInInput
+public class SignInInput
 ```
 
 The **SignInInput** type exposes the following members.
@@ -24,19 +24,19 @@ The **SignInInput** type exposes the following members.
 Constructors
 ------------
 
-Name             | Description                                             
----------------- | ------------------------------------------------------- 
-[SignInInput][4] | Initializes a new instance of the **SignInInput** class 
+                 | Name             | Description                                             
+---------------- | ---------------- | ------------------------------------------------------- 
+![Public method] | [SignInInput][4] | Initializes a new instance of the **SignInInput** class 
 
 
 Properties
 ----------
 
-Name            | Description                                                         
---------------- | ------------------------------------------------------------------- 
-[Password][5]   | The password.                                                       
-[RememberMe][6] | True to create a persistent authentication cookie; otherwise false. 
-[Username][7]   | The username.                                                       
+                   | Name            | Description                                                         
+------------------ | --------------- | ------------------------------------------------------------------- 
+![Public property] | [Password][5]   | The password.                                                       
+![Public property] | [RememberMe][6] | True to create a persistent authentication cookie; otherwise false. 
+![Public property] | [Username][7]   | The username.                                                       
 
 
 See Also
@@ -50,3 +50,5 @@ See Also
 [5]: Password.md
 [6]: RememberMe.md
 [7]: Username.md
+[Public method]: ../../_icons/pubmethod.gif "Public method"
+[Public property]: ../../_icons/pubproperty.gif "Public property"

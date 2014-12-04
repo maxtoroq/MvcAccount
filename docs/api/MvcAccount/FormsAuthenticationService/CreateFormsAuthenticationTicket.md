@@ -9,44 +9,44 @@ Syntax
 ------
 
 ```csharp
-protected virtual FormsAuthenticationTicket CreateFormsAuthenticationTicket(
-	int version,
-	string name,
-	DateTime issueDate,
-	DateTime expiration,
-	bool isPersistent,
-	string cookiePath
+protected virtual FormsAuthenticationTicket CreateFormsAuthenticationTicket(
+	int version,
+	string name,
+	DateTime issueDate,
+	DateTime expiration,
+	bool isPersistent,
+	string cookiePath
 )
 ```
 
 ### Parameters
 
 #### *version*
-Type: [System.Int32][3]  
+Type: [System.Int32][3]  
 The version number of the ticket.
 
 #### *name*
-Type: [System.String][4]  
+Type: [System.String][4]  
 The user name associated with the ticket.
 
 #### *issueDate*
-Type: [System.DateTime][5]  
+Type: [System.DateTime][5]  
 The local date and time at which the ticket was issued.
 
 #### *expiration*
-Type: [System.DateTime][5]  
+Type: [System.DateTime][5]  
 The local date and time at which the ticket expires.
 
 #### *isPersistent*
-Type: [System.Boolean][6]  
+Type: [System.Boolean][6]  
 true if the ticket will be stored in a persistent cookie (saved across browser sessions); otherwise, false. If the ticket is stored in the URL, this value is ignored.
 
 #### *cookiePath*
-Type: [System.String][4]  
+Type: [System.String][4]  
 The user-specific data to be stored with the ticket.
 
 ### Return Value
-Type: [FormsAuthenticationTicket][1]  
+Type: [FormsAuthenticationTicket][1]  
 A new [FormsAuthenticationTicket][1] instance.
 
 Remarks

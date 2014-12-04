@@ -9,20 +9,20 @@ Syntax
 ------
 
 ```csharp
-public LinkModel(
-	string url,
-	string text
+public LinkModel(
+	string url,
+	string text
 )
 ```
 
 ### Parameters
 
 #### *url*
-Type: [System.String][3]  
+Type: [System.String][3]  
 The link's URL.
 
 #### *text*
-Type: [System.String][3]  
+Type: [System.String][3]  
 The link's text.
 
 

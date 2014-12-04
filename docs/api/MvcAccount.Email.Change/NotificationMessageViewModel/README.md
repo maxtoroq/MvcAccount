@@ -15,7 +15,7 @@ Syntax
 ------
 
 ```csharp
-public class NotificationMessageViewModel
+public class NotificationMessageViewModel
 ```
 
 The **NotificationMessageViewModel** type exposes the following members.
@@ -24,21 +24,21 @@ The **NotificationMessageViewModel** type exposes the following members.
 Constructors
 ------------
 
-Name                              | Description                                                              
---------------------------------- | ------------------------------------------------------------------------ 
-[NotificationMessageViewModel][3] | Initializes a new instance of the **NotificationMessageViewModel** class 
+                 | Name                              | Description                                                              
+---------------- | --------------------------------- | ------------------------------------------------------------------------ 
+![Public method] | [NotificationMessageViewModel][3] | Initializes a new instance of the **NotificationMessageViewModel** class 
 
 
 Properties
 ----------
 
-Name              | Description                              
------------------ | ---------------------------------------- 
-[HelpResource][4] | A resource where users can ask for help. 
-[NewEmail][5]     | The new email.                           
-[OldEmail][6]     | The old email.                           
-[SiteName][7]     | The name of the website.                 
-[Username][8]     | The username.                            
+                   | Name              | Description                              
+------------------ | ----------------- | ---------------------------------------- 
+![Public property] | [HelpResource][4] | A resource where users can ask for help. 
+![Public property] | [NewEmail][5]     | The new email.                           
+![Public property] | [OldEmail][6]     | The old email.                           
+![Public property] | [SiteName][7]     | The name of the website.                 
+![Public property] | [Username][8]     | The username.                            
 
 
 See Also
@@ -53,3 +53,5 @@ See Also
 [6]: OldEmail.md
 [7]: SiteName.md
 [8]: Username.md
+[Public method]: ../../_icons/pubmethod.gif "Public method"
+[Public property]: ../../_icons/pubproperty.gif "Public property"

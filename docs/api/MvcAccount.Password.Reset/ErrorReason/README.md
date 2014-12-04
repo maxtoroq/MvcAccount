@@ -9,7 +9,7 @@ Syntax
 ------
 
 ```csharp
-public enum ErrorReason
+public enum ErrorReason
 ```
 
 

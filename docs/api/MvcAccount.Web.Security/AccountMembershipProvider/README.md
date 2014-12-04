@@ -17,7 +17,7 @@ Syntax
 ------
 
 ```csharp
-public class AccountMembershipProvider : MembershipProvider
+public class AccountMembershipProvider : MembershipProvider
 ```
 
 The **AccountMembershipProvider** type exposes the following members.
@@ -26,50 +26,50 @@ The **AccountMembershipProvider** type exposes the following members.
 Constructors
 ------------
 
-Name                           | Description                                                           
------------------------------- | --------------------------------------------------------------------- 
-[AccountMembershipProvider][5] | Initializes a new instance of the **AccountMembershipProvider** class 
+                 | Name                           | Description                                                           
+---------------- | ------------------------------ | --------------------------------------------------------------------- 
+![Public method] | [AccountMembershipProvider][5] | Initializes a new instance of the **AccountMembershipProvider** class 
 
 
 Methods
 -------
 
-Name                                 | Description                                                                                                                                                                                 
------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-[ChangePassword][6]                  | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.ChangePassword(String, String, String)][8].)                                                       
-[ChangePasswordQuestionAndAnswer][9] | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.ChangePasswordQuestionAndAnswer(String, String, String, String)][10].)                             
-[CreateUser][11]                     | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.CreateUser(String, String, String, String, String, Boolean, Object, MembershipCreateStatus)][12].) 
-[DeleteUser][13]                     | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.DeleteUser(String, Boolean)][14].)                                                                 
-[FindUsersByEmail][15]               | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.FindUsersByEmail(String, Int32, Int32, Int32)][16].)                                               
-[FindUsersByName][17]                | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.FindUsersByName(String, Int32, Int32, Int32)][18].)                                                
-[GetAllUsers][19]                    | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.GetAllUsers(Int32, Int32, Int32)][20].)                                                            
-[GetNumberOfUsersOnline][21]         | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.GetNumberOfUsersOnline()][22].)                                                                    
-[GetPassword][23]                    | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.GetPassword(String, String)][24].)                                                                 
-[GetUser(Object, Boolean)][25]       | Gets user information from the data source based on the unique identifier for the user. (Overrides [MembershipProvider.GetUser(Object, Boolean)][26].)                                      
-[GetUser(String, Boolean)][27]       | Gets information from the data source for a user. (Overrides [MembershipProvider.GetUser(String, Boolean)][28].)                                                                            
-[GetUserNameByEmail][29]             | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.GetUserNameByEmail(String)][30].)                                                                  
-[ResetPassword][31]                  | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.ResetPassword(String, String)][32].)                                                               
-[UnlockUser][33]                     | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.UnlockUser(String)][34].)                                                                          
-[UpdateUser][35]                     | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.UpdateUser(MembershipUser)][36].)                                                                  
-[ValidateUser][37]                   | Verifies that the specified user name and password exist in the data source. (Overrides [MembershipProvider.ValidateUser(String, String)][38].)                                             
+                 | Name                                 | Description                                                                                                                                                                                 
+---------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+![Public method] | [ChangePassword][6]                  | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.ChangePassword(String, String, String)][8].)                                                       
+![Public method] | [ChangePasswordQuestionAndAnswer][9] | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.ChangePasswordQuestionAndAnswer(String, String, String, String)][10].)                             
+![Public method] | [CreateUser][11]                     | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.CreateUser(String, String, String, String, String, Boolean, Object, MembershipCreateStatus)][12].) 
+![Public method] | [DeleteUser][13]                     | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.DeleteUser(String, Boolean)][14].)                                                                 
+![Public method] | [FindUsersByEmail][15]               | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.FindUsersByEmail(String, Int32, Int32, Int32)][16].)                                               
+![Public method] | [FindUsersByName][17]                | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.FindUsersByName(String, Int32, Int32, Int32)][18].)                                                
+![Public method] | [GetAllUsers][19]                    | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.GetAllUsers(Int32, Int32, Int32)][20].)                                                            
+![Public method] | [GetNumberOfUsersOnline][21]         | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.GetNumberOfUsersOnline()][22].)                                                                    
+![Public method] | [GetPassword][23]                    | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.GetPassword(String, String)][24].)                                                                 
+![Public method] | [GetUser(Object, Boolean)][25]       | Gets user information from the data source based on the unique identifier for the user. (Overrides [MembershipProvider.GetUser(Object, Boolean)][26].)                                      
+![Public method] | [GetUser(String, Boolean)][27]       | Gets information from the data source for a user. (Overrides [MembershipProvider.GetUser(String, Boolean)][28].)                                                                            
+![Public method] | [GetUserNameByEmail][29]             | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.GetUserNameByEmail(String)][30].)                                                                  
+![Public method] | [ResetPassword][31]                  | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.ResetPassword(String, String)][32].)                                                               
+![Public method] | [UnlockUser][33]                     | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.UnlockUser(String)][34].)                                                                          
+![Public method] | [UpdateUser][35]                     | This method always throws a [NotImplementedException][7]. (Overrides [MembershipProvider.UpdateUser(MembershipUser)][36].)                                                                  
+![Public method] | [ValidateUser][37]                   | Verifies that the specified user name and password exist in the data source. (Overrides [MembershipProvider.ValidateUser(String, String)][38].)                                             
 
 
 Properties
 ----------
 
-Name                                       | Description                                                                                                             
------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- 
-[ApplicationName][39]                      | The name of the application using the custom membership provider. (Overrides [MembershipProvider.ApplicationName][40].) 
-[EnablePasswordReset][41]                  | This property always returns false. (Overrides [MembershipProvider.EnablePasswordReset][42].)                           
-[EnablePasswordRetrieval][43]              | This property always returns false. (Overrides [MembershipProvider.EnablePasswordRetrieval][44].)                       
-[MaxInvalidPasswordAttempts][45]           | This property always returns 0. (Overrides [MembershipProvider.MaxInvalidPasswordAttempts][46].)                        
-[MinRequiredNonAlphanumericCharacters][47] | This property always returns 0. (Overrides [MembershipProvider.MinRequiredNonAlphanumericCharacters][48].)              
-[MinRequiredPasswordLength][49]            | This property always returns 0. (Overrides [MembershipProvider.MinRequiredPasswordLength][50].)                         
-[PasswordAttemptWindow][51]                | This property always returns 0. (Overrides [MembershipProvider.PasswordAttemptWindow][52].)                             
-[PasswordFormat][53]                       | This property always returns [Clear][54]. (Overrides [MembershipProvider.PasswordFormat][55].)                          
-[PasswordStrengthRegularExpression][56]    | This property always returns null. (Overrides [MembershipProvider.PasswordStrengthRegularExpression][57].)              
-[RequiresQuestionAndAnswer][58]            | This property always returns false. (Overrides [MembershipProvider.RequiresQuestionAndAnswer][59].)                     
-[RequiresUniqueEmail][60]                  | This property always return false. (Overrides [MembershipProvider.RequiresUniqueEmail][61].)                            
+                   | Name                                       | Description                                                                                                             
+------------------ | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- 
+![Public property] | [ApplicationName][39]                      | The name of the application using the custom membership provider. (Overrides [MembershipProvider.ApplicationName][40].) 
+![Public property] | [EnablePasswordReset][41]                  | This property always returns false. (Overrides [MembershipProvider.EnablePasswordReset][42].)                           
+![Public property] | [EnablePasswordRetrieval][43]              | This property always returns false. (Overrides [MembershipProvider.EnablePasswordRetrieval][44].)                       
+![Public property] | [MaxInvalidPasswordAttempts][45]           | This property always returns 0. (Overrides [MembershipProvider.MaxInvalidPasswordAttempts][46].)                        
+![Public property] | [MinRequiredNonAlphanumericCharacters][47] | This property always returns 0. (Overrides [MembershipProvider.MinRequiredNonAlphanumericCharacters][48].)              
+![Public property] | [MinRequiredPasswordLength][49]            | This property always returns 0. (Overrides [MembershipProvider.MinRequiredPasswordLength][50].)                         
+![Public property] | [PasswordAttemptWindow][51]                | This property always returns 0. (Overrides [MembershipProvider.PasswordAttemptWindow][52].)                             
+![Public property] | [PasswordFormat][53]                       | This property always returns [Clear][54]. (Overrides [MembershipProvider.PasswordFormat][55].)                          
+![Public property] | [PasswordStrengthRegularExpression][56]    | This property always returns null. (Overrides [MembershipProvider.PasswordStrengthRegularExpression][57].)              
+![Public property] | [RequiresQuestionAndAnswer][58]            | This property always returns false. (Overrides [MembershipProvider.RequiresQuestionAndAnswer][59].)                     
+![Public property] | [RequiresUniqueEmail][60]                  | This property always return false. (Overrides [MembershipProvider.RequiresUniqueEmail][61].)                            
 
 
 Remarks
@@ -141,3 +141,5 @@ See Also
 [59]: http://msdn.microsoft.com/en-us/library/yda8bsea
 [60]: RequiresUniqueEmail.md
 [61]: http://msdn.microsoft.com/en-us/library/ms152055
+[Public method]: ../../_icons/pubmethod.gif "Public method"
+[Public property]: ../../_icons/pubproperty.gif "Public property"

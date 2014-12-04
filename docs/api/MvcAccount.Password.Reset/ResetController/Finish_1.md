@@ -9,24 +9,24 @@ Syntax
 ------
 
 ```csharp
-public ActionResult Finish(
-	string id,
-	FinishInput input
+public ActionResult Finish(
+	string id,
+	FinishInput input
 )
 ```
 
 ### Parameters
 
 #### *id*
-Type: [System.String][2]  
+Type: [System.String][2]  
 The verification ticket.
 
 #### *input*
-Type: [MvcAccount.Password.Reset.FinishInput][3]  
+Type: [MvcAccount.Password.Reset.FinishInput][3]  
 The input model.
 
 ### Return Value
-Type: [ActionResult][4]  
+Type: [ActionResult][4]  
 The action result.
 
 See Also

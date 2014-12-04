@@ -9,15 +9,15 @@ Syntax
 ------
 
 ```csharp
-public FinishViewModel(
-	FinishInput inputModel
+public FinishViewModel(
+	FinishInput inputModel
 )
 ```
 
 ### Parameters
 
 #### *inputModel*
-Type: [MvcAccount.Password.Reset.FinishInput][3]  
+Type: [MvcAccount.Password.Reset.FinishInput][3]  
 The input model.
 
 

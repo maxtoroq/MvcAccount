@@ -9,15 +9,15 @@ Syntax
 ------
 
 ```csharp
-public SqlMembershipProviderPasswordService(
-	MembershipPasswordFormat passwordFormat
+public SqlMembershipProviderPasswordService(
+	MembershipPasswordFormat passwordFormat
 )
 ```
 
 ### Parameters
 
 #### *passwordFormat*
-Type: [System.Web.Security.MembershipPasswordFormat][3]  
+Type: [System.Web.Security.MembershipPasswordFormat][3]  
 The password encryption method.
 
 

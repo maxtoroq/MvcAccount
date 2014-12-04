@@ -15,7 +15,7 @@ Syntax
 ------
 
 ```csharp
-public class FinishInput
+public class FinishInput
 ```
 
 The **FinishInput** type exposes the following members.
@@ -24,18 +24,18 @@ The **FinishInput** type exposes the following members.
 Constructors
 ------------
 
-Name             | Description                                             
----------------- | ------------------------------------------------------- 
-[FinishInput][4] | Initializes a new instance of the **FinishInput** class 
+                 | Name             | Description                                             
+---------------- | ---------------- | ------------------------------------------------------- 
+![Public method] | [FinishInput][4] | Initializes a new instance of the **FinishInput** class 
 
 
 Properties
 ----------
 
-Name                    | Description       
------------------------ | ----------------- 
-[ConfirmNewPassword][5] | The new password. 
-[NewPassword][6]        | The new password. 
+                   | Name                    | Description       
+------------------ | ----------------------- | ----------------- 
+![Public property] | [ConfirmNewPassword][5] | The new password. 
+![Public property] | [NewPassword][6]        | The new password. 
 
 
 See Also
@@ -48,3 +48,5 @@ See Also
 [4]: _ctor.md
 [5]: ConfirmNewPassword.md
 [6]: NewPassword.md
+[Public method]: ../../_icons/pubmethod.gif "Public method"
+[Public property]: ../../_icons/pubproperty.gif "Public property"

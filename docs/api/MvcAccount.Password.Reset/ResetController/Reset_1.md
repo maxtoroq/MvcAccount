@@ -9,19 +9,19 @@ Syntax
 ------
 
 ```csharp
-public ActionResult Reset(
-	ResetInput input
+public ActionResult Reset(
+	ResetInput input
 )
 ```
 
 ### Parameters
 
 #### *input*
-Type: [MvcAccount.Password.Reset.ResetInput][2]  
+Type: [MvcAccount.Password.Reset.ResetInput][2]  
 The input model.
 
 ### Return Value
-Type: [ActionResult][3]  
+Type: [ActionResult][3]  
 The action result.
 
 See Also

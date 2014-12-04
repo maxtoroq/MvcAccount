@@ -9,29 +9,29 @@ Syntax
 ------
 
 ```csharp
-public override bool ChangePassword(
-	string username,
-	string oldPassword,
-	string newPassword
+public override bool ChangePassword(
+	string username,
+	string oldPassword,
+	string newPassword
 )
 ```
 
 ### Parameters
 
 #### *username*
-Type: [System.String][3]  
+Type: [System.String][3]  
 The user to update the password for.
 
 #### *oldPassword*
-Type: [System.String][3]  
+Type: [System.String][3]  
 The current password for the specified user.
 
 #### *newPassword*
-Type: [System.String][3]  
+Type: [System.String][3]  
 The new password for the specified user.
 
 ### Return Value
-Type: [Boolean][4]  
+Type: [Boolean][4]  
 true if the password was updated successfully; otherwise, false.
 
 See Also

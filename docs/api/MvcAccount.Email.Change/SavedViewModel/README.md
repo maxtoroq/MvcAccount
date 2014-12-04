@@ -16,7 +16,7 @@ Syntax
 ------
 
 ```csharp
-public class SavedViewModel : BaseViewModel
+public class SavedViewModel : BaseViewModel
 ```
 
 The **SavedViewModel** type exposes the following members.
@@ -25,21 +25,21 @@ The **SavedViewModel** type exposes the following members.
 Constructors
 ------------
 
-Name                | Description                                                 
-------------------- | ----------------------------------------------------------- 
-[SavedViewModel][4] | Initializes a new instance of the **SavedViewModel** class. 
+                 | Name                | Description                                                 
+---------------- | ------------------- | ----------------------------------------------------------- 
+![Public method] | [SavedViewModel][4] | Initializes a new instance of the **SavedViewModel** class. 
 
 
 Properties
 ----------
 
-Name               | Description                                                                                        
------------------- | -------------------------------------------------------------------------------------------------- 
-[Message][5]       | A message for the user.                                                                            
-[NextLink][6]      | The link for the next URL the user should navigate to.                                             
-[Title][7]         | The view's title, used on h1 and title elements. (Inherited from [BaseViewModel][2].)              
-[Url][8]           | A [UrlHelper][9] for creating URLs. (Inherited from [BaseViewModel][2].)                           
-[ViewCssClass][10] | A space-separated list of CSS classes to be used in the view. (Inherited from [BaseViewModel][2].) 
+                      | Name               | Description                                                                                        
+--------------------- | ------------------ | -------------------------------------------------------------------------------------------------- 
+![Public property]    | [Message][5]       | A message for the user.                                                                            
+![Public property]    | [NextLink][6]      | The link for the next URL the user should navigate to.                                             
+![Public property]    | [Title][7]         | The view's title, used on h1 and title elements. (Inherited from [BaseViewModel][2].)              
+![Protected property] | [Url][8]           | A [UrlHelper][9] for creating URLs. (Inherited from [BaseViewModel][2].)                           
+![Public property]    | [ViewCssClass][10] | A space-separated list of CSS classes to be used in the view. (Inherited from [BaseViewModel][2].) 
 
 
 See Also
@@ -56,3 +56,6 @@ See Also
 [8]: ../../MvcAccount.Shared/BaseViewModel/Url.md
 [9]: http://msdn.microsoft.com/en-us/library/dd492578
 [10]: ../../MvcAccount.Shared/BaseViewModel/ViewCssClass.md
+[Public method]: ../../_icons/pubmethod.gif "Public method"
+[Public property]: ../../_icons/pubproperty.gif "Public property"
+[Protected property]: ../../_icons/protproperty.gif "Protected property"

@@ -9,15 +9,15 @@ Syntax
 ------
 
 ```csharp
-protected override void Initialize(
-	RequestContext requestContext
+protected override void Initialize(
+	RequestContext requestContext
 )
 ```
 
 ### Parameters
 
 #### *requestContext*
-Type: [System.Web.Routing.RequestContext][2]  
+Type: [System.Web.Routing.RequestContext][2]  
 The HTTP context and route data.
 
 

@@ -18,7 +18,7 @@ Syntax
 ------
 
 ```csharp
-public class ResetController : BaseController
+public class ResetController : BaseController
 ```
 
 The **ResetController** type exposes the following members.
@@ -27,32 +27,32 @@ The **ResetController** type exposes the following members.
 Constructors
 ------------
 
-Name                                                     | Description                                                                                                  
--------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ 
-[ResetController()][6]                                   | Initializes a new instance of the **ResetController** class.                                                 
-[ResetController(AccountRepository, PasswordService)][7] | Initializes a new instance of the **ResetController** class, with the provided *repo* and *passwordService*. 
+                 | Name                                                     | Description                                                                                                  
+---------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ 
+![Public method] | [ResetController()][6]                                   | Initializes a new instance of the **ResetController** class.                                                 
+![Public method] | [ResetController(AccountRepository, PasswordService)][7] | Initializes a new instance of the **ResetController** class, with the provided *repo* and *passwordService*. 
 
 
 Methods
 -------
 
-Name                              | Description                                                                                                                               
---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- 
-[Done][8]                         | A page that informs the user that his password has been reset.                                                                            
-[Finish(String)][9]               | The reset password callback page.                                                                                                         
-[Finish(String, FinishInput)][10] | Attempts to reset the password.                                                                                                           
-[Initialize][11]                  | Initializes data that might not be available when the constructor is called. (Overrides [BaseController.Initialize(RequestContext)][12].) 
-[Reset()][13]                     | The reset password page.                                                                                                                  
-[Reset(ResetInput)][14]           | Attempts to reset the password.                                                                                                           
-[VerificationSent][15]            | A page that informs the user that the reset password verification e-mail was sent.                                                        
+                    | Name                              | Description                                                                                                                               
+------------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- 
+![Public method]    | [Done][8]                         | A page that informs the user that his password has been reset.                                                                            
+![Public method]    | [Finish(String)][9]               | The reset password callback page.                                                                                                         
+![Public method]    | [Finish(String, FinishInput)][10] | Attempts to reset the password.                                                                                                           
+![Protected method] | [Initialize][11]                  | Initializes data that might not be available when the constructor is called. (Overrides [BaseController.Initialize(RequestContext)][12].) 
+![Public method]    | [Reset()][13]                     | The reset password page.                                                                                                                  
+![Public method]    | [Reset(ResetInput)][14]           | Attempts to reset the password.                                                                                                           
+![Public method]    | [VerificationSent][15]            | A page that informs the user that the reset password verification e-mail was sent.                                                        
 
 
 Properties
 ----------
 
-Name                | Description                                                                                            
-------------------- | ------------------------------------------------------------------------------------------------------ 
-[Configuration][16] | The [AccountConfiguration][17] instance for the current request. (Inherited from [BaseController][4].) 
+                      | Name                | Description                                                                                            
+--------------------- | ------------------- | ------------------------------------------------------------------------------------------------------ 
+![Protected property] | [Configuration][16] | The [AccountConfiguration][17] instance for the current request. (Inherited from [BaseController][4].) 
 
 
 See Also
@@ -76,3 +76,6 @@ See Also
 [15]: VerificationSent.md
 [16]: ../../MvcAccount.Shared/BaseController/Configuration.md
 [17]: ../../MvcAccount/AccountConfiguration/README.md
+[Public method]: ../../_icons/pubmethod.gif "Public method"
+[Protected method]: ../../_icons/protmethod.gif "Protected method"
+[Protected property]: ../../_icons/protproperty.gif "Protected property"

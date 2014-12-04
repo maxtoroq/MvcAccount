@@ -9,7 +9,7 @@ Syntax
 ------
 
 ```csharp
-public SavedViewModel()
+public SavedViewModel()
 ```
 
 

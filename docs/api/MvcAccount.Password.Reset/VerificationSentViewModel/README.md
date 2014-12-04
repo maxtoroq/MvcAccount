@@ -16,7 +16,7 @@ Syntax
 ------
 
 ```csharp
-public class VerificationSentViewModel : BaseViewModel
+public class VerificationSentViewModel : BaseViewModel
 ```
 
 The **VerificationSentViewModel** type exposes the following members.
@@ -25,20 +25,20 @@ The **VerificationSentViewModel** type exposes the following members.
 Constructors
 ------------
 
-Name                           | Description                                                            
------------------------------- | ---------------------------------------------------------------------- 
-[VerificationSentViewModel][4] | Initializes a new instance of the **VerificationSentViewModel** class. 
+                 | Name                           | Description                                                            
+---------------- | ------------------------------ | ---------------------------------------------------------------------- 
+![Public method] | [VerificationSentViewModel][4] | Initializes a new instance of the **VerificationSentViewModel** class. 
 
 
 Properties
 ----------
 
-Name              | Description                                                                                        
------------------ | -------------------------------------------------------------------------------------------------- 
-[Message][5]      | A message for the user.                                                                            
-[Title][6]        | The view's title, used on h1 and title elements. (Inherited from [BaseViewModel][2].)              
-[Url][7]          | A [UrlHelper][8] for creating URLs. (Inherited from [BaseViewModel][2].)                           
-[ViewCssClass][9] | A space-separated list of CSS classes to be used in the view. (Inherited from [BaseViewModel][2].) 
+                      | Name              | Description                                                                                        
+--------------------- | ----------------- | -------------------------------------------------------------------------------------------------- 
+![Public property]    | [Message][5]      | A message for the user.                                                                            
+![Public property]    | [Title][6]        | The view's title, used on h1 and title elements. (Inherited from [BaseViewModel][2].)              
+![Protected property] | [Url][7]          | A [UrlHelper][8] for creating URLs. (Inherited from [BaseViewModel][2].)                           
+![Public property]    | [ViewCssClass][9] | A space-separated list of CSS classes to be used in the view. (Inherited from [BaseViewModel][2].) 
 
 
 See Also
@@ -54,3 +54,6 @@ See Also
 [7]: ../../MvcAccount.Shared/BaseViewModel/Url.md
 [8]: http://msdn.microsoft.com/en-us/library/dd492578
 [9]: ../../MvcAccount.Shared/BaseViewModel/ViewCssClass.md
+[Public method]: ../../_icons/pubmethod.gif "Public method"
+[Public property]: ../../_icons/pubproperty.gif "Public property"
+[Protected property]: ../../_icons/protproperty.gif "Protected property"

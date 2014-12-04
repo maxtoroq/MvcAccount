@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public Func<FormsAuthenticationService> FormsAuthenticationServiceResolver { get; set; }
+public Func<FormsAuthenticationService> FormsAuthenticationServiceResolver { get; set; }
 ```
 
 ### Property Value
-Type: [Func][3]&lt;[FormsAuthenticationService][1]>
+Type: [Func][3]&lt;[FormsAuthenticationService][1]>
 
 See Also
 --------

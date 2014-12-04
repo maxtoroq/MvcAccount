@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public int MaxPasswordLength { get; set; }
+public int MaxPasswordLength { get; set; }
 ```
 
 ### Property Value
-Type: [Int32][2]
+Type: [Int32][2]
 
 See Also
 --------

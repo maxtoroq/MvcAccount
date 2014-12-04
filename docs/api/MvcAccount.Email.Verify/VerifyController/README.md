@@ -18,7 +18,7 @@ Syntax
 ------
 
 ```csharp
-public class VerifyController : BaseController
+public class VerifyController : BaseController
 ```
 
 The **VerifyController** type exposes the following members.
@@ -27,27 +27,27 @@ The **VerifyController** type exposes the following members.
 Constructors
 ------------
 
-Name                                     | Description                                                                             
----------------------------------------- | --------------------------------------------------------------------------------------- 
-[VerifyController()][6]                  | Initializes a new instance of the **VerifyController** class.                           
-[VerifyController(AccountRepository)][7] | Initializes a new instance of the **VerifyController** class, with the provided *repo*. 
+                 | Name                                     | Description                                                                             
+---------------- | ---------------------------------------- | --------------------------------------------------------------------------------------- 
+![Public method] | [VerifyController()][6]                  | Initializes a new instance of the **VerifyController** class.                           
+![Public method] | [VerifyController(AccountRepository)][7] | Initializes a new instance of the **VerifyController** class, with the provided *repo*. 
 
 
 Methods
 -------
 
-Name            | Description                                                                                                                              
---------------- | ---------------------------------------------------------------------------------------------------------------------------------------- 
-[Initialize][8] | Initializes data that might not be available when the constructor is called. (Overrides [BaseController.Initialize(RequestContext)][9].) 
-[Verify][10]    | E-mail verification callback.                                                                                                            
+                    | Name            | Description                                                                                                                              
+------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------- 
+![Protected method] | [Initialize][8] | Initializes data that might not be available when the constructor is called. (Overrides [BaseController.Initialize(RequestContext)][9].) 
+![Public method]    | [Verify][10]    | E-mail verification callback.                                                                                                            
 
 
 Properties
 ----------
 
-Name                | Description                                                                                            
-------------------- | ------------------------------------------------------------------------------------------------------ 
-[Configuration][11] | The [AccountConfiguration][12] instance for the current request. (Inherited from [BaseController][4].) 
+                      | Name                | Description                                                                                            
+--------------------- | ------------------- | ------------------------------------------------------------------------------------------------------ 
+![Protected property] | [Configuration][11] | The [AccountConfiguration][12] instance for the current request. (Inherited from [BaseController][4].) 
 
 
 See Also
@@ -66,3 +66,6 @@ See Also
 [10]: Verify.md
 [11]: ../../MvcAccount.Shared/BaseController/Configuration.md
 [12]: ../../MvcAccount/AccountConfiguration/README.md
+[Public method]: ../../_icons/pubmethod.gif "Public method"
+[Protected method]: ../../_icons/protmethod.gif "Protected method"
+[Protected property]: ../../_icons/protproperty.gif "Protected property"

@@ -9,19 +9,19 @@ Syntax
 ------
 
 ```csharp
-public ActionResult Finish(
-	string id
+public ActionResult Finish(
+	string id
 )
 ```
 
 ### Parameters
 
 #### *id*
-Type: [System.String][2]  
+Type: [System.String][2]  
 The verification ticket.
 
 ### Return Value
-Type: [ActionResult][3]  
+Type: [ActionResult][3]  
 The action result.
 
 See Also

@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public string ToHtmlString()
+public string ToHtmlString()
 ```
 
 ### Return Value
-Type: [String][2]  
+Type: [String][2]  
 An HTML-encoded string representation of the link.
 ### Implements
 [IHtmlString.ToHtmlString()][3]  

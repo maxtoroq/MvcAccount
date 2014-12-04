@@ -9,19 +9,19 @@ Syntax
 ------
 
 ```csharp
-public virtual string ValidatePassword(
-	string clearTextPassword
+public virtual string ValidatePassword(
+	string clearTextPassword
 )
 ```
 
 ### Parameters
 
 #### *clearTextPassword*
-Type: [System.String][2]  
+Type: [System.String][2]  
 The new password in clear text.
 
 ### Return Value
-Type: [String][2]  
+Type: [String][2]  
 An error message if the password is not valid; otherwise null.
 
 Remarks

@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public LinkModel NextLink { get; set; }
+public LinkModel NextLink { get; set; }
 ```
 
 ### Property Value
-Type: [LinkModel][2]
+Type: [LinkModel][2]
 
 See Also
 --------

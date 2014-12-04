@@ -9,7 +9,7 @@ Syntax
 ------
 
 ```csharp
-public IndexViewModel()
+public IndexViewModel()
 ```
 
 

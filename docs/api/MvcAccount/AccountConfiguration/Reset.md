@@ -9,7 +9,7 @@ Syntax
 ------
 
 ```csharp
-public void Reset()
+public void Reset()
 ```
 
 

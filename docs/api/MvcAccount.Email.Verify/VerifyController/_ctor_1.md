@@ -9,15 +9,15 @@ Syntax
 ------
 
 ```csharp
-public VerifyController(
-	AccountRepository repo
+public VerifyController(
+	AccountRepository repo
 )
 ```
 
 ### Parameters
 
 #### *repo*
-Type: [MvcAccount.AccountRepository][3]  
+Type: [MvcAccount.AccountRepository][3]  
 The account repository.
 
 

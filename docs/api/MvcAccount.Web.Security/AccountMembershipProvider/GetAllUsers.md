@@ -9,29 +9,29 @@ Syntax
 ------
 
 ```csharp
-public override MembershipUserCollection GetAllUsers(
-	int pageIndex,
-	int pageSize,
-	out int totalRecords
+public override MembershipUserCollection GetAllUsers(
+	int pageIndex,
+	int pageSize,
+	out int totalRecords
 )
 ```
 
 ### Parameters
 
 #### *pageIndex*
-Type: [System.Int32][3]  
+Type: [System.Int32][3]  
 The index of the page of results to return. pageIndex is zero-based.
 
 #### *pageSize*
-Type: [System.Int32][3]  
+Type: [System.Int32][3]  
 The size of the page of results to return.
 
 #### *totalRecords*
-Type: [System.Int32][3]  
+Type: [System.Int32][3]  
 The total number of matched users.
 
 ### Return Value
-Type: [MembershipUserCollection][4]  
+Type: [MembershipUserCollection][4]  
  A [MembershipUserCollection][4] collection that contains a page of pageSize [MembershipUser][5] objects beginning at the page specified by pageIndex. 
 
 See Also

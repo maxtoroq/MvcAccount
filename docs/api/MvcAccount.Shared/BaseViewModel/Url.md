@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-protected UrlHelper Url { get; }
+protected UrlHelper Url { get; }
 ```
 
 ### Property Value
-Type: [UrlHelper][1]
+Type: [UrlHelper][1]
 
 See Also
 --------

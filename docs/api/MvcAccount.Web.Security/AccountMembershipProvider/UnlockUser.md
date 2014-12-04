@@ -9,19 +9,19 @@ Syntax
 ------
 
 ```csharp
-public override bool UnlockUser(
-	string userName
+public override bool UnlockUser(
+	string userName
 )
 ```
 
 ### Parameters
 
 #### *userName*
-Type: [System.String][3]  
+Type: [System.String][3]  
 The user whose lock status you want to clear.
 
 ### Return Value
-Type: [Boolean][4]  
+Type: [Boolean][4]  
 true if the user was successfully unlocked; otherwise, false.
 
 See Also

@@ -13,7 +13,7 @@ public TInputModel InputModel { get; }
 ```
 
 ### Property Value
-Type: [TInputModel][2]
+Type: [TInputModel][2]
 
 See Also
 --------

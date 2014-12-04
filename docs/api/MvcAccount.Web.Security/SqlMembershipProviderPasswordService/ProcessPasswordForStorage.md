@@ -9,19 +9,19 @@ Syntax
 ------
 
 ```csharp
-public override string ProcessPasswordForStorage(
-	string clearTextPassword
+public override string ProcessPasswordForStorage(
+	string clearTextPassword
 )
 ```
 
 ### Parameters
 
 #### *clearTextPassword*
-Type: [System.String][2]  
+Type: [System.String][2]  
 The password in clear text.
 
 ### Return Value
-Type: [String][2]  
+Type: [String][2]  
 The password suitable for storage.
 
 See Also

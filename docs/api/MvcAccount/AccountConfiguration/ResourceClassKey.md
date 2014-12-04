@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public string ResourceClassKey { get; set; }
+public string ResourceClassKey { get; set; }
 ```
 
 ### Property Value
-Type: [String][2]
+Type: [String][2]
 
 See Also
 --------

@@ -9,7 +9,7 @@ Syntax
 ------
 
 ```csharp
-public SignInInput()
+public SignInInput()
 ```
 
 

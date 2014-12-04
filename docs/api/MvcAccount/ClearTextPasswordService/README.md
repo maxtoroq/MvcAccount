@@ -16,7 +16,7 @@ Syntax
 ------
 
 ```csharp
-public class ClearTextPasswordService : PasswordService
+public class ClearTextPasswordService : PasswordService
 ```
 
 The **ClearTextPasswordService** type exposes the following members.
@@ -25,19 +25,19 @@ The **ClearTextPasswordService** type exposes the following members.
 Constructors
 ------------
 
-Name                          | Description                                                          
------------------------------ | -------------------------------------------------------------------- 
-[ClearTextPasswordService][4] | Initializes a new instance of the **ClearTextPasswordService** class 
+                 | Name                          | Description                                                          
+---------------- | ----------------------------- | -------------------------------------------------------------------- 
+![Public method] | [ClearTextPasswordService][4] | Initializes a new instance of the **ClearTextPasswordService** class 
 
 
 Methods
 -------
 
-Name                           | Description                                                                                                                                                                                                                                              
------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-[PasswordEquals][5]            | Compares a password provided by a user to one that is stored. (Overrides [PasswordService.PasswordEquals(String, String)][6].)                                                                                                                           
-[ProcessPasswordForStorage][7] | Returns *clearTextPassword* unchanged. (Overrides [PasswordService.ProcessPasswordForStorage(String)][8].)                                                                                                                                               
-[ValidatePassword][9]          | Validates a new password provided by a user. This method can be used to check if the new password has the length required by the encryption method. Returns null by default, which means all passwords are valid. (Inherited from [PasswordService][1].) 
+                 | Name                           | Description                                                                                                                                                                                                                                              
+---------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+![Public method] | [PasswordEquals][5]            | Compares a password provided by a user to one that is stored. (Overrides [PasswordService.PasswordEquals(String, String)][6].)                                                                                                                           
+![Public method] | [ProcessPasswordForStorage][7] | Returns *clearTextPassword* unchanged. (Overrides [PasswordService.ProcessPasswordForStorage(String)][8].)                                                                                                                                               
+![Public method] | [ValidatePassword][9]          | Validates a new password provided by a user. This method can be used to check if the new password has the length required by the encryption method. Returns null by default, which means all passwords are valid. (Inherited from [PasswordService][1].) 
 
 
 See Also
@@ -53,3 +53,4 @@ See Also
 [7]: ProcessPasswordForStorage.md
 [8]: ../PasswordService/ProcessPasswordForStorage.md
 [9]: ../PasswordService/ValidatePassword.md
+[Public method]: ../../_icons/pubmethod.gif "Public method"

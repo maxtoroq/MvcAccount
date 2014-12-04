@@ -9,15 +9,15 @@ Syntax
 ------
 
 ```csharp
-public SignInViewModel(
-	SignInInput inputModel
+public SignInViewModel(
+	SignInInput inputModel
 )
 ```
 
 ### Parameters
 
 #### *inputModel*
-Type: [MvcAccount.Authentication.SignInInput][3]  
+Type: [MvcAccount.Authentication.SignInInput][3]  
 The input model.
 
 

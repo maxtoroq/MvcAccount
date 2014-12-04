@@ -15,7 +15,7 @@ Syntax
 ------
 
 ```csharp
-public abstract class AccountRepository
+public abstract class AccountRepository
 ```
 
 The **AccountRepository** type exposes the following members.
@@ -24,20 +24,20 @@ The **AccountRepository** type exposes the following members.
 Constructors
 ------------
 
-Name                   | Description                                                   
----------------------- | ------------------------------------------------------------- 
-[AccountRepository][3] | Initializes a new instance of the **AccountRepository** class 
+                    | Name                   | Description                                                   
+------------------- | ---------------------- | ------------------------------------------------------------- 
+![Protected method] | [AccountRepository][3] | Initializes a new instance of the **AccountRepository** class 
 
 
 Methods
 -------
 
-Name                 | Description                                                                                                                                                                                               
--------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-[FindUserByEmail][4] | Gets the user whose email matches the provided *email*.                                                                                                                                                   
-[FindUserById][5]    | Gets the user that matches the provided unique identifier. Note to Implementers: *id* can be provided as a [String][6], make sure to convert the value if needed. e.g. `int intId = Convert.ToInt32(id);` 
-[FindUserByName][7]  | Gets the user that matches the provided *username*.                                                                                                                                                       
-[UpdateUser][8]      | Persists the changes of *user*.                                                                                                                                                                           
+                 | Name                 | Description                                                                                                                                                                                               
+---------------- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+![Public method] | [FindUserByEmail][4] | Gets the user whose email matches the provided *email*.                                                                                                                                                   
+![Public method] | [FindUserById][5]    | Gets the user that matches the provided unique identifier. Note to Implementers: *id* can be provided as a [String][6], make sure to convert the value if needed. e.g. `int intId = Convert.ToInt32(id);` 
+![Public method] | [FindUserByName][7]  | Gets the user that matches the provided *username*.                                                                                                                                                       
+![Public method] | [UpdateUser][8]      | Persists the changes of *user*.                                                                                                                                                                           
 
 
 See Also
@@ -52,3 +52,5 @@ See Also
 [6]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
 [7]: FindUserByName.md
 [8]: UpdateUser.md
+[Protected method]: ../../_icons/protmethod.gif "Protected method"
+[Public method]: ../../_icons/pubmethod.gif "Public method"

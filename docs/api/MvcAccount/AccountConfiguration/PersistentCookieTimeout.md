@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public TimeSpan PersistentCookieTimeout { get; set; }
+public TimeSpan PersistentCookieTimeout { get; set; }
 ```
 
 ### Property Value
-Type: [TimeSpan][2]
+Type: [TimeSpan][2]
 
 Remarks
 -------

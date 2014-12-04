@@ -9,24 +9,24 @@ Syntax
 ------
 
 ```csharp
-public override bool PasswordEquals(
-	string clearTextPassword,
-	string storedPassword
+public override bool PasswordEquals(
+	string clearTextPassword,
+	string storedPassword
 )
 ```
 
 ### Parameters
 
 #### *clearTextPassword*
-Type: [System.String][2]  
+Type: [System.String][2]  
 The password in clear text provided by a user.
 
 #### *storedPassword*
-Type: [System.String][2]  
+Type: [System.String][2]  
 The stored password.
 
 ### Return Value
-Type: [Boolean][3]  
+Type: [Boolean][3]  
 true if the passwords are equal; otherwise false.
 
 See Also

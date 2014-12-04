@@ -9,7 +9,7 @@ Syntax
 ------
 
 ```csharp
-public virtual void SignOut()
+public virtual void SignOut()
 ```
 
 

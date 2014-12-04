@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public ErrorReason ErrorReason { get; set; }
+public ErrorReason ErrorReason { get; set; }
 ```
 
 ### Property Value
-Type: [ErrorReason][2]
+Type: [ErrorReason][2]
 
 See Also
 --------

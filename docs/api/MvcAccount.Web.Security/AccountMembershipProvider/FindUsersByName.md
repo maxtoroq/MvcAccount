@@ -9,34 +9,34 @@ Syntax
 ------
 
 ```csharp
-public override MembershipUserCollection FindUsersByName(
-	string usernameToMatch,
-	int pageIndex,
-	int pageSize,
-	out int totalRecords
+public override MembershipUserCollection FindUsersByName(
+	string usernameToMatch,
+	int pageIndex,
+	int pageSize,
+	out int totalRecords
 )
 ```
 
 ### Parameters
 
 #### *usernameToMatch*
-Type: [System.String][3]  
+Type: [System.String][3]  
 The user name to search for.
 
 #### *pageIndex*
-Type: [System.Int32][4]  
+Type: [System.Int32][4]  
 The index of the page of results to return. pageIndex is zero-based.
 
 #### *pageSize*
-Type: [System.Int32][4]  
+Type: [System.Int32][4]  
 The size of the page of results to return.
 
 #### *totalRecords*
-Type: [System.Int32][4]  
+Type: [System.Int32][4]  
 The total number of matched users.
 
 ### Return Value
-Type: [MembershipUserCollection][5]  
+Type: [MembershipUserCollection][5]  
  A [MembershipUserCollection][5] collection that contains a page of pageSize [MembershipUser][6] objects beginning at the page specified by pageIndex. 
 
 See Also

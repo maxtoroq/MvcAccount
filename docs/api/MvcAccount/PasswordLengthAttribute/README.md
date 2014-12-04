@@ -18,7 +18,7 @@ Syntax
 ------
 
 ```csharp
-public class PasswordLengthAttribute : StringLengthAttribute, 
+public class PasswordLengthAttribute : StringLengthAttribute, 
 	IClientValidatable
 ```
 
@@ -28,17 +28,17 @@ The **PasswordLengthAttribute** type exposes the following members.
 Constructors
 ------------
 
-Name                         | Description                                                          
----------------------------- | -------------------------------------------------------------------- 
-[PasswordLengthAttribute][8] | Initializes a new instance of the **PasswordLengthAttribute** class. 
+                 | Name                         | Description                                                          
+---------------- | ---------------------------- | -------------------------------------------------------------------- 
+![Public method] | [PasswordLengthAttribute][8] | Initializes a new instance of the **PasswordLengthAttribute** class. 
 
 
 Methods
 -------
 
-Name                          | Description                      
------------------------------ | -------------------------------- 
-[GetClientValidationRules][9] | Returns client validation rules. 
+                 | Name                          | Description                      
+---------------- | ----------------------------- | -------------------------------- 
+![Public method] | [GetClientValidationRules][9] | Returns client validation rules. 
 
 
 See Also
@@ -56,3 +56,4 @@ See Also
 [7]: ../README.md
 [8]: _ctor.md
 [9]: GetClientValidationRules.md
+[Public method]: ../../_icons/pubmethod.gif "Public method"

@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public DateTimeKind DateTimeKind { get; set; }
+public DateTimeKind DateTimeKind { get; set; }
 ```
 
 ### Property Value
-Type: [DateTimeKind][2]
+Type: [DateTimeKind][2]
 
 See Also
 --------

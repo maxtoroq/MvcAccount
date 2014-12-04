@@ -18,7 +18,7 @@ Syntax
 ------
 
 ```csharp
-public class ChangeController : BaseController
+public class ChangeController : BaseController
 ```
 
 The **ChangeController** type exposes the following members.
@@ -27,29 +27,29 @@ The **ChangeController** type exposes the following members.
 Constructors
 ------------
 
-Name                                                      | Description                                                                                                   
---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- 
-[ChangeController()][6]                                   | Initializes a new instance of the **ChangeController** class.                                                 
-[ChangeController(AccountRepository, PasswordService)][7] | Initializes a new instance of the **ChangeController** class, with the provided *repo* and *passwordService*. 
+                 | Name                                                      | Description                                                                                                   
+---------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- 
+![Public method] | [ChangeController()][6]                                   | Initializes a new instance of the **ChangeController** class.                                                 
+![Public method] | [ChangeController(AccountRepository, PasswordService)][7] | Initializes a new instance of the **ChangeController** class, with the provided *repo* and *passwordService*. 
 
 
 Methods
 -------
 
-Name                                 | Description                                                                                                                               
------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- 
-[Change()][8]                        | The change password page.                                                                                                                 
-[Change(ChangeInput, FormButton)][9] | Attempts to change the password.                                                                                                          
-[Initialize][10]                     | Initializes data that might not be available when the constructor is called. (Overrides [BaseController.Initialize(RequestContext)][11].) 
-[Saved][12]                          | A page that informs the user that his new password was saved.                                                                             
+                    | Name                                 | Description                                                                                                                               
+------------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- 
+![Public method]    | [Change()][8]                        | The change password page.                                                                                                                 
+![Public method]    | [Change(ChangeInput, FormButton)][9] | Attempts to change the password.                                                                                                          
+![Protected method] | [Initialize][10]                     | Initializes data that might not be available when the constructor is called. (Overrides [BaseController.Initialize(RequestContext)][11].) 
+![Public method]    | [Saved][12]                          | A page that informs the user that his new password was saved.                                                                             
 
 
 Properties
 ----------
 
-Name                | Description                                                                                            
-------------------- | ------------------------------------------------------------------------------------------------------ 
-[Configuration][13] | The [AccountConfiguration][14] instance for the current request. (Inherited from [BaseController][4].) 
+                      | Name                | Description                                                                                            
+--------------------- | ------------------- | ------------------------------------------------------------------------------------------------------ 
+![Protected property] | [Configuration][13] | The [AccountConfiguration][14] instance for the current request. (Inherited from [BaseController][4].) 
 
 
 See Also
@@ -70,3 +70,6 @@ See Also
 [12]: Saved.md
 [13]: ../../MvcAccount.Shared/BaseController/Configuration.md
 [14]: ../../MvcAccount/AccountConfiguration/README.md
+[Public method]: ../../_icons/pubmethod.gif "Public method"
+[Protected method]: ../../_icons/protmethod.gif "Protected method"
+[Protected property]: ../../_icons/protproperty.gif "Protected property"

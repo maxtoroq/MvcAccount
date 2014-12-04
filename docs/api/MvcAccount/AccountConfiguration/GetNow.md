@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public DateTime GetNow()
+public DateTime GetNow()
 ```
 
 ### Return Value
-Type: [DateTime][1]  
+Type: [DateTime][1]  
 The current [DateTime][1], which depends on [DateTimeKind][3].
 
 See Also

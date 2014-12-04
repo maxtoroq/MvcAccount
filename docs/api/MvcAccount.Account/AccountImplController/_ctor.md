@@ -9,7 +9,7 @@ Syntax
 ------
 
 ```csharp
-protected AccountImplController()
+protected AccountImplController()
 ```
 
 

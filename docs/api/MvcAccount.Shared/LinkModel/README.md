@@ -15,7 +15,7 @@ Syntax
 ------
 
 ```csharp
-public class LinkModel : IHtmlString
+public class LinkModel : IHtmlString
 ```
 
 The **LinkModel** type exposes the following members.
@@ -24,26 +24,26 @@ The **LinkModel** type exposes the following members.
 Constructors
 ------------
 
-Name           | Description                                                                            
--------------- | -------------------------------------------------------------------------------------- 
-[LinkModel][3] | Initializes a new instance of the **LinkModel** class using the provided URL and text. 
+                 | Name           | Description                                                                            
+---------------- | -------------- | -------------------------------------------------------------------------------------- 
+![Public method] | [LinkModel][3] | Initializes a new instance of the **LinkModel** class using the provided URL and text. 
 
 
 Methods
 -------
 
-Name              | Description                                                
------------------ | ---------------------------------------------------------- 
-[ToHtmlString][4] | Returns an HTML-encoded string representation of the link. 
+                 | Name              | Description                                                
+---------------- | ----------------- | ---------------------------------------------------------- 
+![Public method] | [ToHtmlString][4] | Returns an HTML-encoded string representation of the link. 
 
 
 Properties
 ----------
 
-Name      | Description      
---------- | ---------------- 
-[Text][5] | The link's text. 
-[Url][6]  | The link's URL.  
+                   | Name      | Description      
+------------------ | --------- | ---------------- 
+![Public property] | [Text][5] | The link's text. 
+![Public property] | [Url][6]  | The link's URL.  
 
 
 See Also
@@ -56,3 +56,5 @@ See Also
 [4]: ToHtmlString.md
 [5]: Text.md
 [6]: Url.md
+[Public method]: ../../_icons/pubmethod.gif "Public method"
+[Public property]: ../../_icons/pubproperty.gif "Public property"

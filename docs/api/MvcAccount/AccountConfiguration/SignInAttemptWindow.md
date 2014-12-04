@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public TimeSpan SignInAttemptWindow { get; set; }
+public TimeSpan SignInAttemptWindow { get; set; }
 ```
 
 ### Property Value
-Type: [TimeSpan][4]
+Type: [TimeSpan][4]
 
 See Also
 --------

@@ -9,15 +9,15 @@ Syntax
 ------
 
 ```csharp
-public void SetAuthCookie(
-	string userName
+public void SetAuthCookie(
+	string userName
 )
 ```
 
 ### Parameters
 
 #### *userName*
-Type: [System.String][2]  
+Type: [System.String][2]  
 The name of an authenticated user.
 
 

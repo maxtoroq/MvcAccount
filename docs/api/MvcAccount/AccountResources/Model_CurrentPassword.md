@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public static string Model_CurrentPassword { get; }
+public static string Model_CurrentPassword { get; }
 ```
 
 ### Property Value
-Type: [String][2]
+Type: [String][2]
 
 See Also
 --------

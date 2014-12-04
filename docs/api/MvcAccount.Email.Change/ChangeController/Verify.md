@@ -9,19 +9,19 @@ Syntax
 ------
 
 ```csharp
-public ActionResult Verify(
-	string id
+public ActionResult Verify(
+	string id
 )
 ```
 
 ### Parameters
 
 #### *id*
-Type: [System.String][2]  
+Type: [System.String][2]  
 The verification email.
 
 ### Return Value
-Type: [ActionResult][3]  
+Type: [ActionResult][3]  
 The action result.
 
 See Also

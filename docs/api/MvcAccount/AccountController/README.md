@@ -19,7 +19,7 @@ Syntax
 ------
 
 ```csharp
-public class AccountController : AccountImplController
+public class AccountController : AccountImplController
 ```
 
 The **AccountController** type exposes the following members.
@@ -28,26 +28,26 @@ The **AccountController** type exposes the following members.
 Constructors
 ------------
 
-Name                   | Description                                                   
----------------------- | ------------------------------------------------------------- 
-[AccountController][7] | Initializes a new instance of the **AccountController** class 
+                 | Name                   | Description                                                   
+---------------- | ---------------------- | ------------------------------------------------------------- 
+![Public method] | [AccountController][7] | Initializes a new instance of the **AccountController** class 
 
 
 Methods
 -------
 
-Name            | Description                                                                                                        
---------------- | ------------------------------------------------------------------------------------------------------------------ 
-[Index][8]      | The index page. (Inherited from [AccountImplController][5].)                                                       
-[Initialize][9] | Initializes data that might not be available when the constructor is called. (Inherited from [BaseController][4].) 
+                    | Name            | Description                                                                                                        
+------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------ 
+![Public method]    | [Index][8]      | The index page. (Inherited from [AccountImplController][5].)                                                       
+![Protected method] | [Initialize][9] | Initializes data that might not be available when the constructor is called. (Inherited from [BaseController][4].) 
 
 
 Properties
 ----------
 
-Name                | Description                                                                                            
-------------------- | ------------------------------------------------------------------------------------------------------ 
-[Configuration][10] | The [AccountConfiguration][11] instance for the current request. (Inherited from [BaseController][4].) 
+                      | Name                | Description                                                                                            
+--------------------- | ------------------- | ------------------------------------------------------------------------------------------------------ 
+![Protected property] | [Configuration][10] | The [AccountConfiguration][11] instance for the current request. (Inherited from [BaseController][4].) 
 
 
 See Also
@@ -65,3 +65,6 @@ See Also
 [9]: ../../MvcAccount.Shared/BaseController/Initialize.md
 [10]: ../../MvcAccount.Shared/BaseController/Configuration.md
 [11]: ../AccountConfiguration/README.md
+[Public method]: ../../_icons/pubmethod.gif "Public method"
+[Protected method]: ../../_icons/protmethod.gif "Protected method"
+[Protected property]: ../../_icons/protproperty.gif "Protected property"

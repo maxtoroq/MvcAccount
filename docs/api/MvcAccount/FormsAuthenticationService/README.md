@@ -15,7 +15,7 @@ Syntax
 ------
 
 ```csharp
-public class FormsAuthenticationService
+public class FormsAuthenticationService
 ```
 
 The **FormsAuthenticationService** type exposes the following members.
@@ -24,33 +24,33 @@ The **FormsAuthenticationService** type exposes the following members.
 Constructors
 ------------
 
-Name                            | Description                                                            
-------------------------------- | ---------------------------------------------------------------------- 
-[FormsAuthenticationService][3] | Initializes a new instance of the **FormsAuthenticationService** class 
+                 | Name                            | Description                                                            
+---------------- | ------------------------------- | ---------------------------------------------------------------------- 
+![Public method] | [FormsAuthenticationService][3] | Initializes a new instance of the **FormsAuthenticationService** class 
 
 
 Methods
 -------
 
-Name                                         | Description                                                                                                                                        
--------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- 
-[CreateFormsAuthenticationTicket][4]         | Creates a [FormsAuthenticationTicket][5] instance.                                                                                                 
-[GetAuthCookie(String)][6]                   | Creates an authentication cookie for a given user name. This does not set the cookie as part of the outgoing response.                             
-[GetAuthCookie(String, Boolean)][7]          | Creates an authentication cookie for a given user name. This does not set the cookie as part of the outgoing response.                             
-[GetAuthCookie(String, Boolean, String)][8]  | Creates an authentication cookie for a given user name. This does not set the cookie as part of the outgoing response.                             
-[SetAuthCookie(String)][9]                   | Creates an authentication ticket for the supplied user name and adds it to the cookies collection of the response.                                 
-[SetAuthCookie(HttpCookie)][10]              | Adds the *cookie* to the cookies collection of the response.                                                                                       
-[SetAuthCookie(String, Boolean)][11]         | Creates an authentication ticket for the supplied user name and adds it to the cookies collection of the response.                                 
-[SetAuthCookie(String, Boolean, String)][12] | Creates an authentication ticket for the supplied user name and adds it to the cookies collection of the response, using the supplied cookie path. 
-[SignOut][13]                                | Removes the forms-authentication ticket from the browser.                                                                                          
+                    | Name                                         | Description                                                                                                                                        
+------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- 
+![Protected method] | [CreateFormsAuthenticationTicket][4]         | Creates a [FormsAuthenticationTicket][5] instance.                                                                                                 
+![Public method]    | [GetAuthCookie(String)][6]                   | Creates an authentication cookie for a given user name. This does not set the cookie as part of the outgoing response.                             
+![Public method]    | [GetAuthCookie(String, Boolean)][7]          | Creates an authentication cookie for a given user name. This does not set the cookie as part of the outgoing response.                             
+![Public method]    | [GetAuthCookie(String, Boolean, String)][8]  | Creates an authentication cookie for a given user name. This does not set the cookie as part of the outgoing response.                             
+![Public method]    | [SetAuthCookie(String)][9]                   | Creates an authentication ticket for the supplied user name and adds it to the cookies collection of the response.                                 
+![Public method]    | [SetAuthCookie(HttpCookie)][10]              | Adds the *cookie* to the cookies collection of the response.                                                                                       
+![Public method]    | [SetAuthCookie(String, Boolean)][11]         | Creates an authentication ticket for the supplied user name and adds it to the cookies collection of the response.                                 
+![Public method]    | [SetAuthCookie(String, Boolean, String)][12] | Creates an authentication ticket for the supplied user name and adds it to the cookies collection of the response, using the supplied cookie path. 
+![Public method]    | [SignOut][13]                                | Removes the forms-authentication ticket from the browser.                                                                                          
 
 
 Properties
 ----------
 
-Name                | Description                                                      
-------------------- | ---------------------------------------------------------------- 
-[Configuration][14] | The [AccountConfiguration][15] instance for the current request. 
+                   | Name                | Description                                                      
+------------------ | ------------------- | ---------------------------------------------------------------- 
+![Public property] | [Configuration][14] | The [AccountConfiguration][15] instance for the current request. 
 
 
 See Also
@@ -72,3 +72,6 @@ See Also
 [13]: SignOut.md
 [14]: Configuration.md
 [15]: ../AccountConfiguration/README.md
+[Public method]: ../../_icons/pubmethod.gif "Public method"
+[Protected method]: ../../_icons/protmethod.gif "Protected method"
+[Public property]: ../../_icons/pubproperty.gif "Public property"

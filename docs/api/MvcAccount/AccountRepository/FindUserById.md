@@ -9,19 +9,19 @@ Syntax
 ------
 
 ```csharp
-public abstract Object FindUserById(
-	Object id
+public abstract Object FindUserById(
+	Object id
 )
 ```
 
 ### Parameters
 
 #### *id*
-Type: [System.Object][3]  
+Type: [System.Object][3]  
 The user unique identifier.
 
 ### Return Value
-Type: [Object][3]  
+Type: [Object][3]  
 The user object whose unique identifier matches *id*, or null if not found.
 
 See Also

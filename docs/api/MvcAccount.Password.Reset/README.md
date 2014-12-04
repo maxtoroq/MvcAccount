@@ -6,25 +6,25 @@ MvcAccount.Password.Reset Namespace
 Classes
 -------
 
-Class                              | Description                                                         
----------------------------------- | ------------------------------------------------------------------- 
-[DoneViewModel][1]                 | Holds data for the PasswordReset view.                              
-[ErrorMessageViewModel][2]         | Holds data for the ResetPasswordNotFoundMessage view.               
-[FinishInput][3]                   | Holds data required by the [Finish(String, FinishInput)][4] action. 
-[FinishViewModel][5]               | Holds data for the RP view.                                         
-[ResetController][6]               | Exposes password reset functionality.                               
-[ResetInput][7]                    | Holds data required by the [Reset(ResetInput)][8] action.           
-[ResetViewModel][9]                | Holds data for the ResetPassword view.                              
-[VerificationMessageViewModel][10] | Holds data for the ResetPasswordMessage view.                       
-[VerificationSentViewModel][11]    | Holds data for the PasswordResetVerificationSent view.              
+                | Class                              | Description                                                         
+--------------- | ---------------------------------- | ------------------------------------------------------------------- 
+![Public class] | [DoneViewModel][1]                 | Holds data for the PasswordReset view.                              
+![Public class] | [ErrorMessageViewModel][2]         | Holds data for the ResetPasswordNotFoundMessage view.               
+![Public class] | [FinishInput][3]                   | Holds data required by the [Finish(String, FinishInput)][4] action. 
+![Public class] | [FinishViewModel][5]               | Holds data for the RP view.                                         
+![Public class] | [ResetController][6]               | Exposes password reset functionality.                               
+![Public class] | [ResetInput][7]                    | Holds data required by the [Reset(ResetInput)][8] action.           
+![Public class] | [ResetViewModel][9]                | Holds data for the ResetPassword view.                              
+![Public class] | [VerificationMessageViewModel][10] | Holds data for the ResetPasswordMessage view.                       
+![Public class] | [VerificationSentViewModel][11]    | Holds data for the PasswordResetVerificationSent view.              
 
 
 Enumerations
 ------------
 
-Enumeration       | Description                                               
------------------ | --------------------------------------------------------- 
-[ErrorReason][12] | Specifies the reason why a reset password attempt failed. 
+                      | Enumeration       | Description                                               
+--------------------- | ----------------- | --------------------------------------------------------- 
+![Public enumeration] | [ErrorReason][12] | Specifies the reason why a reset password attempt failed. 
 
 [1]: DoneViewModel/README.md
 [2]: ErrorMessageViewModel/README.md
@@ -38,3 +38,5 @@ Enumeration       | Description
 [10]: VerificationMessageViewModel/README.md
 [11]: VerificationSentViewModel/README.md
 [12]: ErrorReason/README.md
+[Public class]: ../_icons/pubclass.gif "Public class"
+[Public enumeration]: ../_icons/pubenumeration.gif "Public enumeration"

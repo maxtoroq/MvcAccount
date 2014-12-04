@@ -17,7 +17,7 @@ Syntax
 ------
 
 ```csharp
-public class ChangeViewModel : FormViewModel<ChangeInput>
+public class ChangeViewModel : FormViewModel<ChangeInput>
 ```
 
 The **ChangeViewModel** type exposes the following members.
@@ -26,30 +26,30 @@ The **ChangeViewModel** type exposes the following members.
 Constructors
 ------------
 
-Name                 | Description                                                                              
--------------------- | ---------------------------------------------------------------------------------------- 
-[ChangeViewModel][6] | Initializes a new instance of the [ChangeInput][4] class using the provided input model. 
+                 | Name                 | Description                                                                              
+---------------- | -------------------- | ---------------------------------------------------------------------------------------- 
+![Public method] | [ChangeViewModel][6] | Initializes a new instance of the [ChangeInput][4] class using the provided input model. 
 
 
 Methods
 -------
 
-Name                    | Description                                                                                                                                           
------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- 
-[HtmlHelperForInput][7] | Returns a [HtmlHelper&lt;TModel>][8] to be used to render form controls for the [InputModel][9]. (Inherited from [FormViewModel&lt;TInputModel>][3].) 
+                 | Name                    | Description                                                                                                                                           
+---------------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- 
+![Public method] | [HtmlHelperForInput][7] | Returns a [HtmlHelper&lt;TModel>][8] to be used to render form controls for the [InputModel][9]. (Inherited from [FormViewModel&lt;TInputModel>][3].) 
 
 
 Properties
 ----------
 
-Name               | Description                                                                                        
------------------- | -------------------------------------------------------------------------------------------------- 
-[CancelText][10]   | Text for the cancel button. (Inherited from [FormViewModel&lt;TInputModel>][3].)                   
-[InputModel][9]    | The form's input model. (Inherited from [FormViewModel&lt;TInputModel>][3].)                       
-[SubmitText][11]   | Text for the submit button. (Inherited from [FormViewModel&lt;TInputModel>][3].)                   
-[Title][12]        | The view's title, used on h1 and title elements. (Inherited from [BaseViewModel][2].)              
-[Url][13]          | A [UrlHelper][14] for creating URLs. (Inherited from [BaseViewModel][2].)                          
-[ViewCssClass][15] | A space-separated list of CSS classes to be used in the view. (Inherited from [BaseViewModel][2].) 
+                      | Name               | Description                                                                                        
+--------------------- | ------------------ | -------------------------------------------------------------------------------------------------- 
+![Public property]    | [CancelText][10]   | Text for the cancel button. (Inherited from [FormViewModel&lt;TInputModel>][3].)                   
+![Public property]    | [InputModel][9]    | The form's input model. (Inherited from [FormViewModel&lt;TInputModel>][3].)                       
+![Public property]    | [SubmitText][11]   | Text for the submit button. (Inherited from [FormViewModel&lt;TInputModel>][3].)                   
+![Public property]    | [Title][12]        | The view's title, used on h1 and title elements. (Inherited from [BaseViewModel][2].)              
+![Protected property] | [Url][13]          | A [UrlHelper][14] for creating URLs. (Inherited from [BaseViewModel][2].)                          
+![Public property]    | [ViewCssClass][15] | A space-separated list of CSS classes to be used in the view. (Inherited from [BaseViewModel][2].) 
 
 
 See Also
@@ -71,3 +71,6 @@ See Also
 [13]: ../../MvcAccount.Shared/BaseViewModel/Url.md
 [14]: http://msdn.microsoft.com/en-us/library/dd492578
 [15]: ../../MvcAccount.Shared/BaseViewModel/ViewCssClass.md
+[Public method]: ../../_icons/pubmethod.gif "Public method"
+[Public property]: ../../_icons/pubproperty.gif "Public property"
+[Protected property]: ../../_icons/protproperty.gif "Protected property"

@@ -9,24 +9,24 @@ Syntax
 ------
 
 ```csharp
-public override bool DeleteUser(
-	string username,
-	bool deleteAllRelatedData
+public override bool DeleteUser(
+	string username,
+	bool deleteAllRelatedData
 )
 ```
 
 ### Parameters
 
 #### *username*
-Type: [System.String][3]  
+Type: [System.String][3]  
 The name of the user to delete.
 
 #### *deleteAllRelatedData*
-Type: [System.Boolean][4]  
-true to delete data related to the user from the database; false to leave data related to the user in the database.
+Type: [System.Boolean][4]  
+ true to delete data related to the user from the database; false to leave data related to the user in the database.
 
 ### Return Value
-Type: [Boolean][4]  
+Type: [Boolean][4]  
 true if the user was successfully deleted; otherwise, false.
 
 See Also

@@ -9,24 +9,24 @@ Syntax
 ------
 
 ```csharp
-public override string ResetPassword(
-	string username,
-	string answer
+public override string ResetPassword(
+	string username,
+	string answer
 )
 ```
 
 ### Parameters
 
 #### *username*
-Type: [System.String][3]  
+Type: [System.String][3]  
 The user to reset the password for.
 
 #### *answer*
-Type: [System.String][3]  
+Type: [System.String][3]  
 The password answer for the specified user.
 
 ### Return Value
-Type: [String][3]  
+Type: [String][3]  
 The new password for the specified user.
 
 See Also

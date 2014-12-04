@@ -9,15 +9,15 @@ Syntax
 ------
 
 ```csharp
-public ChangeViewModel(
-	ChangeInput inputModel
+public ChangeViewModel(
+	ChangeInput inputModel
 )
 ```
 
 ### Parameters
 
 #### *inputModel*
-Type: [MvcAccount.Email.Change.ChangeInput][3]  
+Type: [MvcAccount.Email.Change.ChangeInput][3]  
 The input model.
 
 

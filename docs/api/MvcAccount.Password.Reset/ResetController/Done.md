@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public ActionResult Done()
+public ActionResult Done()
 ```
 
 ### Return Value
-Type: [ActionResult][2]  
+Type: [ActionResult][2]  
 The action result.
 
 See Also

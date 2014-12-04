@@ -9,19 +9,19 @@ Syntax
 ------
 
 ```csharp
-public static implicit operator bool (
-	FormButton value
+public static implicit operator bool (
+	FormButton value
 )
 ```
 
 ### Parameters
 
 #### *value*
-Type: [MvcAccount.Shared.FormButton][3]  
+Type: [MvcAccount.Shared.FormButton][3]  
 The value.
 
 ### Return Value
-Type: [Boolean][1]  
+Type: [Boolean][1]  
 The value of [Successful][4].
 
 See Also

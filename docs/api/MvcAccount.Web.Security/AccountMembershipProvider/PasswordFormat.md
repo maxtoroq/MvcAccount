@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public override MembershipPasswordFormat PasswordFormat { get; }
+public override MembershipPasswordFormat PasswordFormat { get; }
 ```
 
 ### Property Value
-Type: [MembershipPasswordFormat][1]
+Type: [MembershipPasswordFormat][1]
 
 See Also
 --------

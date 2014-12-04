@@ -9,24 +9,24 @@ Syntax
 ------
 
 ```csharp
-public HttpCookie GetAuthCookie(
-	string userName,
-	bool createPersistentCookie
+public HttpCookie GetAuthCookie(
+	string userName,
+	bool createPersistentCookie
 )
 ```
 
 ### Parameters
 
 #### *userName*
-Type: [System.String][2]  
+Type: [System.String][2]  
 The name of the authenticated user.
 
 #### *createPersistentCookie*
-Type: [System.Boolean][3]  
-true to create a durable cookie (one that is saved across browser sessions); otherwise, false.
+Type: [System.Boolean][3]  
+ true to create a durable cookie (one that is saved across browser sessions); otherwise, false.
 
 ### Return Value
-Type: [HttpCookie][4]  
+Type: [HttpCookie][4]  
  An [HttpCookie][4] that contains encrypted forms-authentication ticket information. 
 
 See Also

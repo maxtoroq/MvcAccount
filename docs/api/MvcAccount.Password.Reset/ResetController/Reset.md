@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public ActionResult Reset()
+public ActionResult Reset()
 ```
 
 ### Return Value
-Type: [ActionResult][2]  
+Type: [ActionResult][2]  
 The action result.
 
 See Also

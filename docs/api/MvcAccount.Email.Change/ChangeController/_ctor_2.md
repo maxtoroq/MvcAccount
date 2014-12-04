@@ -9,25 +9,25 @@ Syntax
 ------
 
 ```csharp
-public ChangeController(
-	AccountRepository repo,
-	PasswordService passwordService,
-	FormsAuthenticationService formsAuthService
+public ChangeController(
+	AccountRepository repo,
+	PasswordService passwordService,
+	FormsAuthenticationService formsAuthService
 )
 ```
 
 ### Parameters
 
 #### *repo*
-Type: [MvcAccount.AccountRepository][3]  
+Type: [MvcAccount.AccountRepository][3]  
 The account repository.
 
 #### *passwordService*
-Type: [MvcAccount.PasswordService][4]  
+Type: [MvcAccount.PasswordService][4]  
 The password service.
 
 #### *formsAuthService*
-Type: [MvcAccount.FormsAuthenticationService][5]  
+Type: [MvcAccount.FormsAuthenticationService][5]  
 The forms authentication service.
 
 

@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public Func<Type, Object> DependencyResolver { get; set; }
+public Func<Type, Object> DependencyResolver { get; set; }
 ```
 
 ### Property Value
-Type: [Func][4]&lt;[Type][5], [Object][6]>
+Type: [Func][4]&lt;[Type][5], [Object][6]>
 
 See Also
 --------

@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public static Func<AccountConfiguration> ConfigurationResolver { get; set; }
+public static Func<AccountConfiguration> ConfigurationResolver { get; set; }
 ```
 
 ### Property Value
-Type: [Func][4]&lt;[AccountConfiguration][1]>
+Type: [Func][4]&lt;[AccountConfiguration][1]>
 
 See Also
 --------

@@ -9,24 +9,24 @@ Syntax
 ------
 
 ```csharp
-public override MembershipUser GetUser(
-	Object providerUserKey,
-	bool userIsOnline
+public override MembershipUser GetUser(
+	Object providerUserKey,
+	bool userIsOnline
 )
 ```
 
 ### Parameters
 
 #### *providerUserKey*
-Type: [System.Object][2]  
+Type: [System.Object][2]  
 The unique identifier for the user to get information for.
 
 #### *userIsOnline*
-Type: [System.Boolean][3]  
+Type: [System.Boolean][3]  
 This parameter is ignored.
 
 ### Return Value
-Type: [MembershipUser][4]  
+Type: [MembershipUser][4]  
  A [MembershipUser][4] object populated with the specified user's information from the data source. 
 
 See Also

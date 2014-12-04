@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public ActionResult Index()
+public ActionResult Index()
 ```
 
 ### Return Value
-Type: [ActionResult][2]  
+Type: [ActionResult][2]  
 The action result.
 
 See Also

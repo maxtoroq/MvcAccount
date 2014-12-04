@@ -9,24 +9,24 @@ Syntax
 ------
 
 ```csharp
-public ActionResult Change(
-	ChangeInput input,
-	FormButton cancel
+public ActionResult Change(
+	ChangeInput input,
+	FormButton cancel
 )
 ```
 
 ### Parameters
 
 #### *input*
-Type: [MvcAccount.Password.Change.ChangeInput][2]  
+Type: [MvcAccount.Password.Change.ChangeInput][2]  
 The input model.
 
 #### *cancel*
-Type: [MvcAccount.Shared.FormButton][3]  
+Type: [MvcAccount.Shared.FormButton][3]  
 A value that indicates if the operation was cancelled by the user.
 
 ### Return Value
-Type: [ActionResult][4]  
+Type: [ActionResult][4]  
 The action result.
 
 See Also

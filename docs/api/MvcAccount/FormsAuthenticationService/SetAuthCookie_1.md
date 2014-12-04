@@ -9,21 +9,21 @@ Syntax
 ------
 
 ```csharp
-public void SetAuthCookie(
-	string userName,
-	bool createPersistentCookie
+public void SetAuthCookie(
+	string userName,
+	bool createPersistentCookie
 )
 ```
 
 ### Parameters
 
 #### *userName*
-Type: [System.String][2]  
+Type: [System.String][2]  
 The name of an authenticated user.
 
 #### *createPersistentCookie*
-Type: [System.Boolean][3]  
-true to create a durable cookie (one that is saved across browser sessions); otherwise, false.
+Type: [System.Boolean][3]  
+ true to create a durable cookie (one that is saved across browser sessions); otherwise, false.
 
 
 See Also

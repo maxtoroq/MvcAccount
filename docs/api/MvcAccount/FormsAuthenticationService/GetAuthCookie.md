@@ -9,19 +9,19 @@ Syntax
 ------
 
 ```csharp
-public HttpCookie GetAuthCookie(
-	string userName
+public HttpCookie GetAuthCookie(
+	string userName
 )
 ```
 
 ### Parameters
 
 #### *userName*
-Type: [System.String][2]  
+Type: [System.String][2]  
 The name of the authenticated user.
 
 ### Return Value
-Type: [HttpCookie][3]  
+Type: [HttpCookie][3]  
  An [HttpCookie][3] that contains encrypted forms-authentication ticket information. 
 
 See Also

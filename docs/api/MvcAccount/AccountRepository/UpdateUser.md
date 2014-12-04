@@ -9,15 +9,15 @@ Syntax
 ------
 
 ```csharp
-public abstract void UpdateUser(
-	Object user
+public abstract void UpdateUser(
+	Object user
 )
 ```
 
 ### Parameters
 
 #### *user*
-Type: [System.Object][2]  
+Type: [System.Object][2]  
 The user whose changes are to be persisted.
 
 

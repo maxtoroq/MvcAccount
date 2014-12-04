@@ -9,24 +9,24 @@ Syntax
 ------
 
 ```csharp
-public IEnumerable<ModelClientValidationRule> GetClientValidationRules(
-	ModelMetadata metadata,
-	ControllerContext context
+public IEnumerable<ModelClientValidationRule> GetClientValidationRules(
+	ModelMetadata metadata,
+	ControllerContext context
 )
 ```
 
 ### Parameters
 
 #### *metadata*
-Type: [System.Web.Mvc.ModelMetadata][2]  
+Type: [System.Web.Mvc.ModelMetadata][2]  
 The model metadata.
 
 #### *context*
-Type: [System.Web.Mvc.ControllerContext][3]  
+Type: [System.Web.Mvc.ControllerContext][3]  
 The controller context.
 
 ### Return Value
-Type: [IEnumerable][4]&lt;[ModelClientValidationRule][5]>  
+Type: [IEnumerable][4]&lt;[ModelClientValidationRule][5]>  
 The client validation rules for this validator.
 ### Implements
 [IClientValidatable.GetClientValidationRules(ModelMetadata, ControllerContext)][6]  

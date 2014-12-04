@@ -15,7 +15,7 @@ Syntax
 ------
 
 ```csharp
-public class ResetInput
+public class ResetInput
 ```
 
 The **ResetInput** type exposes the following members.
@@ -24,17 +24,17 @@ The **ResetInput** type exposes the following members.
 Constructors
 ------------
 
-Name            | Description                                            
---------------- | ------------------------------------------------------ 
-[ResetInput][4] | Initializes a new instance of the **ResetInput** class 
+                 | Name            | Description                                            
+---------------- | --------------- | ------------------------------------------------------ 
+![Public method] | [ResetInput][4] | Initializes a new instance of the **ResetInput** class 
 
 
 Properties
 ----------
 
-Name       | Description   
----------- | ------------- 
-[Email][5] | The username. 
+                   | Name       | Description   
+------------------ | ---------- | ------------- 
+![Public property] | [Email][5] | The username. 
 
 
 See Also
@@ -46,3 +46,5 @@ See Also
 [3]: ../README.md
 [4]: _ctor.md
 [5]: Email.md
+[Public method]: ../../_icons/pubmethod.gif "Public method"
+[Public property]: ../../_icons/pubproperty.gif "Public property"

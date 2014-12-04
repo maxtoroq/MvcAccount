@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public override string ApplicationName { get; set; }
+public override string ApplicationName { get; set; }
 ```
 
 ### Property Value
-Type: [String][2]
+Type: [String][2]
 
 See Also
 --------

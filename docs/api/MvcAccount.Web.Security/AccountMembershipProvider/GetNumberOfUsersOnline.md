@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public override int GetNumberOfUsersOnline()
+public override int GetNumberOfUsersOnline()
 ```
 
 ### Return Value
-Type: [Int32][3]  
+Type: [Int32][3]  
 The number of users currently accessing the application.
 
 See Also

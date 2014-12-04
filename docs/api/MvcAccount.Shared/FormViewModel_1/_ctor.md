@@ -9,7 +9,7 @@ Syntax
 ------
 
 ```csharp
-protected FormViewModel(
+protected FormViewModel(
 	TInputModel inputModel
 )
 ```
@@ -17,7 +17,7 @@ protected FormViewModel(
 ### Parameters
 
 #### *inputModel*
-Type: [TInputModel][2]  
+Type: [TInputModel][2]  
 The form's input model.
 
 

@@ -9,20 +9,20 @@ Syntax
 ------
 
 ```csharp
-public AuthenticationController(
-	AccountRepository repo,
-	PasswordService passwordService
+public AuthenticationController(
+	AccountRepository repo,
+	PasswordService passwordService
 )
 ```
 
 ### Parameters
 
 #### *repo*
-Type: [MvcAccount.AccountRepository][3]  
+Type: [MvcAccount.AccountRepository][3]  
 The account repository.
 
 #### *passwordService*
-Type: [MvcAccount.PasswordService][4]  
+Type: [MvcAccount.PasswordService][4]  
 The password service.
 
 

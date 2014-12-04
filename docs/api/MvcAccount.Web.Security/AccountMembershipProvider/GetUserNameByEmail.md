@@ -9,19 +9,19 @@ Syntax
 ------
 
 ```csharp
-public override string GetUserNameByEmail(
-	string email
+public override string GetUserNameByEmail(
+	string email
 )
 ```
 
 ### Parameters
 
 #### *email*
-Type: [System.String][3]  
+Type: [System.String][3]  
 The e-mail address to search for.
 
 ### Return Value
-Type: [String][3]  
+Type: [String][3]  
  The user name associated with the specified e-mail address. If no match is found, return null. 
 
 See Also

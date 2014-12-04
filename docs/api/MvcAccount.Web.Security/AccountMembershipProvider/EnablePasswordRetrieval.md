@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public override bool EnablePasswordRetrieval { get; }
+public override bool EnablePasswordRetrieval { get; }
 ```
 
 ### Property Value
-Type: [Boolean][2]
+Type: [Boolean][2]
 
 See Also
 --------

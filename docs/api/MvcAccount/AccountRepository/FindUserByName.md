@@ -9,19 +9,19 @@ Syntax
 ------
 
 ```csharp
-public abstract Object FindUserByName(
-	string username
+public abstract Object FindUserByName(
+	string username
 )
 ```
 
 ### Parameters
 
 #### *username*
-Type: [System.String][2]  
+Type: [System.String][2]  
 The username.
 
 ### Return Value
-Type: [Object][3]  
+Type: [Object][3]  
 The user object whose username matches *username*, or null if not found.
 
 See Also

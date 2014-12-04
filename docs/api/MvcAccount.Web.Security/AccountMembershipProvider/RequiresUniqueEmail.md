@@ -9,11 +9,11 @@ Syntax
 ------
 
 ```csharp
-public override bool RequiresUniqueEmail { get; }
+public override bool RequiresUniqueEmail { get; }
 ```
 
 ### Property Value
-Type: [Boolean][2]
+Type: [Boolean][2]
 
 See Also
 --------

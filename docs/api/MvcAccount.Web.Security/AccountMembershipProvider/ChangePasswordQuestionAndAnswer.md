@@ -9,34 +9,34 @@ Syntax
 ------
 
 ```csharp
-public override bool ChangePasswordQuestionAndAnswer(
-	string username,
-	string password,
-	string newPasswordQuestion,
-	string newPasswordAnswer
+public override bool ChangePasswordQuestionAndAnswer(
+	string username,
+	string password,
+	string newPasswordQuestion,
+	string newPasswordAnswer
 )
 ```
 
 ### Parameters
 
 #### *username*
-Type: [System.String][3]  
+Type: [System.String][3]  
 The user to change the password question and answer for.
 
 #### *password*
-Type: [System.String][3]  
+Type: [System.String][3]  
 The password for the specified user.
 
 #### *newPasswordQuestion*
-Type: [System.String][3]  
+Type: [System.String][3]  
 The new password question for the specified user.
 
 #### *newPasswordAnswer*
-Type: [System.String][3]  
+Type: [System.String][3]  
 The new password answer for the specified user.
 
 ### Return Value
-Type: [Boolean][4]  
+Type: [Boolean][4]  
 true if the password question and answer are updated successfully; otherwise, false.
 
 See Also

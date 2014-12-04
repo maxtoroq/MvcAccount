@@ -15,7 +15,7 @@ Syntax
 ------
 
 ```csharp
-public class ChangeInput
+public class ChangeInput
 ```
 
 The **ChangeInput** type exposes the following members.
@@ -24,19 +24,19 @@ The **ChangeInput** type exposes the following members.
 Constructors
 ------------
 
-Name             | Description                                             
----------------- | ------------------------------------------------------- 
-[ChangeInput][4] | Initializes a new instance of the **ChangeInput** class 
+                 | Name             | Description                                             
+---------------- | ---------------- | ------------------------------------------------------- 
+![Public method] | [ChangeInput][4] | Initializes a new instance of the **ChangeInput** class 
 
 
 Properties
 ----------
 
-Name                    | Description                  
------------------------ | ---------------------------- 
-[ConfirmNewPassword][5] | The new password.            
-[CurrentPassword][6]    | The user's current password. 
-[NewPassword][7]        | The new password.            
+                   | Name                    | Description                  
+------------------ | ----------------------- | ---------------------------- 
+![Public property] | [ConfirmNewPassword][5] | The new password.            
+![Public property] | [CurrentPassword][6]    | The user's current password. 
+![Public property] | [NewPassword][7]        | The new password.            
 
 
 See Also
@@ -50,3 +50,5 @@ See Also
 [5]: ConfirmNewPassword.md
 [6]: CurrentPassword.md
 [7]: NewPassword.md
+[Public method]: ../../_icons/pubmethod.gif "Public method"
+[Public property]: ../../_icons/pubproperty.gif "Public property"
