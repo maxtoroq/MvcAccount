@@ -14,15 +14,17 @@ public virtual void SetAuthCookie(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *cookie*
+##### *cookie*
 Type: [System.Web.HttpCookie][2]  
 The authentication cookie.
 
 
 See Also
 --------
+
+#### Reference
 [FormsAuthenticationService Class][3]  
 [MvcAccount Namespace][1]  
 

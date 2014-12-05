@@ -14,18 +14,20 @@ public HtmlHelper<TInputModel> HtmlHelperForInput(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *htmlHelper*
+##### *htmlHelper*
 Type: [System.Web.Mvc.HtmlHelper][4]  
 The [HtmlHelper][4] of the current view.
 
-### Return Value
+#### Return Value
 Type: [HtmlHelper][1]&lt;[TInputModel][5]>  
 An [HtmlHelper&lt;TModel>][1] instance.
 
 See Also
 --------
+
+#### Reference
 [FormViewModel&lt;TInputModel> Class][5]  
 [MvcAccount.Shared Namespace][3]  
 

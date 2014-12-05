@@ -15,22 +15,24 @@ public override MembershipUser GetUser(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *username*
+##### *username*
 Type: [System.String][2]  
 The name of the user to get information for.
 
-#### *userIsOnline*
+##### *userIsOnline*
 Type: [System.Boolean][3]  
 This parameter is ignored.
 
-### Return Value
+#### Return Value
 Type: [MembershipUser][4]  
  A [MembershipUser][4] object populated with the specified user's information from the data source. 
 
 See Also
 --------
+
+#### Reference
 [AccountMembershipProvider Class][5]  
 [MvcAccount.Web.Security Namespace][1]  
 

@@ -14,18 +14,20 @@ public override string ProcessPasswordForStorage(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *clearTextPassword*
+##### *clearTextPassword*
 Type: [System.String][2]  
 The password in clear text.
 
-### Return Value
+#### Return Value
 Type: [String][2]  
 The password suitable for storage.
 
 See Also
 --------
+
+#### Reference
 [SqlMembershipProviderPasswordService Class][3]  
 [MvcAccount.Web.Security Namespace][1]  
 

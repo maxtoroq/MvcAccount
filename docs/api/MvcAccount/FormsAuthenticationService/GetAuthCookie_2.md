@@ -16,26 +16,28 @@ public virtual HttpCookie GetAuthCookie(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *userName*
+##### *userName*
 Type: [System.String][2]  
 The name of the authenticated user.
 
-#### *createPersistentCookie*
+##### *createPersistentCookie*
 Type: [System.Boolean][3]  
  true to create a durable cookie (one that is saved across browser sessions); otherwise, false.
 
-#### *strCookiePath*
+##### *strCookiePath*
 Type: [System.String][2]  
 The [Path][4] of the authentication cookie.
 
-### Return Value
+#### Return Value
 Type: [HttpCookie][5]  
  An [HttpCookie][5] that contains encrypted forms-authentication ticket information. 
 
 See Also
 --------
+
+#### Reference
 [FormsAuthenticationService Class][6]  
 [MvcAccount Namespace][1]  
 

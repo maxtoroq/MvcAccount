@@ -12,11 +12,13 @@ Syntax
 public AccountConfiguration Configuration { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [AccountConfiguration][1]
 
 See Also
 --------
+
+#### Reference
 [FormsAuthenticationService Class][3]  
 [MvcAccount Namespace][2]  
 

@@ -12,11 +12,13 @@ Syntax
 public override bool RequiresUniqueEmail { get; }
 ```
 
-### Property Value
+#### Property Value
 Type: [Boolean][2]
 
 See Also
 --------
+
+#### Reference
 [AccountMembershipProvider Class][3]  
 [MvcAccount.Web.Security Namespace][1]  
 

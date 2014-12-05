@@ -12,11 +12,13 @@ Syntax
 public override MembershipPasswordFormat PasswordFormat { get; }
 ```
 
-### Property Value
+#### Property Value
 Type: [MembershipPasswordFormat][1]
 
 See Also
 --------
+
+#### Reference
 [AccountMembershipProvider Class][3]  
 [MvcAccount.Web.Security Namespace][2]  
 

@@ -12,11 +12,13 @@ Syntax
 public string CurrentPassword { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [String][2]
 
 See Also
 --------
+
+#### Reference
 [ChangeInput Class][3]  
 [MvcAccount.Email.Change Namespace][1]  
 

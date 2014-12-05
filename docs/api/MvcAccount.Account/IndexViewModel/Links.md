@@ -12,11 +12,13 @@ Syntax
 public Collection<LinkModel> Links { get; }
 ```
 
-### Property Value
+#### Property Value
 Type: [Collection][2]&lt;[LinkModel][3]>
 
 See Also
 --------
+
+#### Reference
 [IndexViewModel Class][4]  
 [MvcAccount.Account Namespace][1]  
 

@@ -15,6 +15,8 @@ public NotificationMessageViewModel()
 
 See Also
 --------
+
+#### Reference
 [NotificationMessageViewModel Class][1]  
 [MvcAccount.Email.Change Namespace][2]  
 

@@ -16,23 +16,25 @@ public AuthenticationController(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *repo*
+##### *repo*
 Type: [MvcAccount.AccountRepository][3]  
 The account repository.
 
-#### *passwordService*
+##### *passwordService*
 Type: [MvcAccount.PasswordService][4]  
 The password service.
 
-#### *formsAuthService*
+##### *formsAuthService*
 Type: [MvcAccount.FormsAuthenticationService][5]  
 The forms authentication service.
 
 
 See Also
 --------
+
+#### Reference
 [AuthenticationController Class][1]  
 [MvcAccount.Authentication Namespace][2]  
 

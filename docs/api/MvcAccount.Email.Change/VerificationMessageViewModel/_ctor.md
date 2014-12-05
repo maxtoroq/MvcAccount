@@ -15,6 +15,8 @@ public VerificationMessageViewModel()
 
 See Also
 --------
+
+#### Reference
 [VerificationMessageViewModel Class][1]  
 [MvcAccount.Email.Change Namespace][2]  
 

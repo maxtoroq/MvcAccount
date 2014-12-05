@@ -21,46 +21,48 @@ public override MembershipUser CreateUser(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *username*
+##### *username*
 Type: [System.String][3]  
 The user name for the new user.
 
-#### *password*
+##### *password*
 Type: [System.String][3]  
 The password for the new user.
 
-#### *email*
+##### *email*
 Type: [System.String][3]  
 The e-mail address for the new user.
 
-#### *passwordQuestion*
+##### *passwordQuestion*
 Type: [System.String][3]  
 The password question for the new user.
 
-#### *passwordAnswer*
+##### *passwordAnswer*
 Type: [System.String][3]  
 The password answer for the new user
 
-#### *isApproved*
+##### *isApproved*
 Type: [System.Boolean][4]  
 Whether or not the new user is approved to be validated.
 
-#### *providerUserKey*
+##### *providerUserKey*
 Type: [System.Object][5]  
 The unique identifier from the membership data source for the user.
 
-#### *status*
+##### *status*
 Type: [System.Web.Security.MembershipCreateStatus][6]  
  A [MembershipCreateStatus][6] enumeration value indicating whether the user was created successfully.
 
-### Return Value
+#### Return Value
 Type: [MembershipUser][7]  
  A [MembershipUser][7] object populated with the information for the newly created user. 
 
 See Also
 --------
+
+#### Reference
 [AccountMembershipProvider Class][8]  
 [MvcAccount.Web.Security Namespace][2]  
 

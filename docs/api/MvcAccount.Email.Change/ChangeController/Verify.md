@@ -14,18 +14,20 @@ public ActionResult Verify(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *id*
+##### *id*
 Type: [System.String][2]  
 The verification email.
 
-### Return Value
+#### Return Value
 Type: [ActionResult][3]  
 The action result.
 
 See Also
 --------
+
+#### Reference
 [ChangeController Class][4]  
 [MvcAccount.Email.Change Namespace][1]  
 

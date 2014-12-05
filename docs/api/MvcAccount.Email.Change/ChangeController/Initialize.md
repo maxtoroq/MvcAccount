@@ -14,15 +14,17 @@ protected override void Initialize(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *requestContext*
+##### *requestContext*
 Type: [System.Web.Routing.RequestContext][2]  
 The HTTP context and route data.
 
 
 See Also
 --------
+
+#### Reference
 [ChangeController Class][3]  
 [MvcAccount.Email.Change Namespace][1]  
 

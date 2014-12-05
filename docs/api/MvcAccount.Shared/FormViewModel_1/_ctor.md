@@ -14,15 +14,17 @@ protected FormViewModel(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *inputModel*
+##### *inputModel*
 Type: [TInputModel][2]  
 The form's input model.
 
 
 See Also
 --------
+
+#### Reference
 [FormViewModel&lt;TInputModel> Class][2]  
 [MvcAccount.Shared Namespace][1]  
 

@@ -14,15 +14,17 @@ public void SetAuthCookie(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *userName*
+##### *userName*
 Type: [System.String][2]  
 The name of an authenticated user.
 
 
 See Also
 --------
+
+#### Reference
 [FormsAuthenticationService Class][3]  
 [MvcAccount Namespace][1]  
 

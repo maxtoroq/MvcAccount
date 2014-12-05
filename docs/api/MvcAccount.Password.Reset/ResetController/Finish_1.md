@@ -15,22 +15,24 @@ public ActionResult Finish(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *id*
+##### *id*
 Type: [System.String][2]  
 The verification ticket.
 
-#### *input*
+##### *input*
 Type: [MvcAccount.Password.Reset.FinishInput][3]  
 The input model.
 
-### Return Value
+#### Return Value
 Type: [ActionResult][4]  
 The action result.
 
 See Also
 --------
+
+#### Reference
 [ResetController Class][5]  
 [MvcAccount.Password.Reset Namespace][1]  
 

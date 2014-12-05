@@ -12,12 +12,14 @@ Syntax
 public DateTime GetNow()
 ```
 
-### Return Value
+#### Return Value
 Type: [DateTime][1]  
 The current [DateTime][1], which depends on [DateTimeKind][3].
 
 See Also
 --------
+
+#### Reference
 [AccountConfiguration Class][4]  
 [MvcAccount Namespace][2]  
 [AccountConfiguration.DateTimeKind][3]  

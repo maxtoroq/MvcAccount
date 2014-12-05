@@ -12,11 +12,13 @@ Syntax
 public string SiteName { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [String][2]
 
 See Also
 --------
+
+#### Reference
 [VerificationMessageViewModel Class][3]  
 [MvcAccount.Password.Reset Namespace][1]  
 [AccountConfiguration.SiteName][4]  

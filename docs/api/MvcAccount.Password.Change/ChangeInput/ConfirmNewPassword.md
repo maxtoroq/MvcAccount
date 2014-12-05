@@ -12,11 +12,13 @@ Syntax
 public string ConfirmNewPassword { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [String][2]
 
 See Also
 --------
+
+#### Reference
 [ChangeInput Class][3]  
 [MvcAccount.Password.Change Namespace][1]  
 

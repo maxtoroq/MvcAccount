@@ -12,11 +12,13 @@ Syntax
 public ErrorReason ErrorReason { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [ErrorReason][2]
 
 See Also
 --------
+
+#### Reference
 [ErrorMessageViewModel Class][3]  
 [MvcAccount.Password.Reset Namespace][1]  
 

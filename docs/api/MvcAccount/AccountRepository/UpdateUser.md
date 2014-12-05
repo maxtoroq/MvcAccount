@@ -14,15 +14,17 @@ public abstract void UpdateUser(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *user*
+##### *user*
 Type: [System.Object][2]  
 The user whose changes are to be persisted.
 
 
 See Also
 --------
+
+#### Reference
 [AccountRepository Class][3]  
 [MvcAccount Namespace][1]  
 

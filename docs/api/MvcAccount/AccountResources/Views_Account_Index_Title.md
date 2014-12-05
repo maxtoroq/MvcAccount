@@ -12,11 +12,13 @@ Syntax
 public static string Views_Account_Index_Title { get; }
 ```
 
-### Property Value
+#### Property Value
 Type: [String][2]
 
 See Also
 --------
+
+#### Reference
 [AccountResources Class][3]  
 [MvcAccount Namespace][1]  
 

@@ -12,11 +12,13 @@ Syntax
 public LinkModel NextLink { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [LinkModel][2]
 
 See Also
 --------
+
+#### Reference
 [SavedViewModel Class][3]  
 [MvcAccount.Password.Change Namespace][1]  
 

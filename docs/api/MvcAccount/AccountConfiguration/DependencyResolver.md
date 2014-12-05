@@ -12,11 +12,13 @@ Syntax
 public Func<Type, Object> DependencyResolver { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [Func][4]&lt;[Type][5], [Object][6]>
 
 See Also
 --------
+
+#### Reference
 [AccountConfiguration Class][7]  
 [MvcAccount Namespace][3]  
 

@@ -14,18 +14,20 @@ public ActionResult Reset(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *input*
+##### *input*
 Type: [MvcAccount.Password.Reset.ResetInput][2]  
 The input model.
 
-### Return Value
+#### Return Value
 Type: [ActionResult][3]  
 The action result.
 
 See Also
 --------
+
+#### Reference
 [ResetController Class][4]  
 [MvcAccount.Password.Reset Namespace][1]  
 

@@ -14,15 +14,17 @@ public VerifyController(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *repo*
+##### *repo*
 Type: [MvcAccount.AccountRepository][3]  
 The account repository.
 
 
 See Also
 --------
+
+#### Reference
 [VerifyController Class][1]  
 [MvcAccount.Email.Verify Namespace][2]  
 

@@ -12,11 +12,13 @@ Syntax
 public bool DisableOnMaxInvalidSignInAttempts { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [Boolean][3]
 
 See Also
 --------
+
+#### Reference
 [AccountConfiguration Class][4]  
 [MvcAccount Namespace][2]  
 

@@ -17,30 +17,32 @@ public override bool ChangePasswordQuestionAndAnswer(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *username*
+##### *username*
 Type: [System.String][3]  
 The user to change the password question and answer for.
 
-#### *password*
+##### *password*
 Type: [System.String][3]  
 The password for the specified user.
 
-#### *newPasswordQuestion*
+##### *newPasswordQuestion*
 Type: [System.String][3]  
 The new password question for the specified user.
 
-#### *newPasswordAnswer*
+##### *newPasswordAnswer*
 Type: [System.String][3]  
 The new password answer for the specified user.
 
-### Return Value
+#### Return Value
 Type: [Boolean][4]  
 true if the password question and answer are updated successfully; otherwise, false.
 
 See Also
 --------
+
+#### Reference
 [AccountMembershipProvider Class][5]  
 [MvcAccount.Web.Security Namespace][2]  
 

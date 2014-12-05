@@ -25,9 +25,9 @@ public abstract class FormViewModel<TInputModel> : BaseViewModel
 
 ```
 
-### Type Parameters
+#### Type Parameters
 
-#### *TInputModel*
+##### *TInputModel*
 The form's input type.
 
 The **FormViewModel<TInputModel>** type exposes the following members.
@@ -64,6 +64,8 @@ Properties
 
 See Also
 --------
+
+#### Reference
 [MvcAccount.Shared Namespace][8]  
 
 [1]: http://msdn.microsoft.com/en-us/library/e5kfa45b

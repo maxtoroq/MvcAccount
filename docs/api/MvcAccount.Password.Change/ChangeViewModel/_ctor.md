@@ -14,15 +14,17 @@ public ChangeViewModel(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *inputModel*
+##### *inputModel*
 Type: [MvcAccount.Password.Change.ChangeInput][1]  
 The input model.
 
 
 See Also
 --------
+
+#### Reference
 [ChangeViewModel Class][3]  
 [MvcAccount.Password.Change Namespace][2]  
 

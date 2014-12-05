@@ -14,15 +14,17 @@ public ChangeViewModel(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *inputModel*
+##### *inputModel*
 Type: [MvcAccount.Email.Change.ChangeInput][3]  
 The input model.
 
 
 See Also
 --------
+
+#### Reference
 [ChangeViewModel Class][1]  
 [MvcAccount.Email.Change Namespace][2]  
 

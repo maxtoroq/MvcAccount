@@ -16,26 +16,28 @@ public override bool ChangePassword(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *username*
+##### *username*
 Type: [System.String][3]  
 The user to update the password for.
 
-#### *oldPassword*
+##### *oldPassword*
 Type: [System.String][3]  
 The current password for the specified user.
 
-#### *newPassword*
+##### *newPassword*
 Type: [System.String][3]  
 The new password for the specified user.
 
-### Return Value
+#### Return Value
 Type: [Boolean][4]  
 true if the password was updated successfully; otherwise, false.
 
 See Also
 --------
+
+#### Reference
 [AccountMembershipProvider Class][5]  
 [MvcAccount.Web.Security Namespace][2]  
 

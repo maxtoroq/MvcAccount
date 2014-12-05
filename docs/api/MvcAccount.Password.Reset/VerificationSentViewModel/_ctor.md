@@ -15,6 +15,8 @@ public VerificationSentViewModel()
 
 See Also
 --------
+
+#### Reference
 [VerificationSentViewModel Class][1]  
 [MvcAccount.Password.Reset Namespace][2]  
 

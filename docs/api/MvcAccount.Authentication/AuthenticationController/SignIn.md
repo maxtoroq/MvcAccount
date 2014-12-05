@@ -12,12 +12,14 @@ Syntax
 public ActionResult SignIn()
 ```
 
-### Return Value
+#### Return Value
 Type: [ActionResult][2]  
 The action result.
 
 See Also
 --------
+
+#### Reference
 [AuthenticationController Class][3]  
 [MvcAccount.Authentication Namespace][1]  
 

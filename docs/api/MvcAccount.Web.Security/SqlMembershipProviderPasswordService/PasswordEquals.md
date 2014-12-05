@@ -15,22 +15,24 @@ public override bool PasswordEquals(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *clearTextPassword*
+##### *clearTextPassword*
 Type: [System.String][2]  
 The password in clear text provided by a user.
 
-#### *storedPassword*
+##### *storedPassword*
 Type: [System.String][2]  
 The stored password.
 
-### Return Value
+#### Return Value
 Type: [Boolean][3]  
 true if the passwords are equal; otherwise false.
 
 See Also
 --------
+
+#### Reference
 [SqlMembershipProviderPasswordService Class][4]  
 [MvcAccount.Web.Security Namespace][1]  
 

@@ -15,19 +15,21 @@ public LinkModel(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *url*
+##### *url*
 Type: [System.String][3]  
 The link's URL.
 
-#### *text*
+##### *text*
 Type: [System.String][3]  
 The link's text.
 
 
 See Also
 --------
+
+#### Reference
 [LinkModel Class][1]  
 [MvcAccount.Shared Namespace][2]  
 

@@ -12,11 +12,13 @@ Syntax
 public int MinPasswordLength { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [Int32][2]
 
 See Also
 --------
+
+#### Reference
 [AccountConfiguration Class][3]  
 [MvcAccount Namespace][1]  
 

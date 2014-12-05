@@ -12,11 +12,13 @@ Syntax
 public static string Views_Password_Reset_Done_Title { get; }
 ```
 
-### Property Value
+#### Property Value
 Type: [String][2]
 
 See Also
 --------
+
+#### Reference
 [AccountResources Class][3]  
 [MvcAccount Namespace][1]  
 

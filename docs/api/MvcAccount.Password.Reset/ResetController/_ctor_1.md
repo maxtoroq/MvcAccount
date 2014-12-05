@@ -15,19 +15,21 @@ public ResetController(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *repo*
+##### *repo*
 Type: [MvcAccount.AccountRepository][3]  
 The account repository.
 
-#### *passwordService*
+##### *passwordService*
 Type: [MvcAccount.PasswordService][4]  
 The password service.
 
 
 See Also
 --------
+
+#### Reference
 [ResetController Class][1]  
 [MvcAccount.Password.Reset Namespace][2]  
 

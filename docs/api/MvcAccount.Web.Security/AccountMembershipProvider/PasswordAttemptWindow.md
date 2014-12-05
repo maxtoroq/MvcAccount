@@ -12,11 +12,13 @@ Syntax
 public override int PasswordAttemptWindow { get; }
 ```
 
-### Property Value
+#### Property Value
 Type: [Int32][2]
 
 See Also
 --------
+
+#### Reference
 [AccountMembershipProvider Class][3]  
 [MvcAccount.Web.Security Namespace][1]  
 

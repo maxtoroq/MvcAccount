@@ -12,11 +12,13 @@ Syntax
 public static string Validation_EmailAlreadyExists { get; }
 ```
 
-### Property Value
+#### Property Value
 Type: [String][2]
 
 See Also
 --------
+
+#### Reference
 [AccountResources Class][3]  
 [MvcAccount Namespace][1]  
 

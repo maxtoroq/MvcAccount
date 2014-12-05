@@ -14,18 +14,20 @@ public static implicit operator bool (
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *value*
+##### *value*
 Type: [MvcAccount.Shared.FormButton][3]  
 The value.
 
-### Return Value
+#### Return Value
 Type: [Boolean][1]  
 The value of [Successful][4].
 
 See Also
 --------
+
+#### Reference
 [FormButton Structure][3]  
 [MvcAccount.Shared Namespace][2]  
 

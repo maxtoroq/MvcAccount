@@ -12,11 +12,13 @@ Syntax
 public TimeSpan SignInAttemptWindow { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [TimeSpan][4]
 
 See Also
 --------
+
+#### Reference
 [AccountConfiguration Class][5]  
 [MvcAccount Namespace][3]  
 

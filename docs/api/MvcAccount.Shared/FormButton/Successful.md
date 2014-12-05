@@ -12,11 +12,13 @@ Syntax
 public bool Successful { get; }
 ```
 
-### Property Value
+#### Property Value
 Type: [Boolean][2]
 
 See Also
 --------
+
+#### Reference
 [FormButton Structure][3]  
 [MvcAccount.Shared Namespace][1]  
 

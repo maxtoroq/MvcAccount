@@ -14,18 +14,20 @@ public override string GetUserNameByEmail(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *email*
+##### *email*
 Type: [System.String][3]  
 The e-mail address to search for.
 
-### Return Value
+#### Return Value
 Type: [String][3]  
  The user name associated with the specified e-mail address. If no match is found, return null. 
 
 See Also
 --------
+
+#### Reference
 [AccountMembershipProvider Class][4]  
 [MvcAccount.Web.Security Namespace][2]  
 

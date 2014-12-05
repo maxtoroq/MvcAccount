@@ -14,15 +14,17 @@ public ResetViewModel(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *inputModel*
+##### *inputModel*
 Type: [MvcAccount.Password.Reset.ResetInput][3]  
 The input model.
 
 
 See Also
 --------
+
+#### Reference
 [ResetViewModel Class][1]  
 [MvcAccount.Password.Reset Namespace][2]  
 

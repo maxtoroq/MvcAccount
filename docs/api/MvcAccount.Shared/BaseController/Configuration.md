@@ -12,11 +12,13 @@ Syntax
 protected internal AccountConfiguration Configuration { get; }
 ```
 
-### Property Value
+#### Property Value
 Type: [AccountConfiguration][1]
 
 See Also
 --------
+
+#### Reference
 [BaseController Class][3]  
 [MvcAccount.Shared Namespace][2]  
 

@@ -12,12 +12,14 @@ Syntax
 public override int GetNumberOfUsersOnline()
 ```
 
-### Return Value
+#### Return Value
 Type: [Int32][3]  
 The number of users currently accessing the application.
 
 See Also
 --------
+
+#### Reference
 [AccountMembershipProvider Class][4]  
 [MvcAccount.Web.Security Namespace][2]  
 

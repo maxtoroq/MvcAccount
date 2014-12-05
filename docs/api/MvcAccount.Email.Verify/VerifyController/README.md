@@ -52,6 +52,8 @@ Properties
 
 See Also
 --------
+
+#### Reference
 [MvcAccount.Email.Verify Namespace][5]  
 
 [1]: http://msdn.microsoft.com/en-us/library/e5kfa45b

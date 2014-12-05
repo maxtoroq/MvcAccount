@@ -12,11 +12,13 @@ Syntax
 public string HelpResource { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [String][2]
 
 See Also
 --------
+
+#### Reference
 [AccountConfiguration Class][3]  
 [MvcAccount Namespace][1]  
 

@@ -14,15 +14,17 @@ protected override void Initialize(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *requestContext*
+##### *requestContext*
 Type: [System.Web.Routing.RequestContext][2]  
 The HTTP context and route data.
 
 
 See Also
 --------
+
+#### Reference
 [AuthenticationController Class][3]  
 [MvcAccount.Authentication Namespace][1]  
 

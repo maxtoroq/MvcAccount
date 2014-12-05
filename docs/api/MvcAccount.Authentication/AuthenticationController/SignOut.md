@@ -14,18 +14,20 @@ public ActionResult SignOut(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *returnUrl*
+##### *returnUrl*
 Type: [System.String][2]  
 A URL to redirect to.
 
-### Return Value
+#### Return Value
 Type: [ActionResult][3]  
 The action result.
 
 See Also
 --------
+
+#### Reference
 [AuthenticationController Class][4]  
 [MvcAccount.Authentication Namespace][1]  
 

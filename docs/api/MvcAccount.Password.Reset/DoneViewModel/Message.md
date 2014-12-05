@@ -12,11 +12,13 @@ Syntax
 public string Message { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [String][2]
 
 See Also
 --------
+
+#### Reference
 [DoneViewModel Class][3]  
 [MvcAccount.Password.Reset Namespace][1]  
 

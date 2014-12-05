@@ -12,11 +12,13 @@ Syntax
 public string Email { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [String][2]
 
 See Also
 --------
+
+#### Reference
 [ResetInput Class][3]  
 [MvcAccount.Password.Reset Namespace][1]  
 

@@ -16,26 +16,28 @@ public override MembershipUserCollection GetAllUsers(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *pageIndex*
+##### *pageIndex*
 Type: [System.Int32][3]  
 The index of the page of results to return. pageIndex is zero-based.
 
-#### *pageSize*
+##### *pageSize*
 Type: [System.Int32][3]  
 The size of the page of results to return.
 
-#### *totalRecords*
+##### *totalRecords*
 Type: [System.Int32][3]  
 The total number of matched users.
 
-### Return Value
+#### Return Value
 Type: [MembershipUserCollection][4]  
  A [MembershipUserCollection][4] collection that contains a page of pageSize [MembershipUser][5] objects beginning at the page specified by pageIndex. 
 
 See Also
 --------
+
+#### Reference
 [AccountMembershipProvider Class][6]  
 [MvcAccount.Web.Security Namespace][2]  
 

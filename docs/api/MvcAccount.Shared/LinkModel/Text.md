@@ -12,11 +12,13 @@ Syntax
 public string Text { get; }
 ```
 
-### Property Value
+#### Property Value
 Type: [String][2]
 
 See Also
 --------
+
+#### Reference
 [LinkModel Class][3]  
 [MvcAccount.Shared Namespace][1]  
 

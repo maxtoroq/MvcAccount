@@ -12,11 +12,13 @@ Syntax
 public static Func<AccountConfiguration> ConfigurationResolver { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [Func][4]&lt;[AccountConfiguration][1]>
 
 See Also
 --------
+
+#### Reference
 [AccountConfiguration Class][1]  
 [MvcAccount Namespace][3]  
 

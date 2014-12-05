@@ -15,22 +15,24 @@ public override bool ValidateUser(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *username*
+##### *username*
 Type: [System.String][2]  
 The name of the user to validate.
 
-#### *password*
+##### *password*
 Type: [System.String][2]  
 The password for the specified user.
 
-### Return Value
+#### Return Value
 Type: [Boolean][3]  
 true if the specified username and password are valid; otherwise, false.
 
 See Also
 --------
+
+#### Reference
 [AccountMembershipProvider Class][4]  
 [MvcAccount.Web.Security Namespace][1]  
 

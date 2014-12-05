@@ -12,12 +12,14 @@ Syntax
 public ActionResult Index()
 ```
 
-### Return Value
+#### Return Value
 Type: [ActionResult][2]  
 The action result.
 
 See Also
 --------
+
+#### Reference
 [AccountImplController Class][3]  
 [MvcAccount.Account Namespace][1]  
 

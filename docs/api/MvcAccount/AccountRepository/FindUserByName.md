@@ -14,18 +14,20 @@ public abstract Object FindUserByName(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *username*
+##### *username*
 Type: [System.String][2]  
 The username.
 
-### Return Value
+#### Return Value
 Type: [Object][3]  
 The user object whose username matches *username*, or null if not found.
 
 See Also
 --------
+
+#### Reference
 [AccountRepository Class][4]  
 [MvcAccount Namespace][1]  
 

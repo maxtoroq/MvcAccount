@@ -12,11 +12,13 @@ Syntax
 public override string PasswordStrengthRegularExpression { get; }
 ```
 
-### Property Value
+#### Property Value
 Type: [String][2]
 
 See Also
 --------
+
+#### Reference
 [AccountMembershipProvider Class][3]  
 [MvcAccount.Web.Security Namespace][1]  
 

@@ -14,18 +14,20 @@ public HttpCookie GetAuthCookie(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *userName*
+##### *userName*
 Type: [System.String][2]  
 The name of the authenticated user.
 
-### Return Value
+#### Return Value
 Type: [HttpCookie][3]  
  An [HttpCookie][3] that contains encrypted forms-authentication ticket information. 
 
 See Also
 --------
+
+#### Reference
 [FormsAuthenticationService Class][4]  
 [MvcAccount Namespace][1]  
 

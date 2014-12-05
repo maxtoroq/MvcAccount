@@ -12,11 +12,13 @@ Syntax
 public TInputModel InputModel { get; }
 ```
 
-### Property Value
+#### Property Value
 Type: [TInputModel][2]
 
 See Also
 --------
+
+#### Reference
 [FormViewModel&lt;TInputModel> Class][2]  
 [MvcAccount.Shared Namespace][1]  
 

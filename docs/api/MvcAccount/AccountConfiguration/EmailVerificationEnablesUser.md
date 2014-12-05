@@ -12,11 +12,13 @@ Syntax
 public bool EmailVerificationEnablesUser { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [Boolean][2]
 
 See Also
 --------
+
+#### Reference
 [AccountConfiguration Class][3]  
 [MvcAccount Namespace][1]  
 

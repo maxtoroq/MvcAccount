@@ -12,15 +12,17 @@ Syntax
 public string ToHtmlString()
 ```
 
-### Return Value
+#### Return Value
 Type: [String][2]  
 An HTML-encoded string representation of the link.
-### Implements
+#### Implements
 [IHtmlString.ToHtmlString()][3]  
 
 
 See Also
 --------
+
+#### Reference
 [LinkModel Class][4]  
 [MvcAccount.Shared Namespace][1]  
 

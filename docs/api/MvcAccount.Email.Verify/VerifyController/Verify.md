@@ -14,18 +14,20 @@ public ActionResult Verify(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *id*
+##### *id*
 Type: [System.String][2]  
 The verification ticket.
 
-### Return Value
+#### Return Value
 Type: [ActionResult][3]  
 The action result.
 
 See Also
 --------
+
+#### Reference
 [VerifyController Class][4]  
 [MvcAccount.Email.Verify Namespace][1]  
 

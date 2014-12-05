@@ -14,15 +14,17 @@ public FinishViewModel(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *inputModel*
+##### *inputModel*
 Type: [MvcAccount.Password.Reset.FinishInput][3]  
 The input model.
 
 
 See Also
 --------
+
+#### Reference
 [FinishViewModel Class][1]  
 [MvcAccount.Password.Reset Namespace][2]  
 

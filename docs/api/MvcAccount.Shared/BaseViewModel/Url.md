@@ -12,11 +12,13 @@ Syntax
 protected UrlHelper Url { get; }
 ```
 
-### Property Value
+#### Property Value
 Type: [UrlHelper][1]
 
 See Also
 --------
+
+#### Reference
 [BaseViewModel Class][3]  
 [MvcAccount.Shared Namespace][2]  
 

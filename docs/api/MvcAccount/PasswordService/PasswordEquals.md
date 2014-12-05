@@ -15,22 +15,24 @@ public abstract bool PasswordEquals(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *clearTextPassword*
+##### *clearTextPassword*
 Type: [System.String][2]  
 The password in clear text provided by a user.
 
-#### *storedPassword*
+##### *storedPassword*
 Type: [System.String][2]  
 The stored password.
 
-### Return Value
+#### Return Value
 Type: [Boolean][3]  
 true if the passwords are equal; otherwise false.
 
 See Also
 --------
+
+#### Reference
 [PasswordService Class][4]  
 [MvcAccount Namespace][1]  
 

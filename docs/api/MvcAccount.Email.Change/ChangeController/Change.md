@@ -12,12 +12,14 @@ Syntax
 public ActionResult Change()
 ```
 
-### Return Value
+#### Return Value
 Type: [ActionResult][2]  
 The action result.
 
 See Also
 --------
+
+#### Reference
 [ChangeController Class][3]  
 [MvcAccount.Email.Change Namespace][1]  
 

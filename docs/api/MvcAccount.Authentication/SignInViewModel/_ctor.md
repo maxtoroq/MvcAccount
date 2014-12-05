@@ -14,15 +14,17 @@ public SignInViewModel(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *inputModel*
+##### *inputModel*
 Type: [MvcAccount.Authentication.SignInInput][3]  
 The input model.
 
 
 See Also
 --------
+
+#### Reference
 [SignInViewModel Class][1]  
 [MvcAccount.Authentication Namespace][2]  
 

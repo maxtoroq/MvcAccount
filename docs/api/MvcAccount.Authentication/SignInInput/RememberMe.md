@@ -12,11 +12,13 @@ Syntax
 public bool RememberMe { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [Boolean][2]
 
 See Also
 --------
+
+#### Reference
 [SignInInput Class][3]  
 [MvcAccount.Authentication Namespace][1]  
 

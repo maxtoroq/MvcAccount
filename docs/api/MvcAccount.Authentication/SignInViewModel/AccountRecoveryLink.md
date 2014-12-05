@@ -12,11 +12,13 @@ Syntax
 public LinkModel AccountRecoveryLink { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [LinkModel][2]
 
 See Also
 --------
+
+#### Reference
 [SignInViewModel Class][3]  
 [MvcAccount.Authentication Namespace][1]  
 

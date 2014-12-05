@@ -12,11 +12,13 @@ Syntax
 public Func<FormsAuthenticationService> FormsAuthenticationServiceResolver { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [Func][3]&lt;[FormsAuthenticationService][1]>
 
 See Also
 --------
+
+#### Reference
 [AccountConfiguration Class][4]  
 [MvcAccount Namespace][2]  
 

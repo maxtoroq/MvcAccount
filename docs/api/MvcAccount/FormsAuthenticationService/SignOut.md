@@ -15,6 +15,8 @@ public virtual void SignOut()
 
 See Also
 --------
+
+#### Reference
 [FormsAuthenticationService Class][2]  
 [MvcAccount Namespace][1]  
 

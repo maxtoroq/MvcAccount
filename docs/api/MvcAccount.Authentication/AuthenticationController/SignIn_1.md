@@ -15,22 +15,24 @@ public ActionResult SignIn(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *input*
+##### *input*
 Type: [MvcAccount.Authentication.SignInInput][2]  
 The input model.
 
-#### *returnUrl*
+##### *returnUrl*
 Type: [System.String][3]  
 A URL to redirect to if the operation succeeds.
 
-### Return Value
+#### Return Value
 Type: [ActionResult][4]  
 The action result.
 
 See Also
 --------
+
+#### Reference
 [AuthenticationController Class][5]  
 [MvcAccount.Authentication Namespace][1]  
 

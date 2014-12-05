@@ -15,22 +15,24 @@ public override string GetPassword(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *username*
+##### *username*
 Type: [System.String][3]  
 The user to retrieve the password for.
 
-#### *answer*
+##### *answer*
 Type: [System.String][3]  
 The password answer for the user.
 
-### Return Value
+#### Return Value
 Type: [String][3]  
 The password for the specified user name.
 
 See Also
 --------
+
+#### Reference
 [AccountMembershipProvider Class][4]  
 [MvcAccount.Web.Security Namespace][2]  
 

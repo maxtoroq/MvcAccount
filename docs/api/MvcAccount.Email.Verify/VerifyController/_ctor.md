@@ -15,6 +15,8 @@ public VerifyController()
 
 See Also
 --------
+
+#### Reference
 [VerifyController Class][1]  
 [MvcAccount.Email.Verify Namespace][2]  
 

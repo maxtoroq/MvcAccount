@@ -15,25 +15,27 @@ public IEnumerable<ModelClientValidationRule> GetClientValidationRules(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *metadata*
+##### *metadata*
 Type: [System.Web.Mvc.ModelMetadata][2]  
 The model metadata.
 
-#### *context*
+##### *context*
 Type: [System.Web.Mvc.ControllerContext][3]  
 The controller context.
 
-### Return Value
+#### Return Value
 Type: [IEnumerable][4]&lt;[ModelClientValidationRule][5]>  
 The client validation rules for this validator.
-### Implements
+#### Implements
 [IClientValidatable.GetClientValidationRules(ModelMetadata, ControllerContext)][6]  
 
 
 See Also
 --------
+
+#### Reference
 [PasswordLengthAttribute Class][7]  
 [MvcAccount Namespace][1]  
 

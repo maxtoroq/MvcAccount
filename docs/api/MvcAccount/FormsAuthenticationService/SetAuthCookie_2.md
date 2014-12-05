@@ -16,23 +16,25 @@ public void SetAuthCookie(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *userName*
+##### *userName*
 Type: [System.String][2]  
 The name of an authenticated user.
 
-#### *createPersistentCookie*
+##### *createPersistentCookie*
 Type: [System.Boolean][3]  
  true to create a durable cookie (one that is saved across browser sessions); otherwise, false.
 
-#### *strCookiePath*
+##### *strCookiePath*
 Type: [System.String][2]  
 The cookie path for the forms-authentication ticket.
 
 
 See Also
 --------
+
+#### Reference
 [FormsAuthenticationService Class][4]  
 [MvcAccount Namespace][1]  
 

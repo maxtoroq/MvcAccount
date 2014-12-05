@@ -12,12 +12,14 @@ Syntax
 public ActionResult VerificationSent()
 ```
 
-### Return Value
+#### Return Value
 Type: [ActionResult][2]  
 The action result.
 
 See Also
 --------
+
+#### Reference
 [ResetController Class][3]  
 [MvcAccount.Password.Reset Namespace][1]  
 

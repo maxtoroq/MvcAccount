@@ -12,11 +12,13 @@ Syntax
 public string Username { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [String][2]
 
 See Also
 --------
+
+#### Reference
 [SignInInput Class][3]  
 [MvcAccount.Authentication Namespace][1]  
 

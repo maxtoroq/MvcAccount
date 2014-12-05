@@ -14,18 +14,20 @@ public override bool UnlockUser(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *userName*
+##### *userName*
 Type: [System.String][3]  
 The user whose lock status you want to clear.
 
-### Return Value
+#### Return Value
 Type: [Boolean][4]  
 true if the user was successfully unlocked; otherwise, false.
 
 See Also
 --------
+
+#### Reference
 [AccountMembershipProvider Class][5]  
 [MvcAccount.Web.Security Namespace][2]  
 

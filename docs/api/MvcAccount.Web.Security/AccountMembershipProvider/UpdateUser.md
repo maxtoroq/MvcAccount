@@ -14,15 +14,17 @@ public override void UpdateUser(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *user*
+##### *user*
 Type: [System.Web.Security.MembershipUser][3]  
  A [MembershipUser][3] object that represents the user to update and the updated information for the user.
 
 
 See Also
 --------
+
+#### Reference
 [AccountMembershipProvider Class][4]  
 [MvcAccount.Web.Security Namespace][2]  
 

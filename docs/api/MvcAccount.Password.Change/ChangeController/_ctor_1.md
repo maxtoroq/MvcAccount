@@ -15,19 +15,21 @@ public ChangeController(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *repo*
+##### *repo*
 Type: [MvcAccount.AccountRepository][3]  
 The account repository.
 
-#### *passwordService*
+##### *passwordService*
 Type: [MvcAccount.PasswordService][4]  
 The password service.
 
 
 See Also
 --------
+
+#### Reference
 [ChangeController Class][1]  
 [MvcAccount.Password.Change Namespace][2]  
 

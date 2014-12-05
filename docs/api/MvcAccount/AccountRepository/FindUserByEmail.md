@@ -14,18 +14,20 @@ public abstract Object FindUserByEmail(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *email*
+##### *email*
 Type: [System.String][2]  
 The user's email.
 
-### Return Value
+#### Return Value
 Type: [Object][3]  
 The user object whose email matches the provided *email*, or null if not found.
 
 See Also
 --------
+
+#### Reference
 [AccountRepository Class][4]  
 [MvcAccount Namespace][1]  
 

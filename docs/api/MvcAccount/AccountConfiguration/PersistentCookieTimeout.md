@@ -12,7 +12,7 @@ Syntax
 public TimeSpan PersistentCookieTimeout { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [TimeSpan][2]
 
 Remarks
@@ -21,6 +21,8 @@ Remarks
 
 See Also
 --------
+
+#### Reference
 [AccountConfiguration Class][3]  
 [MvcAccount Namespace][1]  
 

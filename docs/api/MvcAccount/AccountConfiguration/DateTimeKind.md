@@ -12,11 +12,13 @@ Syntax
 public DateTimeKind DateTimeKind { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [DateTimeKind][2]
 
 See Also
 --------
+
+#### Reference
 [AccountConfiguration Class][4]  
 [MvcAccount Namespace][3]  
 

@@ -12,11 +12,13 @@ Syntax
 public string CancelText { get; set; }
 ```
 
-### Property Value
+#### Property Value
 Type: [String][2]
 
 See Also
 --------
+
+#### Reference
 [FormViewModel&lt;TInputModel> Class][3]  
 [MvcAccount.Shared Namespace][1]  
 

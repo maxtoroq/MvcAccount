@@ -19,33 +19,33 @@ protected virtual FormsAuthenticationTicket CreateFormsAuthenticationTicket(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *version*
+##### *version*
 Type: [System.Int32][3]  
 The version number of the ticket.
 
-#### *name*
+##### *name*
 Type: [System.String][4]  
 The user name associated with the ticket.
 
-#### *issueDate*
+##### *issueDate*
 Type: [System.DateTime][5]  
 The local date and time at which the ticket was issued.
 
-#### *expiration*
+##### *expiration*
 Type: [System.DateTime][5]  
 The local date and time at which the ticket expires.
 
-#### *isPersistent*
+##### *isPersistent*
 Type: [System.Boolean][6]  
 true if the ticket will be stored in a persistent cookie (saved across browser sessions); otherwise, false. If the ticket is stored in the URL, this value is ignored.
 
-#### *cookiePath*
+##### *cookiePath*
 Type: [System.String][4]  
 The user-specific data to be stored with the ticket.
 
-### Return Value
+#### Return Value
 Type: [FormsAuthenticationTicket][1]  
 A new [FormsAuthenticationTicket][1] instance.
 
@@ -55,6 +55,8 @@ This method can be overriden to provide a value for the userData parameter.
 
 See Also
 --------
+
+#### Reference
 [FormsAuthenticationService Class][7]  
 [MvcAccount Namespace][2]  
 

@@ -15,22 +15,24 @@ public override string ResetPassword(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *username*
+##### *username*
 Type: [System.String][3]  
 The user to reset the password for.
 
-#### *answer*
+##### *answer*
 Type: [System.String][3]  
 The password answer for the specified user.
 
-### Return Value
+#### Return Value
 Type: [String][3]  
 The new password for the specified user.
 
 See Also
 --------
+
+#### Reference
 [AccountMembershipProvider Class][4]  
 [MvcAccount.Web.Security Namespace][2]  
 

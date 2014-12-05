@@ -15,22 +15,24 @@ public ActionResult Change(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *input*
+##### *input*
 Type: [MvcAccount.Password.Change.ChangeInput][2]  
 The input model.
 
-#### *cancel*
+##### *cancel*
 Type: [MvcAccount.Shared.FormButton][3]  
 A value that indicates if the operation was cancelled by the user.
 
-### Return Value
+#### Return Value
 Type: [ActionResult][4]  
 The action result.
 
 See Also
 --------
+
+#### Reference
 [ChangeController Class][5]  
 [MvcAccount.Password.Change Namespace][1]  
 

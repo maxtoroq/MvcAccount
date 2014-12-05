@@ -14,15 +14,17 @@ public SqlMembershipProviderPasswordService(
 )
 ```
 
-### Parameters
+#### Parameters
 
-#### *passwordFormat*
+##### *passwordFormat*
 Type: [System.Web.Security.MembershipPasswordFormat][3]  
 The password encryption method.
 
 
 See Also
 --------
+
+#### Reference
 [SqlMembershipProviderPasswordService Class][1]  
 [MvcAccount.Web.Security Namespace][2]  
 
