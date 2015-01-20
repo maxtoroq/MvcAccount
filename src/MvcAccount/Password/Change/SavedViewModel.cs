@@ -21,7 +21,7 @@ using MvcAccount.Shared;
 namespace MvcAccount.Password.Change {
    
    /// <summary>
-   /// Holds data for the PasswordSaved view.
+   /// Holds data for the Saved view.
    /// </summary>
    public class SavedViewModel : BaseViewModel {
 

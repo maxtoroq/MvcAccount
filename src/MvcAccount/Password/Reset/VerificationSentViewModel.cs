@@ -21,7 +21,7 @@ using MvcAccount.Shared;
 namespace MvcAccount.Password.Reset {
    
    /// <summary>
-   /// Holds data for the PasswordResetVerificationSent view.
+   /// Holds data for the VerificationSent view.
    /// </summary>
    public class VerificationSentViewModel : BaseViewModel {
 

@@ -21,7 +21,7 @@ using MvcAccount.Shared;
 namespace MvcAccount.Email.Change {
    
    /// <summary>
-   /// Holds data for the EmailChangeVerificationSent view.
+   /// Holds data for the VerificationSent view.
    /// </summary>
    public class VerificationSentViewModel : BaseViewModel {
 

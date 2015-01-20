@@ -21,7 +21,7 @@ using MvcAccount.Shared;
 namespace MvcAccount.Email.Change {
    
    /// <summary>
-   /// Holds data for the EmailSaved view.
+   /// Holds data for the Saved view.
    /// </summary>
    public class SavedViewModel : BaseViewModel {
 
