@@ -1,6 +1,6 @@
 VerificationMessageViewModel Class
 ==================================
-Holds data for the EmailChangeVerificationMessage view.
+Holds data for the _VerificationMessage view.
 
 
 Inheritance Hierarchy

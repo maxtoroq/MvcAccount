@@ -20,7 +20,7 @@ using System.Text;
 namespace MvcAccount.Password.Reset {
    
    /// <summary>
-   /// Holds data for the ResetPasswordMessage view.
+   /// Holds data for the _VerificationMessage view.
    /// </summary>
    public class VerificationMessageViewModel {
       

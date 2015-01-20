@@ -1,6 +1,6 @@
 NotificationMessageViewModel Class
 ==================================
-Holds data for the EmailChangeNotificationMessage view.
+Holds data for the _NotificationMessage view.
 
 
 Inheritance Hierarchy

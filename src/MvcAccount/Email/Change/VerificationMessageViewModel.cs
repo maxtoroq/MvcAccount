@@ -20,7 +20,7 @@ using System.Text;
 namespace MvcAccount.Email.Change {
    
    /// <summary>
-   /// Holds data for the EmailChangeVerificationMessage view.
+   /// Holds data for the _VerificationMessage view.
    /// </summary>
    public class VerificationMessageViewModel {
 

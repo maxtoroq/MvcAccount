@@ -20,7 +20,7 @@ using System.Text;
 namespace MvcAccount.Email.Change {
    
    /// <summary>
-   /// Holds data for the EmailChangeNotificationMessage view.
+   /// Holds data for the _NotificationMessage view.
    /// </summary>
    public class NotificationMessageViewModel {
 

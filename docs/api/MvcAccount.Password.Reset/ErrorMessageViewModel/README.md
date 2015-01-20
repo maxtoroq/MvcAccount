@@ -1,6 +1,6 @@
 ErrorMessageViewModel Class
 ===========================
-Holds data for the ResetPasswordNotFoundMessage view.
+Holds data for the _ErrorMessage view.
 
 
 Inheritance Hierarchy
