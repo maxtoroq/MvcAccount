@@ -1,6 +1,6 @@
 SavedViewModel Class
 ====================
-Holds data for the PasswordSaved view.
+Holds data for the Saved view.
 
 
 Inheritance Hierarchy

@@ -1,6 +1,6 @@
 DoneViewModel Class
 ===================
-Holds data for the PasswordReset view.
+Holds data for the Done view.
 
 
 Inheritance Hierarchy

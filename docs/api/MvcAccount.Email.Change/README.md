@@ -12,9 +12,9 @@ Classes
 ![Public class] | [ChangeInput][2]                  | Holds data required by the [Change(ChangeInput, FormButton)][3] action. 
 ![Public class] | [ChangeViewModel][4]              | Holds data for the ChangeEmail view.                                    
 ![Public class] | [NotificationMessageViewModel][5] | Holds data for the EmailChangeNotificationMessage view.                 
-![Public class] | [SavedViewModel][6]               | Holds data for the EmailSaved view.                                     
+![Public class] | [SavedViewModel][6]               | Holds data for the Saved view.                                          
 ![Public class] | [VerificationMessageViewModel][7] | Holds data for the EmailChangeVerificationMessage view.                 
-![Public class] | [VerificationSentViewModel][8]    | Holds data for the EmailChangeVerificationSent view.                    
+![Public class] | [VerificationSentViewModel][8]    | Holds data for the VerificationSent view.                               
 
 [1]: ChangeController/README.md
 [2]: ChangeInput/README.md

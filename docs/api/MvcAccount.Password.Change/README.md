@@ -11,7 +11,7 @@ Classes
 ![Public class] | [ChangeController][1] | Exposes password change functionality.                                  
 ![Public class] | [ChangeInput][2]      | Holds data required by the [Change(ChangeInput, FormButton)][3] action. 
 ![Public class] | [ChangeViewModel][4]  | Holds data for the ChangePassword view.                                 
-![Public class] | [SavedViewModel][5]   | Holds data for the PasswordSaved view.                                  
+![Public class] | [SavedViewModel][5]   | Holds data for the Saved view.                                          
 
 [1]: ChangeController/README.md
 [2]: ChangeInput/README.md

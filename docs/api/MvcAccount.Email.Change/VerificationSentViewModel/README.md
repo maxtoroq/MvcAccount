@@ -1,6 +1,6 @@
 VerificationSentViewModel Class
 ===============================
-Holds data for the EmailChangeVerificationSent view.
+Holds data for the VerificationSent view.
 
 
 Inheritance Hierarchy

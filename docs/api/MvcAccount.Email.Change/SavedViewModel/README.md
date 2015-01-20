@@ -1,6 +1,6 @@
 SavedViewModel Class
 ====================
-Holds data for the EmailSaved view.
+Holds data for the Saved view.
 
 
 Inheritance Hierarchy
