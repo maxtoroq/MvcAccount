@@ -21,7 +21,7 @@ using MvcAccount.Shared;
 namespace MvcAccount.Password.Reset {
    
    /// <summary>
-   /// Holds data for the RP view.
+   /// Holds data for the Finish view.
    /// </summary>
    public class FinishViewModel : FormViewModel<FinishInput> {
 

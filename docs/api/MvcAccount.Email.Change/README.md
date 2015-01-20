@@ -10,7 +10,7 @@ Classes
 --------------- | --------------------------------- | ----------------------------------------------------------------------- 
 ![Public class] | [ChangeController][1]             | Exposes e-mail change functionality.                                    
 ![Public class] | [ChangeInput][2]                  | Holds data required by the [Change(ChangeInput, FormButton)][3] action. 
-![Public class] | [ChangeViewModel][4]              | Holds data for the ChangeEmail view.                                    
+![Public class] | [ChangeViewModel][4]              | Holds data for the Change view.                                         
 ![Public class] | [NotificationMessageViewModel][5] | Holds data for the EmailChangeNotificationMessage view.                 
 ![Public class] | [SavedViewModel][6]               | Holds data for the Saved view.                                          
 ![Public class] | [VerificationMessageViewModel][7] | Holds data for the EmailChangeVerificationMessage view.                 

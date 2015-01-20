@@ -1,6 +1,6 @@
 ResetViewModel Class
 ====================
-Holds data for the ResetPassword view.
+Holds data for the Reset view.
 
 
 Inheritance Hierarchy

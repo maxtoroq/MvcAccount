@@ -1,6 +1,6 @@
 FinishViewModel Class
 =====================
-Holds data for the RP view.
+Holds data for the Finish view.
 
 
 Inheritance Hierarchy

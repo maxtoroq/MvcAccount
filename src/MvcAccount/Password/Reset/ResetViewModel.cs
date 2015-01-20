@@ -21,7 +21,7 @@ using MvcAccount.Shared;
 namespace MvcAccount.Password.Reset {
    
    /// <summary>
-   /// Holds data for the ResetPassword view.
+   /// Holds data for the Reset view.
    /// </summary>
    public class ResetViewModel : FormViewModel<ResetInput> {
 

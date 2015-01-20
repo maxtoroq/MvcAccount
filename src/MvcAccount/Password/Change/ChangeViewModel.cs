@@ -21,7 +21,7 @@ using MvcAccount.Shared;
 namespace MvcAccount.Password.Change {
    
    /// <summary>
-   /// Holds data for the ChangePassword view.
+   /// Holds data for the Change view.
    /// </summary>
    public class ChangeViewModel : FormViewModel<ChangeInput> {
 

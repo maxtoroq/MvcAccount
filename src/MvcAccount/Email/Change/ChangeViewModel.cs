@@ -21,7 +21,7 @@ using MvcAccount.Shared;
 namespace MvcAccount.Email.Change {
    
    /// <summary>
-   /// Holds data for the ChangeEmail view.
+   /// Holds data for the Change view.
    /// </summary>
    public class ChangeViewModel : FormViewModel<ChangeInput> {
 

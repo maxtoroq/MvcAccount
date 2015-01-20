@@ -11,10 +11,10 @@ Classes
 ![Public class] | [DoneViewModel][1]                 | Holds data for the Done view.                                       
 ![Public class] | [ErrorMessageViewModel][2]         | Holds data for the ResetPasswordNotFoundMessage view.               
 ![Public class] | [FinishInput][3]                   | Holds data required by the [Finish(String, FinishInput)][4] action. 
-![Public class] | [FinishViewModel][5]               | Holds data for the RP view.                                         
+![Public class] | [FinishViewModel][5]               | Holds data for the Finish view.                                     
 ![Public class] | [ResetController][6]               | Exposes password reset functionality.                               
 ![Public class] | [ResetInput][7]                    | Holds data required by the [Reset(ResetInput)][8] action.           
-![Public class] | [ResetViewModel][9]                | Holds data for the ResetPassword view.                              
+![Public class] | [ResetViewModel][9]                | Holds data for the Reset view.                                      
 ![Public class] | [VerificationMessageViewModel][10] | Holds data for the ResetPasswordMessage view.                       
 ![Public class] | [VerificationSentViewModel][11]    | Holds data for the VerificationSent view.                           
 

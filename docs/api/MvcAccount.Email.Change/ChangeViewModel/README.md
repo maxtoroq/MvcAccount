@@ -1,6 +1,6 @@
 ChangeViewModel Class
 =====================
-Holds data for the ChangeEmail view.
+Holds data for the Change view.
 
 
 Inheritance Hierarchy
