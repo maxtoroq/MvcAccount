@@ -10,5 +10,3 @@ To contribute a complete translation please translate the following files:
 - [MvcAccount/Views/Email/Change/_VerificationMessage.cshtml](src/MvcAccount/Views/Email/Change/_VerificationMessage.cshtml)
 - [MvcAccount/Views/Password/Reset/_ErrorMessage.cshtml](src/MvcAccount/Views/Password/Reset/_ErrorMessage.cshtml)
 - [MvcAccount/Views/Password/Reset/_VerificationMessage.cshtml](src/MvcAccount/Views/Password/Reset/_VerificationMessage.cshtml)
-
-Pull requests are welcome, or you can [email me](mailto:maxtoroq@gmail.com).
