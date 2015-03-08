@@ -102,7 +102,7 @@ namespace MvcAccount.Email.Change {
       public ActionResult Change(ChangeInput input, FormButton cancel) {
 
          if (cancel) {
-            return HttpSeeOther(this.Url.Action("", "~Account"));
+            return Redirect(this.Url.Action("", "~Account"));
          }
 
          this.ViewData.Model = new ChangeViewModel(input);
@@ -121,10 +121,10 @@ namespace MvcAccount.Email.Change {
 
             this.TempData["PostChange"] = result;
 
-            return HttpSeeOther(this.Url.Action(VerificationSent));
+            return Redirect(this.Url.Action(VerificationSent));
          }
 
-         return HttpSeeOther(this.Url.Action(Saved));
+         return Redirect(this.Url.Action(Saved));
       }
       
       /// <summary>

@@ -113,7 +113,7 @@ namespace MvcAccount.Authentication {
 
          string location = GetValidReturnUrl(returnUrl);
 
-         return HttpSeeOther(location);
+         return Redirect(location);
       }
       
       /// <summary>
@@ -129,7 +129,7 @@ namespace MvcAccount.Authentication {
 
          string location = GetValidReturnUrl(returnUrl);
 
-         return HttpSeeOther(location);
+         return Redirect(location);
       }
    }
 }

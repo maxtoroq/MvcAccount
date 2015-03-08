@@ -99,7 +99,7 @@ namespace MvcAccount.Password.Reset {
 
          this.TempData["PostReset"] = result;
 
-         return HttpSeeOther(this.Url.Action(VerificationSent));
+         return Redirect(this.Url.Action(VerificationSent));
       }
       
       /// <summary>
@@ -169,7 +169,7 @@ namespace MvcAccount.Password.Reset {
             throw new HttpException((int)result.StatusCode, result.Value.ToStringInvariant());
          }
 
-         return HttpSeeOther(this.Url.Action(Done));
+         return Redirect(this.Url.Action(Done));
       }
 
       /// <summary>

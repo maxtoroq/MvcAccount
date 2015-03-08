@@ -39,8 +39,18 @@ namespace MvcAccount.Shared {
       /// <summary>
       /// The <see cref="AccountConfiguration"/> instance for the current request.
       /// </summary>
-      protected internal AccountConfiguration Configuration {
+      protected AccountConfiguration Configuration {
          get { return _Configuration; }
+      }
+
+      [Obsolete("Don't read the request directly, use model binding instead.")]
+      internal new HttpRequestBase Request {
+         get { return base.Request; }
+      }
+
+      [Obsolete("Don't write to the response directly, use action results instead.")]
+      internal new HttpResponseBase Response {
+         get { return base.Response; }
       }
 
       string IAccountContext.CurrentUserName {
@@ -65,14 +75,6 @@ namespace MvcAccount.Shared {
          _Configuration = AccountConfiguration.Current(requestContext);
       }
 
-      internal ActionResult HttpSeeOther(string location) {
-
-         this.Response.StatusCode = 303;
-         this.Response.RedirectLocation = location;
-
-         return new EmptyResult();
-      }
-
       internal string GetValidReturnUrl(string returnUrl) {
 
          string location = (returnUrl.HasValue() && this.Url.IsLocalUrl(returnUrl)) ?
@@ -82,7 +84,9 @@ namespace MvcAccount.Shared {
       }
 
       string IAccountContext.AbsoluteUrl(string relativeUrl) {
+#pragma warning disable 618
          return new Uri(this.Request.Url, relativeUrl).AbsoluteUri;
+#pragma warning restore 618
       }
 
       string IAccountContext.RenderEmailView(string viewName, object model) {

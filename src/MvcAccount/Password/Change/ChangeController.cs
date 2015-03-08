@@ -85,7 +85,7 @@ namespace MvcAccount.Password.Change {
       public ActionResult Change(ChangeInput input, FormButton cancel) {
 
          if (cancel) {
-            return HttpSeeOther(this.Url.Action("", "~Account"));
+            return Redirect(this.Url.Action("", "~Account"));
          }
 
          this.ViewData.Model = new ChangeViewModel(input);
@@ -100,7 +100,7 @@ namespace MvcAccount.Password.Change {
             return View().WithErrors(result);
          }
 
-         return HttpSeeOther(this.Url.Action(Saved));
+         return Redirect(this.Url.Action(Saved));
       }
 
       /// <summary>
