@@ -1,4 +1,4 @@
-[MvcAccount](http://maxtoroq.github.io/MvcAccount/) — Authentication and Account Management plugin for ASP.NET MVC
+﻿[MvcAccount](http://maxtoroq.github.io/MvcAccount/) — Authentication and Account Management plugin for ASP.NET MVC
 ==================================================================================================================
 MvcAccount is a substitute for [MembershipProvider](http://msdn.microsoft.com/library/system.web.security.membershipprovider) designed for ASP.NET MVC, that provides more features and the ability to store username/password and other related data in your own database.
 
@@ -48,4 +48,3 @@ Resources
 - [Report an issue](https://github.com/maxtoroq/MvcAccount/issues)
 
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](http://maxtoroq.github.io/p/donate.html)
-[![Flattr this](https://api.flattr.com/button/flattr-badge-large.png)](http://flattr.com/thing/1761238/MvcAccount)
