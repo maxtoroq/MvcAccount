@@ -27,6 +27,7 @@
     </FileUpgradeFlags>
     <OldToolsVersion>4.0</OldToolsVersion>
     <UpgradeBackupLocation />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -104,6 +105,7 @@
     <Compile Include="AccountController.cs" />
     <Compile Include="AccountHelpers.cs" />
     <Compile Include="Authentication\Authenticator.cs" />
+    <Compile Include="MailService.cs" />
     <Compile Include="Email\Change\EmailChanger.cs" />
     <Compile Include="Email\Verify\EmailVerifier.cs" />
     <Compile Include="IAccountContext.cs" />

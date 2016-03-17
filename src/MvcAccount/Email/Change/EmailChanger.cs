@@ -13,12 +13,9 @@
 // limitations under the License.
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Mail;
 using System.Security.Principal;
-using System.Web;
 using ResultEnvelope;
 
 namespace MvcAccount.Email.Change {
@@ -30,11 +27,12 @@ namespace MvcAccount.Email.Change {
       readonly AccountRepositoryWrapper repo;
       readonly PasswordService passServ;
       readonly FormsAuthenticationService formsAuthService;
+      readonly MailService mailService;
 
       public EmailChanger(AccountConfiguration config, IAccountContext context)
-         : this(config, context, null, null, null) { }
+         : this(config, context, null, null, null, null) { }
 
-      public EmailChanger(AccountConfiguration config, IAccountContext context, AccountRepository repo, PasswordService passwordService, FormsAuthenticationService formsAuthService) {
+      public EmailChanger(AccountConfiguration config, IAccountContext context, AccountRepository repo, PasswordService passwordService, FormsAuthenticationService formsAuthService, MailService mailService) {
          
          if (config == null) throw new ArgumentNullException("config");
          if (context == null) throw new ArgumentNullException("context");
@@ -44,6 +42,7 @@ namespace MvcAccount.Email.Change {
          this.repo = new AccountRepositoryWrapper(config.RequireDependency(repo));
          this.passServ = config.RequireDependency(passwordService);
          this.formsAuthService = config.RequireDependency(formsAuthService);
+         this.mailService = config.RequireDependency(mailService);
       }
 
       public ChangeInput Change() {
@@ -113,7 +112,7 @@ namespace MvcAccount.Email.Change {
          var notifyMessage = new MailMessage {
             To = { user.Email },
             Subject = AccountResources.Model_EmailChangeNotificationMessageSubject,
-            Body = this.context.RenderEmailView(Views.Email.Change._NotificationMessage, notifyModel)
+            Body = this.mailService.RenderMailView(this.context.ControllerContext, Views.Email.Change._NotificationMessage, notifyModel)
          };
 
          string verificationTicket = new VerificationData(user.Id, newEmail).GetVerificationTicket();
@@ -127,11 +126,10 @@ namespace MvcAccount.Email.Change {
          var verifyMessage = new MailMessage {
             To = { newEmail },
             Subject = AccountResources.Model_EmailChangeVerificationMessageSubject,
-            Body = this.context.RenderEmailView(Views.Email.Change._VerificationMessage, verifyModel)
+            Body = this.mailService.RenderMailView(this.context.ControllerContext, Views.Email.Change._VerificationMessage, verifyModel)
          };
 
-         this.context.SendEmail(notifyMessage);
-         this.context.SendEmail(verifyMessage);
+         this.mailService.Send(notifyMessage, verifyMessage);
 
          return new Result(HttpStatusCode.Accepted, new ChangeResult(newEmail));
       }

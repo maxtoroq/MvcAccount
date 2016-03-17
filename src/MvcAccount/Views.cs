@@ -25,6 +25,12 @@ namespace MvcAccount {
 
          public const string 
             SignIn = "SignIn";
+
+         public static class EditorTemplates {
+
+            public const string 
+               Object = "Object";
+         }
       }
 
       public static class Email {
@@ -42,6 +48,12 @@ namespace MvcAccount {
                _VerificationMessage_es = "_VerificationMessage.es",
                _VerificationMessage_fi = "_VerificationMessage.fi",
                _VerificationMessage_pt = "_VerificationMessage.pt";
+
+            public static class EditorTemplates {
+
+               public const string 
+                  Object = "Object";
+            }
          }
       }
 
@@ -51,6 +63,12 @@ namespace MvcAccount {
 
             public const string 
                Saved = "Saved";
+
+            public static class EditorTemplates {
+
+               public const string 
+                  Object = "Object";
+            }
          }
 
          public static class Reset {
@@ -66,6 +84,12 @@ namespace MvcAccount {
                _VerificationMessage_es = "_VerificationMessage.es",
                _VerificationMessage_fi = "_VerificationMessage.fi",
                _VerificationMessage_pt = "_VerificationMessage.pt";
+
+            public static class EditorTemplates {
+
+               public const string 
+                  Object = "Object";
+            }
          }
       }
 

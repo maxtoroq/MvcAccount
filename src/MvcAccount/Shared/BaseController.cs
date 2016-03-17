@@ -13,13 +13,6 @@
 // limitations under the License.
 
 using System;
-using System.ComponentModel;
-using System.Globalization;
-using System.IO;
-using System.Linq.Expressions;
-using System.Net;
-using System.Net.Mail;
-using System.Security.Principal;
 using System.Web;
 using System.Web.Hosting;
 using System.Web.Mvc;
@@ -87,34 +80,6 @@ namespace MvcAccount.Shared {
 #pragma warning disable 618
          return new Uri(this.Request.Url, relativeUrl).AbsoluteUri;
 #pragma warning restore 618
-      }
-
-      string IAccountContext.RenderEmailView(string viewName, object model) {
-
-         ViewEngineResult viewResult = ViewEngines.Engines.FindLocalizedPartialView(this.ControllerContext, viewName);
-
-         if (viewResult.View == null) {
-            throw new InvalidOperationException();
-         }
-
-         using (var output = new StringWriter()) {
-
-            var viewContext = new ViewContext(
-               this.ControllerContext,
-               viewResult.View,
-               new ViewDataDictionary(model),
-               new TempDataDictionary(),
-               output
-            );
-
-            viewResult.View.Render(viewContext, output);
-
-            return output.ToString();
-         }
-      }
-
-      void IAccountContext.SendEmail(MailMessage message) {
-         new SmtpClient().Send(message);
       }
    }
 }

@@ -32,6 +32,7 @@ namespace MvcAccount.Email.Change {
       AccountRepository repo;
       PasswordService passServ;
       FormsAuthenticationService formsAuthService;
+      MailService mailService;
 
       EmailChanger changer;
 
@@ -67,6 +68,20 @@ namespace MvcAccount.Email.Change {
       }
 
       /// <summary>
+      /// Initializes a new instance of the <see cref="ChangeController"/> class, 
+      /// with the provided <paramref name="repo"/>, <paramref name="passwordService"/> and <paramref name="formsAuthService"/>.
+      /// </summary>
+      /// <param name="repo">The account repository.</param>
+      /// <param name="passwordService">The password service.</param>
+      /// <param name="formsAuthService">The forms authentication service.</param>
+      /// <param name="mailService">The mail service.</param>
+      public ChangeController(AccountRepository repo, PasswordService passwordService, FormsAuthenticationService formsAuthService, MailService mailService)
+         : this(repo, passwordService, formsAuthService) {
+
+         this.mailService = mailService;
+      }
+
+      /// <summary>
       /// Initializes data that might not be available when the constructor is called.
       /// </summary>
       /// <param name="requestContext">The HTTP context and route data.</param>
@@ -74,7 +89,7 @@ namespace MvcAccount.Email.Change {
          
          base.Initialize(requestContext);
 
-         this.changer = new EmailChanger(this.Configuration, this, this.repo, this.passServ, this.formsAuthService);
+         this.changer = new EmailChanger(this.Configuration, this, this.repo, this.passServ, this.formsAuthService, this.mailService);
       }
 
       /// <summary>

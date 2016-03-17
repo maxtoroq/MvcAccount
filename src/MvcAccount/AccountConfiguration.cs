@@ -34,6 +34,7 @@ namespace MvcAccount {
       Func<AccountRepository> _AccountRepositoryResolver;
       Func<PasswordService> _PasswordServiceResolver;
       Func<FormsAuthenticationService> _FormsAuthenticationServiceResolver;
+      Func<MailService> _MailServiceResolver;
 
       /// <summary>
       /// A delegate that returns an <see cref="AccountConfiguration"/> instance.
@@ -89,6 +90,23 @@ namespace MvcAccount {
          }
          set {
             _FormsAuthenticationServiceResolver = value;
+         }
+      }
+
+      /// <summary>
+      /// A delegate that returns a <see cref="MailService"/> instance. 
+      /// This setting is always optional since <see cref="MailService"/> is
+      /// a concrete type, but can be used to provide a specialized implementation.
+      /// </summary>
+      public Func<MailService> MailServiceResolver {
+         get {
+            if (_MailServiceResolver == null && DependencyResolver != null) {
+               _MailServiceResolver = () => (MailService)DependencyResolver(typeof(MailService));
+            }
+            return _MailServiceResolver;
+         }
+         set {
+            _MailServiceResolver = value;
          }
       }
 
@@ -237,7 +255,7 @@ namespace MvcAccount {
          this.HelpResource = null;
          this.ResourceClassKey = null;
       }
-      
+
       /// <summary>
       /// Gets the current <see cref="DateTime"/>.
       /// </summary>
@@ -245,7 +263,7 @@ namespace MvcAccount {
       /// <seealso cref="AccountConfiguration.DateTimeKind"/>
       [SuppressMessage("Microsoft.Design", "CA1024:UsePropertiesWhereAppropriate", Justification = "Calling the member twice in succession creates different results.")]
       public DateTime GetNow() {
-         
+
          return (this.DateTimeKind == DateTimeKind.Utc) ?
             DateTime.UtcNow
             : DateTime.Now;
@@ -294,6 +312,17 @@ namespace MvcAccount {
             : injectedDependency ?? new FormsAuthenticationService();
 
          instance.Configuration = this;
+
+         return instance;
+      }
+
+      internal MailService RequireDependency(MailService injectedDependency) {
+
+         Func<MailService> resolver = this.MailServiceResolver;
+
+         MailService instance = (resolver != null) ?
+            resolver()
+            : injectedDependency ?? new MailService();
 
          return instance;
       }

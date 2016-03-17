@@ -31,6 +31,7 @@ namespace MvcAccount.Password.Reset {
 
       AccountRepository repo;
       PasswordService passServ;
+      MailService mailService;
 
       PasswordResetter resetter;
 
@@ -53,6 +54,21 @@ namespace MvcAccount.Password.Reset {
       }
 
       /// <summary>
+      /// Initializes a new instance of the <see cref="ResetController"/> class, 
+      /// with the provided <paramref name="repo"/> and <paramref name="passwordService"/>.
+      /// </summary>
+      /// <param name="repo">The account repository.</param>
+      /// <param name="passwordService">The password service.</param>
+      /// <param name="mailService">The mail service.</param>
+      public ResetController(AccountRepository repo, PasswordService passwordService, MailService mailService)
+         : this(repo, passwordService) {
+
+         this.repo = repo;
+         this.passServ = passwordService;
+         this.mailService = mailService;
+      }
+
+      /// <summary>
       /// Initializes data that might not be available when the constructor is called.
       /// </summary>
       /// <param name="requestContext">The HTTP context and route data.</param>
@@ -60,7 +76,7 @@ namespace MvcAccount.Password.Reset {
          
          base.Initialize(requestContext);
 
-         this.resetter = new PasswordResetter(this.Configuration, this, this.repo, this.passServ);
+         this.resetter = new PasswordResetter(this.Configuration, this, this.repo, this.passServ, this.mailService);
       }
 
       /// <summary>

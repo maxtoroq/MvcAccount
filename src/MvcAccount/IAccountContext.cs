@@ -13,16 +13,14 @@
 // limitations under the License.
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Mail;
 using System.Security.Principal;
-using System.Web;
 using System.Web.Mvc;
 
 namespace MvcAccount {
    
    interface IAccountContext {
+
+      ControllerContext ControllerContext { get; }
 
       IPrincipal User { get; }
       string CurrentUserName { get; }
@@ -31,7 +29,5 @@ namespace MvcAccount {
       UrlHelper Url { get; }
 
       string AbsoluteUrl(string relativeUrl);
-      string RenderEmailView(string viewName, object model);
-      void SendEmail(MailMessage message);
    }
 }

@@ -13,11 +13,8 @@
 // limitations under the License.
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Mail;
-using System.Web;
 using ResultEnvelope;
 
 namespace MvcAccount.Password.Reset {
@@ -28,11 +25,12 @@ namespace MvcAccount.Password.Reset {
       readonly IAccountContext context;
       readonly AccountRepositoryWrapper repo;
       readonly PasswordService passServ;
+      readonly MailService mailService;
 
       public PasswordResetter(AccountConfiguration config, IAccountContext context)
-         : this(config, context, null, null) { }
+         : this(config, context, null, null, null) { }
 
-      public PasswordResetter(AccountConfiguration config, IAccountContext context, AccountRepository repo, PasswordService passwordService) {
+      public PasswordResetter(AccountConfiguration config, IAccountContext context, AccountRepository repo, PasswordService passwordService, MailService mailService) {
          
          if (config == null) throw new ArgumentNullException("config");
          if (context == null) throw new ArgumentNullException("context");
@@ -41,6 +39,7 @@ namespace MvcAccount.Password.Reset {
          this.context = context;
          this.repo = new AccountRepositoryWrapper(config.RequireDependency(repo));
          this.passServ = config.RequireDependency(passwordService);
+         this.mailService = config.RequireDependency(mailService);
       }
 
       public Result<ResetResult> Reset(ResetInput input) {
@@ -85,7 +84,7 @@ namespace MvcAccount.Password.Reset {
             message = new MailMessage {
                To = { destinationEmail },
                Subject = AccountResources.Model_PasswordResetVerificationMessageSubject,
-               Body = this.context.RenderEmailView(Views.Password.Reset._VerificationMessage, mailModel)
+               Body = this.mailService.RenderMailView(this.context.ControllerContext, Views.Password.Reset._VerificationMessage, mailModel)
             };
 
          } else {
@@ -102,11 +101,11 @@ namespace MvcAccount.Password.Reset {
             message = new MailMessage {
                To = { destinationEmail },
                Subject = AccountResources.Model_PasswordResetVerificationMessageSubject,
-               Body = this.context.RenderEmailView(Views.Password.Reset._ErrorMessage, mailModel)
+               Body = this.mailService.RenderMailView(this.context.ControllerContext, Views.Password.Reset._ErrorMessage, mailModel)
             };
          }
 
-         this.context.SendEmail(message);
+         this.mailService.Send(message);
 
          return new Result<ResetResult>(HttpStatusCode.Accepted, new ResetResult(destinationEmail));
       }
