@@ -5,9 +5,9 @@
 
 MvcAccount is the simplest way to password-protect your ASP.NET MVC application. It consists of a single assembly which includes models, views, controllers, resources, etc. Add a bit of configuration and you are done!
 
-![](samples/demo.gif)
-
 See the [documentation][2] to get started.
+
+![](samples/demo.gif)
 
 Functions
 ---------
